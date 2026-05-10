@@ -113,7 +113,7 @@ If `gpt-5.2` is unavailable, substitute a reachable model by editing
 | `scripts/baselines/` | Phase 4: reasoning-model and tool-augmented sweeps. |
 | `scripts/validation/` | Synthetic-data validation, oracle audits, final-benchmark gate, secondary generators. |
 | `scripts/analyses/` | τ-sensitivity, κ computation, hyperparameter tuning, parameter-extraction audit. |
-| `results/{router,e2e,reasoning,independent_oracle,validation,analyses}/` | All committed artefacts, grouped by producing-phase / script family. |
+| `results/` | All committed artefacts, grouped by producing-phase / script family. |
 
 ## Key thresholds
 
