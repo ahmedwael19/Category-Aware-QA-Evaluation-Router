@@ -1,0 +1,162 @@
+Metadata-Version: 2.4
+Name: thesis-router
+Version: 1.0.0
+Summary: Category-aware routing architecture for LLM-based QA evaluation (MSc thesis code).
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anthropic==0.98.0
+Requires-Dist: openai==2.15.0
+Requires-Dist: python-dotenv==1.2.1
+Requires-Dist: marimo==0.19.5
+Requires-Dist: pandas==3.0.0
+Requires-Dist: numpy==2.3.5
+Requires-Dist: scipy==1.17.0
+Requires-Dist: scikit-learn==1.8.0
+Requires-Dist: sentence-transformers==5.2.0
+Requires-Dist: torch==2.10.0
+Requires-Dist: lightgbm==4.6.0
+Requires-Dist: matplotlib==3.10.8
+Requires-Dist: joblib==1.5.3
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: httpx==0.28.1
+Requires-Dist: tqdm==4.67.1
+Dynamic: license-file
+
+# Category-Aware QA Evaluation Router
+
+Code and data for the MSc thesis *Category-Aware Evaluation Architecture for
+QA Systems: Routing Between Symbolic and Semantic Computation* (University of
+Tartu, 2026).
+
+The repository bundles the full experiment pipeline: synthetic benchmark
+generation, router training and calibration across ten classifier
+configurations, end-to-end evaluation against LLM and tool-augmented
+baselines, and every result file cited in the thesis.
+
+## Requirements
+
+- Python 3.13
+- An OpenAI API key (Phases 1, 3, 4)
+- An Anthropic API key (Phase 4 secondary-generator and tool-augmented sweep)
+
+## Setup
+
+```bash
+git clone <repo>
+cd <repo>
+conda create -n research python=3.13 && conda activate research
+pip install -r requirements.txt
+pip install -e .
+cp .env.example .env
+# edit .env: set OPENAI_API_KEY and ANTHROPIC_API_KEY
+```
+
+`pip install -e .` registers `thesis_router`, `benchmark`, `router`, and
+`evaluation` as importable packages and makes `config` available at the top
+level, so scripts can be run with `python -m scripts.<subdir>.<name>` from
+any working directory.
+
+## Reproduce
+
+```bash
+make phase1     # regenerate synthetic dataset with GPT-5.2 (non-deterministic)
+make phase2     # train 10 router classifiers; outputs models/ + results/router/
+make phase3     # end-to-end evaluation on 305 pairs; outputs results/e2e/
+make phase4     # reasoning + tool-augmented baselines
+make figures    # rebuild every thesis figure into figures/
+```
+
+`make all` runs phases 1–4 plus figures.
+
+Individual scripts can be invoked directly:
+
+```bash
+python -m scripts.baselines.reasoning_model_comparison
+python -m scripts.baselines.tool_augmented_llm_sweep --models gpt-4o-mini gpt-4o
+python -m scripts.validation.secondary_generator --model sonnet
+python -m scripts.analyses.tau_sensitivity
+```
+
+## Committed artefacts
+
+`data/`, `models/`, and `results/` ship with the exact synthetic dataset,
+trained classifiers, and result files that produced the numbers reported in
+the thesis. Phases 2–4 reproduce deterministically from these (seed 42 in
+`config.py`).
+
+Phase 1 calls GPT-5.2 and is non-deterministic by design. Re-running it
+produces a different synthetic dataset with the same distributional
+properties; Phase 2 will then train on the fresh dataset.
+
+## Cost estimate
+
+API spend for a full re-run, based on token counts in the committed result
+files and public provider pricing (2026):
+
+| Phase | Work | Rough cost |
+| --- | --- | --- |
+| 1 | regenerate ~4k synthetic prompts via GPT-5.2 | $20–50 |
+| 3 | end-to-end evaluation, GPT-4o-mini + GPT-4o on 305 pairs | $1–3 |
+| 4a | reasoning-model comparison (250 calls × 3 models) | $10–15 |
+| 4b | tool-augmented sweep (175 pairs × 6 models) | $70–100 |
+
+Budget **$100–200** for a complete re-run, with most of the spend on
+Claude Opus in Phase 4b. Phases 2 and 5 cost nothing beyond compute: Phase 2
+trains classifiers locally on the committed dataset, Phase 5 processes the
+committed annotation CSVs.
+
+If `gpt-5.2` is not available to you, substitute `gpt-4o` for Phase 1 by
+editing `GENERATION_MODEL` in `config.py`.
+
+## Layout
+
+```
+config.py              # paths, thresholds, constants
+thesis_router/         # LLM client factories (OpenAI + Anthropic from env)
+benchmark/             # synthetic benchmark construction
+router/                # router training, calibration, evaluation
+evaluation/            # deterministic functions + end-to-end harness
+notebooks/             # Marimo phase notebooks
+cli/                   # plain-Python entry points for each phase
+scripts/
+  baselines/           # LLM and tool-augmented baselines
+  validation/          # synthetic-data validation, oracle audits, secondary generators
+  analyses/            # tau, sensitivity, kappa, hyperparameters, parameter extraction
+  artifacts/           # holdout, annotation CSVs, figures
+data/                  # datasets (committed)
+models/                # trained router artefacts (committed)
+results/               # experiment outputs cited in the thesis (committed)
+figures/               # publication PDFs (committed)
+```
+
+## Key thresholds
+
+All thresholds live in `config.py`.
+
+| Parameter | Value | Note |
+| --- | --- | --- |
+| Stratified split | 70 / 15 / 15 | Validation fold sized for stable Platt scaling |
+| Keyword leakage | 0.25 | Reject if any token predicts >25% of one category |
+| Dataset rejection | 0.80 F1 | Reject if regex baseline exceeds this Macro-F1 |
+| Semantic dedup | 0.99 cosine | Removes near-identical LLM paraphrases |
+| Noise mix | 60 / 25 / 10 / 5% | none / light / medium / heavy |
+| Confidence tau | 0.85 | Validation-set sweep on routed accuracy and coverage |
+| Bootstrap | 5,000 iters | 95% CIs |
+
+## License
+
+MIT. See `LICENSE`.
+
+## Citation
+
+```bibtex
+@mastersthesis{soliman2026router,
+  title  = {Category-Aware Evaluation Architecture for QA Systems:
+            Routing Between Symbolic and Semantic Computation},
+  author = {Soliman, Ahmed},
+  school = {University of Tartu},
+  year   = {2026},
+}
+```
