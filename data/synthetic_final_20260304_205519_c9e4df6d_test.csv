@@ -1,0 +1,635 @@
+prompt,category,subcategory,style,noise,params,top_category
+Aggregate the customer's complaint pattern from the last 2 contacts.,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+Detect whether the agent ended the conversation without leaving the customer hanging.,SEMANTIC_CLOSING,llm_generated,instruction,medium,,SEMANTIC
+"Review the first 2–3 messages: confirm the agent greeted the customer, acknowledged the shipping delay, and checked understanding (restating the issue or asking a confirming question), without sounding cold or hostile.",SEMANTIC_TONE,llm_generated,instruction,light,,SEMANTIC
+Did this agent’s escalation rate exceed the contact center average?,UNSUPPORTED,llm_generated,question,none,,UNSUPPORTED
+Record cases where more than 19 replies were needed.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 19}",SYMBOLIC_COUNT
+Calculate the impact of this conversation on purchase over week.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Was the response delivered before 18 hours passed?,SYMBOLIC_TIME,time_explicit,question,none,"{""threshold"": 18, ""unit"": ""hours""}",SYMBOLIC_TIME
+check whether agent did a proper conversation finish after empathizing.,SEMANTIC_CLOSING,llm_generated,instruction,medium,,SEMANTIC
+"If customer asked “when will we depart,” did agent answer timing rather than policies only?",SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+"Did agent mention the delay up front, no hedging, no skipping?",SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+"If first response time exceeded 10 minutes on an urgent upgrade request, assess whether the greeting included a tactful acknowledgment of the delay.",HYBRID,llm_generated,instruction,none,,HYBRID
+"Did the agent summarize next steps for cancellation correctly, even while offering other options?",SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+"At closing, did the agent provide accurate info on remaining access after cancel?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Detect whether the agent checked they had the right issue (shipping delay) before troubleshooting.,SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+Verify the agent apologized for the billing error in the very first greeting message.,SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+Verify 'escalated' tickets received appropriate urgency.,HYBRID,hybrid,instruction,none,,HYBRID
+Did the agent clearly acknowledge the customer’s account lock situation?,SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+"Across the last 20 tickets, what is the return trend?",UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Detect whether the agent’s first message included an intro and acknowledgment.,SEMANTIC_GREETING,llm_generated,instruction,none,,SEMANTIC
+Did agent acknowledge company responsibility (where applicable) before closing out the breach case?,SEMANTIC_TONE,llm_generated,question,none,,SEMANTIC
+Did the agent offer alternatives but still complete cancellation when customer insisted?,SEMANTIC_SOLUTION,llm_generated,question,light,,SEMANTIC
+How many times has this custmer had escalation issues in previous tickets?,UNSUPPORTED,unsupported,question,medium,,UNSUPPORTED
+Did the agent finish the follow-up by confirming next steps for the defect?,SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+"Assess whethet the agent used a cindiriomal finish: if you can’t reset, contact us; otherwiae confiem it’s all set.",SEMANTIC_CLOSING,llm_generated,instruction,light,,SEMANTIC
+Was the query addressed within 22 minutes?,SYMBOLIC_TIME,time_explicit,question,light,"{""threshold"": 22, ""unit"": ""minutes""}",SYMBOLIC_TIME
+Check if more than 6 turns occurred.,SYMBOLIC_COUNT,count_explicit,instruction,none,"{""threshold"": 6}",SYMBOLIC_COUNT
+Did the customer have other pending returns that should have been bundled into one refund?,UNSUPPORTED,llm_generated,question,medium,,UNSUPPORTED
+Is the 'spam' tag present on this ticket?,SYMBOLIC_METADATA,meta_tag,question,medium,"{""subtype"": ""tag"", ""value"": ""spam""}",SYMBOLIC_METADATA
+Determine whether the agent’s follow-up phrasing was too blunt when instructing the customer on next steps for a defective item.,SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+Pinpoint interactions exceeding 5 back-and-forths.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 5}",SYMBOLIC_COUNT
+did the customer contact support again about the same transaction afterward...,UNSUPPORTED,llm_generated,instruction,heavy,,UNSUPPORTED
+"Did the agent explain what info is needed to proceed with refund, conditionally?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Identify threads where 50 exchanges were not enough.,SYMBOLIC_COUNT,count_moderate,instruction,medium,"{""threshold"": 50}",SYMBOLIC_COUNT
+Aggregate the customer's escalation pattern from the last 50 contacts.,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+Is this a whatsapp ticket?,SYMBOLIC_METADATA,meta_channel,question,light,"{""subtype"": ""channel"", ""value"": ""whatsapp""}",SYMBOLIC_METADATA
+"detect whether the agent ends the conversation in a professional way after the escalation request, showing active listening by referencing what the customer said and confirming the escalation path for the locked account.",SEMANTIC_CLOSING,llm_generated,instruction,medium,,SEMANTIC
+"If the customer was irritated, did the agent acknowledge that and then confirm they’d help with password recovery?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+"Detect whether the agent’s greeting escalated tension (e.g., sharp wording) in a shipping delay chat.",SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+Did the interaction require over 50 turns?,SYMBOLIC_COUNT,count_moderate,question,light,"{""threshold"": 50}",SYMBOLIC_COUNT
+Validate that the conversation stayed under 18 turns.,SYMBOLIC_COUNT,count_explicit,instruction,none,"{""threshold"": 18}",SYMBOLIC_COUNT
+Assess based on the customer's refund records in Stripe.,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+Check if this agent’s handling time beats the team average this quarter.,UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+Count the number of agent responses and compare to 30,SYMBOLIC_COUNT,count_explicit,instruction,medium,"{""threshold"": 30}",SYMBOLIC_COUNT
+"Did the agent end the interaction after apologizing, without being abrupt?",SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+Did agent acknowledge service outage + customer escalation request up front?,SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+"Was the escalation path offered based on the lockout, not generic troubleshooting?",SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+"Inspect conversations where the custmer sent 8+ messges before resolution and assess whether the agen’s tone remained professional, especially when restating security policy.",HYBRID,llm_generated,instruction,light,,HYBRID
+Determine if the agent’s follow-up used pushy or impatient phrasing while explaining next steps for the defective product process.,SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+"If the customer said they’re stressed, did the agent acknowledge it and then finalize the interaction with a recap and offer further assistance?",SEMANTIC_CLOSING,llm_generated,question,light,,SEMANTIC
+"Did the agent set expectations for escalation during outage while also acknowledging the customer’s situation and keeping a patient, steady pace (no interrupting, no blaming, no shortcuts)?",SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+Predict churn likelihood based on this subscription interaction.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+"Did agent correctly identify customer’s intent for refund, and in their first troubleshooting reply, tailor it to the customer’s product/version and reason without switching the issue to something else??",SEMANTIC_COMPREHENSION,llm_generated,question,heavy,,SEMANTIC
+What is the customer's loyalty points according to Salesforce records?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+"If the conversation exceeded 8 turns in chat, did the agent maintain patience and keep the return process easy to follow?",HYBRID,llm_generated,question,light,,HYBRID
+"If customer requested immediate next steps, did agent outline a sequence (check status → rebook options → compensation request) tied to the delay?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+assess first-reply promptness.,SYMBOLIC_TIME,time_implicit,instruction,light,"{""threshold"": 3, ""unit"": ""seconds""}",SYMBOLIC_TIME
+Check if the agent’s first message shows they read the customer note about shipping delay.,SEMANTIC_GREETING,llm_generated,instruction,light,,SEMANTIC
+"If customer sounded angry, did agent respond to that (without arguing) before providing password reset resolution?",SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+Measure wheather the first response took less than 15 hours.,SYMBOLIC_TIME,time_explicit,instruction,heavy,"{""threshold"": 15, ""unit"": ""hours""}",SYMBOLIC_TIME
+"When internal notes show multiple prior contacts, did the agent’s closing acknowledge the repeated disruption and offer a concrete follow-up?",HYBRID,llm_generated,question,none,,HYBRID
+Detect if 'onboarding' label exists.,SYMBOLIC_METADATA,meta_tag,instruction,light,"{""subtype"": ""tag"", ""value"": ""onboarding""}",SYMBOLIC_METADATA
+Did the agent offer more help after confirming escalation for the service outage?,SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+Note if the response gap was wider than 16 sec.,SYMBOLIC_TIME,time_moderate,instruction,light,"{""threshold"": 16, ""unit"": ""sec""}",SYMBOLIC_TIME
+assess email-appropriate communication style.,HYBRID,hybrid,instruction,light,,HYBRID
+Detect whether agent ended chat with a courteous final statement and invitation for more questions.,SEMANTIC_CLOSING,llm_generated,instruction,light,,SEMANTIC
+"Check whether agent explained next steps that actually resolve the defect complaint, not unrelated actions.",SEMANTIC_COMPREHENSION,llm_generated,instruction,light,,SEMANTIC
+Did the customer wait too long?,SYMBOLIC_TIME,time_implicit,question,none,"{""threshold"": 4, ""unit"": ""seconds""}",SYMBOLIC_TIME
+Detect whether the agent’s wording was too cold when asking troubleshooting questions.,SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+"Confirm the agent’s greeting immediately includes regret/apology for the billing error, not later.",SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+Detect if the agent mixed up the delay with a cancellation or reroute request.,SEMANTIC_COMPREHENSION,llm_generated,instruction,medium,,SEMANTIC
+Estimate the probability that this customer will escalate within month.,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+Audit the response against the 20 sec standard.,SYMBOLIC_TIME,time_explicit,instruction,light,"{""threshold"": 20, ""unit"": ""sec""}",SYMBOLIC_TIME
+Evaluate if agent’s greeting apology was followed by specific billing correction guidance.,SEMANTIC_SOLUTION,llm_generated,instruction,light,,SEMANTIC
+"Check for a proper start: agent identifies self/team + acknowledges data breach notification, especially when presenting the resolution.",SEMANTIC_GREETING,llm_generated,instruction,none,,SEMANTIC
+"Did the agent end on time, without dragging, and still offer additional support...",SEMANTIC_CLOSING,llm_generated,instruction,light,,SEMANTIC
+Did the agent meet the 17 hrs response target?,SYMBOLIC_TIME,time_explicit,question,light,"{""threshold"": 17, ""unit"": ""hrs""}",SYMBOLIC_TIME
+Did the customer get an answer before 25 hours elapsed?,SYMBOLIC_TIME,time_moderate,question,none,"{""threshold"": 25, ""unit"": ""hours""}",SYMBOLIC_TIME
+Pull the customer's subscription tier from external database before evaluating.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Did the agent provide a professional finish even when no immediate fix was available?,SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+Is 'sensitive' applied to this ticket?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""sensitive""}",SYMBOLIC_METADATA
+Detect whether agent captured the core defect issue before listing next steps.,SEMANTIC_COMPREHENSION,llm_generated,instruction,light,,SEMANTIC
+Assess whether the customer is likely to request a callback after this exchange.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Assess based on the customer's return records in third-party system.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Was the first reply sent in under 26 hrs?,SYMBOLIC_TIME,time_explicit,question,none,"{""threshold"": 26, ""unit"": ""hrs""}",SYMBOLIC_TIME
+Detect whether agent’s next-step troubleshooting aligned with customer’s goal (get on flight asap).,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+check whether the agen avoided generic security tips and focused on the customer’s stated issue after the breach notification.,SEMANTIC_SOLUTION,llm_generated,instruction,heavy,,SEMANTIC
+Assess phone-appropriate communication style.,HYBRID,hybrid,instruction,medium,,HYBRID
+assess whether the customer is likely to escalate after this exchange,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+Ascertain whether 15 sec was exceeded.,SYMBOLIC_TIME,time_explicit,instruction,none,"{""threshold"": 15, ""unit"": ""sec""}",SYMBOLIC_TIME
+Did the agent apologize at closing for the wrong item?,SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+Detect whether the agent offered further help once the resolution was provided for the data-breach notice.,SEMANTIC_CLOSING,llm_generated,instruction,light,,SEMANTIC
+"For return requests submitted via email, assess whether the greeting matched a professional email tone.",HYBRID,llm_generated,instruction,none,,HYBRID
+"When the wait exceeded 60 minutes, did the agent address it?",HYBRID,hybrid,question,none,,HYBRID
+"If the ticket is escalated and includes an upgrade request, did the greeting avoid blaming language and feel diplomatically phrased?",HYBRID,llm_generated,question,light,,HYBRID
+"For chat conversations, was the opening appropriate for the channel?",HYBRID,hybrid,question,none,,HYBRID
+Detect whether the qgent kept the conversqtion aligned with the customwr’d ask: rscalate the ouyqge case now.,SEMANTIC_COMPREHENSION,llm_generated,instruction,light,,SEMANTIC
+Detect social media conversations...,SYMBOLIC_METADATA,meta_channel,instruction,heavy,"{""subtype"": ""channel"", ""value"": ""social media""}",SYMBOLIC_METADATA
+"Detect whether the agent’s opening message includes both a brief self-identification and a sincere apology for the billing error, and whether it acknowledges the customer’s reason for contacting support without shifting blame to the customer or another department.",SEMANTIC_GREETING,llm_generated,instruction,none,,SEMANTIC
+Assess emaul-appropriate communication styke.,HYBRID,hybrid,instruction,light,,HYBRID
+Confirm the agent addressed customer’s concerns before closing with resolution.,SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+Did the representative respond in less than 300 hours?,SYMBOLIC_TIME,time_explicit,question,none,"{""threshold"": 300, ""unit"": ""hours""}",SYMBOLIC_TIME
+Flag slow initial responses.,SYMBOLIC_TIME,time_implicit,instruction,medium,"{""threshold"": 26, ""unit"": ""hrs""}",SYMBOLIC_TIME
+Was there an answer from the agent within 24 hours?,SYMBOLIC_TIME,time_explicit,question,light,"{""threshold"": 24, ""unit"": ""hours""}",SYMBOLIC_TIME
+"Did agent recognize customer wanted to cancel due to price and offer price-related alternatives, not random features?",SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+Check if more than 14 turns occurred.,SYMBOLIC_COUNT,count_explicit,instruction,heavy,"{""threshold"": 14}",SYMBOLIC_COUNT
+Confirm whether the hotel charged a no-show fee after this case.,UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+"Did the rep ask for details needed to move forward (dates, airports) and then give tailored next steps? kinda felt like looping.",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Did the agent reflect back the timeline of the lockout before escalating?,SEMANTIC_TONE,llm_generated,question,none,,SEMANTIC
+"Verify the agent’s greeting includes apology language (e.g., “I’m sorry”) tied to the billing error, with no hedging like “if” or “might have.”",SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+chexk for abaolute adherence to active listening: every cusrimer cpncern acknowlrdged.,SEMANTIC_TONE,llm_generated,instruction,heavy,,SEMANTIC
+Verify whether a follow-up email was sent and whether the customer opened it.,UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+Estimate the probability that this customer will cancel within 30 days.,UNSUPPORTED,unsupported,instruction,medium,,UNSUPPORTED
+Did the agent avoid robotic replies and address the customer’s specific refund scenario?,SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+"Evaluate whether the agent’s follow-up explanation of next steps balanced empathy with clarity for a defective product case, especially if the customer had already tried troubleshooting and is now requesting a replacement or refund.",SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+Detect whether agent gave real steps for billing error or canned lines.,SEMANTIC_SOLUTION,llm_generated,instruction,light,,SEMANTIC
+"If customer asked for refund, verify agent balanced firmness with kindness while guiding first checks.",SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+Detect whether the agent began by acknowledging the customer’s refund issue and identifying themselves.,SEMANTIC_GREETING,llm_generated,instruction,none,,SEMANTIC
+"Did the agent begin with acknowledgment + intro during resolution delivery for the breach notice scenario, or was it kinda abrupt?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Was the delay between customer message and agent reply under 20 hrs?,SYMBOLIC_TIME,time_moderate,question,none,"{""threshold"": 20, ""unit"": ""hrs""}",SYMBOLIC_TIME
+Identify delays in agent response.,SYMBOLIC_TIME,time_implicit,instruction,light,"{""threshold"": 21, ""unit"": ""hours""}",SYMBOLIC_TIME
+"If the ticket is urgent and was transferred at least once, evaluate whether the greeting after transfer re-established rapport appropriately for the upgrade request.",HYBRID,llm_generated,instruction,none,,HYBRID
+Did the agent need more than 16 attempts to address this?,SYMBOLIC_COUNT,count_moderate,question,none,"{""threshold"": 16}",SYMBOLIC_COUNT
+Count the number of agent responses and compare to 14.,SYMBOLIC_COUNT,count_explicit,instruction,light,"{""threshold"": 14}",SYMBOLIC_COUNT
+"If user is frustrated, did the agnet avoid jokes and keep the resolution delivery aligned with the moment?",SEMANTIC_TONE,llm_generated,question,medium,,SEMANTIC
+Is this marked as 'urgent'?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""urgent""}",SYMBOLIC_METADATA
+Was the channel twitter?,SYMBOLIC_METADATA,meta_channel,question,none,"{""subtype"": ""channel"", ""value"": ""twitter""}",SYMBOLIC_METADATA
+"For VIP tickets about product returns, was the opening greeting appropriately courteous and personalized?",HYBRID,llm_generated,question,light,,HYBRID
+Identify 'urgent' cases.,SYMBOLIC_METADATA,meta_tag,instruction,none,"{""subtype"": ""tag"", ""value"": ""urgent""}",SYMBOLIC_METADATA
+Did this customer have unresolved subscription problems in the last 50 tickets?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Assess whether the agent took responsibility and then brought the exchange to a proper end after the breach notice was handled.,SEMANTIC_CLOSING,llm_generated,instruction,none,,SEMANTIC
+Did the agent incorrectly suggest canceling account when it was locked?,SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+Assess email-appropriate communication style.,HYBRID,hybrid,instruction,light,,HYBRID
+Check if a long wait (10+ minutes) was compensated by extra care.,HYBRID,hybrid,instruction,none,,HYBRID
+did this come through email?,SYMBOLIC_METADATA,meta_channel,question,heavy,"{""subtype"": ""channel"", ""value"": ""email""}",SYMBOLIC_METADATA
+Check opening compliance: agent must identify self and acknowledge customer (no exceptions).,SEMANTIC_GREETING,llm_generated,instruction,heavy,,SEMANTIC
+Pull the customer's credit score from ERP before evaluating.,UNSUPPORTED,unsupported,instruction,medium,,UNSUPPORTED
+Were 8+ messages exchanged in this conversation?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 8}",SYMBOLIC_COUNT
+Compare this agent's handling against  custoemr's pattern in the app.,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+Check the customer's complete support ticket log from social media.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Assess handling appropriateness for 'urgent' cases.,HYBRID,hybrid,instruction,none,,HYBRID
+Did the agent summarize the cancellation outcome and ask if anything else is needed?,SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+"Detect whether agent recognized the customer’s emotions about the delay at the start, and only then moved to next steps.",SEMANTIC_GREETING,llm_generated,instruction,light,,SEMANTIC
+"Determine whether the agent mirrored the customer’s escalation request accurately, without adding assumptions about the outage cause.",SEMANTIC_COMPREHENSION,llm_generated,instruction,light,,SEMANTIC
+Is this an 'billing' case,SYMBOLIC_METADATA,meta_tag,question,medium,"{""subtype"": ""tag"", ""value"": ""billing""}",SYMBOLIC_METADATA
+Did agent ignore the customer’s follow-up clarification and repeat same next steps?,SEMANTIC_COMPREHENSION,llm_generated,question,light,,SEMANTIC
+Did the agent confirm which order is delayed before proceeding?,SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+Monitor for exchanges going beyond 10 messages.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 10}",SYMBOLIC_COUNT
+"Detect if the agent properly ended the subscription cancellation interaction, including offering alternatives like pausing the service or switching tiers, and then clearly asked if there’s anything else they can help with before ending.",SEMANTIC_CLOSING,llm_generated,instruction,light,,SEMANTIC
+Did the agent acknowledge the customer’s cancellation reason before offering alternatives?,SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+"on technical troubleshooting conversations where internal notes exist, did the agent close with an appropriate follow-up offer?",HYBRID,llm_generated,question,light,,HYBRID
+Was the query addressed within 26 sec?,SYMBOLIC_TIME,time_explicit,question,none,"{""threshold"": 26, ""unit"": ""sec""}",SYMBOLIC_TIME
+Did agent restate the customer’s issue accurately before giving the fix?,SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+Did the agent confirm the delivery window the customer was expecting?,SEMANTIC_COMPREHENSION,llm_generated,question,medium,,SEMANTIC
+Verify whether the guest received and opened the follow-up email with instructions.,UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+Did agent end the interaction too abruptly?,SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+"If an urgent tag is present, did the agent’s first line convey calm reassurance appropriate to an upgrade request?",HYBRID,llm_generated,question,none,,HYBRID
+Has this been flagged as 'onboarding'?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""onboarding""}",SYMBOLIC_METADATA
+"Assess whether agent recognized the customer is locked out and conveyed they’re being heard, prior to giving reset procedure.",SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+Did the agent restate the issue in their own words correctly and match the refund request?,SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+pinpoint responses that came after 21 sec.,SYMBOLIC_TIME,time_moderate,instruction,light,"{""threshold"": 21, ""unit"": ""sec""}",SYMBOLIC_TIME
+Measure whether the first response took less than 120 hours.,SYMBOLIC_TIME,time_explicit,instruction,heavy,"{""threshold"": 120, ""unit"": ""hours""}",SYMBOLIC_TIME
+Examine if the reply count went above 50.,SYMBOLIC_COUNT,count_explicit,instruction,light,"{""threshold"": 50}",SYMBOLIC_COUNT
+Was the message count above 17?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 17}",SYMBOLIC_COUNT
+Verify this came via twitter.,SYMBOLIC_METADATA,meta_channel,instruction,none,"{""subtype"": ""channel"", ""value"": ""twitter""}",SYMBOLIC_METADATA
+Detect whether agent ended the interaction by confirming next steps and giving a way to get more help if needed.,SEMANTIC_CLOSING,llm_generated,instruction,none,,SEMANTIC
+Did agent’s first response feel human/personal and acknowledge the refund ask?,SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+"Did the agent pause to reflect the customer’s situation, then suggest keep-plan options?",SEMANTIC_EMPATHY,llm_generated,question,light,,SEMANTIC
+"For responses taking over 30 minutes, was there an apology?",HYBRID,hybrid,question,light,,HYBRID
+Verify 'legal' tickets received appropriate urgency.,HYBRID,hybrid,instruction,light,,HYBRID
+"Did agent ask you to confirm understanding, then ended, yes or no.",SEMANTIC_CLOSING,llm_generated,instruction,light,,SEMANTIC
+Flag 'legal' tickets where urgency was not matched by quality.,HYBRID,hybrid,instruction,none,,HYBRID
+"If the refund request is tied to a defective item, did the agent acknowledge that and personalize troubleshooting?",SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+"For tickets with a response time over 20 minutes, judge whether the agent recognized the inconvenience and the emotional impact of waiting to cancel.",HYBRID,llm_generated,instruction,none,,HYBRID
+Was the customer's message acknowledged w/in 18 min?,SYMBOLIC_TIME,time_explicit,question,light,"{""threshold"": 18, ""unit"": ""min""}",SYMBOLIC_TIME
+Detect quality degradation in conversations exceeding 10 turns.,HYBRID,hybrid,instruction,light,,HYBRID
+"Detect if agent’s first message includes both greeting + acknowledgment of shipment delay, period.",SEMANTIC_EMPATHY,llm_generated,instruction,medium,,SEMANTIC
+"if the customer asked for a refund within the first 2 messages, did agent greet them in a way that felt welcoming rather than transactional??",HYBRID,llm_generated,question,heavy,,HYBRID
+"Detect whether agent matched seriousness of the situation and didn’t joke around while delivering resolution; if they made light of it, flag it.",SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+Is this marked as 'feature-request'?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""feature-request""}",SYMBOLIC_METADATA
+"When resolution time surpassed 1 business day, determine whether the agent’s understanding of the request remained accurate across follow-ups.",HYBRID,llm_generated,instruction,none,,HYBRID
+Inspect the thread for more than 9 exchanges.,SYMBOLIC_COUNT,count_explicit,instruction,none,"{""threshold"": 9}",SYMBOLIC_COUNT
+Did more than 10 replies get sent by the agent,SYMBOLIC_COUNT,count_explicit,question,light,"{""threshold"": 10}",SYMBOLIC_COUNT
+Check if the guest’s account shows any loyalty points adjustment tied to this case.,UNSUPPORTED,llm_generated,instruction,medium,,UNSUPPORTED
+"Detect whether the agent properly opened the conversation by acknowledging the customer’s delayed shipment, confirming understanding of the concern, and setting up next steps in a clear, professional tone.",SEMANTIC_GREETING,llm_generated,instruction,light,,SEMANTIC
+Was the customer left hanging for more than 300 minutes?,SYMBOLIC_TIME,time_moderate,question,light,"{""threshold"": 300, ""unit"": ""minutes""}",SYMBOLIC_TIME
+Identify whether the agent mirrored the customer’s frustration in a professional way during resolution delivery.,SEMANTIC_EMPATHY,llm_generated,instruction,light,,SEMANTIC
+Confirm the agent opened the interaction by stating who they are and acknowledging the customer’s cancellation intent.,SEMANTIC_GREETING,llm_generated,instruction,none,,SEMANTIC
+"Did the agent actually handle the cancellation request, not just copy-paste scripts?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+"If the customer asked 'Why do you need this info?' after 5+ turns, did the agent explain with a courteous, professional tone?",HYBRID,llm_generated,question,none,,HYBRID
+Did the agent remain patient; no sarcasm or short answers during outage escalation?,SEMANTIC_TONE,llm_generated,question,none,,SEMANTIC
+"detect whether the agent properly opened the conversation for a locked-account escalation request by acknowledging the custoemr, identifying themselves, and demonstrating active listening in the first exchange; this should be explicit, not buried later.",SEMANTIC_GREETING,llm_generated,instruction,heavy,,SEMANTIC
+Did the agent gloss over the customer frustration and just paste steps?,SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+"Evaluate whwthee the agent’s inotial troubleshooting included specific recomnendations contingent on ti,e srbsitivity (tught vonnection vs plrnty of buffee).",SEMANTIC_SOLUTION,llm_generated,instruction,medium,,SEMANTIC
+"Check for a proper first response: acknowledge refund request, identify agent, and address customer directly.",SEMANTIC_GREETING,llm_generated,instruction,none,,SEMANTIC
+"Did agent make sure you understood the shipping delay explanation and then finish properly, no loose ends?",SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+Record cases where more than 5 replies were needed.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 5}",SYMBOLIC_COUNT
+Detect whether the agent’s follow-up explanation of next steps matched the seriousness of a defective product.,SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+Is this a repeat support ticket complaint from the same customer?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Was the wait time wirhin accrptable kimits,SYMBOLIC_TIME,time_implicit,question,light,"{""threshold"": 23, ""unit"": ""hrs""}",SYMBOLIC_TIME
+"If the customer remained confused after the reset instructions, did the agent conditionally offer additional options and then end appropriately once the customer understood?",SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+"If the customer said they’ve tried multiple times, did the agent acknowledge the frustration before outlining the recovery steps?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Was the agent's first message within 22 minutes of the query?,SYMBOLIC_TIME,time_explicit,question,none,"{""threshold"": 22, ""unit"": ""minutes""}",SYMBOLIC_TIME
+Did agent respond to the customer being annoyed about security questions?,SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+Was there a follow-up login complaint after this ticket was closed?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Was the 60 seconds response window honored?,SYMBOLIC_TIME,time_explicit,question,none,"{""threshold"": 60, ""unit"": ""seconds""}",SYMBOLIC_TIME
+Any private comments added?,SYMBOLIC_METADATA,meta_notes,question,none,"{""subtype"": ""notes"", ""value"": null}",SYMBOLIC_METADATA
+"If internal notes are present and the issue required multiple troubleshooting steps, did the agent close by summarizing progress and offering follow-up assistance??",HYBRID,llm_generated,question,light,,HYBRID
+"Did agent acknowledge feelings first, then start troubleshooting the delay?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Filter for SMS tickets.,SYMBOLIC_METADATA,meta_channel,instruction,light,"{""subtype"": ""channel"", ""value"": ""SMS""}",SYMBOLIC_METADATA
+"Verify the agent greeted the customer, apologized, and did not drift away from the billing error topic...",SEMANTIC_COMPREHENSION,llm_generated,instruction,light,,SEMANTIC
+"If agent asks for more info, did they still acknowledge the situation first?",SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+Did the agent provide a final reassurance and ask if everything is sorted now?,SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+Calculate the impact of this conversation on support ticket over next billing cycle.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Detect whether the agent’s follow-up summary aligns with the defect symptoms described.,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Assess whether the agent’s guidance was specific enough to progress the refund request.,SEMANTIC_SOLUTION,llm_generated,instruction,none,,SEMANTIC
+"If customer demanded refund immediately, did the agent keep their wording non-judgmental?",SEMANTIC_TONE,llm_generated,question,light,,SEMANTIC
+Evaluate based on the customer's past support ticket interactions across 15 tickets.,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+"Did the agent end properly: confirm cancelation, mention options, offer more help?",SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+"For VIP return tickets, check whether the greeting used the customer’s name (when available) and felt respectful.",HYBRID,llm_generated,instruction,light,,HYBRID
+Assess whether the 8 sec threshold was met.,SYMBOLIC_TIME,time_explicit,instruction,none,"{""threshold"": 8, ""unit"": ""sec""}",SYMBOLIC_TIME
+Test whether the reply met the 29 hours requirement.,SYMBOLIC_TIME,time_explicit,instruction,none,"{""threshold"": 29, ""unit"": ""hours""}",SYMBOLIC_TIME
+What is the customer's account balance according to external database records?,UNSUPPORTED,unsupported,question,medium,,UNSUPPORTED
+"If the conversation includes 2 or more transfers, did each agent maintain a professional tone and courteous handoff language during the cancellation process?",HYBRID,llm_generated,question,none,,HYBRID
+"If the agent added internal notes, assess whether they offered an appropriate follow-up channel before ending the conversation.",HYBRID,llm_generated,instruction,none,,HYBRID
+Did the customer come back with the same complaint issue within week?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+What is the customer's support ticket history in CRM?,UNSUPPORTED,unsupported,question,light,,UNSUPPORTED
+"did the agent give clear final confirmation after checking your understanding, or did they just stop replying?",SEMANTIC_CLOSING,llm_generated,question,light,,SEMANTIC
+"Did agent ask relevant questions to narrow down refund reason, not generic stuff?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+"If internal notes are missing, did the agent still offer a clear follow-up and closing?",HYBRID,llm_generated,question,none,,HYBRID
+Did the rep validate frustration during resolution delivery for lost password?,SEMANTIC_TONE,llm_generated,question,none,,SEMANTIC
+"Was the initial response a proper intro + acknowledgment, even if conversation is at closing?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+"When the customer says they feel 'tricked' into subscribing and the thread exceeds 6 turns, assess whether the agent’s tone remained professional and respectful.",HYBRID,llm_generated,instruction,light,,HYBRID
+Did the reply arrive before the 90 sec mark?,SYMBOLIC_TIME,time_moderate,question,light,"{""threshold"": 90, ""unit"": ""sec""}",SYMBOLIC_TIME
+Detect whether the follow-up included actionable next steps vs canned lines.,SEMANTIC_SOLUTION,llm_generated,instruction,none,,SEMANTIC
+Is this marked as 'spam'?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""spam""}",SYMBOLIC_METADATA
+"See if agent says hi, apologizes, and nails the billing error issue right away.",SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Did the agent beat the 27 sec deadline?,SYMBOLIC_TIME,time_explicit,question,medium,"{""threshold"": 27, ""unit"": ""sec""}",SYMBOLIC_TIME
+Detect unnecessarily long interactions.,SYMBOLIC_COUNT,count_implicit,instruction,none,"{""threshold"": 18}",SYMBOLIC_COUNT
+Did this come through twitter?,SYMBOLIC_METADATA,meta_channel,question,none,"{""subtype"": ""channel"", ""value"": ""twitter""}",SYMBOLIC_METADATA
+Did the agent start the convo by recognizing customer frustration and listening before escalation talk?,SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Did the agnet write more than 13 responses?,SYMBOLIC_COUNT,count_explicit,question,light,"{""threshold"": 13}",SYMBOLIC_COUNT
+Did the customer’s account remain active 30 days later?,UNSUPPORTED,llm_generated,question,light,,UNSUPPORTED
+"Did the agent’s first message acknowledge the refund request but also personalize it (name, order, product)?",SEMANTIC_GREETING,llm_generated,question,light,,SEMANTIC
+Did the customer later accept the settlement offer without dispute?,UNSUPPORTED,llm_generated,question,none,,UNSUPPORTED
+Check whether the customer’s device inventory lists a compatible router model.,UNSUPPORTED,llm_generated,instruction,heavy,,UNSUPPORTED
+Check if the customer was a high-value shopper and thus eligible for a faster refund.,UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+Did agent say something like “I know that’s frustrating” before sending reset instructions?,SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Check if the agent apologized when response exceeded 45 minutes.,HYBRID,hybrid,instruction,light,,HYBRID
+determine if the exchange surpassed 14 messages.,SYMBOLIC_COUNT,count_explicit,instruction,light,"{""threshold"": 14}",SYMBOLIC_COUNT
+Detect whether the greeting included a brief recap of what the customer is contacting about (late shipment).,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+"If internal notes are present, did the agent offer a clear follow-up option at closing?",HYBRID,llm_generated,question,light,,HYBRID
+Assess based on the customer's support ticket records in ERP.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+"When the customer used negative sentiment words (e.g., ""angry"", ""disappointed"") at least 1 time, did the agent acknowledge that emotion promptly?",HYBRID,llm_generated,question,none,,HYBRID
+Determine if first response exceeded 14 minutes.,SYMBOLIC_TIME,time_explicit,instruction,none,"{""threshold"": 14, ""unit"": ""minutes""}",SYMBOLIC_TIME
+"For chat sessions started from the returns portal, if the customer already entered order details, assess whether the agent avoided asking for information the customer had provided.",HYBRID,llm_generated,instruction,none,,HYBRID
+"For 'complaint' tickets, was the response quality adequate?",HYBRID,hybrid,question,light,,HYBRID
+Did the agent verify the expected delivery date and mismatch at greeting?,SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Detect whether the agent used a courteous final line and offered extra help after handling the lost password.,SEMANTIC_CLOSING,llm_generated,instruction,light,,SEMANTIC
+Watch for turn counts above 16.,SYMBOLIC_COUNT,count_moderate,instruction,heavy,"{""threshold"": 16}",SYMBOLIC_COUNT
+Measure if the total messages crossed 15.,SYMBOLIC_COUNT,count_explicit,instruction,none,"{""threshold"": 15}",SYMBOLIC_COUNT
+Did the agent acknowledge previous case details about the defect before giving next steps?,SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+"If tagged 'sensitive' and over 30 turns, was urgency maintained?",HYBRID,hybrid,question,none,,HYBRID
+"If the conversation exceeded 6 turns on chat, assess whether the agent summarized the billing dispute details to confirm understanding before proposing a solution.",HYBRID,llm_generated,instruction,medium,,HYBRID
+Ensure the 6 minutes target was achieved.,SYMBOLIC_TIME,time_explicit,instruction,medium,"{""threshold"": 6, ""unit"": ""minutes""}",SYMBOLIC_TIME
+Did the customer experience a long wait...,SYMBOLIC_TIME,time_implicit,question,light,"{""threshold"": 3, ""unit"": ""min""}",SYMBOLIC_TIME
+"If customer expressed frustration, did agent acknowledge it and then guide password recovery?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+"If the customer asked for alternate flights, did the agent provide concrete alternatives or at least a process, not generic policy talk?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Identify if source was email.,SYMBOLIC_METADATA,meta_channel,instruction,heavy,"{""subtype"": ""channel"", ""value"": ""email""}",SYMBOLIC_METADATA
+Detect whether the agent’s greeting apology is tied to the billing error and not a generic sorry.,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+"Check that agent didn’t twist customer’s request: customer asked escalate now due to locked account, not “wait 24 hours” unless that’s the stated policy AND they explained it.",SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Was the first contact from the agent made within 180 sec?,SYMBOLIC_TIME,time_moderate,question,light,"{""threshold"": 180, ""unit"": ""sec""}",SYMBOLIC_TIME
+Flag if the conversation exceeded 10 messages.,SYMBOLIC_COUNT,count_moderate,instruction,light,"{""threshold"": 10}",SYMBOLIC_COUNT
+Determine whether the greeting validated the customer’s concern about a late shipment.,SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+What is the customer's usage log in the app?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Is 'complaint' applied to this ticket?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""complaint""}",SYMBOLIC_METADATA
+Was 15 messages enough or did it go longer?,SYMBOLIC_COUNT,count_moderate,question,none,"{""threshold"": 15}",SYMBOLIC_COUNT
+"For cancellation requests where the agent proposes an alternative plan (metadata: plan_change_offered=true), judge whether the offer was presented courteously and professionally.",HYBRID,llm_generated,instruction,none,,HYBRID
+Did the agent correctly identify the customer needed a password reset?,SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+Predict churn likelihood based on this support ticket interaction.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+"If the ticket is marked 'escalated', was it handled with appropriate urgency?",HYBRID,hybrid,question,none,,HYBRID
+Did agent begin with apology but fail to move the billing issue forward at all?,SEMANTIC_SOLUTION,llm_generated,question,medium,,SEMANTIC
+Did the agent acknowledge customer’s concern about money being tied up before proceeding?,SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+Did this customer have unresolved escalation problems in the last 50 tickets?,UNSUPPORTED,unsupported,question,light,,UNSUPPORTED
+Did the agent get the cancellation reason right before offering alternatives?,SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+"If resolution time was between 30 and 90 minutes, did the agent capture the customer’s upgrade requirements clearly?",HYBRID,llm_generated,question,none,,HYBRID
+"Check if, right at the start, the agent acknowledged the shipping delay and verified they understood the customer.",SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+Did agent personalize or just paste boilerplate?,SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Aggregate the customer's escalation pattern from the last 20 contacts.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Did the agent correctly identify the customer’s main ask about the delayed flight?,SEMANTIC_COMPREHENSION,llm_generated,question,light,,SEMANTIC
+"If  conversation took more than 3 exchanges, did the agent remain patient?",HYBRID,hybrid,question,light,,HYBRID
+Detevt whethee the agent used the custoner’s nqmw/irdee fetauls nesr the end and offerwd further assisyamce.,SEMANTIC_CLOSING,llm_generated,instruction,light,,SEMANTIC
+"If tagged 'legal' and over 30 turns, was urgency maintained?",HYBRID,hybrid,question,none,,HYBRID
+Did the agent end the chat appropriately and offer more help?,SEMANTIC_CLOSING,llm_generated,question,medium,,SEMANTIC
+Check if the passenger had prior disruptions on earlier flights this year.,UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+Was the time to first response shorter than 19 hrs?,SYMBOLIC_TIME,time_moderate,question,light,"{""threshold"": 19, ""unit"": ""hrs""}",SYMBOLIC_TIME
+"Determine whether the agent acknowledges the customer’s disappointment about the defective item and provides a clear, step-by-step plan for what will happen next, including who does what and expected timeframes.",SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+Examine if the response was sent before the 26 hours limit.,SYMBOLIC_TIME,time_explicit,instruction,none,"{""threshold"": 26, ""unit"": ""hours""}",SYMBOLIC_TIME
+Did the conversation have more than 5 turns?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 5}",SYMBOLIC_COUNT
+"For 'urgent' tickets, was the response quality adequate?",HYBRID,hybrid,question,none,,HYBRID
+Did the agent end the follow-up appropriately after providing next steps for the defective product issue?,SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+Did agent provide a polite final note and invite additional questions?,SEMANTIC_CLOSING,llm_generated,question,heavy,,SEMANTIC
+"If tagged 'urgent' and over 30 turns, was urgency maintained?",HYBRID,hybrid,question,none,,HYBRID
+did the customer come back with the same complaint issue within quarter,UNSUPPORTED,unsupported,question,medium,,UNSUPPORTED
+Was the customer kept waiting beyond 30 seconds?,SYMBOLIC_TIME,time_moderate,question,light,"{""threshold"": 30, ""unit"": ""seconds""}",SYMBOLIC_TIME
+Predict request a callback likelihood based on this subscription interaction.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Calculate the impact of this conversation on escalation over quarter.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+"Determine if the agent properly ended the interaction with a courteous finish and an invitation for further assistance, despite the conversation being at the greeting stage and primarily an apology for a billing error.",SEMANTIC_CLOSING,llm_generated,instruction,none,,SEMANTIC
+"Was the agent patient and did they acknowledge outage impact, even when escalation demanded, no excuses?",SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+assess whether the turn count exceeded 18.,SYMBOLIC_COUNT,count_explicit,instruction,light,"{""threshold"": 18}",SYMBOLIC_COUNT
+Was the customer offered a travel voucher in a separate follow-up ticket?,UNSUPPORTED,llm_generated,question,none,,UNSUPPORTED
+Did the customer’s subscription status change within a week after this interaction?,UNSUPPORTED,llm_generated,question,none,,UNSUPPORTED
+Check that the agent didn’t forget to ask if customer needs anything else after the troubleshooting portion.,SEMANTIC_CLOSING,llm_generated,instruction,none,,SEMANTIC
+"Check whether agent interpreted customer’s ask right, and didn’t go off on unrelated policy or sales pitch during initial troubleshooting.",SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Audit the response against the 10 sec standard.,SYMBOLIC_TIME,time_explicit,instruction,none,"{""threshold"": 10, ""unit"": ""sec""}",SYMBOLIC_TIME
+Did the customer need to wait past 22 sec for acknowledgment?,SYMBOLIC_TIME,time_moderate,question,none,"{""threshold"": 22, ""unit"": ""sec""}",SYMBOLIC_TIME
+"Detect whether the rep provided a real path to cancel at closing, or just generic talk.",SEMANTIC_SOLUTION,llm_generated,instruction,none,,SEMANTIC
+What is the customer's account balance according to CRM records?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Check if the agent apologized when response exceeded 15 minutes.,HYBRID,hybrid,instruction,none,,HYBRID
+Verify that whatsapp best practices were followed.,HYBRID,hybrid,instruction,none,,HYBRID
+Verify ticket has 'resolved' status.,SYMBOLIC_METADATA,meta_tag,instruction,none,"{""subtype"": ""tag"", ""value"": ""resolved""}",SYMBOLIC_METADATA
+Did the customer rate this interaction positively after 30 days?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Measure whether the 24 min SLA was breached.,SYMBOLIC_TIME,time_moderate,instruction,heavy,"{""threshold"": 24, ""unit"": ""min""}",SYMBOLIC_TIME
+Check whether network maintenance in the area overlapped this incident.,UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+"If customer can’t remember username either, did agent adapt guidance instead of ignoring it?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Did the agent end the chat appropriately after delivering the breach notification resolution?,SEMANTIC_CLOSING,llm_generated,question,light,,SEMANTIC
+Flag tickets marked 'refund'.,SYMBOLIC_METADATA,meta_tag,instruction,none,"{""subtype"": ""tag"", ""value"": ""refund""}",SYMBOLIC_METADATA
+Detect if the agent’s opening apology aligns exactly with customer’s billing error claim.,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Confirm the agent addressed customer’s situation before offering pauses/discounts.,SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+"Evaluate if the agent’s opening response clearly matches what customer asked about: shipping delay, not something else.",SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Did agent apologize in greeting and not twist the billing error into something else?,SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+"Evaluate whether the agent handled the last turn properly: empathy for the delay, quick summary of what was checked, and a courteous finish with room for more questions.",SEMANTIC_CLOSING,llm_generated,instruction,none,,SEMANTIC
+Did agent avoid sounding cold or harsh when customer demanded escalation in outage?,SEMANTIC_TONE,llm_generated,question,none,,SEMANTIC
+Was there more than a 25 minutes gap before the response?,SYMBOLIC_TIME,time_moderate,question,light,"{""threshold"": 25, ""unit"": ""minutes""}",SYMBOLIC_TIME
+Detect whether the agent’s first response contained a clear intro + acknowledgment; don’t give partial credit if it’s vague or buried later. This is required even during closing on cancellation chats.,SEMANTIC_GREETING,llm_generated,instruction,none,,SEMANTIC
+Identify threads where 9 exchanges were not enough.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 9}",SYMBOLIC_COUNT
+Did the thread contain at least 16 messages?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 16}",SYMBOLIC_COUNT
+"Determine whether agent communication stayed steady and patient during outage escalation, no digs, no snap-backs.",SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+Monitor for exchanges going beyond 13 messages.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 13}",SYMBOLIC_COUNT
+Note if the response gap was wider than 28 hrs.,SYMBOLIC_TIME,time_moderate,instruction,none,"{""threshold"": 28, ""unit"": ""hrs""}",SYMBOLIC_TIME
+Verify the response was sent under 4 minutes.,SYMBOLIC_TIME,time_explicit,instruction,medium,"{""threshold"": 4, ""unit"": ""minutes""}",SYMBOLIC_TIME
+Pinpoint interactions exceeding 15 back-and-forths.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 15}",SYMBOLIC_COUNT
+Confirm whether the agent ended the interaction with thanks and an offer to assist further.,SEMANTIC_CLOSING,llm_generated,instruction,none,,SEMANTIC
+Did the customer come back with the same billing issue within month?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+"If customer says they’ve been waiting due to delay, did agent acknowledge that inconvenience and their feelings before initiating troubleshooting steps, and did they avoid sounding robotic or dismissive in that initial response",SEMANTIC_GREETING,llm_generated,instruction,medium,,SEMANTIC
+Check if the claimant’s address on the policy matched their registered residence at loss date.,UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+Check if the agent stayed patient and consistent while confirming the outage details before escalating...,SEMANTIC_COMPREHENSION,llm_generated,instruction,light,,SEMANTIC
+Evaluate both response speed (15 minute threshold) and helpfulness.,HYBRID,hybrid,instruction,light,,HYBRID
+Detect whether the agent verified the customer’s goal (status update / expedite / complaint) while keeping focus on the shipping delay.,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+What is the customer's usage pattern in CRM?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Assess based on the customer's return records in Salesforce.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Did the agent restate the customer’s delivery delay in their own words??,SEMANTIC_COMPREHENSION,llm_generated,question,light,,SEMANTIC
+What is the customer's subscription pattern in ERP?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Pinpoint interactions exceeding 19 back-and-forths.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 19}",SYMBOLIC_COUNT
+Did the agent recognize the customer’s shipping delay right in the greeting?,SEMANTIC_EMPATHY,llm_generated,question,light,,SEMANTIC
+What was the usage outcome of their last 3 interactions?,UNSUPPORTED,unsupported,question,light,,UNSUPPORTED
+Was the message count above 9?,SYMBOLIC_COUNT,count_explicit,question,light,"{""threshold"": 9}",SYMBOLIC_COUNT
+detect whether agent got the core problem wrong during escalation request.,SEMANTIC_COMPREHENSION,llm_generated,instruction,light,,SEMANTIC
+How many times has this customer had return issues in previous tickets?,UNSUPPORTED,unsupported,question,medium,,UNSUPPORTED
+Detect if the agent’s last message included both empathy and an offer for more assistance.,SEMANTIC_CLOSING,llm_generated,instruction,none,,SEMANTIC
+Was it tagged 'duplicate'?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""duplicate""}",SYMBOLIC_METADATA
+Did the agent beat the 21 hours deadline?,SYMBOLIC_TIME,time_explicit,question,light,"{""threshold"": 21, ""unit"": ""hours""}",SYMBOLIC_TIME
+Did the agent acknowledge the customer's frustration about the flight delay before troubleshooting?,SEMANTIC_TONE,llm_generated,question,none,,SEMANTIC
+Assess based on the customer's login records in Salesforce.,UNSUPPORTED,unsupported,instruction,medium,,UNSUPPORTED
+Are there internal notes in this convesation?,SYMBOLIC_METADATA,meta_notes,question,heavy,"{""subtype"": ""notes"", ""value"": null}",SYMBOLIC_METADATA
+Assess whether the 21 min threshold was met.,SYMBOLIC_TIME,time_explicit,instruction,heavy,"{""threshold"": 21, ""unit"": ""min""}",SYMBOLIC_TIME
+"Did agent acknowledge customer at start, or just said 'need info' with no context?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Did this customer have unresolved purchase problems in the last 10 tickets?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+assess whether the interaction was streamlined.,SYMBOLIC_COUNT,count_implicit,instruction,light,"{""threshold"": 10}",SYMBOLIC_COUNT
+Pull the customer's contact preferences from the app before evaluating.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Verify whether the claim was ultimately denied due to an exclusion not discussed here.,UNSUPPORTED,llm_generated,instruction,light,,UNSUPPORTED
+Confirm whether the agent’s resolution-delivery message included both acknowledgment of frustration and a brief statement of support before the steps.,SEMANTIC_GREETING,llm_generated,instruction,none,,SEMANTIC
+Verify whether the restaurant issued a remake or replacement after the conversation.,UNSUPPORTED,llm_generated,instruction,medium,,UNSUPPORTED
+Determine if the agent's responses felt robotic or caring during the first steps of delay troubleshooting.,SEMANTIC_TONE,llm_generated,instruction,light,,SEMANTIC
+"In closing, did the agent give specific confirmation (date, email, billing end) for cancellation?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+"If the customer opens with anger about the delay, assess whether the agent immediately validates that emotion and acknowledges the situation, rather than pushing forms/questions first; note any missed empathy cues in the first turn.",SEMANTIC_GREETING,llm_generated,instruction,light,,SEMANTIC
+"For responses taking over 60 minutes, was there an apology?",HYBRID,hybrid,question,none,,HYBRID
+Did the thread contain at least 50 messages?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 50}",SYMBOLIC_COUNT
+"Based on this cpnveesatiob, wi;; the customrr's comyavt prefeeenxes change?",UNSUPPORTED,unsupported,question,light,,UNSUPPORTED
+"Verify the final agent message ties back to the refund request, confirms current status, and offers further assistance in a personalized way.",SEMANTIC_CLOSING,llm_generated,instruction,none,,SEMANTIC
+"If customer repeated themselves, did agent restate the issue to show it landed?",SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+Estimate the probability that this customer will upgrade within 90 days.,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+Verify whether the customer placed another order immediately after this complaint.,UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+Is this interaction likely to lead to a billing within 90 days?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+"Assess whether agent’s greeting was aligned to shipping delay and included an understanding check plus concrete progression (order lookup, tracking review, ETA update); flag if it stayed generic or repetitive.",SEMANTIC_SOLUTION,llm_generated,instruction,none,,SEMANTIC
+Track conversations exceeding the 18 message mark.,SYMBOLIC_COUNT,count_moderate,instruction,light,"{""threshold"": 18}",SYMBOLIC_COUNT
+"If the ticket is urgent, assess whether the greeting avoided canned phrasing and sounded genuinely attentive to an upgrade request.",HYBRID,llm_generated,instruction,none,,HYBRID
+"Detect if agent acknowledged the cancellation reason, then suggested downgrade, pause, or discount.",SEMANTIC_EMPATHY,llm_generated,instruction,medium,,SEMANTIC
+"Check that agent didn’t assume weather delay when customer said mechanical, etc.",SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Monitor for exchanges going beyond 4 messages.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 4}",SYMBOLIC_COUNT
+Confirm whether the guest’s next booking was completed successfully without support.,UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+Did more than 11 replies get sent by the agent?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 11}",SYMBOLIC_COUNT
+"If the user kept failing reset, did agent diagnose what’s blocking it and suggest next steps?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Filter for whatsapp tickets.,SYMBOLIC_METADATA,meta_channel,instruction,light,"{""subtype"": ""channel"", ""value"": ""whatsapp""}",SYMBOLIC_METADATA
+"If the ticket is marked 'vip', was it handled with appropriate urgency?",HYBRID,hybrid,question,light,,HYBRID
+Did the agent give a clear final message and offer additional assistance?,SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+"For upgrade requests resolved within 20 minutes, did the agent understand the customer’s priorities (cost vs. features) well enough to respond appropriately?",HYBRID,llm_generated,question,none,,HYBRID
+Assess whetehr the interaction was streamlined.,SYMBOLIC_COUNT,count_implicit,instruction,medium,"{""threshold"": 3}",SYMBOLIC_COUNT
+"Did the agent show active listening by reflecting details, then progressing the case?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Examine if the response was sent before the 2 min limit.,SYMBOLIC_TIME,time_explicit,instruction,none,"{""threshold"": 2, ""unit"": ""min""}",SYMBOLIC_TIME
+Inspect if the first reply came under 13 sec.,SYMBOLIC_TIME,time_explicit,instruction,light,"{""threshold"": 13, ""unit"": ""sec""}",SYMBOLIC_TIME
+Determine whether agent’s final summary matched the customer’s cancellation request and didn’t drift into unrelated topics.,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Was the 1 min response window honored?,SYMBOLIC_TIME,time_explicit,question,none,"{""threshold"": 1, ""unit"": ""min""}",SYMBOLIC_TIME
+"For responses taking over 3 minutes, was there an apology?",HYBRID,hybrid,question,light,,HYBRID
+Detect quality degradation in conversations exceeding 10 turns...,HYBRID,hybrid,instruction,medium,,HYBRID
+Estimate the probability that this customer will request a callback within next billing cycle.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Did the agent offer more help before ending interaction?,SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+Flag drawn-out conversations.,SYMBOLIC_COUNT,count_implicit,instruction,none,"{""threshold"": 6}",SYMBOLIC_COUNT
+Did the agent only paste policy text without changing the locked-account situation?,SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Did agent validate the customer’s goal: unlock account via escalation?,SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+"Determine whether the agent, at the greeting stage, correctly captured the customer’s request about a delayed delivery (including order context) and did not reinterpret it as a cancellation, address change, or damaged item report. Look for a clear confirmation step.",SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Did this customer have unresolved return problems in the last 20 tickets?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+did the customer renew after this conversation ended?,UNSUPPORTED,unsupported,question,heavy,,UNSUPPORTED
+Ensure agent did not assume billing issue; customer said account locked.,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Calculate the impact of this conversation on support ticket over quarter.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+"For cases with internal notes present, evaluate whether the agent’s closing acknowledged the customer’s effort and offered continued help.",HYBRID,llm_generated,instruction,light,,HYBRID
+"When the xustomer is on a trial plan (metasaya: trial=true) amd requests cancekkatipn, did the agwbt eemain cpurreius and professional while expkaining next syeps?",HYBRID,llm_generated,question,light,,HYBRID
+"if the chat reached 10+ turns, did the agent remain calm and professional while discussing account security?",HYBRID,llm_generated,question,medium,,HYBRID
+"Check: in first response, did the agent apologize and describe the billing error accurately?",SEMANTIC_COMPREHENSION,llm_generated,question,light,,SEMANTIC
+Check if the final resolution matched what was promised once the back office processed it.,UNSUPPORTED,llm_generated,instruction,light,,UNSUPPORTED
+"Check if agent asked for relevant details (date, route) after customer reported delay, not unrelated info.",SEMANTIC_COMPREHENSION,llm_generated,instruction,light,,SEMANTIC
+"Check whether agent confirmed understanding at the start, then ended neatly.",SEMANTIC_CLOSING,llm_generated,instruction,none,,SEMANTIC
+"Check if agent ended the convo properly: confirm fix, offer more help, then finish.",SEMANTIC_CLOSING,llm_generated,instruction,heavy,,SEMANTIC
+"When internal notes are present, evaluate the warmth and clarity of the closing and whether it encouraged the customer to return if the fix fails.",HYBRID,llm_generated,instruction,none,,HYBRID
+Confirm the agent avoided canned policy blurbs and addressed the exact scenario.,SEMANTIC_SOLUTION,llm_generated,instruction,none,,SEMANTIC
+Forecast the customer's support ticket trend over the next week.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Detect if 'refund' label exists.,SYMBOLIC_METADATA,meta_tag,instruction,none,"{""subtype"": ""tag"", ""value"": ""refund""}",SYMBOLIC_METADATA
+Log responses that exceeded the 120 sec mark.,SYMBOLIC_TIME,time_moderate,instruction,medium,"{""threshold"": 120, ""unit"": ""sec""}",SYMBOLIC_TIME
+Examine if the reply count went above 7.,SYMBOLIC_COUNT,count_explicit,instruction,none,"{""threshold"": 7}",SYMBOLIC_COUNT
+Confirm 'spam' is present.,SYMBOLIC_METADATA,meta_tag,instruction,none,"{""subtype"": ""tag"", ""value"": ""spam""}",SYMBOLIC_METADATA
+Did more than 14 replies get sent by the agent?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 14}",SYMBOLIC_COUNT
+aggregate the customer's usage pattern from the last 10 contacts.,UNSUPPORTED,unsupported,instruction,medium,,UNSUPPORTED
+Verify agent didn't dodge blame when providing the breach resolution steps.,SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+Did the customer receive and redeem any retention offer after the conversation?,UNSUPPORTED,llm_generated,question,none,,UNSUPPORTED
+Detect email conversations,SYMBOLIC_METADATA,meta_channel,instruction,heavy,"{""subtype"": ""channel"", ""value"": ""email""}",SYMBOLIC_METADATA
+Assess fiest-reply promprnesd.,SYMBOLIC_TIME,time_implicit,instruction,heavy,"{""threshold"": 20, ""unit"": ""hours""}",SYMBOLIC_TIME
+"Verify that, if the customer stated they are locked out due to too many tries, agent handled lockout + reset appropriately in the resolution.",SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+"For conversations exceeding 15 turns, was quality maintained throughout?",HYBRID,hybrid,question,none,,HYBRID
+check if the greeting included an apology but no meaningful action on billing error.,SEMANTIC_SOLUTION,llm_generated,instruction,medium,,SEMANTIC
+"Did the agent ask any final check-in question before ending (e.g., anything else I can help with)?",SEMANTIC_CLOSING,llm_generated,question,light,,SEMANTIC
+Check whether agent’s next step logically follows: escalate for lock review.,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Did the customer receive a reply within 90 seconds,SYMBOLIC_TIME,time_explicit,question,medium,"{""threshold"": 90, ""unit"": ""seconds""}",SYMBOLIC_TIME
+Is 'pending' applied to this ticket?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""pending""}",SYMBOLIC_METADATA
+Verify ticket has 'urgent' status.,SYMBOLIC_METADATA,meta_tag,instruction,none,"{""subtype"": ""tag"", ""value"": ""urgent""}",SYMBOLIC_METADATA
+Was the delay between customer message and agent reply under 12 minutes?,SYMBOLIC_TIME,time_moderate,question,none,"{""threshold"": 12, ""unit"": ""minutes""}",SYMBOLIC_TIME
+Evaluate based on the customer's past return interactions across 5 tickets.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Verify the customer's payment method in Salesforce.,UNSUPPORTED,unsupported,instruction,medium,,UNSUPPORTED
+check if agent wrongly interpreted refund request as cancellation only; note any mismatch in first replies,SEMANTIC_COMPREHENSION,llm_generated,instruction,light,,SEMANTIC
+Was the conversation longer than 17 exchanges?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 17}",SYMBOLIC_COUNT
+Cross-reference this support ticket issue with Shopify data.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Highlight cases where 9 hrs was not met.,SYMBOLIC_TIME,time_moderate,instruction,none,"{""threshold"": 9, ""unit"": ""hrs""}",SYMBOLIC_TIME
+"If the customer cited financial hardship and the first reply was over 4 minutes, evaluate whether the agent showed sensitivity and understanding.",HYBRID,llm_generated,instruction,none,,HYBRID
+Detect whether the agent’s troubleshooting questions were tailored to the specific refund issue instead of a broad checklist.,SEMANTIC_EMPATHY,llm_generated,instruction,light,,SEMANTIC
+Did agent greet and confirm what happened (shipping delay) in same message?,SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+Predict cancel likelihood based on this complaint interaction.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Was it tagged 'refund'?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""refund""}",SYMBOLIC_METADATA
+Detect whether the agent’s statements like “we” vs “they” show ownership when delivering resolution for the breach notification.,SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+"Did agent document impact, scope, and account info to support escalation?",SEMANTIC_SOLUTION,llm_generated,question,heavy,,SEMANTIC
+Did the agent take longer than 5 min to get back?,SYMBOLIC_TIME,time_moderate,question,none,"{""threshold"": 5, ""unit"": ""min""}",SYMBOLIC_TIME
+Did the exchange exceed 16 messages?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 16}",SYMBOLIC_COUNT
+Did the agent's response arrive in under 18 min?,SYMBOLIC_TIME,time_explicit,question,light,"{""threshold"": 18, ""unit"": ""min""}",SYMBOLIC_TIME
+Cross-reference this return issue with Shopify data.,UNSUPPORTED,unsupported,instruction,medium,,UNSUPPORTED
+"If tagged 'sensitive' and over 15 turns, was urgency maintained?",HYBRID,hybrid,question,none,,HYBRID
+"If customer mentioned multiple defects, did agent address the main one driving the follow-up request?",SEMANTIC_COMPREHENSION,llm_generated,question,light,,SEMANTIC
+Detect whether the agent actively listened and summarized the request for escalation.,SEMANTIC_EMPATHY,llm_generated,instruction,medium,,SEMANTIC
+Determine if the agent remained patient and kept user informed while escalating.,SEMANTIC_SOLUTION,llm_generated,instruction,none,,SEMANTIC
+was the whatsapp response both timely and genuinely helpful?,HYBRID,hybrid,question,medium,,HYBRID
+Detect if 'follow-up' label exists.,SYMBOLIC_METADATA,meta_tag,instruction,none,"{""subtype"": ""tag"", ""value"": ""follow-up""}",SYMBOLIC_METADATA
+"If the customer asked multiple things (delay + hotel), did agent prioritize and separate them clearly?",SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+"For tickets where internal notes were used to document troubleshooting results, check whether the agent closed by confirming the customer can reach back easily",HYBRID,llm_generated,instruction,medium,,HYBRID
+"Detect whether the agent’s initial summary matched customer’s shipping delay issue, no twist.",SEMANTIC_COMPREHENSION,llm_generated,instruction,light,,SEMANTIC
+Assess whether the customer is likely to leave negative feedback after this exchange.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Monitor whether the 13 seconds benchmark was hit.,SYMBOLIC_TIME,time_moderate,instruction,none,"{""threshold"": 13, ""unit"": ""seconds""}",SYMBOLIC_TIME
+Did agent wrap things up properly?,SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+What is the probability the customer will churn,UNSUPPORTED,unsupported,question,light,,UNSUPPORTED
+Detect whether the agent’s final message confirms the issue in customer’s words (lost password) and recognizes it’s a pain.,SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+Detect if agent used a quick acknowledgement like 'that’s frustrating' and then delivered reset instructions.,SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+Was the message count above 11?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 11}",SYMBOLIC_COUNT
+Did the agent end the cancellation chat on a positive note?,SEMANTIC_TONE,llm_generated,question,none,,SEMANTIC
+Did agent end with “anything else I can help with?” or similar,SEMANTIC_CLOSING,llm_generated,question,light,,SEMANTIC
+Is the 'onboarding' tag present on this ticket?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""onboarding""}",SYMBOLIC_METADATA
+"When the customer requests a refund on email, evaluate whether the agent’s explanation of eligibility and next steps was fair, clear, and customer-friendly.",HYBRID,llm_generated,instruction,none,,HYBRID
+Was this agent’s resolution time better than the team average last month?,UNSUPPORTED,llm_generated,question,none,,UNSUPPORTED
+What is the customer's payment method according to partner portal records?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Did the agent contact the right internal team when escalation was requested?,SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Record whether the customer waited beyond 24 sec.,SYMBOLIC_TIME,time_moderate,instruction,none,"{""threshold"": 24, ""unit"": ""sec""}",SYMBOLIC_TIME
+Was the conversation wrapped up before hitting 15 messages?,SYMBOLIC_COUNT,count_moderate,question,none,"{""threshold"": 15}",SYMBOLIC_COUNT
+Does the ticket have the 'follow-up' label??,SYMBOLIC_METADATA,meta_tag,question,light,"{""subtype"": ""tag"", ""value"": ""follow-up""}",SYMBOLIC_METADATA
+"For chat conversations, was the opening appropriate for the channel...",HYBRID,hybrid,question,medium,,HYBRID
+"Determine whether the agent's guidance is specific to this defect case, not boilerplate.",SEMANTIC_SOLUTION,llm_generated,instruction,none,,SEMANTIC
+Ensure the 14 hours target was achieved.,SYMBOLIC_TIME,time_explicit,instruction,light,"{""threshold"": 14, ""unit"": ""hours""}",SYMBOLIC_TIME
+Is this customer's subscription tier available from external database?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+"If the customer reported a lost package and the agent’s next reply took over 5 minutes, did the agent express concern in a human, caring way?",HYBRID,llm_generated,question,light,,HYBRID
+Did the customer end up waiting over 60 sec?,SYMBOLIC_TIME,time_moderate,question,light,"{""threshold"": 60, ""unit"": ""sec""}",SYMBOLIC_TIME
+"Check greeting for apology re: billing error—required, even if short.",SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+Detect whether the agent’s steps would actually progress a refund request.,SEMANTIC_SOLUTION,llm_generated,instruction,none,,SEMANTIC
+Did more than 13 replies get sent by the agent?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 13}",SYMBOLIC_COUNT
+Is 'vip' applied to this ticket?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""vip""}",SYMBOLIC_METADATA
+Did agent start off w/ an apology for the wrong charge?,SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Estimate the probability that this customer will downgrade within next billing cycle.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Verify agent correctly linked outage to customer impact before proceeding with escalation request.,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Did the agent mention they can see why the delay is a big deal for the customer,SEMANTIC_EMPATHY,llm_generated,instruction,heavy,,SEMANTIC
+"If refund is pending, did the agent communicate timelines and then ask if there’s anything else they can do?",SEMANTIC_CLOSING,llm_generated,question,light,,SEMANTIC
+"Did the agent begin the interaction with a clear acknowledgment and self-identification, even if customer was upset and pushing for escalation?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+"For cases where hte agent responded within 1 minute but the shipment was still late, evaluate whether the agent avoided minimizing the customer’s feelings.",HYBRID,llm_generated,instruction,heavy,,HYBRID
+"Assess if the agent established who they are and acknowledged the customer’s cancellation intent at the start, even though the interaction is near the end; ensure the customer feels recognized before any alternative offers are presented.",SEMANTIC_GREETING,llm_generated,instruction,none,,SEMANTIC
+"Determine if the first message included a suitable self-identification and customer acknowledgment, no exceptions.",SEMANTIC_GREETING,llm_generated,instruction,none,,SEMANTIC
+Did agent start with an acknowledgment of the breach notification and a quick “I’m [name] from [team]” type intro?,SEMANTIC_GREETING,llm_generated,question,medium,,SEMANTIC
+"If the customer cites a previous case number in an email, evaluate whether the agent used that history effectively to resolve the billing dispute faster.",HYBRID,llm_generated,instruction,none,,HYBRID
+Did the agent show they were listening by referencing previous messages when troubleshooting refund?,SEMANTIC_EMPATHY,llm_generated,question,none,,SEMANTIC
+Did the agent personalize their first troubleshooting reply to the customer’s refund intent?,SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+"Did the agent’s first response set a proper start by stating their name/department, acknowledging the customer’s message about the delayed shipment, and confirming what the customer is looking for (status, refund, reroute)?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Determine if the agent captured the exact reason: account locked and user wants escalation.,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Detect whether agent asked the right clarifying question about refund (partial vs full) instead of random troubleshooting.,SEMANTIC_COMPREHENSION,llm_generated,instruction,light,,SEMANTIC
+Was 6 messages enough or did it go longer...,SYMBOLIC_COUNT,count_moderate,question,light,"{""threshold"": 6}",SYMBOLIC_COUNT
+Did the agent resolve it efficiently...,SYMBOLIC_COUNT,count_implicit,question,medium,"{""threshold"": 4}",SYMBOLIC_COUNT
+Did the agent take longer than 30 minutes to get back?,SYMBOLIC_TIME,time_moderate,question,light,"{""threshold"": 30, ""unit"": ""minutes""}",SYMBOLIC_TIME
+"Did the rep at greeting confirm they understood the delayed shipment and then provide targeted guidance (what info needed, what they’ll check, timelines), not just a canned apology?",SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+"If customer can't return item immediately, did the agent offer alternate next steps (pickup, extended window, partial refund) or just repeat policy?",SEMANTIC_SOLUTION,llm_generated,question,light,,SEMANTIC
+Verify this came via social media.,SYMBOLIC_METADATA,meta_channel,instruction,heavy,"{""subtype"": ""channel"", ""value"": ""social media""}",SYMBOLIC_METADATA
+Flag if the conversation exceeded 16 messages.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 16}",SYMBOLIC_COUNT
+"Determine whether the greeting was aligned with the customer’s frustration about a late package, and included a quick check for understanding.",SEMANTIC_TONE,llm_generated,instruction,medium,,SEMANTIC
+Did this customer have unresolved subscription problems in the last 15 tickets?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Can we verify the customer's contact preferences against external database?,UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Were there fewer than 17 messages?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 17}",SYMBOLIC_COUNT
+"If it’s a refund request, did the agent acknowledge it before asking troubleshooting questions?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+"Detect whether the agent's follow-up gives timelines (when label arrives, when new unit ships) rather than generic promises.",SEMANTIC_SOLUTION,llm_generated,instruction,none,,SEMANTIC
+Did the agent take too long to respond?,SYMBOLIC_TIME,time_implicit,question,none,"{""threshold"": 8, ""unit"": ""hours""}",SYMBOLIC_TIME
+"If customer mentions a defective unit again, did agent recognize that and state they’re following up, then give next steps without making customer repeat everything?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Check if the insured had an open fraud review flag on their account beforehand.,UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+Flag converstions with internal notes.,SYMBOLIC_METADATA,meta_notes,instruction,medium,"{""subtype"": ""notes"", ""value"": null}",SYMBOLIC_METADATA
+Check if the agent used the customer’s name and tailored steps at the start.,SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+Did agent start off by confirming they understand customer wants refund and will help?,SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+"If customer provided photos/serial number, did the agent confirm receipt, explain next steps, and then finish properly??",SEMANTIC_CLOSING,llm_generated,question,light,,SEMANTIC
+Agent said sorry—did they do anything about billing error though?,SEMANTIC_SOLUTION,llm_generated,question,light,,SEMANTIC
+"Did agent keep it professional at the end, after resolving the breach notice?",SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC
+Were more than 14 back-and-forth exchanges needed?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 14}",SYMBOLIC_COUNT
+"Review the initial troubleshooting stage for a delayed flight: did the agent begin by acknowledging the delay and the customer’s feelings (stress/frustration), briefly state they can assist, and then proceed conditionally based on what the customer shared?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Is this an 'refund' case?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""refund""}",SYMBOLIC_METADATA
+"Confirm whether the agent’s actions aligned with the customer’s contract terms and whether any credits were ultimately applied on the next invoice, including the final billed amount and line-item adjustments.",UNSUPPORTED,llm_generated,instruction,none,,UNSUPPORTED
+"If the return case took more than 1 hour of active handling time before resolution, judge whether the agent consistently understood the customer’s issue without asking redundant clarifications.",HYBRID,llm_generated,instruction,none,,HYBRID
+Was the passenger a frequent flyer with elite status at the time?,UNSUPPORTED,llm_generated,question,none,,UNSUPPORTED
+What was usage outcome of their last 50 interactions?,UNSUPPORTED,unsupported,question,heavy,,UNSUPPORTED
+Was the channel web form...,SYMBOLIC_METADATA,meta_channel,question,light,"{""subtype"": ""channel"", ""value"": ""web form""}",SYMBOLIC_METADATA
+"Did the agent open with understanding, or did it read kinda cold?",SEMANTIC_TONE,llm_generated,question,none,,SEMANTIC
+"Determine whether the agent’s communication stayed suitable for the situation and avoided any sharp or cold phrasing, while also demonstrating active listening (paraphrasing, confirmations) through the entire escalation request on the locked account case.",SEMANTIC_TONE,llm_generated,instruction,light,,SEMANTIC
+Has this been flagged as 'feature-request'?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""feature-request""}",SYMBOLIC_METADATA
+"Did the agent acknowledge the billing error right at the start, or only later?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Did the first reply take less than 16 hrs?,SYMBOLIC_TIME,time_explicit,question,none,"{""threshold"": 16, ""unit"": ""hrs""}",SYMBOLIC_TIME
+Identify bloated threads.,SYMBOLIC_COUNT,count_implicit,instruction,none,"{""threshold"": 16}",SYMBOLIC_COUNT
+"Was there a firm cancellation outcome communicated, not vague ‘we’ll look into it’?",SEMANTIC_SOLUTION,llm_generated,question,light,,SEMANTIC
+"Did the agant follow through on escalation request end-to-end, not just say they would?",SEMANTIC_SOLUTION,llm_generated,question,light,,SEMANTIC
+Did the agent stay patient and not get defensive when customer insisted on escalation?,SEMANTIC_TONE,llm_generated,question,none,,SEMANTIC
+"Determine if the agent properly began by acknowledging the customer and stating their role, prior to any closing/next steps.",SEMANTIC_GREETING,llm_generated,instruction,none,,SEMANTIC
+Is this an 'complaint' case?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""complaint""}",SYMBOLIC_METADATA
+Check if the customer has a history of chronic signal issues at this address.,UNSUPPORTED,llm_generated,instruction,light,,UNSUPPORTED
+Did agent confirm what was tried in troubleshooting and what will happen next for refund?,SEMANTIC_CLOSING,llm_generated,question,light,,SEMANTIC
+"Confirm the agent did not mislabel the billing error as a payment issue, and apologized in the greeting.",SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+"Evaluate whether the agent’s greeting set the right vibe by immediately apologizing for the billing error; if the apology only appears later in the chat, score it as not met.",SEMANTIC_TONE,llm_generated,instruction,light,,SEMANTIC
+Detect whether chat etiquette was maintained under pressure.,HYBRID,hybrid,instruction,none,,HYBRID
+"If tagged 'legal' and over 10 turns, was urgency maintained?",HYBRID,hybrid,question,none,,HYBRID
+"If customer was upset about being locked out, did agent correctly diagnose it as lost password and provide the proper recovery route, including any security verification steps and expected timelines, without implying the customer did something wrong?",SEMANTIC_COMPREHENSION,llm_generated,question,none,,SEMANTIC
+Is this an 'follow-up' case?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""follow-up""}",SYMBOLIC_METADATA
+Estimate the probability that this customer will renew within quarter.,UNSUPPORTED,unsupported,instruction,none,,UNSUPPORTED
+Examine if the response was sent before the 30 seconds limit.,SYMBOLIC_TIME,time_explicit,instruction,none,"{""threshold"": 30, ""unit"": ""seconds""}",SYMBOLIC_TIME
+"Check whether agent artempted to retaim customet with optiona, then ended cobversqtion cleanly...",SEMANTIC_CLOSING,llm_generated,instruction,medium,,SEMANTIC
+Did the agent take ownership and provide concrete next steps after the breach notice?,SEMANTIC_SOLUTION,llm_generated,question,light,,SEMANTIC
+Confirm the agent didn’t act annoyed when the customer declined alternatives.,SEMANTIC_TONE,llm_generated,instruction,light,,SEMANTIC
+Record cases where more than 25 replies were needed.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 25}",SYMBOLIC_COUNT
+verify wheather the customer’s seat count changed in the next billing cycle,UNSUPPORTED,llm_generated,instruction,heavy,,UNSUPPORTED
+Verify ticket has 'feature-request' status.,SYMBOLIC_METADATA,meta_tag,instruction,none,"{""subtype"": ""tag"", ""value"": ""feature-request""}",SYMBOLIC_METADATA
+Determine if the agent validated the customer’s frustration about being locked out.,SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+Highlight unnecessarily lengthy exchanges.,SYMBOLIC_COUNT,count_implicit,instruction,light,"{""threshold"": 12}",SYMBOLIC_COUNT
+Aggregate the customer's support ticket pattern from the last 15 contacts.,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+Did agent repeat canned outage copy/paste w/out any real escalation steps?,SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+assess whether the response was prompt.,SYMBOLIC_TIME,time_implicit,instruction,light,"{""threshold"": 21, ""unit"": ""min""}",SYMBOLIC_TIME
+Did the interaction require over 13 turns?,SYMBOLIC_COUNT,count_moderate,question,light,"{""threshold"": 13}",SYMBOLIC_COUNT
+Detect whether agent acknowledged inconvenience of outage while escalating.,SEMANTIC_EMPATHY,llm_generated,instruction,light,,SEMANTIC
+"Did the agent begin by acknowledging the customer and stating their role, instead of jumping to closing steps and alternative options? Absolute pass/fail",SEMANTIC_GREETING,llm_generated,question,light,,SEMANTIC
+Detect whether the agent missed any customer cues while discussing escalation on account locked case.,SEMANTIC_TONE,llm_generated,instruction,light,,SEMANTIC
+Identify 'retention' cases.,SYMBOLIC_METADATA,meta_tag,instruction,none,"{""subtype"": ""tag"", ""value"": ""retention""}",SYMBOLIC_METADATA
+"Across the last 20 tickets, what is the refund trend?",UNSUPPORTED,unsupported,question,light,,UNSUPPORTED
+Did hte guest latet submit a satidfacroon rating for this onteeactoon?,UNSUPPORTED,llm_generated,question,heavy,,UNSUPPORTED
+Aggregate the customer's complaint pattern from the last 3 contacts.,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+Did the agent show empathy for the lost password frustration when presenting the fix?,SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+"If the ticket is marked 'complaint', was it handled with appropriate urgency?",HYBRID,hybrid,question,none,,HYBRID
+Did the agent write more than 2 responses?,SYMBOLIC_COUNT,count_explicit,question,none,"{""threshold"": 2}",SYMBOLIC_COUNT
+"If the average agent response time was above 8 minutes, did the agent compensate with stronger emotional acknowledgment of the delivery delay?",HYBRID,llm_generated,question,none,,HYBRID
+did the agent ask unnecessary questions and delay cancel till chat ended?,SEMANTIC_SOLUTION,llm_generated,question,medium,,SEMANTIC
+Determine whether agent’s closing reinforced that the customer was heard and then offered options.,SEMANTIC_EMPATHY,llm_generated,instruction,none,,SEMANTIC
+Assess handling appropriateness for 'sensitive' cases.,HYBRID,hybrid,instruction,none,,HYBRID
+"Based on this converstion, will rhe customer's credit score change?",UNSUPPORTED,unsupported,question,heavy,,UNSUPPORTED
+"When the customer requested a prepaid return label on email, judge whether the agent’s response felt fair and solution-oriented.",HYBRID,llm_generated,instruction,none,,HYBRID
+Verify the agent addressed the core cancellation ask in the closing and only then proposed alternatives like downgrades or pauses.,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Was yhe wait time within acceptable limits?,SYMBOLIC_TIME,time_implicit,question,light,"{""threshold"": 25, ""unit"": ""minutes""}",SYMBOLIC_TIME
+Is this a social media conversation?,SYMBOLIC_METADATA,meta_channel,question,none,"{""subtype"": ""channel"", ""value"": ""social media""}",SYMBOLIC_METADATA
+did the customer get an answer before 14 minutes elapsed?,SYMBOLIC_TIME,time_moderate,question,light,"{""threshold"": 14, ""unit"": ""minutes""}",SYMBOLIC_TIME
+Confirm 'technical' is present.,SYMBOLIC_METADATA,meta_tag,instruction,none,"{""subtype"": ""tag"", ""value"": ""technical""}",SYMBOLIC_METADATA
+"In the opening greeting, verify the agent apologized and correctly framed the billing error (e.g., duplicate charge vs wrong plan) exactly as the customer presented it, with no deviation.",SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+Catalog threads over 6 exchanges long.,SYMBOLIC_COUNT,count_moderate,instruction,none,"{""threshold"": 6}",SYMBOLIC_COUNT
+Did the agent need more than 30 attempts to address this?,SYMBOLIC_COUNT,count_moderate,question,heavy,"{""threshold"": 30}",SYMBOLIC_COUNT
+"Did the agent handle the escalation request in an absolute way: either clear internal handoff + documented steps + customer expectations set, or it’s a failure; patience is required but not sufficient.",SEMANTIC_SOLUTION,llm_generated,instruction,none,,SEMANTIC
+Is the 'urgent' tag present on this ticket?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""urgent""}",SYMBOLIC_METADATA
+rxamine if the reply count went above 14.,SYMBOLIC_COUNT,count_explicit,instruction,heavy,"{""threshold"": 14}",SYMBOLIC_COUNT
+Did agent greet + confirm what customer meant about delay?,SEMANTIC_TONE,llm_generated,question,none,,SEMANTIC
+Is 'technical' applied to this ticket?,SYMBOLIC_METADATA,meta_tag,question,none,"{""subtype"": ""tag"", ""value"": ""technical""}",SYMBOLIC_METADATA
+Flag conversations that could have been shorter.,SYMBOLIC_COUNT,count_implicit,instruction,none,"{""threshold"": 50}",SYMBOLIC_COUNT
+Detect whether the agent initiated escalation and communicated reference numbers clearly.,SEMANTIC_SOLUTION,llm_generated,instruction,none,,SEMANTIC
+Did the agent end thw chat appripriatwly after thr escalation request?,SEMANTIC_CLOSING,llm_generated,question,medium,,SEMANTIC
+"For cases where tesolution time exveedes 36 hours, evaluste whether the agent’s explanations show they undwrstiod the customer’a desirwd upgrase psth amd rimelune.",HYBRID,llm_generated,instruction,medium,,HYBRID
+Identify if source was chat.,SYMBOLIC_METADATA,meta_channel,instruction,none,"{""subtype"": ""channel"", ""value"": ""chat""}",SYMBOLIC_METADATA
+Evaluate whether agent’s resolution matched the customer’s question from the breach notification.,SEMANTIC_COMPREHENSION,llm_generated,instruction,none,,SEMANTIC
+"When the customer asked to cancel more than once (2+ times), did the agent validate the reason before proceeding?",HYBRID,llm_generated,question,light,,HYBRID
+"If the defect caused safety concerns, did the agent’s follow-up language reflect urgency while still explaining next steps?",SEMANTIC_TONE,llm_generated,question,light,,SEMANTIC
+Assess whether the customer is likely to churn after this exchange.,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+"Across the last 2 tickets, what is the refund trend?",UNSUPPORTED,unsupported,question,none,,UNSUPPORTED
+Identify if source was phone.,SYMBOLIC_METADATA,meta_channel,instruction,none,"{""subtype"": ""channel"", ""value"": ""phone""}",SYMBOLIC_METADATA
+"When the customer said they were ""sad to leave"" and the response came within 4 minutes, did the agent reflect that sentiment appropriately?",HYBRID,llm_generated,question,none,,HYBRID
+"If the ticket is marked 'sensitive', was it handled with appropriate urgency?",HYBRID,hybrid,question,none,,HYBRID
+"Detect whether agent used any dismissive phrasing when closing out the lost password case, even after saying they understand it's frustrating.",SEMANTIC_TONE,llm_generated,instruction,heavy,,SEMANTIC
+Did the agent avoid blaming the customer while explaining next steps on the defect follow-up,SEMANTIC_TONE,llm_generated,instruction,heavy,,SEMANTIC
+Did the customer downgrade after this conversation ended?,UNSUPPORTED,unsupported,question,light,,UNSUPPORTED
+did the agent greet the customer in a suitable way for a shipping delay?,SEMANTIC_TONE,llm_generated,question,medium,,SEMANTIC
+Would the customer recommend the service after this usage interaction,UNSUPPORTED,unsupported,question,light,,UNSUPPORTED
+"If the customer used angry language and the agent responded within 4 minutes, did the agent de-escalate by acknowledging the emotion behind the complaint?",HYBRID,llm_generated,question,none,,HYBRID
+Check that the greeting explicitly includes an apology for the billing error (must be present).,SEMANTIC_TONE,llm_generated,instruction,none,,SEMANTIC
+Detect twitter conversations.,SYMBOLIC_METADATA,meta_channel,instruction,light,"{""subtype"": ""channel"", ""value"": ""twitter""}",SYMBOLIC_METADATA
+"Did the agent start the exchange with an appropriate self-ID and acknowledgement, then move into alternatives?",SEMANTIC_GREETING,llm_generated,question,none,,SEMANTIC
+Was the fitst rwply prpmpt?,SYMBOLIC_TIME,time_implicit,question,light,"{""threshold"": 18, ""unit"": ""seconds""}",SYMBOLIC_TIME
+Did the agent offer pause/downgrade options and then still cancel immediately when declined?,SEMANTIC_SOLUTION,llm_generated,question,none,,SEMANTIC
+Detect whether the agent ended the conversation appropriately after cancellation request.,SEMANTIC_CLOSING,llm_generated,instruction,light,,SEMANTIC
+"Detect whether the agent opened the follow-up by acknowledging the customer’s reported defect and confirming they’re continuing the existing case, rather than treating it like a brand-new request, before laying out next steps.",SEMANTIC_GREETING,llm_generated,instruction,light,,SEMANTIC
+"If this came via twitter, was communication style suitable?",HYBRID,hybrid,question,heavy,,HYBRID
+Aggregate the customer's return pattern from the last 2 contacts.,UNSUPPORTED,unsupported,instruction,light,,UNSUPPORTED
+"If user is still frustrated even after steps, did agent try to reassure and then finish properly?",SEMANTIC_CLOSING,llm_generated,question,none,,SEMANTIC

@@ -1,0 +1,751 @@
+model,run,idx,category,prompt,answer,ground_truth,correct,prompt_tokens,completion_tokens,reasoning_tokens,total_tokens,latency_ms
+o3-mini,0,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,539,526,512,1065,6081.1
+o3-mini,0,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,no,yes,0,592,527,512,1119,4519.9
+o3-mini,0,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,295,270,256,565,3094.5
+o3-mini,0,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,588,463,448,1051,4402.2
+o3-mini,0,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,yes,yes,1,343,782,768,1125,6662.7
+o3-mini,0,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,311,79,64,390,1325.2
+o3-mini,0,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,no,yes,0,268,79,64,347,1330.2
+o3-mini,0,15,SYMBOLIC_TIME,Identify delays in agent response.,yes,yes,1,282,335,320,617,3732.1
+o3-mini,0,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,no,yes,0,359,527,512,886,4867.5
+o3-mini,0,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,256,79,64,335,1024.8
+o3-mini,0,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,391,78,64,469,1330.2
+o3-mini,0,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,282,270,256,552,3309.8
+o3-mini,0,45,SYMBOLIC_TIME,Was the 1 min response window honored?,no,yes,0,286,210,192,496,2514.6
+o3-mini,0,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,no,yes,0,295,462,448,757,4592.1
+o3-mini,0,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,239,206,192,445,2161.1
+o3-mini,0,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,yes,yes,1,290,79,64,369,1165.3
+o3-mini,0,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,315,15,0,330,1305.3
+o3-mini,0,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,238,334,320,572,3161.4
+o3-mini,0,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,no,yes,0,222,207,192,429,2003.2
+o3-mini,0,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,344,79,64,423,1150.3
+o3-mini,0,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,514,526,512,1040,4518.0
+o3-mini,0,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,605,399,384,1004,4327.3
+o3-mini,0,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,418,271,256,689,2796.1
+o3-mini,0,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,yes,yes,1,188,590,576,778,6302.5
+o3-mini,0,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,187,334,320,521,3282.3
+o3-mini,0,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,238,207,192,445,2464.3
+o3-mini,0,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,263,15,0,278,1276.5
+o3-mini,0,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,no,no,1,403,143,128,546,1891.0
+o3-mini,0,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,187,15,0,202,1124.4
+o3-mini,0,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,189,15,0,204,880.9
+o3-mini,0,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,258,271,256,529,2792.0
+o3-mini,0,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,yes,yes,1,217,207,192,424,1967.8
+o3-mini,0,12,SYMBOLIC_TIME,Flag slow initial responses.,yes,yes,1,357,334,320,691,3269.9
+o3-mini,0,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,388,79,64,467,1146.5
+o3-mini,0,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,242,207,192,449,2060.5
+o3-mini,0,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,593,143,128,736,1911.5
+o3-mini,0,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,yes,no,0,308,142,128,450,1642.6
+o3-mini,0,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,419,271,256,690,3050.7
+o3-mini,0,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,265,208,192,473,2125.5
+o3-mini,0,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,504,527,512,1031,5261.4
+o3-mini,0,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,187,78,64,265,1745.6
+o3-mini,0,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,239,15,0,254,1016.3
+o3-mini,0,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,593,591,576,1184,5166.9
+o3-mini,0,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,220,79,64,299,1384.4
+o3-mini,0,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,365,142,128,507,2152.5
+o3-mini,0,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,yes,no,0,130,143,128,273,2000.5
+o3-mini,0,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,no,yes,0,499,526,512,1025,4709.1
+o3-mini,0,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,290,79,64,369,1581.9
+o3-mini,0,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,189,15,0,204,923.3
+o3-mini,0,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,yes,yes,1,211,271,256,482,3171.6
+o3-mini,1,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,539,655,640,1194,6365.4
+o3-mini,1,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,yes,yes,1,592,783,768,1375,8296.0
+o3-mini,1,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,295,206,192,501,2434.9
+o3-mini,1,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,588,526,512,1114,5344.5
+o3-mini,1,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,yes,yes,1,343,1038,1024,1381,9319.1
+o3-mini,1,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,311,143,128,454,1667.9
+o3-mini,1,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,no,yes,0,268,206,192,474,2591.0
+o3-mini,1,15,SYMBOLIC_TIME,Identify delays in agent response.,yes,yes,1,282,335,320,617,3109.6
+o3-mini,1,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,no,yes,0,359,399,384,758,4224.3
+o3-mini,1,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,256,80,64,336,1483.8
+o3-mini,1,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,391,78,64,469,1256.4
+o3-mini,1,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,282,334,320,616,3466.8
+o3-mini,1,45,SYMBOLIC_TIME,Was the 1 min response window honored?,no,yes,0,286,209,192,495,2090.2
+o3-mini,1,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,no,yes,0,295,463,448,758,4877.5
+o3-mini,1,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,239,142,128,381,1746.4
+o3-mini,1,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,yes,yes,1,290,143,128,433,1741.9
+o3-mini,1,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,315,15,0,330,629.6
+o3-mini,1,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,238,398,384,636,3880.9
+o3-mini,1,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,yes,yes,1,222,271,256,493,2554.1
+o3-mini,1,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,344,78,64,422,1536.8
+o3-mini,1,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,514,782,768,1296,7881.4
+o3-mini,1,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,605,527,512,1132,4918.2
+o3-mini,1,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,418,206,192,624,2870.1
+o3-mini,1,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,no,yes,0,188,143,128,331,2144.9
+o3-mini,1,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,no,yes,0,187,143,128,330,1535.4
+o3-mini,1,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,238,271,256,509,3277.8
+o3-mini,1,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,263,79,64,342,1804.2
+o3-mini,1,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,no,no,1,403,207,192,610,2529.0
+o3-mini,1,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,187,142,128,329,2054.0
+o3-mini,1,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,189,79,64,268,1084.6
+o3-mini,1,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,258,399,384,657,3890.4
+o3-mini,1,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,yes,yes,1,217,79,64,296,1360.3
+o3-mini,1,12,SYMBOLIC_TIME,Flag slow initial responses.,yes,yes,1,357,207,192,564,2429.5
+o3-mini,1,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,388,15,0,403,1021.9
+o3-mini,1,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,242,399,384,641,3482.0
+o3-mini,1,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,593,334,320,927,2640.0
+o3-mini,1,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,yes,no,0,308,206,192,514,2087.5
+o3-mini,1,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,419,207,192,626,2335.4
+o3-mini,1,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,265,271,256,536,2989.7
+o3-mini,1,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,504,463,448,967,4141.9
+o3-mini,1,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,187,143,128,330,11098.7
+o3-mini,1,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,239,15,0,254,817.0
+o3-mini,1,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,593,399,384,992,3994.0
+o3-mini,1,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,220,143,128,363,1842.1
+o3-mini,1,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,365,15,0,380,714.9
+o3-mini,1,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,yes,no,0,130,336,320,466,3686.9
+o3-mini,1,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,no,yes,0,499,270,256,769,3175.3
+o3-mini,1,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,290,15,0,305,918.4
+o3-mini,1,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,189,14,0,203,726.7
+o3-mini,1,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,yes,yes,1,211,143,128,354,1957.6
+o3-mini,2,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,539,271,256,810,3378.0
+o3-mini,2,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,no,yes,0,592,1038,1024,1630,8191.6
+o3-mini,2,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,295,79,64,374,1330.6
+o3-mini,2,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,588,590,576,1178,4734.7
+o3-mini,2,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,no,yes,0,343,1422,1408,1765,11136.3
+o3-mini,2,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,311,144,128,455,2054.0
+o3-mini,2,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,no,yes,0,268,206,192,474,2248.3
+o3-mini,2,15,SYMBOLIC_TIME,Identify delays in agent response.,yes,yes,1,282,398,384,680,3588.8
+o3-mini,2,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,yes,yes,1,359,526,512,885,4191.5
+o3-mini,2,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,256,15,0,271,716.5
+o3-mini,2,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,391,79,64,470,1329.3
+o3-mini,2,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,282,271,256,553,3171.8
+o3-mini,2,45,SYMBOLIC_TIME,Was the 1 min response window honored?,no,yes,0,286,334,320,620,3379.3
+o3-mini,2,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,no,yes,0,295,335,320,630,3276.7
+o3-mini,2,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,239,143,128,382,2079.5
+o3-mini,2,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,yes,yes,1,290,79,64,369,1096.7
+o3-mini,2,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,315,15,0,330,818.7
+o3-mini,2,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,238,143,128,381,1944.1
+o3-mini,2,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,yes,yes,1,222,462,448,684,4490.2
+o3-mini,2,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,344,206,192,550,1968.9
+o3-mini,2,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,yes,yes,1,514,591,576,1105,5387.1
+o3-mini,2,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,605,270,256,875,2608.0
+o3-mini,2,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,418,206,192,624,2503.3
+o3-mini,2,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,yes,yes,1,188,271,256,459,2802.1
+o3-mini,2,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,187,334,320,521,3708.9
+o3-mini,2,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,238,142,128,380,1830.6
+o3-mini,2,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,263,15,0,278,1116.6
+o3-mini,2,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,no,no,1,403,336,320,739,3012.6
+o3-mini,2,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,187,79,64,266,1797.3
+o3-mini,2,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,189,15,0,204,661.6
+o3-mini,2,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,258,654,640,912,5770.5
+o3-mini,2,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,yes,yes,1,217,142,128,359,1557.0
+o3-mini,2,12,SYMBOLIC_TIME,Flag slow initial responses.,yes,yes,1,357,207,192,564,2361.1
+o3-mini,2,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,388,15,0,403,811.2
+o3-mini,2,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,242,143,128,385,1756.5
+o3-mini,2,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,593,334,320,927,2850.3
+o3-mini,2,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,yes,no,0,308,143,128,451,1466.3
+o3-mini,2,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,419,207,192,626,2436.3
+o3-mini,2,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,265,271,256,536,3807.9
+o3-mini,2,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,504,334,320,838,3176.1
+o3-mini,2,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,187,334,320,521,3437.1
+o3-mini,2,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,239,15,0,254,1061.5
+o3-mini,2,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,593,399,384,992,3453.7
+o3-mini,2,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,220,79,64,299,989.0
+o3-mini,2,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,365,79,64,444,1235.4
+o3-mini,2,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,yes,no,0,130,142,128,272,2382.2
+o3-mini,2,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,no,yes,0,499,271,256,770,2276.4
+o3-mini,2,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,290,206,192,496,2025.1
+o3-mini,2,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,189,78,64,267,1141.3
+o3-mini,2,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,yes,yes,1,211,144,128,355,1424.3
+o3-mini,3,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,539,654,640,1193,5745.7
+o3-mini,3,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,yes,yes,1,592,337,320,929,3069.7
+o3-mini,3,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,295,78,64,373,1739.5
+o3-mini,3,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,588,337,320,925,3129.5
+o3-mini,3,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,yes,yes,1,343,974,960,1317,7827.3
+o3-mini,3,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,311,142,128,453,1531.0
+o3-mini,3,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,no,yes,0,268,270,256,538,2460.8
+o3-mini,3,15,SYMBOLIC_TIME,Identify delays in agent response.,yes,yes,1,282,399,384,681,3995.6
+o3-mini,3,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,no,yes,0,359,271,256,630,2867.2
+o3-mini,3,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,256,79,64,335,1112.9
+o3-mini,3,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,391,15,0,406,1137.2
+o3-mini,3,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,282,463,448,745,3767.7
+o3-mini,3,45,SYMBOLIC_TIME,Was the 1 min response window honored?,no,yes,0,286,399,384,685,3687.8
+o3-mini,3,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,no,yes,0,295,526,512,821,4591.3
+o3-mini,3,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,239,144,128,383,1776.9
+o3-mini,3,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,yes,yes,1,290,79,64,369,1280.8
+o3-mini,3,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,315,15,0,330,479.2
+o3-mini,3,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,238,335,320,573,3163.2
+o3-mini,3,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,yes,yes,1,222,207,192,429,2447.6
+o3-mini,3,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,344,142,128,486,1740.3
+o3-mini,3,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,514,398,384,912,3778.3
+o3-mini,3,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,605,334,320,939,3182.8
+o3-mini,3,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,418,398,384,816,4302.4
+o3-mini,3,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,no,yes,0,188,335,320,523,3332.6
+o3-mini,3,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,187,590,576,777,5269.3
+o3-mini,3,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,238,206,192,444,2695.1
+o3-mini,3,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,263,79,64,342,1603.6
+o3-mini,3,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,no,no,1,403,334,320,737,3194.4
+o3-mini,3,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,187,143,128,330,1532.2
+o3-mini,3,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,189,15,0,204,691.5
+o3-mini,3,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,258,142,128,400,1850.1
+o3-mini,3,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,yes,yes,1,217,207,192,424,1915.2
+o3-mini,3,12,SYMBOLIC_TIME,Flag slow initial responses.,yes,yes,1,357,209,192,566,2062.2
+o3-mini,3,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,388,14,0,402,1039.9
+o3-mini,3,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,242,527,512,769,4779.2
+o3-mini,3,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,593,270,256,863,2860.0
+o3-mini,3,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,yes,no,0,308,143,128,451,1935.8
+o3-mini,3,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,419,465,448,884,4131.6
+o3-mini,3,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,265,143,128,408,2519.0
+o3-mini,3,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,504,654,640,1158,5991.0
+o3-mini,3,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,187,78,64,265,1999.4
+o3-mini,3,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,239,15,0,254,1382.9
+o3-mini,3,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,593,590,576,1183,4703.0
+o3-mini,3,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,220,15,0,235,1128.9
+o3-mini,3,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,365,78,64,443,1844.0
+o3-mini,3,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,yes,no,0,130,271,256,401,2762.6
+o3-mini,3,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,no,yes,0,499,399,384,898,4625.1
+o3-mini,3,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,290,79,64,369,1314.4
+o3-mini,3,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,189,15,0,204,1712.9
+o3-mini,3,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,yes,yes,1,211,207,192,418,2301.9
+o3-mini,4,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,539,334,320,873,4673.6
+o3-mini,4,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,no,yes,0,592,590,576,1182,6070.2
+o3-mini,4,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,295,78,64,373,2047.6
+o3-mini,4,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,588,463,448,1051,5634.2
+o3-mini,4,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,no,yes,0,343,1358,1344,1701,12694.8
+o3-mini,4,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,311,206,192,517,3994.2
+o3-mini,4,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,no,yes,0,268,590,576,858,5527.7
+o3-mini,4,15,SYMBOLIC_TIME,Identify delays in agent response.,yes,yes,1,282,335,320,617,4847.3
+o3-mini,4,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,yes,yes,1,359,721,704,1080,6066.0
+o3-mini,4,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,256,15,0,271,795.4
+o3-mini,4,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,391,79,64,470,2514.0
+o3-mini,4,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,282,334,320,616,4720.1
+o3-mini,4,45,SYMBOLIC_TIME,Was the 1 min response window honored?,no,yes,0,286,206,192,492,3479.0
+o3-mini,4,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,no,yes,0,295,143,128,438,1946.0
+o3-mini,4,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,239,143,128,382,1842.5
+o3-mini,4,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,yes,yes,1,290,15,0,305,1127.9
+o3-mini,4,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,315,15,0,330,812.5
+o3-mini,4,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,238,340,320,578,4714.5
+o3-mini,4,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,no,yes,0,222,79,64,301,2559.4
+o3-mini,4,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,344,143,128,487,1971.9
+o3-mini,4,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,yes,yes,1,514,846,832,1360,8475.2
+o3-mini,4,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,605,335,320,940,4771.4
+o3-mini,4,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,418,270,256,688,4849.6
+o3-mini,4,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,yes,yes,1,188,270,256,458,2866.9
+o3-mini,4,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,187,270,256,457,4301.5
+o3-mini,4,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,238,271,256,509,2969.4
+o3-mini,4,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,263,15,0,278,2149.8
+o3-mini,4,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,no,no,1,403,206,192,609,3755.6
+o3-mini,4,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,187,143,128,330,3511.9
+o3-mini,4,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,189,15,0,204,1257.4
+o3-mini,4,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,258,334,320,592,4474.9
+o3-mini,4,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,yes,yes,1,217,142,128,359,1843.8
+o3-mini,4,12,SYMBOLIC_TIME,Flag slow initial responses.,yes,yes,1,357,142,128,499,3044.8
+o3-mini,4,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,388,15,0,403,846.2
+o3-mini,4,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,242,142,128,384,3090.5
+o3-mini,4,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,593,143,128,736,3565.4
+o3-mini,4,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,yes,no,0,308,270,256,578,3889.4
+o3-mini,4,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,419,207,192,626,2399.1
+o3-mini,4,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,265,398,384,663,3770.3
+o3-mini,4,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,504,399,384,903,4266.7
+o3-mini,4,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,187,79,64,266,1510.6
+o3-mini,4,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,239,15,0,254,681.9
+o3-mini,4,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,593,271,256,864,2874.9
+o3-mini,4,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,220,143,128,363,1594.1
+o3-mini,4,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,365,15,0,380,718.0
+o3-mini,4,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,yes,no,0,130,144,128,274,1783.0
+o3-mini,4,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,no,yes,0,499,847,832,1346,7021.1
+o3-mini,4,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,290,207,192,497,1904.1
+o3-mini,4,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,189,79,64,268,933.6
+o3-mini,4,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,yes,yes,1,211,207,192,418,2528.6
+o1,0,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,539,719,704,1258,14360.7
+o1,0,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,no,yes,0,592,1039,1024,1631,20732.1
+o1,0,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,295,399,384,694,44545.6
+o1,0,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,588,78,64,666,4127.8
+o1,0,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,yes,yes,1,343,911,896,1254,32782.5
+o1,0,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,311,334,320,645,7849.8
+o1,0,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,yes,yes,1,268,398,384,666,27279.7
+o1,0,15,SYMBOLIC_TIME,Identify delays in agent response.,no,yes,0,282,654,640,936,49816.5
+o1,0,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,yes,yes,1,359,911,896,1270,18841.5
+o1,0,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,no,yes,0,256,1871,1856,2127,60812.4
+o1,0,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,391,335,320,726,11788.7
+o1,0,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,282,464,448,746,14167.9
+o1,0,45,SYMBOLIC_TIME,Was the 1 min response window honored?,no,yes,0,286,206,192,492,7743.4
+o1,0,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,no,yes,0,295,719,704,1014,23705.4
+o1,0,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,239,334,320,573,11341.4
+o1,0,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,yes,yes,1,290,271,256,561,9328.3
+o1,0,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,315,463,448,778,17944.6
+o1,0,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,238,398,384,636,9798.0
+o1,0,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,yes,yes,1,222,206,192,428,14818.4
+o1,0,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,344,270,256,614,6461.0
+o1,0,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,514,718,704,1232,16169.6
+o1,0,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,605,533,512,1138,11877.3
+o1,0,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,418,526,512,944,8861.1
+o1,0,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,yes,yes,1,188,278,256,466,12440.2
+o1,0,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,187,462,448,649,11057.0
+o1,0,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,238,273,256,511,12613.9
+o1,0,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,263,79,64,342,3252.3
+o1,0,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,no,no,1,403,142,128,545,7552.7
+o1,0,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,187,142,128,329,4494.8
+o1,0,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,189,206,192,395,7389.2
+o1,0,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,258,526,512,784,19160.8
+o1,0,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,yes,yes,1,217,398,384,615,10410.4
+o1,0,12,SYMBOLIC_TIME,Flag slow initial responses.,no,yes,0,357,1487,1472,1844,74595.5
+o1,0,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,388,206,192,594,11263.7
+o1,0,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,242,975,960,1217,22631.9
+o1,0,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,593,335,320,928,7639.8
+o1,0,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,no,no,1,308,398,384,706,8843.6
+o1,0,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,419,526,512,945,8903.0
+o1,0,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,yes,yes,1,265,1166,1152,1431,15955.2
+o1,0,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,504,590,576,1094,7955.9
+o1,0,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,187,143,128,330,5457.4
+o1,0,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,239,142,128,381,3841.2
+o1,0,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,593,464,448,1057,6423.5
+o1,0,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,220,206,192,426,6145.8
+o1,0,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,365,398,384,763,10032.2
+o1,0,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,no,no,1,130,206,192,336,5073.3
+o1,0,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,no,yes,0,499,654,640,1153,9568.0
+o1,0,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,290,463,448,753,11863.4
+o1,0,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,189,271,256,460,6362.2
+o1,0,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,yes,yes,1,211,1104,1088,1315,31097.1
+o1,1,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,539,654,640,1193,9373.0
+o1,1,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,no,yes,0,592,1487,1472,2079,22656.1
+o1,1,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,295,527,512,822,12787.9
+o1,1,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,588,590,576,1178,9717.1
+o1,1,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,yes,yes,1,343,910,896,1253,20275.6
+o1,1,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,311,334,320,645,5528.4
+o1,1,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,yes,yes,1,268,335,320,603,29273.1
+o1,1,15,SYMBOLIC_TIME,Identify delays in agent response.,no,yes,0,282,783,768,1065,13773.5
+o1,1,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,yes,yes,1,359,334,320,693,7521.9
+o1,1,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,256,213,192,469,4211.9
+o1,1,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,391,143,128,534,3399.7
+o1,1,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,282,399,384,681,3994.2
+o1,1,45,SYMBOLIC_TIME,Was the 1 min response window honored?,no,yes,0,286,463,448,749,14905.0
+o1,1,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,yes,yes,1,295,974,960,1269,24494.5
+o1,1,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,239,270,256,509,8867.4
+o1,1,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,yes,yes,1,290,78,64,368,4200.3
+o1,1,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,315,206,192,521,10177.1
+o1,1,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,238,271,256,509,5325.0
+o1,1,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,yes,yes,1,222,270,256,492,13313.3
+o1,1,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,344,462,448,806,12950.9
+o1,1,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,514,1038,1024,1552,33025.2
+o1,1,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,605,654,640,1259,10855.9
+o1,1,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,418,526,512,944,14230.8
+o1,1,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,yes,yes,1,188,462,448,650,7291.3
+o1,1,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,187,208,192,395,4302.9
+o1,1,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,238,590,576,828,8629.4
+o1,1,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,263,78,64,341,5172.7
+o1,1,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,no,no,1,403,143,128,546,7474.9
+o1,1,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,187,206,192,393,6247.2
+o1,1,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,189,718,704,907,10094.4
+o1,1,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,258,599,576,857,8642.5
+o1,1,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,yes,yes,1,217,271,256,488,9626.9
+o1,1,12,SYMBOLIC_TIME,Flag slow initial responses.,yes,yes,1,357,463,448,820,18273.9
+o1,1,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,388,143,128,531,2632.5
+o1,1,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,242,654,640,896,7969.2
+o1,1,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,593,911,896,1504,11469.4
+o1,1,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,no,no,1,308,398,384,706,13411.0
+o1,1,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,419,462,448,881,11221.5
+o1,1,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,265,526,512,791,16733.4
+o1,1,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,504,527,512,1031,5793.6
+o1,1,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,187,208,192,395,3842.1
+o1,1,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,239,78,64,317,1512.9
+o1,1,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,593,654,640,1247,5019.7
+o1,1,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,220,207,192,427,3093.8
+o1,1,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,365,79,64,444,1592.9
+o1,1,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,no,no,1,130,782,768,912,16111.7
+o1,1,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,no,yes,0,499,655,640,1154,4846.6
+o1,1,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,290,334,320,624,6209.6
+o1,1,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,189,142,128,331,1682.0
+o1,1,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,yes,yes,1,211,654,640,865,6306.5
+o1,2,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,539,846,832,1385,5958.8
+o1,2,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,yes,yes,1,592,1039,1024,1631,10973.6
+o1,2,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,295,526,512,821,7413.2
+o1,2,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,588,143,128,731,6797.3
+o1,2,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,yes,yes,1,343,910,896,1253,12004.6
+o1,2,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,311,398,384,709,5199.3
+o1,2,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,yes,yes,1,268,462,448,730,6892.1
+o1,2,15,SYMBOLIC_TIME,Identify delays in agent response.,no,yes,0,282,590,576,872,8288.4
+o1,2,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,yes,yes,1,359,847,832,1206,10708.5
+o1,2,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,256,334,320,590,4750.4
+o1,2,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,391,208,192,599,4560.2
+o1,2,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,282,271,256,553,5219.9
+o1,2,45,SYMBOLIC_TIME,Was the 1 min response window honored?,no,yes,0,286,399,384,685,8076.2
+o1,2,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,no,yes,0,295,1166,1152,1461,21716.8
+o1,2,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,239,143,128,382,6370.3
+o1,2,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,yes,yes,1,290,206,192,496,6738.3
+o1,2,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,315,206,192,521,4218.0
+o1,2,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,238,207,192,445,3878.5
+o1,2,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,no,yes,0,222,591,576,813,12413.0
+o1,2,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,344,590,576,934,4124.9
+o1,2,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,514,1294,1280,1808,12923.3
+o1,2,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,605,655,640,1260,6769.1
+o1,2,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,418,334,320,752,4071.3
+o1,2,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,yes,yes,1,188,462,448,650,6197.7
+o1,2,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,187,143,128,330,2527.8
+o1,2,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,238,398,384,636,7086.2
+o1,2,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,263,206,192,469,3682.7
+o1,2,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,no,no,1,403,142,128,545,3203.9
+o1,2,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,187,206,192,393,3261.2
+o1,2,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,189,910,896,1099,19198.6
+o1,2,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,258,398,384,656,8402.6
+o1,2,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,yes,yes,1,217,271,256,488,3420.3
+o1,2,12,SYMBOLIC_TIME,Flag slow initial responses.,no,yes,0,357,590,576,947,7718.3
+o1,2,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,388,144,128,532,2622.9
+o1,2,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,242,462,448,704,5213.6
+o1,2,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,593,1038,1024,1631,12644.3
+o1,2,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,no,no,1,308,335,320,643,4185.2
+o1,2,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,419,527,512,946,6854.6
+o1,2,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,yes,yes,1,265,1358,1344,1623,11731.9
+o1,2,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,504,591,576,1095,5671.3
+o1,2,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,187,79,64,266,1542.2
+o1,2,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,239,149,128,388,2961.7
+o1,2,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,593,655,640,1248,8357.0
+o1,2,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,220,143,128,363,6008.0
+o1,2,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,365,276,256,641,6833.0
+o1,2,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,yes,no,0,130,463,448,593,6682.8
+o1,2,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,no,yes,0,499,526,512,1025,7707.9
+o1,2,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,290,142,128,432,2895.9
+o1,2,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,189,143,128,332,4047.7
+o1,2,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,yes,yes,1,211,335,320,546,5624.5
+o1,3,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,539,399,384,938,4757.2
+o1,3,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,no,yes,0,592,1040,1024,1632,10992.8
+o1,3,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,295,207,192,502,4367.7
+o1,3,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,588,783,768,1371,5067.4
+o1,3,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,yes,yes,1,343,910,896,1253,7058.8
+o1,3,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,311,334,320,645,4493.1
+o1,3,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,yes,yes,1,268,783,768,1051,11829.7
+o1,3,15,SYMBOLIC_TIME,Identify delays in agent response.,no,yes,0,282,974,960,1256,28511.2
+o1,3,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,yes,yes,1,359,398,384,757,5343.5
+o1,3,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,256,78,64,334,1639.8
+o1,3,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,391,206,192,597,4720.2
+o1,3,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,282,463,448,745,4695.3
+o1,3,45,SYMBOLIC_TIME,Was the 1 min response window honored?,no,yes,0,286,335,320,621,3461.4
+o1,3,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,no,yes,0,295,719,704,1014,6702.7
+o1,3,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,239,142,128,381,2728.6
+o1,3,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,yes,yes,1,290,206,192,496,3406.8
+o1,3,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,315,270,256,585,4796.9
+o1,3,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,238,271,256,509,3646.6
+o1,3,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,yes,yes,1,222,142,128,364,10275.3
+o1,3,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,344,335,320,679,4366.3
+o1,3,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,514,1166,1152,1680,14859.2
+o1,3,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,605,526,512,1131,14560.9
+o1,3,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,418,654,640,1072,5228.7
+o1,3,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,yes,yes,1,188,591,576,779,8299.0
+o1,3,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,187,719,704,906,15558.1
+o1,3,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,238,270,256,508,5226.4
+o1,3,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,263,207,192,470,3723.8
+o1,3,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,no,no,1,403,206,192,609,5086.3
+o1,3,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,187,207,192,394,2520.2
+o1,3,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,189,334,320,523,7835.3
+o1,3,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,258,911,896,1169,13011.6
+o1,3,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,yes,yes,1,217,270,256,487,5961.4
+o1,3,12,SYMBOLIC_TIME,Flag slow initial responses.,no,yes,0,357,526,512,883,8495.3
+o1,3,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,388,206,192,594,9475.6
+o1,3,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,242,335,320,577,3235.8
+o1,3,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,593,1230,1216,1823,22327.2
+o1,3,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,no,no,1,308,462,448,770,3821.7
+o1,3,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,419,463,448,882,4004.4
+o1,3,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,265,271,256,536,8644.2
+o1,3,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,504,719,704,1223,10074.7
+o1,3,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,187,271,256,458,4115.0
+o1,3,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,239,78,64,317,1837.5
+o1,3,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,593,591,576,1184,2819.4
+o1,3,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,220,334,320,554,3770.9
+o1,3,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,365,206,192,571,1967.2
+o1,3,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,no,no,1,130,206,192,336,4721.2
+o1,3,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,no,yes,0,499,526,512,1025,4523.5
+o1,3,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,290,207,192,497,3191.5
+o1,3,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,189,24,0,213,1184.9
+o1,3,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,yes,yes,1,211,142,128,353,2189.4
+o1,4,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,539,725,704,1264,5191.5
+o1,4,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,yes,yes,1,592,783,768,1375,9982.8
+o1,4,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,295,206,192,501,3628.8
+o1,4,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,588,79,64,667,1920.3
+o1,4,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,yes,yes,1,343,655,640,998,6874.1
+o1,4,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,311,336,320,647,2934.9
+o1,4,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,yes,yes,1,268,398,384,666,7989.6
+o1,4,15,SYMBOLIC_TIME,Identify delays in agent response.,yes,yes,1,282,718,704,1000,8509.5
+o1,4,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,yes,yes,1,359,846,832,1205,6847.3
+o1,4,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,256,206,192,462,3071.4
+o1,4,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,391,270,256,661,3054.7
+o1,4,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,282,655,640,937,7083.1
+o1,4,45,SYMBOLIC_TIME,Was the 1 min response window honored?,no,yes,0,286,463,448,749,5357.7
+o1,4,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,no,yes,0,295,398,384,693,6723.8
+o1,4,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,239,334,320,573,3381.2
+o1,4,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,yes,yes,1,290,78,64,368,2066.3
+o1,4,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,315,206,192,521,3870.2
+o1,4,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,238,207,192,445,2722.9
+o1,4,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,yes,yes,1,222,271,256,493,4170.7
+o1,4,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,344,526,512,870,4414.0
+o1,4,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,514,1486,1472,2000,16002.1
+o1,4,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,605,654,640,1259,5761.6
+o1,4,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,418,462,448,880,3654.2
+o1,4,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,no,yes,0,188,277,256,465,4000.8
+o1,4,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,187,462,448,649,6505.3
+o1,4,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,238,527,512,765,5808.1
+o1,4,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,263,14,0,277,1640.3
+o1,4,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,no,no,1,403,143,128,546,3244.2
+o1,4,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,187,207,192,394,3377.1
+o1,4,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,189,271,256,460,4331.5
+o1,4,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,258,206,192,464,3732.8
+o1,4,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,yes,yes,1,217,399,384,616,4822.7
+o1,4,12,SYMBOLIC_TIME,Flag slow initial responses.,yes,yes,1,357,142,128,499,2683.5
+o1,4,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,388,85,64,473,2687.5
+o1,4,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,242,595,576,837,6655.0
+o1,4,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,593,463,448,1056,7340.2
+o1,4,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,no,no,1,308,399,384,707,4438.9
+o1,4,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,419,782,768,1201,6653.0
+o1,4,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,265,783,768,1048,14316.8
+o1,4,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,504,527,512,1031,6999.2
+o1,4,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,187,143,128,330,3910.9
+o1,4,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,239,79,64,318,4327.5
+o1,4,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,593,18,0,611,1361.7
+o1,4,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,220,270,256,490,4871.8
+o1,4,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,365,590,576,955,14846.2
+o1,4,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,no,no,1,130,590,576,720,11591.0
+o1,4,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,no,yes,0,499,398,384,897,5688.0
+o1,4,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,290,207,192,497,4236.4
+o1,4,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,189,206,192,395,5738.7
+o1,4,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,yes,yes,1,211,398,384,609,5165.0
+gpt-4o,0,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,540,1,0,541,409.1
+gpt-4o,0,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,yes,yes,1,593,1,0,594,388.6
+gpt-4o,0,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,296,1,0,297,374.0
+gpt-4o,0,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,589,1,0,590,506.9
+gpt-4o,0,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,no,yes,0,344,1,0,345,377.3
+gpt-4o,0,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,312,2,0,314,351.2
+gpt-4o,0,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,yes,yes,1,269,1,0,270,423.8
+gpt-4o,0,15,SYMBOLIC_TIME,Identify delays in agent response.,no,yes,0,283,1,0,284,232.8
+gpt-4o,0,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,no,yes,0,360,1,0,361,386.3
+gpt-4o,0,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,257,1,0,258,302.1
+gpt-4o,0,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,392,1,0,393,4879.0
+gpt-4o,0,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,283,1,0,284,331.9
+gpt-4o,0,45,SYMBOLIC_TIME,Was the 1 min response window honored?,yes,yes,1,287,1,0,288,266.6
+gpt-4o,0,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,yes,yes,1,296,1,0,297,367.9
+gpt-4o,0,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,240,1,0,241,382.6
+gpt-4o,0,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,no,yes,0,291,1,0,292,278.6
+gpt-4o,0,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,316,1,0,317,641.0
+gpt-4o,0,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,239,1,0,240,398.5
+gpt-4o,0,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,yes,yes,1,223,1,0,224,411.2
+gpt-4o,0,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,345,1,0,346,305.6
+gpt-4o,0,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,515,1,0,516,306.4
+gpt-4o,0,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,606,1,0,607,256.4
+gpt-4o,0,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,419,1,0,420,529.3
+gpt-4o,0,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,no,yes,0,189,1,0,190,547.7
+gpt-4o,0,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,188,1,0,189,423.3
+gpt-4o,0,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,239,1,0,240,305.2
+gpt-4o,0,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,264,1,0,265,496.3
+gpt-4o,0,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,yes,no,0,404,1,0,405,559.1
+gpt-4o,0,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,188,1,0,189,262.1
+gpt-4o,0,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,190,1,0,191,476.4
+gpt-4o,0,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,259,1,0,260,481.0
+gpt-4o,0,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,no,yes,0,218,1,0,219,306.5
+gpt-4o,0,12,SYMBOLIC_TIME,Flag slow initial responses.,yes,yes,1,358,1,0,359,488.4
+gpt-4o,0,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,389,1,0,390,260.1
+gpt-4o,0,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,243,1,0,244,392.2
+gpt-4o,0,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,594,1,0,595,512.0
+gpt-4o,0,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,no,no,1,309,1,0,310,899.7
+gpt-4o,0,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,420,2,0,422,321.2
+gpt-4o,0,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,266,1,0,267,320.0
+gpt-4o,0,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,505,1,0,506,351.4
+gpt-4o,0,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,188,1,0,189,336.3
+gpt-4o,0,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,240,1,0,241,377.8
+gpt-4o,0,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,594,1,0,595,408.3
+gpt-4o,0,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,221,1,0,222,329.8
+gpt-4o,0,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,366,1,0,367,300.2
+gpt-4o,0,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,no,no,1,131,2,0,133,282.7
+gpt-4o,0,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,yes,yes,1,500,1,0,501,536.5
+gpt-4o,0,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,291,1,0,292,300.2
+gpt-4o,0,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,190,1,0,191,254.8
+gpt-4o,0,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,no,yes,0,212,1,0,213,460.2
+gpt-4o,1,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,540,2,0,542,466.4
+gpt-4o,1,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,yes,yes,1,593,1,0,594,281.0
+gpt-4o,1,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,296,1,0,297,288.4
+gpt-4o,1,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,589,1,0,590,330.9
+gpt-4o,1,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,no,yes,0,344,1,0,345,450.2
+gpt-4o,1,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,312,2,0,314,344.6
+gpt-4o,1,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,yes,yes,1,269,1,0,270,412.8
+gpt-4o,1,15,SYMBOLIC_TIME,Identify delays in agent response.,no,yes,0,283,1,0,284,525.5
+gpt-4o,1,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,no,yes,0,360,2,0,362,271.8
+gpt-4o,1,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,257,1,0,258,247.2
+gpt-4o,1,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,392,1,0,393,564.6
+gpt-4o,1,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,283,1,0,284,228.5
+gpt-4o,1,45,SYMBOLIC_TIME,Was the 1 min response window honored?,yes,yes,1,287,1,0,288,301.4
+gpt-4o,1,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,yes,yes,1,296,2,0,298,421.5
+gpt-4o,1,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,240,1,0,241,755.1
+gpt-4o,1,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,no,yes,0,291,1,0,292,431.7
+gpt-4o,1,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,316,1,0,317,325.6
+gpt-4o,1,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,239,1,0,240,326.7
+gpt-4o,1,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,no,yes,0,223,1,0,224,317.3
+gpt-4o,1,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,345,1,0,346,429.3
+gpt-4o,1,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,515,1,0,516,317.5
+gpt-4o,1,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,606,1,0,607,267.2
+gpt-4o,1,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,419,1,0,420,251.7
+gpt-4o,1,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,no,yes,0,189,1,0,190,546.3
+gpt-4o,1,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,188,1,0,189,429.8
+gpt-4o,1,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,239,1,0,240,534.9
+gpt-4o,1,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,264,1,0,265,329.4
+gpt-4o,1,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,yes,no,0,404,1,0,405,265.5
+gpt-4o,1,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,188,1,0,189,442.1
+gpt-4o,1,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,190,1,0,191,327.2
+gpt-4o,1,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,259,1,0,260,431.6
+gpt-4o,1,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,no,yes,0,218,1,0,219,645.2
+gpt-4o,1,12,SYMBOLIC_TIME,Flag slow initial responses.,yes,yes,1,358,1,0,359,292.2
+gpt-4o,1,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,389,1,0,390,419.6
+gpt-4o,1,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,243,1,0,244,307.4
+gpt-4o,1,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,594,1,0,595,404.8
+gpt-4o,1,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,no,no,1,309,1,0,310,467.3
+gpt-4o,1,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,420,1,0,421,323.5
+gpt-4o,1,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,266,1,0,267,397.6
+gpt-4o,1,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,505,1,0,506,650.4
+gpt-4o,1,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,188,1,0,189,285.3
+gpt-4o,1,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,240,1,0,241,379.1
+gpt-4o,1,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,594,1,0,595,376.8
+gpt-4o,1,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,221,1,0,222,471.3
+gpt-4o,1,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,366,1,0,367,282.9
+gpt-4o,1,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,no,no,1,131,1,0,132,264.6
+gpt-4o,1,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,yes,yes,1,500,1,0,501,379.4
+gpt-4o,1,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,291,1,0,292,259.5
+gpt-4o,1,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,190,1,0,191,375.9
+gpt-4o,1,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,no,yes,0,212,1,0,213,390.1
+gpt-4o,2,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,540,2,0,542,761.2
+gpt-4o,2,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,yes,yes,1,593,1,0,594,255.7
+gpt-4o,2,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,296,1,0,297,241.8
+gpt-4o,2,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,589,1,0,590,257.4
+gpt-4o,2,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,no,yes,0,344,1,0,345,346.0
+gpt-4o,2,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,312,2,0,314,323.0
+gpt-4o,2,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,yes,yes,1,269,1,0,270,294.3
+gpt-4o,2,15,SYMBOLIC_TIME,Identify delays in agent response.,no,yes,0,283,1,0,284,456.4
+gpt-4o,2,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,no,yes,0,360,1,0,361,234.8
+gpt-4o,2,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,257,1,0,258,395.4
+gpt-4o,2,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,392,1,0,393,332.9
+gpt-4o,2,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,283,1,0,284,272.8
+gpt-4o,2,45,SYMBOLIC_TIME,Was the 1 min response window honored?,yes,yes,1,287,1,0,288,467.2
+gpt-4o,2,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,yes,yes,1,296,1,0,297,417.2
+gpt-4o,2,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,240,1,0,241,323.6
+gpt-4o,2,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,no,yes,0,291,2,0,293,374.5
+gpt-4o,2,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,316,1,0,317,295.6
+gpt-4o,2,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,239,1,0,240,320.1
+gpt-4o,2,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,no,yes,0,223,1,0,224,294.6
+gpt-4o,2,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,345,1,0,346,328.4
+gpt-4o,2,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,515,1,0,516,232.0
+gpt-4o,2,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,606,1,0,607,619.5
+gpt-4o,2,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,419,1,0,420,498.5
+gpt-4o,2,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,no,yes,0,189,1,0,190,454.7
+gpt-4o,2,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,188,1,0,189,278.7
+gpt-4o,2,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,239,1,0,240,305.7
+gpt-4o,2,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,264,2,0,266,345.4
+gpt-4o,2,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,yes,no,0,404,1,0,405,333.0
+gpt-4o,2,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,188,1,0,189,263.7
+gpt-4o,2,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,190,1,0,191,285.3
+gpt-4o,2,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,259,2,0,261,267.7
+gpt-4o,2,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,no,yes,0,218,1,0,219,422.3
+gpt-4o,2,12,SYMBOLIC_TIME,Flag slow initial responses.,yes,yes,1,358,2,0,360,345.1
+gpt-4o,2,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,389,1,0,390,375.8
+gpt-4o,2,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,243,1,0,244,291.8
+gpt-4o,2,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,594,1,0,595,254.8
+gpt-4o,2,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,no,no,1,309,1,0,310,686.8
+gpt-4o,2,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,420,1,0,421,492.3
+gpt-4o,2,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,266,1,0,267,512.0
+gpt-4o,2,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,505,1,0,506,509.1
+gpt-4o,2,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,188,1,0,189,241.4
+gpt-4o,2,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,240,1,0,241,432.2
+gpt-4o,2,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,594,1,0,595,349.1
+gpt-4o,2,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,221,1,0,222,276.3
+gpt-4o,2,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,366,1,0,367,341.6
+gpt-4o,2,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,no,no,1,131,1,0,132,238.8
+gpt-4o,2,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,yes,yes,1,500,1,0,501,263.2
+gpt-4o,2,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,291,1,0,292,278.1
+gpt-4o,2,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,190,1,0,191,311.1
+gpt-4o,2,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,no,yes,0,212,1,0,213,244.0
+gpt-4o,3,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,540,1,0,541,253.9
+gpt-4o,3,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,yes,yes,1,593,1,0,594,227.5
+gpt-4o,3,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,296,1,0,297,256.1
+gpt-4o,3,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,589,1,0,590,292.3
+gpt-4o,3,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,no,yes,0,344,1,0,345,448.0
+gpt-4o,3,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,312,2,0,314,398.5
+gpt-4o,3,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,yes,yes,1,269,1,0,270,284.1
+gpt-4o,3,15,SYMBOLIC_TIME,Identify delays in agent response.,no,yes,0,283,1,0,284,308.5
+gpt-4o,3,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,no,yes,0,360,2,0,362,276.1
+gpt-4o,3,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,257,1,0,258,436.8
+gpt-4o,3,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,392,1,0,393,415.1
+gpt-4o,3,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,283,1,0,284,249.8
+gpt-4o,3,45,SYMBOLIC_TIME,Was the 1 min response window honored?,yes,yes,1,287,1,0,288,306.8
+gpt-4o,3,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,yes,yes,1,296,1,0,297,425.3
+gpt-4o,3,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,240,1,0,241,447.8
+gpt-4o,3,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,no,yes,0,291,1,0,292,302.4
+gpt-4o,3,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,316,1,0,317,282.7
+gpt-4o,3,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,239,1,0,240,373.2
+gpt-4o,3,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,no,yes,0,223,2,0,225,286.8
+gpt-4o,3,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,345,1,0,346,525.5
+gpt-4o,3,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,515,1,0,516,454.4
+gpt-4o,3,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,606,1,0,607,432.9
+gpt-4o,3,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,419,1,0,420,289.6
+gpt-4o,3,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,no,yes,0,189,1,0,190,240.8
+gpt-4o,3,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,188,1,0,189,390.3
+gpt-4o,3,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,239,1,0,240,248.2
+gpt-4o,3,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,264,1,0,265,272.5
+gpt-4o,3,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,yes,no,0,404,1,0,405,437.6
+gpt-4o,3,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,188,1,0,189,252.7
+gpt-4o,3,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,190,2,0,192,333.3
+gpt-4o,3,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,259,2,0,261,396.7
+gpt-4o,3,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,no,yes,0,218,1,0,219,410.2
+gpt-4o,3,12,SYMBOLIC_TIME,Flag slow initial responses.,yes,yes,1,358,1,0,359,478.0
+gpt-4o,3,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,389,1,0,390,421.0
+gpt-4o,3,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,243,1,0,244,366.7
+gpt-4o,3,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,594,1,0,595,373.2
+gpt-4o,3,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,no,no,1,309,1,0,310,244.1
+gpt-4o,3,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,420,1,0,421,673.3
+gpt-4o,3,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,266,1,0,267,410.6
+gpt-4o,3,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,505,1,0,506,509.6
+gpt-4o,3,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,188,1,0,189,306.6
+gpt-4o,3,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,240,1,0,241,411.7
+gpt-4o,3,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,594,1,0,595,309.3
+gpt-4o,3,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,221,1,0,222,305.3
+gpt-4o,3,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,366,1,0,367,257.3
+gpt-4o,3,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,no,no,1,131,1,0,132,281.3
+gpt-4o,3,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,yes,yes,1,500,1,0,501,424.7
+gpt-4o,3,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,291,1,0,292,402.5
+gpt-4o,3,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,190,1,0,191,260.8
+gpt-4o,3,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,no,yes,0,212,1,0,213,312.4
+gpt-4o,4,156,SYMBOLIC_COUNT,Was the conversation longer than 17 exchanges?,yes,yes,1,540,1,0,541,477.1
+gpt-4o,4,145,SYMBOLIC_COUNT,Pinpoint interactions exceeding 19 back-and-forths.,yes,yes,1,593,1,0,594,249.0
+gpt-4o,4,101,SYMBOLIC_METADATA,Is this an 'refund' case?,no,yes,0,296,1,0,297,294.0
+gpt-4o,4,127,SYMBOLIC_COUNT,Examine if the reply count went above 50.,no,no,1,589,1,0,590,233.2
+gpt-4o,4,141,SYMBOLIC_COUNT,Identify threads where 9 exchanges were not enough.,no,yes,0,344,1,0,345,437.4
+gpt-4o,4,139,SYMBOLIC_COUNT,Did the conversation have more than 5 turns?,yes,yes,1,312,2,0,314,345.5
+gpt-4o,4,42,SYMBOLIC_TIME,Assess whether the 21 min threshold was met.,yes,yes,1,269,1,0,270,335.8
+gpt-4o,4,15,SYMBOLIC_TIME,Identify delays in agent response.,no,yes,0,283,1,0,284,309.2
+gpt-4o,4,126,SYMBOLIC_COUNT,Monitor for exchanges going beyond 10 messages.,no,yes,0,360,1,0,361,298.9
+gpt-4o,4,65,SYMBOLIC_METADATA,Is the 'spam' tag present on this ticket?,yes,yes,1,257,1,0,258,316.2
+gpt-4o,4,112,SYMBOLIC_METADATA,Identify if source was chat.,no,no,1,392,1,0,393,613.9
+gpt-4o,4,60,SYMBOLIC_TIME,Examine if the response was sent before the 30 seconds limit.,no,yes,0,283,1,0,284,285.7
+gpt-4o,4,45,SYMBOLIC_TIME,Was the 1 min response window honored?,yes,yes,1,287,1,0,288,329.6
+gpt-4o,4,51,SYMBOLIC_TIME,Did the agent take longer than 5 min to get back?,yes,yes,1,296,1,0,297,511.5
+gpt-4o,4,31,SYMBOLIC_TIME,Was the first contact from the agent made within 180 sec?,no,no,1,240,1,0,241,307.5
+gpt-4o,4,9,SYMBOLIC_TIME,Was the first reply sent in under 26 hrs?,no,yes,0,291,1,0,292,271.4
+gpt-4o,4,113,SYMBOLIC_METADATA,Identify if source was phone.,yes,yes,1,316,1,0,317,497.7
+gpt-4o,4,55,SYMBOLIC_TIME,Ensure the 14 hours target was achieved.,no,no,1,239,1,0,240,330.9
+gpt-4o,4,24,SYMBOLIC_TIME,Assess whether the 8 sec threshold was met.,no,yes,0,223,1,0,224,241.7
+gpt-4o,4,155,SYMBOLIC_COUNT,Did more than 14 replies get sent by the agent?,no,no,1,345,1,0,346,248.2
+gpt-4o,4,138,SYMBOLIC_COUNT,Was 15 messages enough or did it go longer?,no,yes,0,515,1,0,516,455.5
+gpt-4o,4,167,SYMBOLIC_COUNT,Record cases where more than 25 replies were needed.,no,no,1,606,1,0,607,407.8
+gpt-4o,4,128,SYMBOLIC_COUNT,Was the message count above 17?,no,no,1,419,1,0,420,386.1
+gpt-4o,4,29,SYMBOLIC_TIME,Ensure the 6 minutes target was achieved.,no,yes,0,189,1,0,190,291.9
+gpt-4o,4,56,SYMBOLIC_TIME,Did the customer end up waiting over 60 sec?,yes,yes,1,188,1,0,189,546.6
+gpt-4o,4,41,SYMBOLIC_TIME,Did the agent beat the 21 hours deadline?,yes,yes,1,239,1,0,240,410.6
+gpt-4o,4,109,SYMBOLIC_METADATA,Confirm 'technical' is present.,yes,yes,1,264,1,0,265,432.4
+gpt-4o,4,19,SYMBOLIC_TIME,Was the customer's message acknowledged w/in 18 min?,yes,no,0,404,1,0,405,299.7
+gpt-4o,4,16,SYMBOLIC_TIME,Was the query addressed within 26 sec?,no,no,1,188,2,0,190,337.7
+gpt-4o,4,78,SYMBOLIC_METADATA,Any private comments added?,no,no,1,190,2,0,192,313.0
+gpt-4o,4,30,SYMBOLIC_TIME,Did the customer experience a long wait...,no,yes,0,259,2,0,261,341.5
+gpt-4o,4,18,SYMBOLIC_TIME,Measure whether the first response took less than 120 hours.,no,yes,0,218,1,0,219,439.6
+gpt-4o,4,12,SYMBOLIC_TIME,Flag slow initial responses.,no,yes,0,358,2,0,360,290.9
+gpt-4o,4,66,SYMBOLIC_METADATA,Is this a whatsapp ticket?,no,no,1,389,1,0,390,263.9
+gpt-4o,4,117,SYMBOLIC_COUNT,Pinpoint interactions exceeding 5 back-and-forths.,no,yes,0,243,1,0,244,272.9
+gpt-4o,4,118,SYMBOLIC_COUNT,Identify threads where 50 exchanges were not enough.,no,no,1,594,1,0,595,282.8
+gpt-4o,4,143,SYMBOLIC_COUNT,Monitor for exchanges going beyond 13 messages.,no,no,1,309,2,0,311,921.3
+gpt-4o,4,164,SYMBOLIC_COUNT,Were there fewer than 17 messages?,yes,no,0,420,1,0,421,235.8
+gpt-4o,4,38,SYMBOLIC_TIME,Was there more than a 25 minutes gap before the response?,no,yes,0,266,2,0,268,310.0
+gpt-4o,4,135,SYMBOLIC_COUNT,Watch for turn counts above 16.,no,yes,0,505,1,0,506,294.1
+gpt-4o,4,104,SYMBOLIC_METADATA,Is this an 'complaint' case?,yes,no,0,188,1,0,189,292.6
+gpt-4o,4,67,SYMBOLIC_METADATA,Detect if 'onboarding' label exists.,yes,yes,1,240,1,0,241,402.5
+gpt-4o,4,148,SYMBOLIC_COUNT,Did the thread contain at least 50 messages?,no,no,1,594,1,0,595,307.4
+gpt-4o,4,2,SYMBOLIC_TIME,assess first-reply promptness.,yes,no,0,221,1,0,222,2509.3
+gpt-4o,4,98,SYMBOLIC_METADATA,Is 'vip' applied to this ticket?,no,no,1,366,1,0,367,272.5
+gpt-4o,4,152,SYMBOLIC_COUNT,Assess whetehr the interaction was streamlined.,no,no,1,131,1,0,132,525.0
+gpt-4o,4,159,SYMBOLIC_COUNT,Was the conversation wrapped up before hitting 15 messages?,yes,yes,1,500,1,0,501,333.4
+gpt-4o,4,75,SYMBOLIC_METADATA,Has this been flagged as 'onboarding'?,yes,yes,1,291,1,0,292,359.6
+gpt-4o,4,108,SYMBOLIC_METADATA,Is this a social media conversation?,no,no,1,190,1,0,191,368.6
+gpt-4o,4,26,SYMBOLIC_TIME,Did the reply arrive before the 90 sec mark?,no,yes,0,212,1,0,213,340.5

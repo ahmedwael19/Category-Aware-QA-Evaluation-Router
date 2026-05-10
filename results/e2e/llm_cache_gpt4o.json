@@ -1,0 +1,3532 @@
+{
+ "gpt-4o:binary_gpt4o:08c99b123f221193c93d": {
+  "answer": "yes",
+  "tokens": 264,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:d6d709531c457261ae87": {
+  "answer": "yes",
+  "tokens": 370,
+  "latency_ms": 609.6
+ },
+ "gpt-4o:binary_gpt4o:2dc47e13f8fb7f854202": {
+  "answer": "no",
+  "tokens": 224,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:eb5841b84e84ff29b736": {
+  "answer": "no",
+  "tokens": 330,
+  "latency_ms": 389.8
+ },
+ "gpt-4o:binary_gpt4o:5055efad76fec0ab6609": {
+  "answer": "yes",
+  "tokens": 254,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:7561a997426dd2bf1d78": {
+  "answer": "yes",
+  "tokens": 360,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:41a047323714d7fdce04": {
+  "answer": "no",
+  "tokens": 261,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:a67b9e7ada29c3e4edb0": {
+  "answer": "yes",
+  "tokens": 367,
+  "latency_ms": 307.6
+ },
+ "gpt-4o:binary_gpt4o:644608cd359a72efd3a0": {
+  "answer": "no",
+  "tokens": 225,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:cc9a6662d9921bd41c50": {
+  "answer": "yes",
+  "tokens": 331,
+  "latency_ms": 309.8
+ },
+ "gpt-4o:binary_gpt4o:51c037726d339eb6d006": {
+  "answer": "no",
+  "tokens": 268,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:0643f7fdd89ea3057f21": {
+  "answer": "reject",
+  "tokens": 374,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:3b0e34937aaa794ee79e": {
+  "answer": "no",
+  "tokens": 306,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:b9f975d1934d670cd668": {
+  "answer": "reject",
+  "tokens": 412,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:c3ef5e918e86543fbc41": {
+  "answer": "yes",
+  "tokens": 292,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:2463d457d2d1f409e99a": {
+  "answer": "no",
+  "tokens": 398,
+  "raw": "no"
+ },
+ "gpt-4o:binary_gpt4o:b4f51ff2e6eaf7d88a35": {
+  "answer": "yes",
+  "tokens": 264,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:740729e63176540cc6e0": {
+  "answer": "yes",
+  "tokens": 370,
+  "latency_ms": 268.4
+ },
+ "gpt-4o:binary_gpt4o:a0aadac3faad79ab3a7d": {
+  "answer": "yes",
+  "tokens": 324,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:bbf6f52ec755b70a002d": {
+  "answer": "yes",
+  "tokens": 430,
+  "latency_ms": 253.6
+ },
+ "gpt-4o:binary_gpt4o:95fc2c05f70dda67760e": {
+  "answer": "no",
+  "tokens": 284,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:fa9930f7cfd59fb33b53": {
+  "answer": "reject",
+  "tokens": 390,
+  "latency_ms": 282.4
+ },
+ "gpt-4o:binary_gpt4o:dbbdea8d0c98dda32aad": {
+  "answer": "no",
+  "tokens": 221,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:5628eee3bbbd0b76073d": {
+  "answer": "no",
+  "tokens": 327,
+  "latency_ms": 360.2
+ },
+ "gpt-4o:binary_gpt4o:a05a3184c2e91bddb12c": {
+  "answer": "yes",
+  "tokens": 391,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:c40a01b9e50fdbe17bd6": {
+  "answer": "yes",
+  "tokens": 497,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:2d413375be5ec7a50fa2": {
+  "answer": "yes",
+  "tokens": 252,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:e01be3f711bae92013b2": {
+  "answer": "no",
+  "tokens": 358,
+  "latency_ms": 365.4
+ },
+ "gpt-4o:binary_gpt4o:77ab776d92359df20910": {
+  "answer": "yes",
+  "tokens": 289,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:51c8c489316133892244": {
+  "answer": "yes",
+  "tokens": 395,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:7fc4cb9718265f932c05": {
+  "answer": "no",
+  "tokens": 316,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:9835bea0b238569b5881": {
+  "answer": "yes",
+  "tokens": 422,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:3ed54a3677c1fd4ed53b": {
+  "answer": "no",
+  "tokens": 221,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:eafece4c616c10a4a4f0": {
+  "answer": "no",
+  "tokens": 327,
+  "latency_ms": 308.6
+ },
+ "gpt-4o:binary_gpt4o:6eabf479373267ce9f34": {
+  "answer": "no",
+  "tokens": 301,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:dfab6732bcc7f5fd9489": {
+  "answer": "yes",
+  "tokens": 407,
+  "latency_ms": 252.8
+ },
+ "gpt-4o:binary_gpt4o:18ae0e770ce55b9cc0f7": {
+  "answer": "yes",
+  "tokens": 251,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:cbdaa1393c1971a38c50": {
+  "answer": "yes",
+  "tokens": 357,
+  "latency_ms": 260.9
+ },
+ "gpt-4o:binary_gpt4o:517de7633c4da9913d9d": {
+  "answer": "yes",
+  "tokens": 437,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:5be25a8c1b7525b1e07f": {
+  "answer": "yes",
+  "tokens": 543,
+  "latency_ms": 306.4
+ },
+ "gpt-4o:binary_gpt4o:3e59021c6a73528d4a15": {
+  "answer": "yes",
+  "tokens": 303,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:12c40c3c4e779df1d876": {
+  "answer": "yes",
+  "tokens": 409,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:2bd43f36f98b343f4b0a": {
+  "answer": "no",
+  "tokens": 258,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:8fcff5d55cb86b567026": {
+  "answer": "reject",
+  "tokens": 364,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:2fdba0caa5d6234475c1": {
+  "answer": "yes",
+  "tokens": 306,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:b0354bf256a14a2b65c3": {
+  "answer": "yes",
+  "tokens": 412,
+  "latency_ms": 296.6
+ },
+ "gpt-4o:binary_gpt4o:d727868de4271b0bafee": {
+  "answer": "yes",
+  "tokens": 218,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:79886961fe10b3a5d5e9": {
+  "answer": "yes",
+  "tokens": 324,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:e8cabfa9d601a64b21b9": {
+  "answer": "no",
+  "tokens": 256,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:b339d41d1a9c64b5805f": {
+  "answer": "reject",
+  "tokens": 362,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:71569469a1dd1d0c71cf": {
+  "answer": "yes",
+  "tokens": 220,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:b55cbcdd7a25febbb2b9": {
+  "answer": "yes",
+  "tokens": 326,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:9ae96ea5a3c71cc6a0bb": {
+  "answer": "yes",
+  "tokens": 245,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:017c3ad99abb99e7d250": {
+  "answer": "reject",
+  "tokens": 351,
+  "latency_ms": 416.5
+ },
+ "gpt-4o:binary_gpt4o:ebd5de98e26999b69390": {
+  "answer": "no",
+  "tokens": 332,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:3c2fd45ac58726829224": {
+  "answer": "reject",
+  "tokens": 438,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:9a19830ae2c9a8ac7049": {
+  "answer": "no",
+  "tokens": 273,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:f02587b544dfb06beedc": {
+  "answer": "yes",
+  "tokens": 379,
+  "latency_ms": 309.1
+ },
+ "gpt-4o:binary_gpt4o:8cdac23695714c36c28c": {
+  "answer": "yes",
+  "tokens": 222,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:57a0e4b3ad354f81df69": {
+  "answer": "yes",
+  "tokens": 328,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:9922c07121209ed7627e": {
+  "answer": "no",
+  "tokens": 292,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:e787c7585bca893f4108": {
+  "answer": "yes",
+  "tokens": 398,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:a3717834079ee1f3eda2": {
+  "answer": "yes",
+  "tokens": 273,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:9bd0341e1147b52facec": {
+  "answer": "yes",
+  "tokens": 379,
+  "latency_ms": 277.7
+ },
+ "gpt-4o:binary_gpt4o:eed9b22b0a5a20d73da3": {
+  "answer": "no",
+  "tokens": 327,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:3b2af37f951ce0b3094b": {
+  "answer": "no",
+  "tokens": 433,
+  "latency_ms": 297.8
+ },
+ "gpt-4o:binary_gpt4o:e2ccfcc844554de75234": {
+  "answer": "yes",
+  "tokens": 327,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:71de2f6f122db4e5726b": {
+  "answer": "yes",
+  "tokens": 433,
+  "latency_ms": 307.3
+ },
+ "gpt-4o:binary_gpt4o:c28cd1721b6979a254c5": {
+  "answer": "yes",
+  "tokens": 297,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:8c8e830641d6ecda284f": {
+  "answer": "reject",
+  "tokens": 403,
+  "latency_ms": 294.9
+ },
+ "gpt-4o:binary_gpt4o:bdb908954908248e9464": {
+  "answer": "yes",
+  "tokens": 223,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:eac9853054cb90355fe6": {
+  "answer": "yes",
+  "tokens": 329,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:9d80bd7a99a51091ff09": {
+  "answer": "yes",
+  "tokens": 296,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:1d0f497c3eadf8cbbfd7": {
+  "answer": "yes",
+  "tokens": 402,
+  "latency_ms": 341.2
+ },
+ "gpt-4o:binary_gpt4o:f52be01a13c5e69c2bbe": {
+  "answer": "no",
+  "tokens": 302,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:48475f7382db07431e82": {
+  "answer": "reject",
+  "tokens": 408,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:289505127cd929ae526a": {
+  "answer": "no",
+  "tokens": 299,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:6dd02e0c116c8112a95c": {
+  "answer": "no",
+  "tokens": 405,
+  "raw": "no"
+ },
+ "gpt-4o:binary_gpt4o:7657abbf156101cc87d3": {
+  "answer": "yes",
+  "tokens": 255,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:7dca7ba864e6e4a3d39e": {
+  "answer": "no",
+  "tokens": 361,
+  "latency_ms": 240.1
+ },
+ "gpt-4o:binary_gpt4o:c3f8148c81c146dae2b2": {
+  "answer": "yes",
+  "tokens": 338,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:9b27269d7cd31da8c9af": {
+  "answer": "yes",
+  "tokens": 444,
+  "latency_ms": 286.3
+ },
+ "gpt-4o:binary_gpt4o:651c46bc4a3230ec79dc": {
+  "answer": "yes",
+  "tokens": 272,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:82e02b2c5d3f02f10d9c": {
+  "answer": "yes",
+  "tokens": 378,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:971eb9af299c40039a49": {
+  "answer": "yes",
+  "tokens": 302,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:0b035a7f891144828f88": {
+  "answer": "yes",
+  "tokens": 408,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:4f4321166fd00f3787b6": {
+  "answer": "yes",
+  "tokens": 252,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:824ac510e8ad38ce2689": {
+  "answer": "yes",
+  "tokens": 358,
+  "latency_ms": 280.9
+ },
+ "gpt-4o:binary_gpt4o:24dcd410ffdf78b17f2b": {
+  "answer": "yes",
+  "tokens": 335,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:bbec3fa3f52a948ebbcf": {
+  "answer": "yes",
+  "tokens": 441,
+  "latency_ms": 322.9
+ },
+ "gpt-4o:binary_gpt4o:39ded825fdfc509c54d2": {
+  "answer": "yes",
+  "tokens": 320,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:e26a9ec98af5fa3171b5": {
+  "answer": "no",
+  "tokens": 426,
+  "raw": "no"
+ },
+ "gpt-4o:binary_gpt4o:80e27eb73440693afc13": {
+  "answer": "no",
+  "tokens": 246,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:12b697198a53e3a00ca8": {
+  "answer": "yes",
+  "tokens": 352,
+  "latency_ms": 258.7
+ },
+ "gpt-4o:binary_gpt4o:4fe034c18102df0237fc": {
+  "answer": "no",
+  "tokens": 272,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:99d46645921d0717d86a": {
+  "answer": "reject",
+  "tokens": 378,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:8d88d08e50f75bb320bf": {
+  "answer": "yes",
+  "tokens": 280,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:b115a4bd7c32ea60d93f": {
+  "answer": "yes",
+  "tokens": 386,
+  "latency_ms": 278.8
+ },
+ "gpt-4o:binary_gpt4o:301b40a064b7b2b88e0c": {
+  "answer": "yes",
+  "tokens": 358,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:a758de758875066d9adc": {
+  "answer": "yes",
+  "tokens": 464,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:42cc82e60b60dd77f500": {
+  "answer": "no",
+  "tokens": 298,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:a242ca1779fc218c172a": {
+  "answer": "yes",
+  "tokens": 404,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:bde8b02b027bab786623": {
+  "answer": "yes",
+  "tokens": 329,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:93083311989f5bcc3f05": {
+  "answer": "no",
+  "tokens": 435,
+  "latency_ms": 287.3
+ },
+ "gpt-4o:binary_gpt4o:8cb9436e07320fdcc273": {
+  "answer": "yes",
+  "tokens": 306,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:88679aea10e1c0e32e7e": {
+  "answer": "yes",
+  "tokens": 412,
+  "latency_ms": 304.7
+ },
+ "gpt-4o:binary_gpt4o:3df17aed9248ecfc7b38": {
+  "answer": "no",
+  "tokens": 325,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:d768b1c3de74d835fb28": {
+  "answer": "reject",
+  "tokens": 431,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:577214c67f7c417acbb2": {
+  "answer": "yes",
+  "tokens": 296,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:a18733edea4cdf00b0d1": {
+  "answer": "yes",
+  "tokens": 402,
+  "latency_ms": 569.3
+ },
+ "gpt-4o:binary_gpt4o:127b774f5c3ed572abcc": {
+  "answer": "no",
+  "tokens": 272,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:d99313894d3c1d997ae7": {
+  "answer": "yes",
+  "tokens": 378,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:c7190936f1ba263e4728": {
+  "answer": "no",
+  "tokens": 221,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:32e7a38c36c166299caa": {
+  "answer": "yes",
+  "tokens": 327,
+  "latency_ms": 268.5
+ },
+ "gpt-4o:binary_gpt4o:8a712c31550b025432a6": {
+  "answer": "no",
+  "tokens": 332,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:24b18e075209b4df5c4f": {
+  "answer": "no",
+  "tokens": 438,
+  "latency_ms": 271.8
+ },
+ "gpt-4o:binary_gpt4o:19a9070f984d8fdd740d": {
+  "answer": "no",
+  "tokens": 406,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:28f0ded6a4b1e616e84b": {
+  "answer": "yes",
+  "tokens": 512,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:206fdb0927b10ca6b21a": {
+  "answer": "yes",
+  "tokens": 288,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:e0f6b0342c8ef4a3caa3": {
+  "answer": "yes",
+  "tokens": 394,
+  "latency_ms": 422.7
+ },
+ "gpt-4o:binary_gpt4o:01f2607fa55f699541bb": {
+  "answer": "no",
+  "tokens": 316,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:3ce0f4b20ffb799f6abb": {
+  "answer": "reject",
+  "tokens": 422,
+  "latency_ms": 310.0
+ },
+ "gpt-4o:binary_gpt4o:fec3113b1b9683e2f937": {
+  "answer": "yes",
+  "tokens": 268,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:d122740e1cebf24dea84": {
+  "answer": "yes",
+  "tokens": 374,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:c9595f3280259ca2379f": {
+  "answer": "no",
+  "tokens": 376,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:031cc1b72b55925926c5": {
+  "answer": "reject",
+  "tokens": 482,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:309ad92a1336e643491e": {
+  "answer": "yes",
+  "tokens": 323,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:c04c3ee7b8eb4c6d9083": {
+  "answer": "yes",
+  "tokens": 429,
+  "latency_ms": 276.1
+ },
+ "gpt-4o:binary_gpt4o:4d32e611edc73cbff221": {
+  "answer": "yes",
+  "tokens": 299,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:8de2535bd28bf73449e1": {
+  "answer": "reject",
+  "tokens": 405,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:ec6cf461e3587b8d4976": {
+  "answer": "no",
+  "tokens": 290,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:7c8fa14fcec48232a97d": {
+  "answer": "yes",
+  "tokens": 396,
+  "latency_ms": 272.9
+ },
+ "gpt-4o:binary_gpt4o:1314a5e4789321158913": {
+  "answer": "no",
+  "tokens": 422,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:ebe5d675caf9c8e7f93c": {
+  "answer": "no",
+  "tokens": 528,
+  "latency_ms": 446.9
+ },
+ "gpt-4o:binary_gpt4o:00dc06e8a6dd254fc326": {
+  "answer": "no",
+  "tokens": 273,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:7b2418c9e14f6fc6beb8": {
+  "answer": "yes",
+  "tokens": 379,
+  "latency_ms": 298.2
+ },
+ "gpt-4o:binary_gpt4o:4198c4071505adb51bd2": {
+  "answer": "no",
+  "tokens": 422,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:8faf5e2d488bd0a7d572": {
+  "answer": "reject",
+  "tokens": 528,
+  "latency_ms": 361.9
+ },
+ "gpt-4o:binary_gpt4o:0fbdc4360b90d97e0322": {
+  "answer": "no",
+  "tokens": 422,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:95f8c35d7d49edae88d6": {
+  "answer": "reject",
+  "tokens": 528,
+  "latency_ms": 287.0
+ },
+ "gpt-4o:binary_gpt4o:b4b834ed809ae0c6327b": {
+  "answer": "no",
+  "tokens": 429,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:e0a0f19e5ed22d72a211": {
+  "answer": "yes",
+  "tokens": 535,
+  "latency_ms": 310.6
+ },
+ "gpt-4o:binary_gpt4o:5601e5b04f422cfe8253": {
+  "answer": "yes",
+  "tokens": 363,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:8208322dc4dcc7323717": {
+  "answer": "yes",
+  "tokens": 469,
+  "latency_ms": 323.9
+ },
+ "gpt-4o:binary_gpt4o:20132f7102d26372da1e": {
+  "answer": "no",
+  "tokens": 393,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:edb6ffa6eb71baa710a7": {
+  "answer": "reject",
+  "tokens": 499,
+  "latency_ms": 344.7
+ },
+ "gpt-4o:binary_gpt4o:0b5dc39ffa27f27098e8": {
+  "answer": "no",
+  "tokens": 393,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:97730233a1ea3c0381d9": {
+  "answer": "yes",
+  "tokens": 499,
+  "latency_ms": 522.2
+ },
+ "gpt-4o:binary_gpt4o:ebe96174e2210a423711": {
+  "answer": "no",
+  "tokens": 221,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:c7219a669cc0a8c071d1": {
+  "answer": "no",
+  "tokens": 327,
+  "latency_ms": 358.9
+ },
+ "gpt-4o:binary_gpt4o:73072c1e45b682e7ba33": {
+  "answer": "no",
+  "tokens": 324,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:4f4dfe8005851b0b1909": {
+  "answer": "yes",
+  "tokens": 430,
+  "latency_ms": 381.1
+ },
+ "gpt-4o:binary_gpt4o:63479fac4ef865268783": {
+  "answer": "no",
+  "tokens": 348,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:51909d3e1af514945e0c": {
+  "answer": "reject",
+  "tokens": 454,
+  "latency_ms": 402.6
+ },
+ "gpt-4o:binary_gpt4o:18cb50b4dd7bdd478d75": {
+  "answer": "no",
+  "tokens": 392,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:f531e7d7904ebbf2b0b3": {
+  "answer": "yes",
+  "tokens": 498,
+  "latency_ms": 400.9
+ },
+ "gpt-4o:binary_gpt4o:85e6abef0dda3727f6e2": {
+  "answer": "no",
+  "tokens": 223,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:1d1b50a607ec700fb5b2": {
+  "answer": "reject",
+  "tokens": 329,
+  "latency_ms": 306.7
+ },
+ "gpt-4o:binary_gpt4o:6d75b133972383d535ff": {
+  "answer": "yes",
+  "tokens": 390,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:0b5d3edd970655df3f94": {
+  "answer": "yes",
+  "tokens": 496,
+  "latency_ms": 251.3
+ },
+ "gpt-4o:binary_gpt4o:957effc860e34482eab1": {
+  "answer": "no",
+  "tokens": 369,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:008fb5df13ca2b6c3694": {
+  "answer": "reject",
+  "tokens": 475,
+  "latency_ms": 405.4
+ },
+ "gpt-4o:binary_gpt4o:a83b251a6b2531220d11": {
+  "answer": "yes",
+  "tokens": 266,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:b804370c983093824052": {
+  "answer": "yes",
+  "tokens": 372,
+  "latency_ms": 391.9
+ },
+ "gpt-4o:binary_gpt4o:8fc9dae26faf381cdb24": {
+  "answer": "no",
+  "tokens": 222,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:a0068ce080a7d4ec90c6": {
+  "answer": "reject",
+  "tokens": 328,
+  "latency_ms": 321.4
+ },
+ "gpt-4o:binary_gpt4o:55c675343801602b5c56": {
+  "answer": "no",
+  "tokens": 244,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:52cbbd1bffa4f38f82bd": {
+  "answer": "yes",
+  "tokens": 350,
+  "latency_ms": 347.4
+ },
+ "gpt-4o:binary_gpt4o:f6fd2e73b4cacb198de4": {
+  "answer": "yes",
+  "tokens": 263,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:714980634d67a2286350": {
+  "answer": "yes",
+  "tokens": 369,
+  "latency_ms": 678.6
+ },
+ "gpt-4o:binary_gpt4o:8b77398775a6e638658b": {
+  "answer": "yes",
+  "tokens": 298,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:14fac2eca98d54a00594": {
+  "answer": "yes",
+  "tokens": 404,
+  "latency_ms": 285.6
+ },
+ "gpt-4o:binary_gpt4o:427978a0fb5cbb2d6ed4": {
+  "answer": "no",
+  "tokens": 291,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:52ca995e7913abb23015": {
+  "answer": "no",
+  "tokens": 397,
+  "latency_ms": 342.9
+ },
+ "gpt-4o:binary_gpt4o:e973d3a9cfd121d09d20": {
+  "answer": "yes",
+  "tokens": 381,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:15b5588d37e5bdf727aa": {
+  "answer": "yes",
+  "tokens": 487,
+  "latency_ms": 277.0
+ },
+ "gpt-4o:binary_gpt4o:72dd12b87e2acbfcb512": {
+  "answer": "no",
+  "tokens": 404,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:21ac0e3606dc40180725": {
+  "answer": "reject",
+  "tokens": 510,
+  "latency_ms": 312.9
+ },
+ "gpt-4o:binary_gpt4o:6873f7830fa56926dee0": {
+  "answer": "yes",
+  "tokens": 430,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:370ad3632e53ec4e798b": {
+  "answer": "yes",
+  "tokens": 536,
+  "latency_ms": 390.7
+ },
+ "gpt-4o:binary_gpt4o:fd7aa1cf4d3dd1a42658": {
+  "answer": "no",
+  "tokens": 347,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:602a83cf2cdfe0cf3d1b": {
+  "answer": "no",
+  "tokens": 453,
+  "latency_ms": 1561.5
+ },
+ "gpt-4o:binary_gpt4o:df34d7e537ec6468d5c1": {
+  "answer": "no",
+  "tokens": 388,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:822bc188e751250b6d6d": {
+  "answer": "yes",
+  "tokens": 494,
+  "latency_ms": 542.0
+ },
+ "gpt-4o:binary_gpt4o:2edd5c4b1973d841949c": {
+  "answer": "no",
+  "tokens": 344,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:a21d21bfc61ca2c463ef": {
+  "answer": "reject",
+  "tokens": 450,
+  "latency_ms": 361.3
+ },
+ "gpt-4o:binary_gpt4o:9a3deb62c22406e3de91": {
+  "answer": "yes",
+  "tokens": 379,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:334a2e531360aa2944a9": {
+  "answer": "yes",
+  "tokens": 485,
+  "latency_ms": 390.9
+ },
+ "gpt-4o:binary_gpt4o:9e728fd8eb0ce61f97ad": {
+  "answer": "no",
+  "tokens": 218,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:3f42f8744261444cb759": {
+  "answer": "no",
+  "tokens": 324,
+  "latency_ms": 328.9
+ },
+ "gpt-4o:binary_gpt4o:d88f3f9a5c00fde3374b": {
+  "answer": "yes",
+  "tokens": 396,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:f1714a54215d7d1be2b4": {
+  "answer": "yes",
+  "tokens": 502,
+  "latency_ms": 411.3
+ },
+ "gpt-4o:binary_gpt4o:d94a8a3e4181111ec65b": {
+  "answer": "no",
+  "tokens": 408,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:0fb03f79542732f6c216": {
+  "answer": "reject",
+  "tokens": 514,
+  "latency_ms": 623.5
+ },
+ "gpt-4o:binary_gpt4o:724c5137c3e3545b98c4": {
+  "answer": "yes",
+  "tokens": 301,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:f00a5eb8133ad56f44ac": {
+  "answer": "yes",
+  "tokens": 407,
+  "latency_ms": 358.9
+ },
+ "gpt-4o:binary_gpt4o:44c3f01cb3c3b1f09c09": {
+  "answer": "no",
+  "tokens": 399,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:7b89c601b75eabc422e8": {
+  "answer": "reject",
+  "tokens": 505,
+  "latency_ms": 497.9
+ },
+ "gpt-4o:binary_gpt4o:08b12ef72ab17def06f6": {
+  "answer": "no",
+  "tokens": 272,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:6674c070abf7a8a04177": {
+  "answer": "yes",
+  "tokens": 378,
+  "latency_ms": 390.2
+ },
+ "gpt-4o:binary_gpt4o:438a434c2f06ab652fe7": {
+  "answer": "no",
+  "tokens": 420,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:56399c2db468d30032ff": {
+  "answer": "reject",
+  "tokens": 526,
+  "latency_ms": 384.3
+ },
+ "gpt-4o:binary_gpt4o:2f3c11c82a730bcadf92": {
+  "answer": "no",
+  "tokens": 329,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:0cba8f8e97836c30be56": {
+  "answer": "yes",
+  "tokens": 435,
+  "latency_ms": 299.5
+ },
+ "gpt-4o:binary_gpt4o:504adf2f53fa420fd2ca": {
+  "answer": "no",
+  "tokens": 346,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:7d9bc5f6d085bf19e9e2": {
+  "answer": "no",
+  "tokens": 452,
+  "latency_ms": 318.9
+ },
+ "gpt-4o:binary_gpt4o:dd8b9aad30c222873652": {
+  "answer": "no",
+  "tokens": 403,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:455dd6e966f91301d487": {
+  "answer": "yes",
+  "tokens": 509,
+  "latency_ms": 423.3
+ },
+ "gpt-4o:binary_gpt4o:d8d4cf0facbc1951bd81": {
+  "answer": "no",
+  "tokens": 221,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:42f7acfb34948d96cdcc": {
+  "answer": "yes",
+  "tokens": 327,
+  "latency_ms": 337.1
+ },
+ "gpt-4o:binary_gpt4o:b2f97d2aa79fa358f8c6": {
+  "answer": "yes",
+  "tokens": 247,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:96bb6a5af1d2d04dad68": {
+  "answer": "yes",
+  "tokens": 353,
+  "latency_ms": 315.7
+ },
+ "gpt-4o:binary_gpt4o:460c07be525916770167": {
+  "answer": "no",
+  "tokens": 223,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:c7f52deb0931020f1c43": {
+  "answer": "reject",
+  "tokens": 329,
+  "latency_ms": 454.2
+ },
+ "gpt-4o:binary_gpt4o:af5284ace308aebfc497": {
+  "answer": "no",
+  "tokens": 348,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:228ec65b26e43cd53caf": {
+  "answer": "yes",
+  "tokens": 454,
+  "latency_ms": 336.3
+ },
+ "gpt-4o:binary_gpt4o:2bff445f98827050317d": {
+  "answer": "no",
+  "tokens": 223,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:fd36408ee177575e405c": {
+  "answer": "yes",
+  "tokens": 329,
+  "latency_ms": 350.5
+ },
+ "gpt-4o:binary_gpt4o:1d96220e278d4c1e5a43": {
+  "answer": "yes",
+  "tokens": 297,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:136cd878053e7e51da96": {
+  "answer": "yes",
+  "tokens": 403,
+  "latency_ms": 410.1
+ },
+ "gpt-4o:binary_gpt4o:d82eb459169f8987564e": {
+  "answer": "no",
+  "tokens": 298,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:0300486e07ae9c345134": {
+  "answer": "no",
+  "tokens": 404,
+  "latency_ms": 266.3
+ },
+ "gpt-4o:binary_gpt4o:6d0d44a48ae75cc7ad60": {
+  "answer": "yes",
+  "tokens": 298,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:49969491e073226b116f": {
+  "answer": "yes",
+  "tokens": 404,
+  "latency_ms": 373.6
+ },
+ "gpt-4o:binary_gpt4o:d2da16a068f1f8d00477": {
+  "answer": "no",
+  "tokens": 425,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:89caf444786ed1b98e86": {
+  "answer": "no",
+  "tokens": 531,
+  "latency_ms": 333.0
+ },
+ "gpt-4o:binary_gpt4o:d3955c9b6c708a5d11b2": {
+  "answer": "yes",
+  "tokens": 349,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:33b937ccaa2bda302134": {
+  "answer": "yes",
+  "tokens": 455,
+  "latency_ms": 353.1
+ },
+ "gpt-4o:binary_gpt4o:4ca69c50452bfb9791ce": {
+  "answer": "no",
+  "tokens": 219,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:e3aa0f6c7dd62d316e33": {
+  "answer": "reject",
+  "tokens": 325,
+  "latency_ms": 398.1
+ },
+ "gpt-4o:binary_gpt4o:b7951f2df66392fce4d4": {
+  "answer": "no",
+  "tokens": 626,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:f943a0f37261cdd3f009": {
+  "answer": "no",
+  "tokens": 732,
+  "latency_ms": 391.1
+ },
+ "gpt-4o:binary_gpt4o:b84284c7ec89492b07d2": {
+  "answer": "no",
+  "tokens": 174,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:ce33a24328d1d16ccc48": {
+  "answer": "no",
+  "tokens": 280,
+  "latency_ms": 275.5
+ },
+ "gpt-4o:binary_gpt4o:216ce4ff6da152de748c": {
+  "answer": "no",
+  "tokens": 276,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:96dd12b4201e8ecee7dd": {
+  "answer": "no",
+  "tokens": 382,
+  "latency_ms": 313.4
+ },
+ "gpt-4o:binary_gpt4o:5e2fb4ba0cdcd36d81c2": {
+  "answer": "no",
+  "tokens": 627,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:3876bd3a379ff87c6822": {
+  "answer": "reject",
+  "tokens": 733,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:68aaec811e7fcaa7d14d": {
+  "answer": "no",
+  "tokens": 629,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:9a5b91baab403fbbc248": {
+  "answer": "no",
+  "tokens": 735,
+  "latency_ms": 292.8
+ },
+ "gpt-4o:binary_gpt4o:47f0026503d8a4062d04": {
+  "answer": "yes",
+  "tokens": 598,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:a670e29ea9f340598dfa": {
+  "answer": "yes",
+  "tokens": 704,
+  "latency_ms": 283.6
+ },
+ "gpt-4o:binary_gpt4o:1071692929e28d150bb7": {
+  "answer": "no",
+  "tokens": 643,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:13561a4e87c3b83f4f3f": {
+  "answer": "yes",
+  "tokens": 749,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:e3155ef5234e48b10e70": {
+  "answer": "no",
+  "tokens": 369,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:94b42095b213aa78de77": {
+  "answer": "no",
+  "tokens": 475,
+  "latency_ms": 313.1
+ },
+ "gpt-4o:binary_gpt4o:1d060c1eccaa6c51f22f": {
+  "answer": "no",
+  "tokens": 568,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:cb0ba22998241eb0a370": {
+  "answer": "no",
+  "tokens": 674,
+  "latency_ms": 463.6
+ },
+ "gpt-4o:binary_gpt4o:cc47029778c60207b346": {
+  "answer": "no",
+  "tokens": 577,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:d3052e04d4613c7db3ff": {
+  "answer": "no",
+  "tokens": 683,
+  "raw": "no"
+ },
+ "gpt-4o:binary_gpt4o:c933efb6ceaf79465cb8": {
+  "answer": "no",
+  "tokens": 212,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:b2a7ba8c5b729b1d773b": {
+  "answer": "no",
+  "tokens": 318,
+  "raw": "no"
+ },
+ "gpt-4o:binary_gpt4o:f436fa0ebad68375363d": {
+  "answer": "no",
+  "tokens": 393,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:59a9c4de03b908a8fa00": {
+  "answer": "no",
+  "tokens": 499,
+  "latency_ms": 269.0
+ },
+ "gpt-4o:binary_gpt4o:ce28a9f4685c86fcf038": {
+  "answer": "no",
+  "tokens": 622,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:632c095d6aee38e65b74": {
+  "answer": "no",
+  "tokens": 728,
+  "latency_ms": 287.9
+ },
+ "gpt-4o:binary_gpt4o:331b1d2b4ea2b153d13c": {
+  "answer": "no",
+  "tokens": 452,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:ff03a0fae77d736047ce": {
+  "answer": "no",
+  "tokens": 558,
+  "latency_ms": 281.8
+ },
+ "gpt-4o:binary_gpt4o:002646436873fe44298e": {
+  "answer": "no",
+  "tokens": 378,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:5c703e755e535dcff0a1": {
+  "answer": "no",
+  "tokens": 484,
+  "latency_ms": 271.4
+ },
+ "gpt-4o:binary_gpt4o:169b656dd10f68507fdc": {
+  "answer": "yes",
+  "tokens": 482,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:1dbf0d6a3eedfe5f2d07": {
+  "answer": "no",
+  "tokens": 588,
+  "latency_ms": 360.3
+ },
+ "gpt-4o:binary_gpt4o:213cee160dea1f7a1027": {
+  "answer": "no",
+  "tokens": 169,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:f04cf70ccc172338ad50": {
+  "answer": "reject",
+  "tokens": 275,
+  "latency_ms": 470.4
+ },
+ "gpt-4o:binary_gpt4o:c1027294b094836ad2c6": {
+  "answer": "no",
+  "tokens": 613,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:68327b37ccc5edbbb6fc": {
+  "answer": "yes",
+  "tokens": 719,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:82b535743e9b30ad77ac": {
+  "answer": "no",
+  "tokens": 555,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:7d4f9dfc8f0b65b3a436": {
+  "answer": "no",
+  "tokens": 661,
+  "latency_ms": 366.7
+ },
+ "gpt-4o:binary_gpt4o:1b5264e73fcc9ae0e3e3": {
+  "answer": "no",
+  "tokens": 374,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:8fc733c4936653b2fe35": {
+  "answer": "no",
+  "tokens": 480,
+  "latency_ms": 269.7
+ },
+ "gpt-4o:binary_gpt4o:0d88cb819601470be885": {
+  "answer": "yes",
+  "tokens": 538,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:a8bf7893510d365ce393": {
+  "answer": "yes",
+  "tokens": 644,
+  "latency_ms": 300.3
+ },
+ "gpt-4o:binary_gpt4o:a02fd22ac0f7f04f88fb": {
+  "answer": "yes",
+  "tokens": 611,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:0241127f47e17aa84b75": {
+  "answer": "yes",
+  "tokens": 717,
+  "latency_ms": 290.5
+ },
+ "gpt-4o:binary_gpt4o:ab6885de4beed99874ee": {
+  "answer": "no",
+  "tokens": 280,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:efe9a26aac9bb5a49636": {
+  "answer": "yes",
+  "tokens": 386,
+  "latency_ms": 257.2
+ },
+ "gpt-4o:binary_gpt4o:1ac03fa6fd704a1cb7b4": {
+  "answer": "no",
+  "tokens": 548,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:2a461d317b78a1540e84": {
+  "answer": "yes",
+  "tokens": 654,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:0d57c963812403616f30": {
+  "answer": "yes",
+  "tokens": 345,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:fc28a6614024fc88bd8c": {
+  "answer": "yes",
+  "tokens": 451,
+  "latency_ms": 303.3
+ },
+ "gpt-4o:binary_gpt4o:7db4a88e2b9394a0a1e8": {
+  "answer": "no",
+  "tokens": 476,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:1fd1501ce5d67608be9a": {
+  "answer": "no",
+  "tokens": 582,
+  "latency_ms": 671.3
+ },
+ "gpt-4o:binary_gpt4o:b0a62879e7c9be4de9ac": {
+  "answer": "no",
+  "tokens": 377,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:e0e2a2b0e503ac35be6f": {
+  "answer": "no",
+  "tokens": 483,
+  "raw": "no"
+ },
+ "gpt-4o:binary_gpt4o:be3aacbe6d360a80faa5": {
+  "answer": "yes",
+  "tokens": 634,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:f5bf8a3cd018fe35f736": {
+  "answer": "yes",
+  "tokens": 740,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:cb7c7daedcd193bd34bc": {
+  "answer": "yes",
+  "tokens": 342,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:78823902efd954113bd5": {
+  "answer": "no",
+  "tokens": 448,
+  "latency_ms": 404.7
+ },
+ "gpt-4o:binary_gpt4o:8863f3e1f883c15e9966": {
+  "answer": "no",
+  "tokens": 535,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:c470a416bf1d88609d04": {
+  "answer": "no",
+  "tokens": 641,
+  "latency_ms": 319.7
+ },
+ "gpt-4o:binary_gpt4o:9784a017a960e4729973": {
+  "answer": "yes",
+  "tokens": 626,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:5180f283d266bab9793f": {
+  "answer": "yes",
+  "tokens": 732,
+  "latency_ms": 267.3
+ },
+ "gpt-4o:binary_gpt4o:14fcc921502b279adb90": {
+  "answer": "no",
+  "tokens": 248,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:1d3bf0a74dd27ed0be49": {
+  "answer": "no",
+  "tokens": 354,
+  "latency_ms": 313.1
+ },
+ "gpt-4o:binary_gpt4o:d19dac6089e361e399a7": {
+  "answer": "no",
+  "tokens": 391,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:31d84ce642abbb6d29b2": {
+  "answer": "yes",
+  "tokens": 497,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:05c31fe8d75a213f4955": {
+  "answer": "no",
+  "tokens": 627,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:c2df4006e8b3919a5f77": {
+  "answer": "no",
+  "tokens": 733,
+  "raw": "no"
+ },
+ "gpt-4o:binary_gpt4o:6dc49d75b49770b1b703": {
+  "answer": "no",
+  "tokens": 478,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:e9a52b1e48b36f7777fa": {
+  "answer": "no",
+  "tokens": 584,
+  "latency_ms": 514.9
+ },
+ "gpt-4o:binary_gpt4o:7d2f39b5391a6450e24f": {
+  "answer": "yes",
+  "tokens": 241,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:5f38501f3b12caa79937": {
+  "answer": "yes",
+  "tokens": 347,
+  "latency_ms": 304.3
+ },
+ "gpt-4o:binary_gpt4o:ccbca05c9c4f2e35d019": {
+  "answer": "no",
+  "tokens": 504,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:a1d03083c6e47c4c6c14": {
+  "answer": "no",
+  "tokens": 610,
+  "latency_ms": 248.5
+ },
+ "gpt-4o:binary_gpt4o:f0d27a145705e517e012": {
+  "answer": "no",
+  "tokens": 164,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:b9650897d18f9b65c7f5": {
+  "answer": "reject",
+  "tokens": 270,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:ecad30fab2470b692d5f": {
+  "answer": "yes",
+  "tokens": 285,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:42fba1af3de5c1a712aa": {
+  "answer": "no",
+  "tokens": 391,
+  "raw": "no"
+ },
+ "gpt-4o:binary_gpt4o:87c6f0504c198ebb4271": {
+  "answer": "yes",
+  "tokens": 402,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:e536862cb706a5038528": {
+  "answer": "yes",
+  "tokens": 508,
+  "latency_ms": 280.5
+ },
+ "gpt-4o:binary_gpt4o:705dcebcf2ff0ebf1c68": {
+  "answer": "no",
+  "tokens": 378,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:1c4e911b044bb2a26a27": {
+  "answer": "no",
+  "tokens": 484,
+  "latency_ms": 254.3
+ },
+ "gpt-4o:binary_gpt4o:04533fc09d945f2b0b9e": {
+  "answer": "yes",
+  "tokens": 573,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:66c831edb261c5291f73": {
+  "answer": "yes",
+  "tokens": 679,
+  "latency_ms": 308.0
+ },
+ "gpt-4o:binary_gpt4o:95d5d89f80685af1717a": {
+  "answer": "yes",
+  "tokens": 642,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:4a5fcd7a4cad50468de5": {
+  "answer": "yes",
+  "tokens": 748,
+  "raw": "Yes"
+ },
+ "gpt-4o:binary_gpt4o:ffac2a3a7743ed2225be": {
+  "answer": "no",
+  "tokens": 293,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:c966c628d054e36a97bb": {
+  "answer": "no",
+  "tokens": 399,
+  "latency_ms": 278.9
+ },
+ "gpt-4o:binary_gpt4o:8890985f7e4aa68f5123": {
+  "answer": "yes",
+  "tokens": 533,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:f299ff78a26ab97ee7cf": {
+  "answer": "yes",
+  "tokens": 639,
+  "latency_ms": 288.0
+ },
+ "gpt-4o:binary_gpt4o:04736e42f4ba83fb892a": {
+  "answer": "no",
+  "tokens": 571,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:3fd0922d932dfabde046": {
+  "answer": "no",
+  "tokens": 677,
+  "latency_ms": 295.1
+ },
+ "gpt-4o:binary_gpt4o:725d2684633fd8a8dc91": {
+  "answer": "no",
+  "tokens": 173,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:3f6e18bced3e606228de": {
+  "answer": "reject",
+  "tokens": 279,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:e18512f6dca5c013e875": {
+  "answer": "no",
+  "tokens": 251,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:f195cda5db52093c9857": {
+  "answer": "reject",
+  "tokens": 357,
+  "raw": "reject"
+ },
+ "gpt-4o:binary_gpt4o:1c58a465946a8cbcd998": {
+  "answer": "yes",
+  "tokens": 634,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:88dcc723b56321ba5e24": {
+  "answer": "yes",
+  "tokens": 740,
+  "latency_ms": 350.5
+ },
+ "gpt-4o:binary_gpt4o:401e4c7cba0a1603d0d2": {
+  "answer": "yes",
+  "tokens": 453,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:1a4e43f3301104ae5078": {
+  "answer": "yes",
+  "tokens": 559,
+  "latency_ms": 257.6
+ },
+ "gpt-4o:binary_gpt4o:0f04e8fe61590fc8e78a": {
+  "answer": "no",
+  "tokens": 513,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:e434fb87f3288ea62024": {
+  "answer": "no",
+  "tokens": 619,
+  "latency_ms": 433.7
+ },
+ "gpt-4o:binary_gpt4o:2616a9296d65438cee4f": {
+  "answer": "no",
+  "tokens": 624,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:6e557c463582c14c5902": {
+  "answer": "yes",
+  "tokens": 730,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:7df1293c4b45ebb4ab36": {
+  "answer": "no",
+  "tokens": 639,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:4d6d88a80ea532685cf6": {
+  "answer": "no",
+  "tokens": 745,
+  "latency_ms": 490.3
+ },
+ "gpt-4o:binary_gpt4o:d87963afeedc8034fdd8": {
+  "answer": "no",
+  "tokens": 447,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:b7ef392f76e27c25e1fd": {
+  "answer": "yes",
+  "tokens": 553,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:0d9c60fb2906f2925517": {
+  "answer": "yes",
+  "tokens": 552,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:8375396b70d25b8bba2a": {
+  "answer": "yes",
+  "tokens": 658,
+  "latency_ms": 248.3
+ },
+ "gpt-4o:binary_gpt4o:035fd95d27c0ba06e318": {
+  "answer": "no",
+  "tokens": 178,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:d0d28c1c830f39a43d76": {
+  "answer": "no",
+  "tokens": 284,
+  "latency_ms": 633.4
+ },
+ "gpt-4o:binary_gpt4o:6e86ac7bea0634193d48": {
+  "answer": "no",
+  "tokens": 293,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:ef24c08b83a6f552f1af": {
+  "answer": "yes",
+  "tokens": 399,
+  "latency_ms": 281.1
+ },
+ "gpt-4o:binary_gpt4o:0e2a85c2892b4cdad56c": {
+  "answer": "no",
+  "tokens": 645,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:6f0bdc2b8926bf29a2d7": {
+  "answer": "no",
+  "tokens": 751,
+  "latency_ms": 377.2
+ },
+ "gpt-4o:binary_gpt4o:c9652fd2d4d81608c351": {
+  "answer": "no",
+  "tokens": 374,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:30746ab356718d06a22c": {
+  "answer": "no",
+  "tokens": 480,
+  "latency_ms": 757.5
+ },
+ "gpt-4o:binary_gpt4o:5a2f5ab18eb33616dfe8": {
+  "answer": "no",
+  "tokens": 631,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:4236e58f6beb477268a5": {
+  "answer": "yes",
+  "tokens": 737,
+  "raw": "yes"
+ },
+ "gpt-4o:binary_gpt4o:44f43b540180df7b6ba7": {
+  "answer": "no",
+  "tokens": 347,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:5c0daaa49bc705adf332": {
+  "answer": "no",
+  "tokens": 453,
+  "latency_ms": 293.8
+ },
+ "gpt-4o:binary_gpt4o:0130445b5d4e5f54f3d6": {
+  "answer": "no",
+  "tokens": 353,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:308cd3870488724f674a": {
+  "answer": "reject",
+  "tokens": 459,
+  "latency_ms": 301.7
+ },
+ "gpt-4o:binary_gpt4o:ef9874c88709ec20bcbf": {
+  "answer": "no",
+  "tokens": 298,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:6da7632542f44f86557e": {
+  "answer": "reject",
+  "tokens": 404,
+  "latency_ms": 335.2
+ },
+ "gpt-4o:binary_gpt4o:18066bf6df6f627dfd82": {
+  "answer": "no",
+  "tokens": 365,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:8d9cb9289472cd54d344": {
+  "answer": "yes",
+  "tokens": 471,
+  "latency_ms": 380.5
+ },
+ "gpt-4o:binary_gpt4o:c02dcbc8dd218624d189": {
+  "answer": "no",
+  "tokens": 303,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:8693d9b7ca008444c46e": {
+  "answer": "reject",
+  "tokens": 409,
+  "latency_ms": 417.4
+ },
+ "gpt-4o:binary_gpt4o:e8f5dc32a7ad648bba77": {
+  "answer": "yes",
+  "tokens": 356,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:2edb000610f9dd94ef03": {
+  "answer": "yes",
+  "tokens": 462,
+  "latency_ms": 478.0
+ },
+ "gpt-4o:binary_gpt4o:839a9d616f231de0f77d": {
+  "answer": "no",
+  "tokens": 377,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:a04ca42c736e735a9603": {
+  "answer": "reject",
+  "tokens": 483,
+  "latency_ms": 407.0
+ },
+ "gpt-4o:binary_gpt4o:013e3cc429030f1bb087": {
+  "answer": "no",
+  "tokens": 262,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:b004c737b925237f3e05": {
+  "answer": "reject",
+  "tokens": 368,
+  "latency_ms": 393.8
+ },
+ "gpt-4o:binary_gpt4o:6509cfb5990a6286e30e": {
+  "answer": "no",
+  "tokens": 249,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:83ebed81b289639397f5": {
+  "answer": "no",
+  "tokens": 355,
+  "latency_ms": 515.0
+ },
+ "gpt-4o:binary_gpt4o:d951a0a7ca22fe22456e": {
+  "answer": "no",
+  "tokens": 381,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:392f3aa9e2bd051b392b": {
+  "answer": "reject",
+  "tokens": 487,
+  "latency_ms": 403.1
+ },
+ "gpt-4o:binary_gpt4o:8b79d004d1c8d4f197e7": {
+  "answer": "no",
+  "tokens": 295,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:df27a9a2277c3cad32e0": {
+  "answer": "reject",
+  "tokens": 401,
+  "latency_ms": 418.5
+ },
+ "gpt-4o:binary_gpt4o:5e412ff0efc279dd7493": {
+  "answer": "no",
+  "tokens": 384,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:58841624deca9af62796": {
+  "answer": "reject",
+  "tokens": 490,
+  "latency_ms": 369.7
+ },
+ "gpt-4o:binary_gpt4o:e6d008a34f79744fd9d6": {
+  "answer": "no",
+  "tokens": 286,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:889c3844f8a9fd3dd337": {
+  "answer": "reject",
+  "tokens": 392,
+  "latency_ms": 355.9
+ },
+ "gpt-4o:binary_gpt4o:2098e3ac10d328522e0f": {
+  "answer": "no",
+  "tokens": 348,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:385c6157bab1e366ea47": {
+  "answer": "reject",
+  "tokens": 454,
+  "latency_ms": 346.3
+ },
+ "gpt-4o:binary_gpt4o:43db574f3c8d6e8c6790": {
+  "answer": "no",
+  "tokens": 371,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:a9018377baae9d0d1ae1": {
+  "answer": "reject",
+  "tokens": 477,
+  "latency_ms": 459.4
+ },
+ "gpt-4o:binary_gpt4o:4b5ebf1a33a090c3917a": {
+  "answer": "no",
+  "tokens": 344,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:ed9a7eb4e2656d64f23d": {
+  "answer": "reject",
+  "tokens": 450,
+  "latency_ms": 409.3
+ },
+ "gpt-4o:binary_gpt4o:ef649979898ce6a4495c": {
+  "answer": "no",
+  "tokens": 332,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:62da2261dbe88ba36e1a": {
+  "answer": "reject",
+  "tokens": 438,
+  "latency_ms": 388.3
+ },
+ "gpt-4o:binary_gpt4o:cd3f46e8add0f49265e3": {
+  "answer": "yes",
+  "tokens": 291,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:6a6e595625ca199b256b": {
+  "answer": "reject",
+  "tokens": 397,
+  "latency_ms": 375.3
+ },
+ "gpt-4o:binary_gpt4o:101b423d1b749c43e10c": {
+  "answer": "no",
+  "tokens": 384,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:a6bf783a7af11cc5770d": {
+  "answer": "no",
+  "tokens": 490,
+  "latency_ms": 388.7
+ },
+ "gpt-4o:binary_gpt4o:1a59cfe38718a364491e": {
+  "answer": "no",
+  "tokens": 398,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:ea03d3ff56f5f597d674": {
+  "answer": "yes",
+  "tokens": 504,
+  "latency_ms": 281.1
+ },
+ "gpt-4o:binary_gpt4o:49f2b2be4d4dd7038b14": {
+  "answer": "no",
+  "tokens": 344,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:065701da3dd798738d73": {
+  "answer": "reject",
+  "tokens": 450,
+  "latency_ms": 321.2
+ },
+ "gpt-4o:binary_gpt4o:ec2aa9ff8f504adad95e": {
+  "answer": "no",
+  "tokens": 350,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:f44916aac0dce7a06fab": {
+  "answer": "reject",
+  "tokens": 456,
+  "latency_ms": 327.6
+ },
+ "gpt-4o:binary_gpt4o:9ccbc7b66097e4e6c5f2": {
+  "answer": "no",
+  "tokens": 330,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:50f5abb365e99f31612a": {
+  "answer": "reject",
+  "tokens": 436,
+  "latency_ms": 379.8
+ },
+ "gpt-4o:binary_gpt4o:498ec01b880251fa0565": {
+  "answer": "yes",
+  "tokens": 258,
+  "raw": "Yes"
+ },
+ "gpt-4o:reject_gpt4o:e51a5ee1f9d747921fd2": {
+  "answer": "reject",
+  "tokens": 364,
+  "latency_ms": 334.0
+ },
+ "gpt-4o:binary_gpt4o:e7acd856123c97ec7a92": {
+  "answer": "yes",
+  "tokens": 283,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:c043b5f67120002634bc": {
+  "answer": "yes",
+  "tokens": 389,
+  "latency_ms": 319.8
+ },
+ "gpt-4o:binary_gpt4o:d96860967799dbdbfc3a": {
+  "answer": "no",
+  "tokens": 295,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:bf1afba8d7c3785fcb11": {
+  "answer": "reject",
+  "tokens": 401,
+  "latency_ms": 410.2
+ },
+ "gpt-4o:binary_gpt4o:bb5622c8ee3d36688488": {
+  "answer": "no",
+  "tokens": 377,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:ec8eada41c3f3cb69ceb": {
+  "answer": "reject",
+  "tokens": 483,
+  "latency_ms": 266.1
+ },
+ "gpt-4o:binary_gpt4o:c71ace57e302a8ead4e0": {
+  "answer": "no",
+  "tokens": 277,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:c1c06c6714c787c675c6": {
+  "answer": "reject",
+  "tokens": 383,
+  "latency_ms": 404.2
+ },
+ "gpt-4o:binary_gpt4o:45737607e9a096b5187f": {
+  "answer": "no",
+  "tokens": 300,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:6aea9100d9103be11551": {
+  "answer": "reject",
+  "tokens": 406,
+  "latency_ms": 285.1
+ },
+ "gpt-4o:binary_gpt4o:366ca97c82c4e45f75fa": {
+  "answer": "no",
+  "tokens": 309,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:e932fdebe01c5546c958": {
+  "answer": "reject",
+  "tokens": 415,
+  "latency_ms": 334.3
+ },
+ "gpt-4o:binary_gpt4o:1c8dd59f8a1e069a6df9": {
+  "answer": "no",
+  "tokens": 303,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:60746e686d15654c1674": {
+  "answer": "reject",
+  "tokens": 409,
+  "latency_ms": 1752.8
+ },
+ "gpt-4o:binary_gpt4o:d5802935f4908dee8be6": {
+  "answer": "no",
+  "tokens": 374,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:49da5b30ec0c09770ed1": {
+  "answer": "reject",
+  "tokens": 480,
+  "latency_ms": 560.6
+ },
+ "gpt-4o:binary_gpt4o:1e1e6e8e612cb7dc0b26": {
+  "answer": "no",
+  "tokens": 357,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:f9f6671195adff05eba0": {
+  "answer": "reject",
+  "tokens": 463,
+  "latency_ms": 318.3
+ },
+ "gpt-4o:binary_gpt4o:36d13146797e6ef47a21": {
+  "answer": "no",
+  "tokens": 311,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:517788fc5fe44940689b": {
+  "answer": "reject",
+  "tokens": 417,
+  "latency_ms": 398.9
+ },
+ "gpt-4o:binary_gpt4o:ae72029343ee819c8ade": {
+  "answer": "no",
+  "tokens": 380,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:7c74ae18c4127ada8fcf": {
+  "answer": "no",
+  "tokens": 486,
+  "latency_ms": 525.6
+ },
+ "gpt-4o:binary_gpt4o:bd59479db344fe2fda0e": {
+  "answer": "no",
+  "tokens": 272,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:d7d8319964c6a498f877": {
+  "answer": "reject",
+  "tokens": 378,
+  "latency_ms": 366.5
+ },
+ "gpt-4o:binary_gpt4o:a260ae58b3a7868e7486": {
+  "answer": "no",
+  "tokens": 405,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:3c13c7318f18b8b98e0f": {
+  "answer": "reject",
+  "tokens": 511,
+  "latency_ms": 401.1
+ },
+ "gpt-4o:binary_gpt4o:2776603d726dda898733": {
+  "answer": "no",
+  "tokens": 253,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:3216a15767eef0d187cf": {
+  "answer": "reject",
+  "tokens": 359,
+  "latency_ms": 376.6
+ },
+ "gpt-4o:binary_gpt4o:a03562453620144513b1": {
+  "answer": "no",
+  "tokens": 310,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:86f1bf6bba51ba940d1e": {
+  "answer": "reject",
+  "tokens": 416,
+  "latency_ms": 305.7
+ },
+ "gpt-4o:binary_gpt4o:f3ec4b09f742fc53ce4e": {
+  "answer": "no",
+  "tokens": 371,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:1c0737898d6eb88039f6": {
+  "answer": "reject",
+  "tokens": 477,
+  "latency_ms": 307.5
+ },
+ "gpt-4o:binary_gpt4o:45f037e5ecb4ce248212": {
+  "answer": "yes",
+  "tokens": 394,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:bc70a56757ba1c3a5a84": {
+  "answer": "no",
+  "tokens": 500,
+  "latency_ms": 263.2
+ },
+ "gpt-4o:binary_gpt4o:e600f23e32162f5b3e7d": {
+  "answer": "no",
+  "tokens": 297,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:25c62663573f96a8b374": {
+  "answer": "reject",
+  "tokens": 403,
+  "latency_ms": 263.8
+ },
+ "gpt-4o:binary_gpt4o:2e94347a643bf2b9690e": {
+  "answer": "yes",
+  "tokens": 357,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:1708d011c66a13dce279": {
+  "answer": "reject",
+  "tokens": 463,
+  "latency_ms": 295.9
+ },
+ "gpt-4o:binary_gpt4o:a53078bfc9ae8f3097fd": {
+  "answer": "no",
+  "tokens": 254,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:24cb80f13f19367b500a": {
+  "answer": "reject",
+  "tokens": 360,
+  "latency_ms": 278.2
+ },
+ "gpt-4o:binary_gpt4o:323aa05dd5a9ccc1d1ea": {
+  "answer": "no",
+  "tokens": 357,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:14c8b93e6ed95eb8369b": {
+  "answer": "reject",
+  "tokens": 463,
+  "latency_ms": 328.1
+ },
+ "gpt-4o:binary_gpt4o:d2e4f301f1ccd0015ea8": {
+  "answer": "no",
+  "tokens": 265,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:382684e6517aa2490bb3": {
+  "answer": "reject",
+  "tokens": 371,
+  "latency_ms": 279.3
+ },
+ "gpt-4o:binary_gpt4o:fdee1f3824339f2c5a14": {
+  "answer": "no",
+  "tokens": 255,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:c3854dbb5d94f4bb902e": {
+  "answer": "no",
+  "tokens": 361,
+  "latency_ms": 303.0
+ },
+ "gpt-4o:binary_gpt4o:5a3db0532a10c1fd706f": {
+  "answer": "no",
+  "tokens": 285,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:1b38d98b9abbfbcf6581": {
+  "answer": "no",
+  "tokens": 391,
+  "latency_ms": 335.6
+ },
+ "gpt-4o:binary_gpt4o:2f63949116c432155a26": {
+  "answer": "no",
+  "tokens": 388,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:c7552f4bdff80fab6448": {
+  "answer": "reject",
+  "tokens": 494,
+  "latency_ms": 340.7
+ },
+ "gpt-4o:binary_gpt4o:b720b0a770eb7331df71": {
+  "answer": "yes",
+  "tokens": 274,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:42fd5a26d877a38f5eaf": {
+  "answer": "yes",
+  "tokens": 380,
+  "latency_ms": 358.9
+ },
+ "gpt-4o:binary_gpt4o:c177c3bf7048dd4acc8b": {
+  "answer": "no",
+  "tokens": 346,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:14f28ae4da359df19e00": {
+  "answer": "reject",
+  "tokens": 452,
+  "latency_ms": 429.0
+ },
+ "gpt-4o:binary_gpt4o:a8574c4be6c2354b398e": {
+  "answer": "no",
+  "tokens": 363,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:d0c0ab61f98dfee56aac": {
+  "answer": "reject",
+  "tokens": 469,
+  "latency_ms": 746.2
+ },
+ "gpt-4o:binary_gpt4o:04de2bc6dd20d690305b": {
+  "answer": "no",
+  "tokens": 303,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:642ed62d9e5878cb5fed": {
+  "answer": "reject",
+  "tokens": 409,
+  "latency_ms": 346.8
+ },
+ "gpt-4o:binary_gpt4o:b5bc794b6508f9848135": {
+  "answer": "no",
+  "tokens": 274,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:46ca7da3ab877099c327": {
+  "answer": "reject",
+  "tokens": 380,
+  "latency_ms": 345.2
+ },
+ "gpt-4o:binary_gpt4o:385710bcc6a209d560a6": {
+  "answer": "no",
+  "tokens": 364,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:8b74a883e31a8bdd24d5": {
+  "answer": "reject",
+  "tokens": 470,
+  "latency_ms": 305.3
+ },
+ "gpt-4o:binary_gpt4o:fba0a941dd877f51c316": {
+  "answer": "no",
+  "tokens": 329,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:a9be04a8625c41235414": {
+  "answer": "yes",
+  "tokens": 435,
+  "latency_ms": 356.1
+ },
+ "gpt-4o:binary_gpt4o:5309fa84ef30b629aa0a": {
+  "answer": "no",
+  "tokens": 331,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:3586c9a44afa188bc6d0": {
+  "answer": "reject",
+  "tokens": 437,
+  "latency_ms": 836.1
+ },
+ "gpt-4o:binary_gpt4o:0c02af4c3624ec4ada81": {
+  "answer": "yes",
+  "tokens": 321,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:b3deeb24ee2795d04ba7": {
+  "answer": "reject",
+  "tokens": 427,
+  "latency_ms": 298.7
+ },
+ "gpt-4o:binary_gpt4o:ca4a1450f48901e06acc": {
+  "answer": "no",
+  "tokens": 263,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:950a30e21a7284d5e367": {
+  "answer": "yes",
+  "tokens": 369,
+  "latency_ms": 258.8
+ },
+ "gpt-4o:binary_gpt4o:751f92e6869f8a5667b4": {
+  "answer": "no",
+  "tokens": 353,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:03fff8ad4ce4313b213e": {
+  "answer": "reject",
+  "tokens": 459,
+  "latency_ms": 509.1
+ },
+ "gpt-4o:binary_gpt4o:53179a5276a0e69b247d": {
+  "answer": "no",
+  "tokens": 315,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:2c2ed055a126ead4190b": {
+  "answer": "reject",
+  "tokens": 421,
+  "latency_ms": 498.3
+ },
+ "gpt-4o:binary_gpt4o:d797b2436a2fa9a2d1df": {
+  "answer": "no",
+  "tokens": 359,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:9038e28a31098046f4f7": {
+  "answer": "reject",
+  "tokens": 465,
+  "latency_ms": 275.4
+ },
+ "gpt-4o:binary_gpt4o:2f801979a7567f9eb7c5": {
+  "answer": "no",
+  "tokens": 293,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:d60d2f55f245be3dba8e": {
+  "answer": "reject",
+  "tokens": 399,
+  "latency_ms": 460.2
+ },
+ "gpt-4o:binary_gpt4o:706a7245a2693319cc7f": {
+  "answer": "no",
+  "tokens": 355,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:acbecf555249ffe2e26a": {
+  "answer": "no",
+  "tokens": 461,
+  "latency_ms": 363.2
+ },
+ "gpt-4o:binary_gpt4o:f183e2afedaf856f00f5": {
+  "answer": "no",
+  "tokens": 314,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:e4de387e802b3b4e13d6": {
+  "answer": "reject",
+  "tokens": 420,
+  "latency_ms": 285.4
+ },
+ "gpt-4o:binary_gpt4o:98b0e6d57b9d3988bd3e": {
+  "answer": "no",
+  "tokens": 306,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:9d4f34168a7c0eaa6d49": {
+  "answer": "reject",
+  "tokens": 412,
+  "latency_ms": 603.8
+ },
+ "gpt-4o:binary_gpt4o:c4d304acf154bb491ad1": {
+  "answer": "no",
+  "tokens": 274,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:b8af0bef7a975032c0eb": {
+  "answer": "reject",
+  "tokens": 380,
+  "latency_ms": 297.8
+ },
+ "gpt-4o:binary_gpt4o:b428a3b9ae88eb44c4a2": {
+  "answer": "no",
+  "tokens": 388,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:8adb941b8a4cf863acbd": {
+  "answer": "reject",
+  "tokens": 494,
+  "latency_ms": 347.1
+ },
+ "gpt-4o:binary_gpt4o:abc81642094d9f35bcc3": {
+  "answer": "no",
+  "tokens": 369,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:1013710c57d3f07bdb3c": {
+  "answer": "reject",
+  "tokens": 475,
+  "latency_ms": 368.6
+ },
+ "gpt-4o:binary_gpt4o:266b7571a980aca1e3d4": {
+  "answer": "no",
+  "tokens": 392,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:6ebc6838b96e8a5379d3": {
+  "answer": "reject",
+  "tokens": 498,
+  "latency_ms": 268.1
+ },
+ "gpt-4o:binary_gpt4o:154cd3a11cb154da3727": {
+  "answer": "yes",
+  "tokens": 324,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:849286014ddcf5d4d035": {
+  "answer": "yes",
+  "tokens": 430,
+  "latency_ms": 298.8
+ },
+ "gpt-4o:binary_gpt4o:11d41caa5f48bbfec61f": {
+  "answer": "no",
+  "tokens": 345,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:206d2544577c258b9548": {
+  "answer": "reject",
+  "tokens": 451,
+  "latency_ms": 319.9
+ },
+ "gpt-4o:binary_gpt4o:ab7cec61a509c68eefbe": {
+  "answer": "no",
+  "tokens": 366,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:0b66070f983c9e55ab92": {
+  "answer": "reject",
+  "tokens": 472,
+  "latency_ms": 513.6
+ },
+ "gpt-4o:binary_gpt4o:64274ae14880abcc597d": {
+  "answer": "no",
+  "tokens": 366,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:650d038981b64993e398": {
+  "answer": "reject",
+  "tokens": 472,
+  "latency_ms": 283.6
+ },
+ "gpt-4o:binary_gpt4o:c71e431c119f140a4582": {
+  "answer": "no",
+  "tokens": 406,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:9c3e46be31d38f85ef77": {
+  "answer": "reject",
+  "tokens": 512,
+  "latency_ms": 316.5
+ },
+ "gpt-4o:binary_gpt4o:4032dc03aae04205c95b": {
+  "answer": "no",
+  "tokens": 350,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:abd0845c172f8a44b6b5": {
+  "answer": "reject",
+  "tokens": 456,
+  "latency_ms": 262.6
+ },
+ "gpt-4o:binary_gpt4o:f8fb8c42ae46e874de33": {
+  "answer": "no",
+  "tokens": 251,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:ded044d326232e0767f8": {
+  "answer": "reject",
+  "tokens": 357,
+  "latency_ms": 574.0
+ },
+ "gpt-4o:binary_gpt4o:37327cca3b22d27d1591": {
+  "answer": "no",
+  "tokens": 285,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:28604b251419ba691905": {
+  "answer": "reject",
+  "tokens": 391,
+  "latency_ms": 414.6
+ },
+ "gpt-4o:binary_gpt4o:414db86ec81594805061": {
+  "answer": "no",
+  "tokens": 359,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:ef8186fe8359bf1d8c4c": {
+  "answer": "reject",
+  "tokens": 465,
+  "latency_ms": 255.9
+ },
+ "gpt-4o:binary_gpt4o:0ec5ea48d74b95ac0db1": {
+  "answer": "no",
+  "tokens": 265,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:e02631c46c3b269b9e87": {
+  "answer": "reject",
+  "tokens": 371,
+  "latency_ms": 252.0
+ },
+ "gpt-4o:binary_gpt4o:61d56f0db22adcf4ec2f": {
+  "answer": "yes",
+  "tokens": 290,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:bcc27ae1cce680e4552c": {
+  "answer": "reject",
+  "tokens": 396,
+  "latency_ms": 291.6
+ },
+ "gpt-4o:binary_gpt4o:1562bfadd3dc0cb5481c": {
+  "answer": "no",
+  "tokens": 283,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:6cf9b809cd54b6e07580": {
+  "answer": "reject",
+  "tokens": 389,
+  "latency_ms": 300.8
+ },
+ "gpt-4o:binary_gpt4o:c103e15a5393f9bf659e": {
+  "answer": "no",
+  "tokens": 246,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:d651bc27b6f8d4b94923": {
+  "answer": "reject",
+  "tokens": 352,
+  "latency_ms": 420.9
+ },
+ "gpt-4o:binary_gpt4o:3731ee243c1475667442": {
+  "answer": "no",
+  "tokens": 247,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:c67e6b1dc499ca6b012d": {
+  "answer": "reject",
+  "tokens": 353,
+  "latency_ms": 267.0
+ },
+ "gpt-4o:binary_gpt4o:a12bbd229d81612c25c1": {
+  "answer": "no",
+  "tokens": 300,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:85a8e640cffa8a4faba8": {
+  "answer": "reject",
+  "tokens": 406,
+  "latency_ms": 340.5
+ },
+ "gpt-4o:binary_gpt4o:6680a907599ba36df1b9": {
+  "answer": "no",
+  "tokens": 258,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:20a3f5f15bb64fa77159": {
+  "answer": "reject",
+  "tokens": 364,
+  "latency_ms": 312.9
+ },
+ "gpt-4o:binary_gpt4o:72274838fb7e91e1b83e": {
+  "answer": "no",
+  "tokens": 262,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:e0e46bff1a2833fdc289": {
+  "answer": "reject",
+  "tokens": 368,
+  "latency_ms": 299.3
+ },
+ "gpt-4o:binary_gpt4o:22f63c32fb860f902a46": {
+  "answer": "no",
+  "tokens": 346,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:78dc68b8a401466c9009": {
+  "answer": "reject",
+  "tokens": 452,
+  "latency_ms": 273.2
+ },
+ "gpt-4o:binary_gpt4o:bae23199adfb99c890c8": {
+  "answer": "no",
+  "tokens": 297,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:af14de97408554e63de4": {
+  "answer": "reject",
+  "tokens": 403,
+  "latency_ms": 351.5
+ },
+ "gpt-4o:binary_gpt4o:678e754f8d6a5ff6d1ca": {
+  "answer": "no",
+  "tokens": 291,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:a85427f20dc5563fbe9a": {
+  "answer": "reject",
+  "tokens": 397,
+  "latency_ms": 285.2
+ },
+ "gpt-4o:binary_gpt4o:9df1395955d473a1aae2": {
+  "answer": "no",
+  "tokens": 304,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:9b2478d8e3f421991fec": {
+  "answer": "reject",
+  "tokens": 410,
+  "latency_ms": 259.9
+ },
+ "gpt-4o:binary_gpt4o:96264cd0466556445715": {
+  "answer": "no",
+  "tokens": 335,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:c6fdbea74cb5703299f2": {
+  "answer": "reject",
+  "tokens": 441,
+  "latency_ms": 353.3
+ },
+ "gpt-4o:binary_gpt4o:d71a7521dd69cba265f8": {
+  "answer": "no",
+  "tokens": 377,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:1ac6a34bdc4bc2c5a714": {
+  "answer": "reject",
+  "tokens": 483,
+  "latency_ms": 358.9
+ },
+ "gpt-4o:binary_gpt4o:5c63ffd39ce8e0e67b0a": {
+  "answer": "no",
+  "tokens": 273,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:14d46197b04e022c7ae4": {
+  "answer": "reject",
+  "tokens": 379,
+  "latency_ms": 289.5
+ },
+ "gpt-4o:binary_gpt4o:294c836e30fcd025b006": {
+  "answer": "yes",
+  "tokens": 376,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:eb05b2088cd5020afaa8": {
+  "answer": "yes",
+  "tokens": 482,
+  "latency_ms": 274.8
+ },
+ "gpt-4o:binary_gpt4o:666e50259ee1c22c269d": {
+  "answer": "no",
+  "tokens": 328,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:1f65cf798c533ca7dc05": {
+  "answer": "reject",
+  "tokens": 434,
+  "latency_ms": 352.0
+ },
+ "gpt-4o:binary_gpt4o:d50f7676de30e8677bdb": {
+  "answer": "yes",
+  "tokens": 397,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:24cd6d678d795b60248a": {
+  "answer": "reject",
+  "tokens": 503,
+  "latency_ms": 454.4
+ },
+ "gpt-4o:binary_gpt4o:ec1e3d5157773b5cb73c": {
+  "answer": "no",
+  "tokens": 284,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:340bb6b415cbb93c171c": {
+  "answer": "reject",
+  "tokens": 390,
+  "latency_ms": 340.8
+ },
+ "gpt-4o:binary_gpt4o:c7992e70f928c44ad637": {
+  "answer": "no",
+  "tokens": 284,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:6a5e6c20b2c40caacc53": {
+  "answer": "reject",
+  "tokens": 390,
+  "latency_ms": 480.2
+ },
+ "gpt-4o:binary_gpt4o:08b3389e86de90349793": {
+  "answer": "no",
+  "tokens": 244,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:9345e90f464209c0dec7": {
+  "answer": "reject",
+  "tokens": 350,
+  "latency_ms": 270.7
+ },
+ "gpt-4o:binary_gpt4o:350ce052b7dfd5ae2a67": {
+  "answer": "no",
+  "tokens": 252,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:faad9c65e989a0073363": {
+  "answer": "reject",
+  "tokens": 358,
+  "latency_ms": 679.0
+ },
+ "gpt-4o:binary_gpt4o:7eae35d584ee884ad163": {
+  "answer": "no",
+  "tokens": 281,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:ff8b5939b40f1d4b38e8": {
+  "answer": "reject",
+  "tokens": 387,
+  "latency_ms": 404.8
+ },
+ "gpt-4o:binary_gpt4o:83d0d8dc0b73789d912d": {
+  "answer": "no",
+  "tokens": 249,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:69c662cf213ca9902fb3": {
+  "answer": "reject",
+  "tokens": 355,
+  "latency_ms": 287.6
+ },
+ "gpt-4o:binary_gpt4o:414c5e65440541f2c821": {
+  "answer": "no",
+  "tokens": 222,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:fd734a52f7847c2cb8d3": {
+  "answer": "reject",
+  "tokens": 328,
+  "latency_ms": 309.0
+ },
+ "gpt-4o:binary_gpt4o:09dbc3e126c1fe941007": {
+  "answer": "no",
+  "tokens": 270,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:6989e37a2bcbb4e29933": {
+  "answer": "reject",
+  "tokens": 376,
+  "latency_ms": 320.3
+ },
+ "gpt-4o:binary_gpt4o:25fbe23a808983c2ddac": {
+  "answer": "no",
+  "tokens": 277,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:45424e2a9de3dd63dfe1": {
+  "answer": "reject",
+  "tokens": 383,
+  "latency_ms": 394.9
+ },
+ "gpt-4o:binary_gpt4o:66bd291d9a1090e43259": {
+  "answer": "no",
+  "tokens": 320,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:f5f2187bfbb939cd3e24": {
+  "answer": "reject",
+  "tokens": 426,
+  "latency_ms": 356.2
+ },
+ "gpt-4o:binary_gpt4o:c81dd8346bb8cc964f05": {
+  "answer": "no",
+  "tokens": 277,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:fd0e8d4b640336550452": {
+  "answer": "reject",
+  "tokens": 383,
+  "latency_ms": 275.1
+ },
+ "gpt-4o:binary_gpt4o:21376b7ab7ebd5c47d9e": {
+  "answer": "no",
+  "tokens": 226,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:a7fb118b8eaa5c52bfb6": {
+  "answer": "reject",
+  "tokens": 332,
+  "latency_ms": 366.2
+ },
+ "gpt-4o:binary_gpt4o:c5eeff1bb7487fab17e9": {
+  "answer": "no",
+  "tokens": 274,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:280c9b0b9d7a03029553": {
+  "answer": "reject",
+  "tokens": 380,
+  "latency_ms": 353.4
+ },
+ "gpt-4o:binary_gpt4o:a0a0b57cb84612dbec3c": {
+  "answer": "no",
+  "tokens": 275,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:29f7f7dadada9067fb42": {
+  "answer": "reject",
+  "tokens": 381,
+  "latency_ms": 241.8
+ },
+ "gpt-4o:binary_gpt4o:ea0e5165c0a2889814df": {
+  "answer": "no",
+  "tokens": 294,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:bec4576e4196d9806670": {
+  "answer": "reject",
+  "tokens": 400,
+  "latency_ms": 261.7
+ },
+ "gpt-4o:binary_gpt4o:189dda821f45bc59094f": {
+  "answer": "no",
+  "tokens": 271,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:77039372b1aa081b406a": {
+  "answer": "reject",
+  "tokens": 377,
+  "latency_ms": 593.4
+ },
+ "gpt-4o:binary_gpt4o:b8fbe91a14d225567319": {
+  "answer": "no",
+  "tokens": 253,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:3c447a86da8108162a77": {
+  "answer": "reject",
+  "tokens": 359,
+  "latency_ms": 285.1
+ },
+ "gpt-4o:binary_gpt4o:23c63e53ee73c077300c": {
+  "answer": "no",
+  "tokens": 302,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:ecc775455ddd669cfb44": {
+  "answer": "reject",
+  "tokens": 408,
+  "latency_ms": 295.5
+ },
+ "gpt-4o:binary_gpt4o:9c8b8a723c6ac393ca04": {
+  "answer": "no",
+  "tokens": 285,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:4eb0ef8ee15571ddc2b7": {
+  "answer": "reject",
+  "tokens": 391,
+  "latency_ms": 523.6
+ },
+ "gpt-4o:binary_gpt4o:d67ceb75fff474fdac94": {
+  "answer": "no",
+  "tokens": 298,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:00037ba02a8d5b68dbf9": {
+  "answer": "reject",
+  "tokens": 404,
+  "latency_ms": 269.6
+ },
+ "gpt-4o:binary_gpt4o:72955347c7cce027ddb4": {
+  "answer": "no",
+  "tokens": 222,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:ce882d6578189d2a1b6a": {
+  "answer": "reject",
+  "tokens": 328,
+  "latency_ms": 302.9
+ },
+ "gpt-4o:binary_gpt4o:b27379278449c6e54fac": {
+  "answer": "no",
+  "tokens": 326,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:07023997687a220b871c": {
+  "answer": "reject",
+  "tokens": 432,
+  "latency_ms": 286.5
+ },
+ "gpt-4o:binary_gpt4o:1f9e9b3c91492527d1de": {
+  "answer": "yes",
+  "tokens": 281,
+  "raw": "yes"
+ },
+ "gpt-4o:reject_gpt4o:45b3617e526f4e510273": {
+  "answer": "reject",
+  "tokens": 387,
+  "latency_ms": 268.7
+ },
+ "gpt-4o:binary_gpt4o:93265dc7914e5198a35c": {
+  "answer": "no",
+  "tokens": 217,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:71019230801479bedef7": {
+  "answer": "reject",
+  "tokens": 323,
+  "latency_ms": 383.6
+ },
+ "gpt-4o:binary_gpt4o:cdaa5571bca8d28e7dee": {
+  "answer": "no",
+  "tokens": 323,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:870da2ae1aaad2850a91": {
+  "answer": "reject",
+  "tokens": 429,
+  "latency_ms": 323.7
+ },
+ "gpt-4o:binary_gpt4o:5dc0a20831e184fe4f41": {
+  "answer": "no",
+  "tokens": 227,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:9fd6caff7fc5b84f45fe": {
+  "answer": "reject",
+  "tokens": 333,
+  "latency_ms": 326.7
+ },
+ "gpt-4o:binary_gpt4o:f84fabc01b6fa9f8f363": {
+  "answer": "no",
+  "tokens": 318,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:69f27890917896b8bcc3": {
+  "answer": "reject",
+  "tokens": 424,
+  "latency_ms": 388.6
+ },
+ "gpt-4o:binary_gpt4o:cb35b891a683e66d10b1": {
+  "answer": "no",
+  "tokens": 304,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:f7560ca4812ac780079c": {
+  "answer": "reject",
+  "tokens": 410,
+  "latency_ms": 363.5
+ },
+ "gpt-4o:binary_gpt4o:33093be956db1bb4c2b3": {
+  "answer": "no",
+  "tokens": 333,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:0653892fcb8a7f300054": {
+  "answer": "reject",
+  "tokens": 439,
+  "latency_ms": 404.2
+ },
+ "gpt-4o:binary_gpt4o:89adf1a9dd824b850b53": {
+  "answer": "no",
+  "tokens": 329,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:cb3cba229acb60ac91ae": {
+  "answer": "reject",
+  "tokens": 435,
+  "latency_ms": 273.6
+ },
+ "gpt-4o:binary_gpt4o:f1c96125e21cc25eacc0": {
+  "answer": "no",
+  "tokens": 306,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:b86e2af6efccd11c3196": {
+  "answer": "reject",
+  "tokens": 412,
+  "latency_ms": 431.2
+ },
+ "gpt-4o:binary_gpt4o:2ae392eca4d1a8311fb8": {
+  "answer": "no",
+  "tokens": 302,
+  "raw": "no"
+ },
+ "gpt-4o:reject_gpt4o:917ea59d3dc073b1f4bc": {
+  "answer": "reject",
+  "tokens": 408,
+  "latency_ms": 309.8
+ },
+ "gpt-4o:binary_gpt4o:3546a466d14c9328d290": {
+  "answer": "no",
+  "tokens": 295,
+  "raw": "No"
+ },
+ "gpt-4o:reject_gpt4o:93043ebfb0df0385de24": {
+  "answer": "reject",
+  "tokens": 401,
+  "latency_ms": 246.9
+ },
+ "gpt-4o:binary_gpt4o:14290d59fd8f82a8e440": {
+  "answer": "No",
+  "tokens": 292,
+  "latency_ms": 340.4
+ },
+ "gpt-4o:binary_gpt4o:ec90e03180f0cf603878": {
+  "answer": "Yes",
+  "tokens": 276,
+  "latency_ms": 496.1
+ },
+ "gpt-4o:binary_gpt4o:4673ff9b41a0d483fdb7": {
+  "answer": "Yes",
+  "tokens": 244,
+  "latency_ms": 343.1
+ },
+ "gpt-4o:binary_gpt4o:ad0179b2127ca20883a3": {
+  "answer": "Yes",
+  "tokens": 390,
+  "latency_ms": 522.4
+ },
+ "gpt-4o:binary_gpt4o:fc55bbe9c5c703400596": {
+  "answer": "yes",
+  "tokens": 297,
+  "latency_ms": 4223.4
+ },
+ "gpt-4o:binary_gpt4o:955c2c8376812b857110": {
+  "answer": "Yes",
+  "tokens": 246,
+  "latency_ms": 317.9
+ },
+ "gpt-4o:binary_gpt4o:5314cbb0a3fd621dad2d": {
+  "answer": "no",
+  "tokens": 431,
+  "latency_ms": 525.6
+ },
+ "gpt-4o:binary_gpt4o:e914315dffd4b020f881": {
+  "answer": "Yes",
+  "tokens": 353,
+  "latency_ms": 349.9
+ },
+ "gpt-4o:binary_gpt4o:22444a9f9bb1b142fb91": {
+  "answer": "no",
+  "tokens": 380,
+  "latency_ms": 2101.1
+ },
+ "gpt-4o:binary_gpt4o:c9a83bd423ce5d8c5fc0": {
+  "answer": "Yes",
+  "tokens": 406,
+  "latency_ms": 854.1
+ },
+ "gpt-4o:binary_gpt4o:505ffe727f3d397079ee": {
+  "answer": "Yes",
+  "tokens": 423,
+  "latency_ms": 721.1
+ },
+ "gpt-4o:binary_gpt4o:51ebd496ae02219e6854": {
+  "answer": "No",
+  "tokens": 217,
+  "latency_ms": 759.8
+ },
+ "gpt-4o:binary_gpt4o:f09b555b29e81a14b764": {
+  "answer": "no",
+  "tokens": 274,
+  "latency_ms": 349.4
+ },
+ "gpt-4o:binary_gpt4o:01238f4ddcaf8b386998": {
+  "answer": "Yes",
+  "tokens": 297,
+  "latency_ms": 461.9
+ },
+ "gpt-4o:binary_gpt4o:ceb10a45e9991819a722": {
+  "answer": "yes",
+  "tokens": 425,
+  "latency_ms": 621.1
+ },
+ "gpt-4o:binary_gpt4o:c1b8ce3df52b7b7b07a4": {
+  "answer": "Yes",
+  "tokens": 323,
+  "latency_ms": 512.5
+ },
+ "gpt-4o:binary_gpt4o:7294c2057f6ceb81ef73": {
+  "answer": "no",
+  "tokens": 256,
+  "latency_ms": 511.4
+ },
+ "gpt-4o:binary_gpt4o:d35d67e7b5bfb2aca040": {
+  "answer": "Yes",
+  "tokens": 239,
+  "latency_ms": 448.4
+ },
+ "gpt-4o:binary_gpt4o:602d174f6521ba44d35d": {
+  "answer": "Yes",
+  "tokens": 243,
+  "latency_ms": 360.1
+ },
+ "gpt-4o:binary_gpt4o:c4a3bc86837eb8a4e645": {
+  "answer": "Yes",
+  "tokens": 368,
+  "latency_ms": 427.4
+ },
+ "gpt-4o:binary_gpt4o:d9b0f038fb9d14d002f8": {
+  "answer": "yes",
+  "tokens": 378,
+  "latency_ms": 546.8
+ },
+ "gpt-4o:binary_gpt4o:0f71aa39655f11508b88": {
+  "answer": "yes",
+  "tokens": 266,
+  "latency_ms": 347.1
+ },
+ "gpt-4o:binary_gpt4o:586585e53f89140407b2": {
+  "answer": "No",
+  "tokens": 253,
+  "latency_ms": 1349.3
+ },
+ "gpt-4o:binary_gpt4o:e9b1bdc7acf3653e658f": {
+  "answer": "Yes",
+  "tokens": 399,
+  "latency_ms": 345.5
+ },
+ "gpt-4o:binary_gpt4o:7df41f0c4d52ae32b722": {
+  "answer": "yes",
+  "tokens": 292,
+  "latency_ms": 428.4
+ },
+ "gpt-4o:binary_gpt4o:89c789ccabf47735114f": {
+  "answer": "yes",
+  "tokens": 381,
+  "latency_ms": 396.0
+ },
+ "gpt-4o:binary_gpt4o:1dd725b4a45ec1e44a40": {
+  "answer": "no",
+  "tokens": 264,
+  "latency_ms": 404.5
+ },
+ "gpt-4o:binary_gpt4o:df471c593a93d57dcc7d": {
+  "answer": "no",
+  "tokens": 323,
+  "latency_ms": 424.0
+ },
+ "gpt-4o:binary_gpt4o:15d1075fe9188d4b0c7d": {
+  "answer": "no",
+  "tokens": 349,
+  "latency_ms": 519.9
+ },
+ "gpt-4o:binary_gpt4o:98beb189ef1e366b2ab1": {
+  "answer": "no",
+  "tokens": 235,
+  "latency_ms": 339.9
+ },
+ "gpt-4o:binary_gpt4o:3892469f063ef409c456": {
+  "answer": "no",
+  "tokens": 299,
+  "latency_ms": 299.1
+ },
+ "gpt-4o:binary_gpt4o:816ebbb51aefaebfed92": {
+  "answer": "yes",
+  "tokens": 244,
+  "latency_ms": 355.5
+ },
+ "gpt-4o:binary_gpt4o:5d51eb59d307723d3f12": {
+  "answer": "No",
+  "tokens": 340,
+  "latency_ms": 327.9
+ },
+ "gpt-4o:binary_gpt4o:2fdf0594ac52c9951b8a": {
+  "answer": "yes",
+  "tokens": 1186,
+  "latency_ms": 461.8
+ },
+ "gpt-4o:binary_gpt4o:13528ecb3507d218ff25": {
+  "answer": "Yes",
+  "tokens": 195,
+  "latency_ms": 345.9
+ },
+ "gpt-4o:binary_gpt4o:6954f484bb8c9cf47c83": {
+  "answer": "Yes",
+  "tokens": 403,
+  "latency_ms": 326.7
+ },
+ "gpt-4o:binary_gpt4o:a302713cbf0eb05a9e27": {
+  "answer": "no",
+  "tokens": 573,
+  "latency_ms": 424.7
+ },
+ "gpt-4o:binary_gpt4o:49a89ea6a3b2f25cf962": {
+  "answer": "Yes",
+  "tokens": 479,
+  "latency_ms": 558.5
+ },
+ "gpt-4o:binary_gpt4o:3ebcce39557b90c6c219": {
+  "answer": "no",
+  "tokens": 552,
+  "latency_ms": 444.2
+ },
+ "gpt-4o:binary_gpt4o:7685cd25fe01a41b7529": {
+  "answer": "no",
+  "tokens": 557,
+  "latency_ms": 337.7
+ },
+ "gpt-4o:binary_gpt4o:462d020238ab65bd47b9": {
+  "answer": "no",
+  "tokens": 572,
+  "latency_ms": 380.6
+ },
+ "gpt-4o:binary_gpt4o:ee6b1dc02cab63f9c33d": {
+  "answer": "No",
+  "tokens": 228,
+  "latency_ms": 409.1
+ },
+ "gpt-4o:binary_gpt4o:07d867c8c7f7d0bbc21f": {
+  "answer": "yes",
+  "tokens": 295,
+  "latency_ms": 447.6
+ },
+ "gpt-4o:binary_gpt4o:a94eb16316e29aee19a7": {
+  "answer": "No",
+  "tokens": 193,
+  "latency_ms": 410.4
+ },
+ "gpt-4o:binary_gpt4o:97c0147a6ee2cf34c9a3": {
+  "answer": "Yes",
+  "tokens": 399,
+  "latency_ms": 928.3
+ },
+ "gpt-4o:binary_gpt4o:7caafc3d73e2e374c602": {
+  "answer": "Yes",
+  "tokens": 198,
+  "latency_ms": 421.1
+ },
+ "gpt-4o:binary_gpt4o:368c2d4a777c10924776": {
+  "answer": "Yes",
+  "tokens": 469,
+  "latency_ms": 394.9
+ },
+ "gpt-4o:binary_gpt4o:ba80298acddc3becd0ad": {
+  "answer": "No",
+  "tokens": 331,
+  "latency_ms": 353.1
+ },
+ "gpt-4o:reject_gpt4o:6a3c676a1b7dcc6d7786": {
+  "answer": "yes",
+  "tokens": 398,
+  "latency_ms": 293.6
+ },
+ "gpt-4o:reject_gpt4o:0185ac27bad288098355": {
+  "answer": "yes",
+  "tokens": 382,
+  "latency_ms": 1985.4
+ },
+ "gpt-4o:reject_gpt4o:a6ebff7cbbc17cc115fe": {
+  "answer": "yes",
+  "tokens": 350,
+  "latency_ms": 310.1
+ },
+ "gpt-4o:reject_gpt4o:71dc13c8590fe21733e9": {
+  "answer": "yes",
+  "tokens": 496,
+  "latency_ms": 264.5
+ },
+ "gpt-4o:reject_gpt4o:b86115160298ca30d754": {
+  "answer": "yes",
+  "tokens": 403,
+  "latency_ms": 299.0
+ },
+ "gpt-4o:reject_gpt4o:d455159588a98e91cf1b": {
+  "answer": "yes",
+  "tokens": 352,
+  "latency_ms": 380.6
+ },
+ "gpt-4o:reject_gpt4o:4af231221a116a408d4d": {
+  "answer": "yes",
+  "tokens": 537,
+  "latency_ms": 298.3
+ },
+ "gpt-4o:reject_gpt4o:29dd1f3c47fff8b21c99": {
+  "answer": "yes",
+  "tokens": 459,
+  "latency_ms": 312.9
+ },
+ "gpt-4o:reject_gpt4o:2b77a0efa894732eb1e7": {
+  "answer": "reject",
+  "tokens": 486,
+  "latency_ms": 350.3
+ },
+ "gpt-4o:reject_gpt4o:b2adf04788ba1b94299a": {
+  "answer": "yes",
+  "tokens": 512,
+  "latency_ms": 266.6
+ },
+ "gpt-4o:reject_gpt4o:31faece8035f61cd9e1b": {
+  "answer": "yes",
+  "tokens": 529,
+  "latency_ms": 553.7
+ },
+ "gpt-4o:reject_gpt4o:07abc2423c972140daa1": {
+  "answer": "no",
+  "tokens": 323,
+  "latency_ms": 257.8
+ },
+ "gpt-4o:reject_gpt4o:47261a0bdb0f369d6236": {
+  "answer": "no",
+  "tokens": 380,
+  "latency_ms": 248.5
+ },
+ "gpt-4o:reject_gpt4o:2dc5f10af39db08f8102": {
+  "answer": "yes",
+  "tokens": 403,
+  "latency_ms": 291.1
+ },
+ "gpt-4o:reject_gpt4o:e2e4618f49cafbbf0eb9": {
+  "answer": "yes",
+  "tokens": 531,
+  "latency_ms": 281.7
+ },
+ "gpt-4o:reject_gpt4o:597cbb7dab78df63f13c": {
+  "answer": "yes",
+  "tokens": 429,
+  "latency_ms": 317.7
+ },
+ "gpt-4o:reject_gpt4o:65a0b6ac079a5dbdc161": {
+  "answer": "yes",
+  "tokens": 362,
+  "latency_ms": 251.2
+ },
+ "gpt-4o:reject_gpt4o:88ef9adf56f4d635b45a": {
+  "answer": "yes",
+  "tokens": 345,
+  "latency_ms": 337.5
+ },
+ "gpt-4o:reject_gpt4o:64340abcc1ac52ba97a8": {
+  "answer": "yes",
+  "tokens": 349,
+  "latency_ms": 1230.0
+ },
+ "gpt-4o:reject_gpt4o:c04696301303d97a12e3": {
+  "answer": "yes",
+  "tokens": 474,
+  "latency_ms": 274.8
+ },
+ "gpt-4o:reject_gpt4o:f6d4e4ba8334820304c1": {
+  "answer": "yes",
+  "tokens": 484,
+  "latency_ms": 270.2
+ },
+ "gpt-4o:reject_gpt4o:be0d7cf197b6719d181a": {
+  "answer": "yes",
+  "tokens": 372,
+  "latency_ms": 341.1
+ },
+ "gpt-4o:reject_gpt4o:d8c31cf65d25015d856b": {
+  "answer": "no",
+  "tokens": 359,
+  "latency_ms": 293.7
+ },
+ "gpt-4o:reject_gpt4o:3377faea74732e90739a": {
+  "answer": "yes",
+  "tokens": 505,
+  "latency_ms": 287.8
+ },
+ "gpt-4o:reject_gpt4o:7037578789f81cf775e7": {
+  "answer": "yes",
+  "tokens": 398,
+  "latency_ms": 339.3
+ },
+ "gpt-4o:reject_gpt4o:b68dff0bd1d89b68f903": {
+  "answer": "yes",
+  "tokens": 487,
+  "latency_ms": 307.6
+ },
+ "gpt-4o:reject_gpt4o:bfb010e969bbb4237d91": {
+  "answer": "no",
+  "tokens": 370,
+  "latency_ms": 264.8
+ },
+ "gpt-4o:reject_gpt4o:564c4926d0373672e7f0": {
+  "answer": "reject",
+  "tokens": 429,
+  "latency_ms": 275.6
+ },
+ "gpt-4o:reject_gpt4o:0e989c48523e775d3c7b": {
+  "answer": "reject",
+  "tokens": 455,
+  "latency_ms": 250.9
+ },
+ "gpt-4o:reject_gpt4o:895a43d110bc53307840": {
+  "answer": "no",
+  "tokens": 341,
+  "latency_ms": 275.6
+ },
+ "gpt-4o:reject_gpt4o:5b21736e0b8332a2ac47": {
+  "answer": "no",
+  "tokens": 405,
+  "latency_ms": 274.4
+ },
+ "gpt-4o:reject_gpt4o:f88511f512e043d01e4d": {
+  "answer": "yes",
+  "tokens": 350,
+  "latency_ms": 409.4
+ },
+ "gpt-4o:reject_gpt4o:5bd0c30d31da845788f7": {
+  "answer": "no",
+  "tokens": 446,
+  "latency_ms": 270.2
+ },
+ "gpt-4o:reject_gpt4o:c365cbaa62ec70685053": {
+  "answer": "no",
+  "tokens": 1292,
+  "latency_ms": 425.8
+ },
+ "gpt-4o:reject_gpt4o:acc34924dce760b50344": {
+  "answer": "yes",
+  "tokens": 301,
+  "latency_ms": 377.1
+ },
+ "gpt-4o:reject_gpt4o:6ab0e89765bfbe2cb40b": {
+  "answer": "yes",
+  "tokens": 509,
+  "latency_ms": 484.4
+ },
+ "gpt-4o:reject_gpt4o:5ad80a253650d21b5a01": {
+  "answer": "no",
+  "tokens": 679,
+  "latency_ms": 541.3
+ },
+ "gpt-4o:reject_gpt4o:70ee8b54bbe82e6f3c76": {
+  "answer": "yes",
+  "tokens": 585,
+  "latency_ms": 276.3
+ },
+ "gpt-4o:reject_gpt4o:d2d3fbab82b0c0d92521": {
+  "answer": "yes",
+  "tokens": 658,
+  "latency_ms": 319.6
+ },
+ "gpt-4o:reject_gpt4o:69dd2de65e6584304e33": {
+  "answer": "yes",
+  "tokens": 663,
+  "latency_ms": 365.5
+ },
+ "gpt-4o:reject_gpt4o:2c72b7e2fb23a6b2fc36": {
+  "answer": "no",
+  "tokens": 678,
+  "latency_ms": 282.9
+ },
+ "gpt-4o:reject_gpt4o:7978b495cfb714396d18": {
+  "answer": "yes",
+  "tokens": 334,
+  "latency_ms": 264.5
+ },
+ "gpt-4o:reject_gpt4o:d76454dde1000a2dc9d7": {
+  "answer": "yes",
+  "tokens": 401,
+  "latency_ms": 285.3
+ },
+ "gpt-4o:reject_gpt4o:d25f822841af419e552f": {
+  "answer": "reject",
+  "tokens": 299,
+  "latency_ms": 966.8
+ },
+ "gpt-4o:reject_gpt4o:67ed0e3e0ca5146b1535": {
+  "answer": "yes",
+  "tokens": 505,
+  "latency_ms": 415.3
+ },
+ "gpt-4o:reject_gpt4o:0552f7a4d35b71c925b8": {
+  "answer": "Yes",
+  "tokens": 304,
+  "latency_ms": 288.7
+ },
+ "gpt-4o:reject_gpt4o:18fc792c7307f76c2957": {
+  "answer": "yes",
+  "tokens": 575,
+  "latency_ms": 412.0
+ },
+ "gpt-4o:reject_gpt4o:ec25961ea3b31f190b84": {
+  "answer": "yes",
+  "tokens": 437,
+  "latency_ms": 299.9
+ }
+}

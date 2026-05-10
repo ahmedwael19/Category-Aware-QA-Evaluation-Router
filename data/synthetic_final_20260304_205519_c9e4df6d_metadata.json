@@ -1,0 +1,55 @@
+{
+  "generated_at": "20260304_205519",
+  "data_hash": "c9e4df6d",
+  "seed": 42,
+  "total": 4186,
+  "train": 2927,
+  "val": 625,
+  "test": 634,
+  "top_categories": {
+    "SEMANTIC": 1795,
+    "UNSUPPORTED": 699,
+    "HYBRID": 548,
+    "SYMBOLIC_TIME": 427,
+    "SYMBOLIC_COUNT": 393,
+    "SYMBOLIC_METADATA": 324
+  },
+  "sub_categories": {
+    "UNSUPPORTED": 699,
+    "HYBRID": 548,
+    "SYMBOLIC_TIME": 427,
+    "SYMBOLIC_COUNT": 393,
+    "SYMBOLIC_METADATA": 324,
+    "SEMANTIC_GREETING": 300,
+    "SEMANTIC_COMPREHENSION": 300,
+    "SEMANTIC_SOLUTION": 300,
+    "SEMANTIC_EMPATHY": 299,
+    "SEMANTIC_TONE": 299,
+    "SEMANTIC_CLOSING": 297
+  },
+  "style_dist": {
+    "instruction": 2174,
+    "question": 2012
+  },
+  "language": "en",
+  "model": "gpt-5.2",
+  "dedup_stages": [
+    "exact_string",
+    "semantic_cosine_0.99_on_llm_generated_only"
+  ],
+  "generation_strategies": [
+    "template_deterministic_symbolic",
+    "scenario_conditioned_llm_semantic",
+    "template_hybrid",
+    "llm_hybrid",
+    "template_unsupported",
+    "llm_unsupported"
+  ],
+  "noise_levels": {
+    "none": 2439,
+    "light": 1077,
+    "medium": 423,
+    "heavy": 247
+  },
+  "version": "final"
+}

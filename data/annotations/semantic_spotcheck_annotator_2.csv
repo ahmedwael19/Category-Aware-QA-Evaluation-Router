@@ -1,0 +1,663 @@
+id,source_idx,category,prompt,conversation,annotator_answer,notes
+1,257,HYBRID,assess email-appropriate communication style.,"Channel: phone | Tags: refund, technical, bug
+
+[2025-01-15 10:00:00] CUSTOMER: Hi, I need help with the subscription renewal.
+[2025-01-15 10:09:57] AGENT: I apologize for the inconvenience with the subscription renewal. Let me investigate.
+[2025-01-15 10:11:13] CUSTOMER: That's still not working for me.
+[2025-01-15 10:14:29] AGENT: I've escalated the the subscription renewal matter to our specialist team.
+[2025-01-15 10:17:48] CUSTOMER: Could you explain further?",no,
+2,235,HYBRID,"If the agent added internal notes, assess whether they offered an appropriate follow-up channel before ending the conversation.","Channel: email | Tags: feedback, bug, escalated
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to the integration setup but it's not working.
+[2025-01-15 10:13:37] AGENT: I see the issue with the integration setup. Here's what I can do.
+[2025-01-15 10:16:48] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:20:40] AGENT: The the integration setup issue should now be resolved. Please verify.
+[2025-01-15 10:23:08] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:26:31] AGENT: Could you try again? I've updated the the integration setup settings.
+[2025-01-15 10:31:06] CUSTOMER: Could you explain further?",No,
+3,217,SEMANTIC,Confirm the agent didn’t act annoyed when the customer declined alternatives.,"Channel: phone | Tags: escalated, feature_request, technical
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to the mobile app crash but it's not working.
+[2025-01-15 10:12:14] AGENT: Let me review your the mobile app crash situation.
+[2025-01-15 10:13:16] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:15:47] AGENT: I've applied a fix for the the mobile app crash issue.
+[2025-01-15 10:16:44] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:19:02] AGENT: Could you try again? I've updated the the mobile app crash settings.
+[2025-01-15 10:23:08] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:26:47] AGENT: I've checked and here's what I found regarding the mobile app crash.
+[2025-01-15 10:28:00] CUSTOMER: I appreciate the quick response.",yes,
+4,239,HYBRID,"If an urgent tag is present, did the agent’s first line convey calm reassurance appropriate to an upgrade request?","Channel: email | Tags: feedback
+
+[2025-01-15 10:00:00] CUSTOMER: Hello, I'm having an issue with the mobile app crash.
+[2025-01-15 10:00:44] AGENT: Thank you for reaching out. I'll check on the mobile app crash right away.
+[2025-01-15 10:01:18] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:03:20] AGENT: Could you try again? I've updated the the mobile app crash settings.
+[2025-01-15 10:07:22] CUSTOMER: Could you explain further?
+[2025-01-15 10:12:22] AGENT: I've escalated the the mobile app crash matter to our specialist team.
+[2025-01-15 10:16:00] CUSTOMER: Thank you, that helps.",no,
+5,195,SEMANTIC,"Determine whether the greeting was aligned with the customer’s frustration about a late package, and included a quick check for understanding.","Channel: phone | Tags: urgent, technical
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to the integration setup but it's not working.
+[2025-01-15 10:06:59] AGENT: I see the issue with the integration setup. Here's what I can do.
+[2025-01-15 10:07:47] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:09:00] AGENT: The the integration setup issue should now be resolved. Please verify.
+[2025-01-15 10:11:55] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:14:00] AGENT: I've applied a fix for the the integration setup issue.
+[2025-01-15 10:17:29] CUSTOMER: That's still not working for me.
+[2025-01-15 10:19:36] AGENT: Please don't hesitate to reach out if you need more help.",no,
+6,253,HYBRID,"For cases with internal notes present, evaluate whether the agent’s closing acknowledged the customer’s effort and offered continued help.","Channel: phone | Tags: billing, refund
+
+[2025-01-15 10:00:00] CUSTOMER: Quick question about the billing charge.
+[2025-01-15 10:23:30] AGENT: I apologize for the inconvenience with the billing charge. Let me investigate.
+[2025-01-15 10:27:58] CUSTOMER: Could you explain further?
+[2025-01-15 10:30:20] AGENT: I've checked and here's what I found regarding the billing charge.
+[2025-01-15 10:34:45] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:38:37] AGENT: The the billing charge issue should now be resolved. Please verify.
+[2025-01-15 10:43:18] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:47:18] AGENT: I've escalated the the billing charge matter to our specialist team.
+[2025-01-15 10:48:02] CUSTOMER: Great, that fixed it!",No,
+7,245,HYBRID,Evaluate both response speed (15 minute threshold) and helpfulness.,"Channel: email | Tags: bug, technical
+
+[2025-01-15 10:00:00] CUSTOMER: Urgent: service outage is causing problems for our team.
+[2025-01-15 10:00:31] AGENT: Let me review your service outage situation.
+[2025-01-15 10:01:51] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:05:08] AGENT: Could you try again? I've updated the service outage settings.
+[2025-01-15 10:09:08] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:11:04] AGENT: I've checked and here's what I found regarding service outage.
+[2025-01-15 10:14:32] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:18:43] AGENT: Please don't hesitate to reach out if you need more help.",yes,
+8,268,HYBRID,"If this came via twitter, was communication style suitable?","Channel: email | Tags: billing, refund, technical
+
+[2025-01-15 10:00:00] CUSTOMER: Hi, I need help with product returns.
+[2025-01-15 10:18:32] AGENT: I see the issue with product returns. Here's what I can do.
+[2025-01-15 10:19:31] CUSTOMER: Could you explain further?
+[2025-01-15 10:23:45] AGENT: I've checked and here's what I found regarding product returns.
+[2025-01-15 10:28:12] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:31:02] AGENT: Glad I could help. Have a great day!",no,
+9,193,SEMANTIC,"did the agent give clear final confirmation after checking your understanding, or did they just stop replying?","Channel: email | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with my account login?
+[2025-01-15 10:22:26] AGENT: I see the issue with my account login. Here's what I can do.
+[2025-01-15 10:26:50] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:31:15] AGENT: I've applied a fix for the my account login issue.
+[2025-01-15 10:35:51] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:39:33] AGENT: Could you try again? I've updated the my account login settings.
+[2025-01-15 10:43:27] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:47:16] AGENT: I've applied a fix for the my account login issue.
+[2025-01-15 10:51:16] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:53:05] AGENT: Please don't hesitate to reach out if you need more help.",yes,
+10,247,HYBRID,"If the customer cites a previous case number in an email, evaluate whether the agent used that history effectively to resolve the billing dispute faster.","Channel: phone | Tags: billing, technical
+
+[2025-01-15 10:00:00] CUSTOMER: Hello, I'm having an issue with the subscription renewal.
+[2025-01-15 10:18:22] AGENT: I understand, let me look into the subscription renewal for you.
+[2025-01-15 10:23:03] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:26:30] AGENT: I've checked and here's what I found regarding the subscription renewal.
+[2025-01-15 10:29:07] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:29:53] AGENT: The the subscription renewal issue should now be resolved. Please verify.
+[2025-01-15 10:33:44] CUSTOMER: Could you explain further?
+[2025-01-15 10:37:56] AGENT: I've checked and here's what I found regarding the subscription renewal.
+[2025-01-15 10:42:08] CUSTOMER: That's still not working for me.",no,
+11,266,HYBRID,"If tagged 'legal' and over 10 turns, was urgency maintained?","Channel: email | Tags: escalated, vip, complaint
+
+[2025-01-15 10:00:00] CUSTOMER: Hi, I need help with the billing charge.
+[2025-01-15 10:04:22] AGENT: I see the issue with the billing charge. Here's what I can do.
+[2025-01-15 10:07:39] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:10:42] AGENT: I've applied a fix for the the billing charge issue.
+[2025-01-15 10:13:53] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:17:29] AGENT: Could you try again? I've updated the the billing charge settings.
+[2025-01-15 10:18:20] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:20:59] AGENT: Glad I could help. Have a great day!",no,
+12,244,HYBRID,"If the ticket is urgent and was transferred at least once, evaluate whether the greeting after transfer re-established rapport appropriately for the upgrade request.","Channel: email | Tags: complaint, billing, refund
+
+[2025-01-15 10:00:00] CUSTOMER: I'm frustrated — order cancellation hasn't been resolved.
+[2025-01-15 10:21:52] AGENT: I understand, let me look into order cancellation for you.
+[2025-01-15 10:24:33] CUSTOMER: Could you explain further?
+[2025-01-15 10:27:34] AGENT: The order cancellation issue should now be resolved. Please verify.
+[2025-01-15 10:31:12] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:34:15] AGENT: The order cancellation issue should now be resolved. Please verify.
+[2025-01-15 10:36:19] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:38:55] AGENT: The order cancellation issue should now be resolved. Please verify.
+[2025-01-15 10:43:32] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:44:45] AGENT: Please don't hesitate to reach out if you need more help.",no,
+13,229,SEMANTIC,Detect whether the agent used a courteous final line and offered extra help after handling the lost password.,"Channel: chat | Tags: urgent
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with the mobile app crash?
+[2025-01-15 10:08:27] AGENT: I see the issue with the mobile app crash. Here's what I can do.
+[2025-01-15 10:10:54] CUSTOMER: Could you explain further?
+[2025-01-15 10:12:17] AGENT: I've applied a fix for the the mobile app crash issue.
+[2025-01-15 10:14:55] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:16:12] AGENT: I've escalated the the mobile app crash matter to our specialist team.
+[2025-01-15 10:17:19] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:20:39] AGENT: The the mobile app crash issue should now be resolved. Please verify.
+[2025-01-15 10:24:23] CUSTOMER: Is there anything else I should know?",no,
+14,240,HYBRID,"For VIP return tickets, check whether the greeting used the customer’s name (when available) and felt respectful.","Channel: chat | Tags: billing
+
+[2025-01-15 10:00:00] CUSTOMER: Hello, I'm having an issue with password reset.
+[2025-01-15 10:23:22] AGENT: I see the issue with password reset. Here's what I can do.
+[2025-01-15 10:25:59] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:30:31] AGENT: Could you try again? I've updated the password reset settings.
+[2025-01-15 10:34:42] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:35:15] AGENT: I've applied a fix for the password reset issue.
+[2025-01-15 10:37:29] CUSTOMER: Could you explain further?",no,
+15,219,SEMANTIC,"Did the agent pause to reflect the customer’s situation, then suggest keep-plan options?","Channel: phone | Tags: feature_request, billing
+
+[2025-01-15 10:00:00] CUSTOMER: We've noticed an issue with a shipping delay recently.
+[2025-01-15 10:19:23] AGENT: I understand, let me look into a shipping delay for you.
+[2025-01-15 10:20:47] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:25:29] AGENT: The a shipping delay issue should now be resolved. Please verify.
+[2025-01-15 10:27:16] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:31:17] AGENT: The a shipping delay issue should now be resolved. Please verify.
+[2025-01-15 10:34:07] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:37:23] AGENT: I've checked and here's what I found regarding a shipping delay.
+[2025-01-15 10:39:30] CUSTOMER: I appreciate the quick response.",no,
+16,265,HYBRID,"If tagged 'sensitive' and over 15 turns, was urgency maintained?","Channel: phone | Tags: refund
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to a shipping delay but it's not working.
+[2025-01-15 10:19:51] AGENT: I apologize for the inconvenience with a shipping delay. Let me investigate.
+[2025-01-15 10:20:39] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:25:25] AGENT: I've checked and here's what I found regarding a shipping delay.
+[2025-01-15 10:26:45] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:31:13] AGENT: I've checked and here's what I found regarding a shipping delay.
+[2025-01-15 10:35:09] CUSTOMER: Could you explain further?",no,
+17,213,SEMANTIC,Detect whether the agent’s greeting apology is tied to the billing error and not a generic sorry.,"Channel: chat | Tags: feedback, urgent
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to the subscription renewal but it's not working.
+[2025-01-15 10:11:39] AGENT: I understand, let me look into the subscription renewal for you.
+[2025-01-15 10:12:13] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:16:35] AGENT: The the subscription renewal issue should now be resolved. Please verify.
+[2025-01-15 10:20:10] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:21:21] AGENT: I've checked and here's what I found regarding the subscription renewal.
+[2025-01-15 10:22:39] CUSTOMER: Great, that fixed it!",No,
+18,270,HYBRID,"For responses taking over 30 minutes, was there an apology?","Channel: email | Tags: billing, vip, feedback
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with data export?
+[2025-01-15 10:26:57] AGENT: I can help with that. Let me pull up the details on data export.
+[2025-01-15 10:27:51] CUSTOMER: That's still not working for me.
+[2025-01-15 10:31:28] AGENT: I've applied a fix for the data export issue.
+[2025-01-15 10:35:12] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:36:06] AGENT: I've escalated the data export matter to our specialist team.
+[2025-01-15 10:39:27] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:42:19] AGENT: Glad I could help. Have a great day!",no,
+19,205,SEMANTIC,Detect whether the greeting included a brief recap of what the customer is contacting about (late shipment).,"Channel: email | Tags: feedback, technical, escalated
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to service outage but it's not working.
+[2025-01-15 10:16:46] AGENT: Let me review your service outage situation.
+[2025-01-15 10:20:00] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:21:46] AGENT: I've applied a fix for the service outage issue.
+[2025-01-15 10:26:16] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:27:57] AGENT: I've checked and here's what I found regarding service outage.
+[2025-01-15 10:31:44] CUSTOMER: Thank you, that helps.",no,
+20,199,SEMANTIC,"Did the agent ask any final check-in question before ending (e.g., anything else I can help with)?","Channel: email | Tags: refund, feedback, feature_request
+
+[2025-01-15 10:00:00] CUSTOMER: Urgent: product returns is causing problems for our team.
+[2025-01-15 10:09:50] AGENT: Let me review your product returns situation.
+[2025-01-15 10:10:51] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:14:15] AGENT: The product returns issue should now be resolved. Please verify.
+[2025-01-15 10:15:02] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:18:10] AGENT: Is there anything else I can help with?",yes,
+21,251,HYBRID,Assess handling appropriateness for 'sensitive' cases.,"Channel: phone | Tags: bug, feature_request
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to the integration setup but it's not working.
+[2025-01-15 10:17:20] AGENT: I understand, let me look into the integration setup for you.
+[2025-01-15 10:18:00] CUSTOMER: That's still not working for me.
+[2025-01-15 10:19:12] AGENT: Could you try again? I've updated the the integration setup settings.
+[2025-01-15 10:21:21] CUSTOMER: Great, that fixed it!",yes,
+22,269,HYBRID,"For responses taking over 3 minutes, was there an apology?","Channel: chat | Tags: bug, billing, complaint
+
+[2025-01-15 10:00:00] CUSTOMER: I'm frustrated — password reset hasn't been resolved.
+[2025-01-15 10:13:28] AGENT: I apologize for the inconvenience with password reset. Let me investigate.
+[2025-01-15 10:16:02] CUSTOMER: Could you explain further?
+[2025-01-15 10:17:52] AGENT: I've checked and here's what I found regarding password reset.
+[2025-01-15 10:21:28] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:24:03] AGENT: I've escalated the password reset matter to our specialist team.
+[2025-01-15 10:24:57] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:25:58] AGENT: The password reset issue should now be resolved. Please verify.
+[2025-01-15 10:30:41] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:33:39] AGENT: Glad I could help. Have a great day!",yes,
+23,211,SEMANTIC,"Check that agent didn’t twist customer’s request: customer asked escalate now due to locked account, not “wait 24 hours” unless that’s the stated policy AND they explained it.","Channel: email | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to the subscription renewal but it's not working.
+[2025-01-15 10:01:46] AGENT: Thank you for reaching out. I'll check on the subscription renewal right away.
+[2025-01-15 10:05:06] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:09:36] AGENT: I've applied a fix for the the subscription renewal issue.
+[2025-01-15 10:10:21] CUSTOMER: That's still not working for me.
+[2025-01-15 10:15:01] AGENT: The the subscription renewal issue should now be resolved. Please verify.
+[2025-01-15 10:19:49] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:24:41] AGENT: I've checked and here's what I found regarding the subscription renewal.
+[2025-01-15 10:29:08] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:32:37] AGENT: I'll close this ticket. Feel free to reopen if needed.",no,
+24,263,HYBRID,Assess handling appropriateness for 'urgent' cases.,"Channel: chat | Tags: refund, billing
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with the integration setup?
+[2025-01-15 10:28:29] AGENT: Thank you for reaching out. I'll check on the integration setup right away.
+[2025-01-15 10:30:32] CUSTOMER: Could you explain further?
+[2025-01-15 10:33:59] AGENT: I've checked and here's what I found regarding the integration setup.
+[2025-01-15 10:37:46] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:42:36] AGENT: The the integration setup issue should now be resolved. Please verify.
+[2025-01-15 10:47:01] CUSTOMER: I appreciate the quick response.",no,
+25,242,HYBRID,"For upgrade requests resolved within 20 minutes, did the agent understand the customer’s priorities (cost vs. features) well enough to respond appropriately?","Channel: phone | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: I'm frustrated — password reset hasn't been resolved.
+[2025-01-15 10:14:41] AGENT: Thank you for reaching out. I'll check on password reset right away.
+[2025-01-15 10:16:49] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:21:12] AGENT: I've applied a fix for the password reset issue.
+[2025-01-15 10:26:05] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:29:25] AGENT: Could you try again? I've updated the password reset settings.
+[2025-01-15 10:30:00] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:31:44] AGENT: I've checked and here's what I found regarding password reset.
+[2025-01-15 10:34:01] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:34:33] AGENT: Is there anything else I can help with?",no,
+26,228,SEMANTIC,Did the agent show empathy for the lost password frustration when presenting the fix?,"Channel: phone | Tags: complaint, escalated
+
+[2025-01-15 10:00:00] CUSTOMER: Quick question about service outage.
+[2025-01-15 10:28:46] AGENT: I apologize for the inconvenience with service outage. Let me investigate.
+[2025-01-15 10:30:06] CUSTOMER: Could you explain further?
+[2025-01-15 10:31:33] AGENT: Could you try again? I've updated the service outage settings.
+[2025-01-15 10:33:41] CUSTOMER: Could you explain further?
+[2025-01-15 10:35:27] AGENT: Please don't hesitate to reach out if you need more help.",no,
+27,232,SEMANTIC,Confirm the agent addressed customer’s situation before offering pauses/discounts.,"Channel: phone | Tags: urgent, feature_request, vip
+
+[2025-01-15 10:00:00] CUSTOMER: Quick question about order cancellation.
+[2025-01-15 10:07:13] AGENT: Let me review your order cancellation situation.
+[2025-01-15 10:09:02] CUSTOMER: That's still not working for me.
+[2025-01-15 10:12:16] AGENT: I've escalated the order cancellation matter to our specialist team.
+[2025-01-15 10:13:59] CUSTOMER: Could you explain further?
+[2025-01-15 10:18:00] AGENT: Could you try again? I've updated the order cancellation settings.
+[2025-01-15 10:21:52] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:26:42] AGENT: Glad I could help. Have a great day!",no,
+28,224,SEMANTIC,"Check if agent ended the convo properly: confirm fix, offer more help, then finish.","Channel: email | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: Quick question about product returns.
+[2025-01-15 10:20:22] AGENT: I understand, let me look into product returns for you.
+[2025-01-15 10:23:22] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:26:00] AGENT: Could you try again? I've updated the product returns settings.
+[2025-01-15 10:27:29] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:29:12] AGENT: Please don't hesitate to reach out if you need more help.",yes,
+29,233,SEMANTIC,Did agent wrap things up properly?,"Channel: chat | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: I'm frustrated — a shipping delay hasn't been resolved.
+[2025-01-15 10:21:58] AGENT: Let me review your a shipping delay situation.
+[2025-01-15 10:25:37] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:27:04] AGENT: I've escalated the a shipping delay matter to our specialist team.
+[2025-01-15 10:28:02] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:32:44] AGENT: Glad I could help. Have a great day!",yes,
+30,254,HYBRID,"For cancellation requests where the agent proposes an alternative plan (metadata: plan_change_offered=true), judge whether the offer was presented courteously and professionally.","Channel: email | Tags: technical
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to the integration setup but it's not working.
+[2025-01-15 10:21:05] AGENT: I understand, let me look into the integration setup for you.
+[2025-01-15 10:24:36] CUSTOMER: Could you explain further?
+[2025-01-15 10:29:29] AGENT: The the integration setup issue should now be resolved. Please verify.
+[2025-01-15 10:32:34] CUSTOMER: Thank you, that helps.",no,
+31,206,SEMANTIC,"Detect if the agent properly ended the subscription cancellation interaction, including offering alternatives like pausing the service or switching tiers, and then clearly asked if there’s anything else they can help with before ending.","Channel: phone | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with data export?
+[2025-01-15 10:17:34] AGENT: I understand, let me look into data export for you.
+[2025-01-15 10:20:33] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:25:04] AGENT: The data export issue should now be resolved. Please verify.
+[2025-01-15 10:27:42] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:28:52] AGENT: I've escalated the data export matter to our specialist team.
+[2025-01-15 10:30:22] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:33:32] AGENT: Could you try again? I've updated the data export settings.
+[2025-01-15 10:34:38] CUSTOMER: Great, that fixed it!",no,
+32,274,HYBRID,"For VIP tickets about product returns, was the opening greeting appropriately courteous and personalized?","Channel: chat | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to product returns but it's not working.
+[2025-01-15 10:29:48] AGENT: Let me review your product returns situation.
+[2025-01-15 10:31:35] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:35:12] AGENT: The product returns issue should now be resolved. Please verify.
+[2025-01-15 10:38:16] CUSTOMER: Great, that fixed it!",no,
+33,260,HYBRID,"For tickets where internal notes were used to document troubleshooting results, check whether the agent closed by confirming the customer can reach back easily","Channel: email | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: I'm frustrated — password reset hasn't been resolved.
+[2025-01-15 10:05:31] AGENT: Thank you for reaching out. I'll check on password reset right away.
+[2025-01-15 10:09:34] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:11:17] AGENT: I've escalated the password reset matter to our specialist team.
+[2025-01-15 10:14:44] CUSTOMER: Thank you, that helps.",no,
+34,273,HYBRID,"If tagged 'legal' and over 30 turns, was urgency maintained?","Channel: phone | Tags: feature_request, bug
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to the subscription renewal but it's not working.
+[2025-01-15 10:01:56] AGENT: I understand, let me look into the subscription renewal for you.
+[2025-01-15 10:05:22] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:06:32] AGENT: I've checked and here's what I found regarding the subscription renewal.
+[2025-01-15 10:10:02] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:13:15] AGENT: I'll close this ticket. Feel free to reopen if needed.",yes,
+35,248,HYBRID,"When the customer used negative sentiment words (e.g., ""angry"", ""disappointed"") at least 1 time, did the agent acknowledge that emotion promptly?","Channel: chat | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with password reset?
+[2025-01-15 10:02:47] AGENT: I see the issue with password reset. Here's what I can do.
+[2025-01-15 10:03:44] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:05:16] AGENT: I've escalated the password reset matter to our specialist team.
+[2025-01-15 10:06:37] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:10:05] AGENT: The password reset issue should now be resolved. Please verify.
+[2025-01-15 10:13:23] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:16:24] AGENT: The password reset issue should now be resolved. Please verify.
+[2025-01-15 10:18:46] CUSTOMER: Thank you, that helps.",no,
+36,190,SEMANTIC,Determine if the agent remained patient and kept user informed while escalating.,"Channel: email | Tags: complaint
+
+[2025-01-15 10:00:00] CUSTOMER: I'm frustrated — the subscription renewal hasn't been resolved.
+[2025-01-15 10:18:54] AGENT: Let me review your the subscription renewal situation.
+[2025-01-15 10:20:58] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:22:03] AGENT: I've applied a fix for the the subscription renewal issue.
+[2025-01-15 10:24:49] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:28:11] AGENT: I've checked and here's what I found regarding the subscription renewal.
+[2025-01-15 10:32:07] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:34:46] AGENT: The the subscription renewal issue should now be resolved. Please verify.
+[2025-01-15 10:39:31] CUSTOMER: I appreciate the quick response.",no,
+37,238,HYBRID,"If internal notes are missing, did the agent still offer a clear follow-up and closing?","Channel: phone | Tags: escalated, bug
+
+[2025-01-15 10:00:00] CUSTOMER: Hello, I'm having an issue with password reset.
+[2025-01-15 10:12:40] AGENT: Thank you for reaching out. I'll check on password reset right away.
+[2025-01-15 10:13:47] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:17:09] AGENT: The password reset issue should now be resolved. Please verify.
+[2025-01-15 10:19:41] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:23:00] AGENT: I've applied a fix for the password reset issue.
+[2025-01-15 10:24:56] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:25:40] AGENT: The password reset issue should now be resolved. Please verify.
+[2025-01-15 10:26:16] CUSTOMER: Thank you, that helps.",yes,
+38,252,HYBRID,"If the customer reported a lost package and the agent’s next reply took over 5 minutes, did the agent express concern in a human, caring way?","Channel: chat | Tags: escalated, urgent
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with data export?
+[2025-01-15 10:12:17] AGENT: Let me review your data export situation.
+[2025-01-15 10:13:08] CUSTOMER: That's still not working for me.
+[2025-01-15 10:17:12] AGENT: I've applied a fix for the data export issue.
+[2025-01-15 10:19:54] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:23:34] AGENT: Is there anything else I can help with?",no,
+39,243,HYBRID,"When internal notes show multiple prior contacts, did the agent’s closing acknowledge the repeated disruption and offer a concrete follow-up?","Channel: phone | Tags: feature_request, vip, technical
+
+[2025-01-15 10:00:00] CUSTOMER: We've noticed an issue with the billing charge recently.
+[2025-01-15 10:07:50] AGENT: I understand, let me look into the billing charge for you.
+[2025-01-15 10:11:25] CUSTOMER: That's still not working for me.
+[2025-01-15 10:16:06] AGENT: I've checked and here's what I found regarding the billing charge.
+[2025-01-15 10:16:52] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:18:04] AGENT: The the billing charge issue should now be resolved. Please verify.
+[2025-01-15 10:22:08] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:24:49] AGENT: Could you try again? I've updated the the billing charge settings.
+[2025-01-15 10:29:44] CUSTOMER: Is there anything else I should know?",no,
+40,231,SEMANTIC,check if the greeting included an apology but no meaningful action on billing error.,"Channel: chat | Tags: feature_request, complaint
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to data export but it's not working.
+[2025-01-15 10:17:29] AGENT: I apologize for the inconvenience with data export. Let me investigate.
+[2025-01-15 10:19:35] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:22:23] AGENT: I've escalated the data export matter to our specialist team.
+[2025-01-15 10:26:53] CUSTOMER: Could you explain further?
+[2025-01-15 10:30:08] AGENT: I've escalated the data export matter to our specialist team.
+[2025-01-15 10:33:29] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:37:53] AGENT: I'll close this ticket. Feel free to reopen if needed.",no,
+41,241,HYBRID,"For chat conversations, was the opening appropriate for the channel?","Channel: phone | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: Hello, I'm having an issue with the subscription renewal.
+[2025-01-15 10:14:05] AGENT: I see the issue with the subscription renewal. Here's what I can do.
+[2025-01-15 10:17:35] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:20:13] AGENT: Could you try again? I've updated the the subscription renewal settings.
+[2025-01-15 10:24:55] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:28:15] AGENT: Is there anything else I can help with?",no,
+42,271,HYBRID,"For cases where hte agent responded within 1 minute but the shipment was still late, evaluate whether the agent avoided minimizing the customer’s feelings.","Channel: phone | Tags: refund
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to the integration setup but it's not working.
+[2025-01-15 10:11:43] AGENT: I apologize for the inconvenience with the integration setup. Let me investigate.
+[2025-01-15 10:14:46] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:19:09] AGENT: I've applied a fix for the the integration setup issue.
+[2025-01-15 10:23:33] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:27:31] AGENT: I've checked and here's what I found regarding the integration setup.
+[2025-01-15 10:29:54] CUSTOMER: That's still not working for me.
+[2025-01-15 10:33:41] AGENT: I've escalated the the integration setup matter to our specialist team.
+[2025-01-15 10:35:29] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:36:31] AGENT: Please don't hesitate to reach out if you need more help.",yes,
+43,178,SEMANTIC,Did agent personalize or just paste boilerplate?,"Channel: phone | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: Hello, I'm having an issue with password reset.
+[2025-01-15 10:12:54] AGENT: Let me review your password reset situation.
+[2025-01-15 10:15:45] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:18:58] AGENT: I've applied a fix for the password reset issue.
+[2025-01-15 10:21:22] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:24:10] AGENT: The password reset issue should now be resolved. Please verify.
+[2025-01-15 10:25:11] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:29:13] AGENT: I've escalated the password reset matter to our specialist team.
+[2025-01-15 10:30:37] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:34:37] AGENT: Please don't hesitate to reach out if you need more help.",no,
+44,192,SEMANTIC,Did agent avoid sounding cold or harsh when customer demanded escalation in outage?,"Channel: email | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with data export?
+[2025-01-15 10:26:06] AGENT: Let me review your data export situation.
+[2025-01-15 10:29:31] CUSTOMER: Could you explain further?
+[2025-01-15 10:31:05] AGENT: Could you try again? I've updated the data export settings.
+[2025-01-15 10:34:42] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:39:22] AGENT: I've escalated the data export matter to our specialist team.
+[2025-01-15 10:41:45] CUSTOMER: Is there anything else I should know?",no,
+45,230,SEMANTIC,Detect whether the agent’s wording was too cold when asking troubleshooting questions.,"Channel: email | Tags: bug, billing
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to product returns but it's not working.
+[2025-01-15 10:03:25] AGENT: I understand, let me look into product returns for you.
+[2025-01-15 10:04:53] CUSTOMER: That's still not working for me.
+[2025-01-15 10:07:32] AGENT: I've checked and here's what I found regarding product returns.
+[2025-01-15 10:10:03] CUSTOMER: That's still not working for me.
+[2025-01-15 10:11:43] AGENT: Could you try again? I've updated the product returns settings.
+[2025-01-15 10:14:44] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:16:24] AGENT: Is there anything else I can help with?",no,
+46,250,HYBRID,"For 'urgent' tickets, was the response quality adequate?","Channel: chat | Tags: refund
+
+[2025-01-15 10:00:00] CUSTOMER: I'm frustrated — the integration setup hasn't been resolved.
+[2025-01-15 10:27:49] AGENT: I apologize for the inconvenience with the integration setup. Let me investigate.
+[2025-01-15 10:32:38] CUSTOMER: Could you explain further?
+[2025-01-15 10:37:28] AGENT: I've checked and here's what I found regarding the integration setup.
+[2025-01-15 10:41:14] CUSTOMER: That's still not working for me.
+[2025-01-15 10:44:25] AGENT: The the integration setup issue should now be resolved. Please verify.
+[2025-01-15 10:45:31] CUSTOMER: That's still not working for me.
+[2025-01-15 10:46:03] AGENT: I've applied a fix for the the integration setup issue.
+[2025-01-15 10:47:31] CUSTOMER: That's still not working for me.",no,
+47,262,HYBRID,Detect quality degradation in conversations exceeding 10 turns...,"Channel: phone | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: We've noticed an issue with a shipping delay recently.
+[2025-01-15 10:06:22] AGENT: I see the issue with a shipping delay. Here's what I can do.
+[2025-01-15 10:11:02] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:11:42] AGENT: The a shipping delay issue should now be resolved. Please verify.
+[2025-01-15 10:13:35] CUSTOMER: Could you explain further?
+[2025-01-15 10:15:51] AGENT: I've applied a fix for the a shipping delay issue.
+[2025-01-15 10:16:26] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:18:31] AGENT: Could you try again? I've updated the a shipping delay settings.
+[2025-01-15 10:20:05] CUSTOMER: Great, that fixed it!",yes,
+48,183,SEMANTIC,"Did agent acknowledge customer at start, or just said 'need info' with no context?","Channel: email | Tags: billing, urgent, escalated
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with API access?
+[2025-01-15 10:09:46] AGENT: Let me review your API access situation.
+[2025-01-15 10:14:11] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:17:03] AGENT: The API access issue should now be resolved. Please verify.
+[2025-01-15 10:17:58] CUSTOMER: I appreciate the quick response.",yes,
+49,261,HYBRID,"If resolution time was between 30 and 90 minutes, did the agent capture the customer’s upgrade requirements clearly?","Channel: email | Tags: technical, urgent
+
+[2025-01-15 10:00:00] CUSTOMER: Urgent: my account login is causing problems for our team.
+[2025-01-15 10:09:07] AGENT: Thank you for reaching out. I'll check on my account login right away.
+[2025-01-15 10:14:02] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:18:55] AGENT: I've checked and here's what I found regarding my account login.
+[2025-01-15 10:23:29] CUSTOMER: Could you explain further?",no,
+50,198,SEMANTIC,check whether the agen avoided generic security tips and focused on the customer’s stated issue after the breach notification.,"Channel: chat | Tags: urgent, vip, billing
+
+[2025-01-15 10:00:00] CUSTOMER: Hi, I need help with service outage.
+[2025-01-15 10:21:38] AGENT: I understand, let me look into service outage for you.
+[2025-01-15 10:22:28] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:26:33] AGENT: The service outage issue should now be resolved. Please verify.
+[2025-01-15 10:27:22] CUSTOMER: Is there anything else I should know?",no,
+51,259,HYBRID,"If internal notes are present, did the agent offer a clear follow-up option at closing?","Channel: chat | Tags: urgent, escalated
+
+[2025-01-15 10:00:00] CUSTOMER: Quick question about service outage.
+[2025-01-15 10:14:24] AGENT: Thank you for reaching out. I'll check on service outage right away.
+[2025-01-15 10:18:13] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:19:38] AGENT: The service outage issue should now be resolved. Please verify.
+[2025-01-15 10:23:31] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:26:11] AGENT: I've applied a fix for the service outage issue.
+[2025-01-15 10:29:49] CUSTOMER: I appreciate the quick response.",no,
+52,197,SEMANTIC,"Detect whether the agent’s opening message includes both a brief self-identification and a sincere apology for the billing error, and whether it acknowledges the customer’s reason for contacting support without shifting blame to the customer or another department.","Channel: phone | Tags: feedback, billing, escalated
+
+[2025-01-15 10:00:00] CUSTOMER: Hello, I'm having an issue with API access.
+[2025-01-15 10:06:10] AGENT: I understand, let me look into API access for you.
+[2025-01-15 10:07:25] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:10:21] AGENT: I've checked and here's what I found regarding API access.
+[2025-01-15 10:13:40] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:17:11] AGENT: I've applied a fix for the API access issue.
+[2025-01-15 10:21:34] CUSTOMER: Could you explain further?",no,
+53,185,SEMANTIC,"Verify that, if the customer stated they are locked out due to too many tries, agent handled lockout + reset appropriately in the resolution.","Channel: chat | Tags: feedback, feature_request, urgent
+
+[2025-01-15 10:00:00] CUSTOMER: Hello, I'm having an issue with service outage.
+[2025-01-15 10:13:41] AGENT: I can help with that. Let me pull up the details on service outage.
+[2025-01-15 10:17:32] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:18:30] AGENT: I've escalated the service outage matter to our specialist team.
+[2025-01-15 10:19:09] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:19:39] AGENT: Is there anything else I can help with?",no,
+54,246,HYBRID,Check if the agent apologized when response exceeded 45 minutes.,"Channel: phone | Tags: bug, vip, escalated
+
+[2025-01-15 10:00:00] CUSTOMER: Quick question about order cancellation.
+[2025-01-15 10:12:35] AGENT: I understand, let me look into order cancellation for you.
+[2025-01-15 10:13:31] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:14:19] AGENT: I've applied a fix for the order cancellation issue.
+[2025-01-15 10:15:37] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:17:02] AGENT: I've escalated the order cancellation matter to our specialist team.
+[2025-01-15 10:18:23] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:21:28] AGENT: I've escalated the order cancellation matter to our specialist team.
+[2025-01-15 10:24:55] CUSTOMER: Great, that fixed it!",yes,
+55,267,HYBRID,"For return requests submitted via email, assess whether the greeting matched a professional email tone.","Channel: phone | Tags: vip, refund
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to service outage but it's not working.
+[2025-01-15 10:14:28] AGENT: Thank you for reaching out. I'll check on service outage right away.
+[2025-01-15 10:15:59] CUSTOMER: Could you explain further?
+[2025-01-15 10:19:56] AGENT: I've checked and here's what I found regarding service outage.
+[2025-01-15 10:24:36] CUSTOMER: Could you explain further?
+[2025-01-15 10:26:06] AGENT: I've applied a fix for the service outage issue.
+[2025-01-15 10:30:00] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:31:18] AGENT: I've escalated the service outage matter to our specialist team.
+[2025-01-15 10:35:42] CUSTOMER: Could you explain further?
+[2025-01-15 10:39:18] AGENT: Glad I could help. Have a great day!",no,
+56,223,SEMANTIC,"If the customer remained confused after the reset instructions, did the agent conditionally offer additional options and then end appropriately once the customer understood?","Channel: email | Tags: feature_request, feedback, complaint
+
+[2025-01-15 10:00:00] CUSTOMER: We've noticed an issue with order cancellation recently.
+[2025-01-15 10:28:51] AGENT: Let me review your order cancellation situation.
+[2025-01-15 10:31:25] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:35:48] AGENT: I've escalated the order cancellation matter to our specialist team.
+[2025-01-15 10:36:49] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:39:03] AGENT: I've applied a fix for the order cancellation issue.
+[2025-01-15 10:42:36] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:46:42] AGENT: I've escalated the order cancellation matter to our specialist team.
+[2025-01-15 10:51:30] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:54:24] AGENT: I'll close this ticket. Feel free to reopen if needed.",no,
+57,179,SEMANTIC,"Detect whether the agent’s initial summary matched customer’s shipping delay issue, no twist.","Channel: phone | Tags: escalated, vip, billing
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with the integration setup?
+[2025-01-15 10:15:08] AGENT: Let me review your the integration setup situation.
+[2025-01-15 10:19:50] CUSTOMER: That's still not working for me.
+[2025-01-15 10:21:23] AGENT: I've checked and here's what I found regarding the integration setup.
+[2025-01-15 10:24:55] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:29:10] AGENT: I've escalated the the integration setup matter to our specialist team.
+[2025-01-15 10:30:20] CUSTOMER: Thank you, that helps.",no,
+58,272,HYBRID,"When resolution time surpassed 1 business day, determine whether the agent’s understanding of the request remained accurate across follow-ups.","Channel: chat | Tags: billing, feedback
+
+[2025-01-15 10:00:00] CUSTOMER: Hi, I need help with service outage.
+[2025-01-15 10:25:44] AGENT: I see the issue with service outage. Here's what I can do.
+[2025-01-15 10:30:12] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:31:40] AGENT: I've escalated the service outage matter to our specialist team.
+[2025-01-15 10:34:13] CUSTOMER: Could you explain further?
+[2025-01-15 10:35:04] AGENT: Is there anything else I can help with?",no,
+59,264,HYBRID,"If the conversation exceeded 6 turns on chat, assess whether the agent summarized the billing dispute details to confirm understanding before proposing a solution.","Channel: email | Tags: feature_request
+
+[2025-01-15 10:00:00] CUSTOMER: I'm frustrated — a shipping delay hasn't been resolved.
+[2025-01-15 10:13:04] AGENT: I see the issue with a shipping delay. Here's what I can do.
+[2025-01-15 10:15:03] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:16:09] AGENT: I've applied a fix for the a shipping delay issue.
+[2025-01-15 10:19:16] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:23:22] AGENT: Please don't hesitate to reach out if you need more help.",no,
+60,180,SEMANTIC,"Check whether agent interpreted customer’s ask right, and didn’t go off on unrelated policy or sales pitch during initial troubleshooting.","Channel: chat | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: We've noticed an issue with password reset recently.
+[2025-01-15 10:19:30] AGENT: I apologize for the inconvenience with password reset. Let me investigate.
+[2025-01-15 10:21:11] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:22:08] AGENT: I've applied a fix for the password reset issue.
+[2025-01-15 10:26:34] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:28:23] AGENT: Could you try again? I've updated the password reset settings.
+[2025-01-15 10:30:48] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:31:43] AGENT: I've checked and here's what I found regarding password reset.
+[2025-01-15 10:32:16] CUSTOMER: OK, I'll try that.",yes,
+61,182,SEMANTIC,Detect whether the qgent kept the conversqtion aligned with the customwr’d ask: rscalate the ouyqge case now.,"Channel: email | Tags: feature_request, feedback, vip
+
+[2025-01-15 10:00:00] CUSTOMER: Quick question about data export.
+[2025-01-15 10:11:42] AGENT: I see the issue with data export. Here's what I can do.
+[2025-01-15 10:12:19] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:16:47] AGENT: I've applied a fix for the data export issue.
+[2025-01-15 10:19:27] CUSTOMER: Could you explain further?",no,
+62,236,HYBRID,"If first response time exceeded 10 minutes on an urgent upgrade request, assess whether the greeting included a tactful acknowledgment of the delay.","Channel: chat | Tags: 
+
+[2025-01-15 10:00:00] CUSTOMER: Urgent: service outage is causing problems for our team.
+[2025-01-15 10:09:34] AGENT: I apologize for the inconvenience with service outage. Let me investigate.
+[2025-01-15 10:10:46] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:11:16] AGENT: I've applied a fix for the service outage issue.
+[2025-01-15 10:13:19] CUSTOMER: Could you explain further?
+[2025-01-15 10:16:14] AGENT: I've escalated the service outage matter to our specialist team.
+[2025-01-15 10:20:59] CUSTOMER: Could you explain further?
+[2025-01-15 10:22:50] AGENT: I've escalated the service outage matter to our specialist team.
+[2025-01-15 10:26:56] CUSTOMER: Great, that fixed it!",no,
+63,210,SEMANTIC,"At closing, did the agent provide accurate info on remaining access after cancel?","Channel: chat | Tags: vip
+
+[2025-01-15 10:00:00] CUSTOMER: Hello, I'm having an issue with order cancellation.
+[2025-01-15 10:18:15] AGENT: Let me review your order cancellation situation.
+[2025-01-15 10:19:47] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:21:46] AGENT: I've checked and here's what I found regarding order cancellation.
+[2025-01-15 10:24:26] CUSTOMER: Could you explain further?
+[2025-01-15 10:27:06] AGENT: Please don't hesitate to reach out if you need more help.",no,
+64,256,HYBRID,"If the customer cited financial hardship and the first reply was over 4 minutes, evaluate whether the agent showed sensitivity and understanding.","Channel: email | Tags: feedback
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with product returns?
+[2025-01-15 10:19:44] AGENT: I see the issue with product returns. Here's what I can do.
+[2025-01-15 10:23:00] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:25:52] AGENT: I've applied a fix for the product returns issue.
+[2025-01-15 10:26:41] CUSTOMER: Is there anything else I should know?
+[2025-01-15 10:29:07] AGENT: Is there anything else I can help with?",no,
+65,237,HYBRID,"For tickets with a response time over 20 minutes, judge whether the agent recognized the inconvenience and the emotional impact of waiting to cancel.","Channel: chat | Tags: complaint, refund
+
+[2025-01-15 10:00:00] CUSTOMER: Can someone help me with the integration setup?
+[2025-01-15 10:13:23] AGENT: Thank you for reaching out. I'll check on the integration setup right away.
+[2025-01-15 10:17:06] CUSTOMER: I appreciate the quick response.
+[2025-01-15 10:19:21] AGENT: I've escalated the the integration setup matter to our specialist team.
+[2025-01-15 10:20:51] CUSTOMER: Thank you, that helps.
+[2025-01-15 10:23:15] AGENT: Please don't hesitate to reach out if you need more help.",no,
+66,258,HYBRID,Check if the agent apologized when response exceeded 15 minutes.,"Channel: chat | Tags: technical
+
+[2025-01-15 10:00:00] CUSTOMER: Hello, I'm having an issue with a shipping delay.
+[2025-01-15 10:22:51] AGENT: I understand, let me look into a shipping delay for you.
+[2025-01-15 10:26:40] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:31:27] AGENT: I've applied a fix for the a shipping delay issue.
+[2025-01-15 10:35:51] CUSTOMER: Is there anything else I should know?",no,
+67,255,HYBRID,"If the ticket is escalated and includes an upgrade request, did the greeting avoid blaming language and feel diplomatically phrased?","Channel: email | Tags: refund, vip
+
+[2025-01-15 10:00:00] CUSTOMER: We've noticed an issue with a shipping delay recently.
+[2025-01-15 10:10:25] AGENT: I see the issue with a shipping delay. Here's what I can do.
+[2025-01-15 10:14:16] CUSTOMER: Great, that fixed it!
+[2025-01-15 10:16:34] AGENT: I've checked and here's what I found regarding a shipping delay.
+[2025-01-15 10:18:51] CUSTOMER: Could you explain further?
+[2025-01-15 10:22:50] AGENT: Please don't hesitate to reach out if you need more help.",no,
+68,189,SEMANTIC,"Assess whether agent’s greeting was aligned to shipping delay and included an understanding check plus concrete progression (order lookup, tracking review, ETA update); flag if it stayed generic or repetitive.","Channel: chat | Tags: vip
+
+[2025-01-15 10:00:00] CUSTOMER: Quick question about the billing charge.
+[2025-01-15 10:11:55] AGENT: I see the issue with the billing charge. Here's what I can do.
+[2025-01-15 10:16:23] CUSTOMER: Could you explain further?
+[2025-01-15 10:21:18] AGENT: I've applied a fix for the the billing charge issue.
+[2025-01-15 10:23:02] CUSTOMER: That's still not working for me.
+[2025-01-15 10:27:54] AGENT: I've escalated the the billing charge matter to our specialist team.
+[2025-01-15 10:32:01] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:34:22] AGENT: The the billing charge issue should now be resolved. Please verify.
+[2025-01-15 10:36:13] CUSTOMER: I appreciate the quick response.",no,
+69,249,HYBRID,"If the return case took more than 1 hour of active handling time before resolution, judge whether the agent consistently understood the customer’s issue without asking redundant clarifications.","Channel: phone | Tags: feedback, refund
+
+[2025-01-15 10:00:00] CUSTOMER: I've been trying to the billing charge but it's not working.
+[2025-01-15 10:05:25] AGENT: I see the issue with the billing charge. Here's what I can do.
+[2025-01-15 10:07:43] CUSTOMER: That's still not working for me.
+[2025-01-15 10:11:11] AGENT: The the billing charge issue should now be resolved. Please verify.
+[2025-01-15 10:16:10] CUSTOMER: Could you explain further?
+[2025-01-15 10:20:52] AGENT: Could you try again? I've updated the the billing charge settings.
+[2025-01-15 10:23:51] CUSTOMER: That's still not working for me.
+[2025-01-15 10:28:09] AGENT: I've escalated the the billing charge matter to our specialist team.
+[2025-01-15 10:32:05] CUSTOMER: Could you explain further?
+[2025-01-15 10:36:18] AGENT: I'll close this ticket. Feel free to reopen if needed.",no,
+70,221,SEMANTIC,"Check for a proper first response: acknowledge refund request, identify agent, and address customer directly.","Channel: phone | Tags: bug, technical
+
+[2025-01-15 10:00:00] CUSTOMER: I'm frustrated — order cancellation hasn't been resolved.
+[2025-01-15 10:28:55] AGENT: Thank you for reaching out. I'll check on order cancellation right away.
+[2025-01-15 10:32:08] CUSTOMER: OK, I'll try that.
+[2025-01-15 10:34:41] AGENT: I've escalated the order cancellation matter to our specialist team.
+[2025-01-15 10:37:46] CUSTOMER: That's still not working for me.",no,

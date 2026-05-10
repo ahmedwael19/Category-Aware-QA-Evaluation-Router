@@ -1,0 +1,71 @@
+source_idx,category,prompt,gpt5_2_answer
+257,HYBRID,assess email-appropriate communication style.,no
+235,HYBRID,"If the agent added internal notes, assess whether they offered an appropriate follow-up channel before ending the conversation.",no
+217,SEMANTIC,Confirm the agent didn’t act annoyed when the customer declined alternatives.,yes
+239,HYBRID,"If an urgent tag is present, did the agent’s first line convey calm reassurance appropriate to an upgrade request?",no
+195,SEMANTIC,"Determine whether the greeting was aligned with the customer’s frustration about a late package, and included a quick check for understanding.",no
+253,HYBRID,"For cases with internal notes present, evaluate whether the agent’s closing acknowledged the customer’s effort and offered continued help.",no
+245,HYBRID,Evaluate both response speed (15 minute threshold) and helpfulness.,yes
+268,HYBRID,"If this came via twitter, was communication style suitable?",no
+193,SEMANTIC,"did the agent give clear final confirmation after checking your understanding, or did they just stop replying?",yes
+247,HYBRID,"If the customer cites a previous case number in an email, evaluate whether the agent used that history effectively to resolve the billing dispute faster.",no
+266,HYBRID,"If tagged 'legal' and over 10 turns, was urgency maintained?",no
+244,HYBRID,"If the ticket is urgent and was transferred at least once, evaluate whether the greeting after transfer re-established rapport appropriately for the upgrade request.",no
+229,SEMANTIC,Detect whether the agent used a courteous final line and offered extra help after handling the lost password.,no
+240,HYBRID,"For VIP return tickets, check whether the greeting used the customer’s name (when available) and felt respectful.",no
+219,SEMANTIC,"Did the agent pause to reflect the customer’s situation, then suggest keep-plan options?",no
+265,HYBRID,"If tagged 'sensitive' and over 15 turns, was urgency maintained?",yes
+213,SEMANTIC,Detect whether the agent’s greeting apology is tied to the billing error and not a generic sorry.,no
+270,HYBRID,"For responses taking over 30 minutes, was there an apology?",no
+205,SEMANTIC,Detect whether the greeting included a brief recap of what the customer is contacting about (late shipment).,no
+199,SEMANTIC,"Did the agent ask any final check-in question before ending (e.g., anything else I can help with)?",yes
+251,HYBRID,Assess handling appropriateness for 'sensitive' cases.,yes
+269,HYBRID,"For responses taking over 3 minutes, was there an apology?",yes
+211,SEMANTIC,"Check that agent didn’t twist customer’s request: customer asked escalate now due to locked account, not “wait 24 hours” unless that’s the stated policy AND they explained it.",yes
+263,HYBRID,Assess handling appropriateness for 'urgent' cases.,no
+242,HYBRID,"For upgrade requests resolved within 20 minutes, did the agent understand the customer’s priorities (cost vs. features) well enough to respond appropriately?",no
+228,SEMANTIC,Did the agent show empathy for the lost password frustration when presenting the fix?,no
+232,SEMANTIC,Confirm the agent addressed customer’s situation before offering pauses/discounts.,yes
+224,SEMANTIC,"Check if agent ended the convo properly: confirm fix, offer more help, then finish.",yes
+233,SEMANTIC,Did agent wrap things up properly?,yes
+254,HYBRID,"For cancellation requests where the agent proposes an alternative plan (metadata: plan_change_offered=true), judge whether the offer was presented courteously and professionally.",no
+206,SEMANTIC,"Detect if the agent properly ended the subscription cancellation interaction, including offering alternatives like pausing the service or switching tiers, and then clearly asked if there’s anything else they can help with before ending.",no
+274,HYBRID,"For VIP tickets about product returns, was the opening greeting appropriately courteous and personalized?",no
+260,HYBRID,"For tickets where internal notes were used to document troubleshooting results, check whether the agent closed by confirming the customer can reach back easily",no
+273,HYBRID,"If tagged 'legal' and over 30 turns, was urgency maintained?",yes
+248,HYBRID,"When the customer used negative sentiment words (e.g., ""angry"", ""disappointed"") at least 1 time, did the agent acknowledge that emotion promptly?",no
+190,SEMANTIC,Determine if the agent remained patient and kept user informed while escalating.,no
+238,HYBRID,"If internal notes are missing, did the agent still offer a clear follow-up and closing?",yes
+252,HYBRID,"If the customer reported a lost package and the agent’s next reply took over 5 minutes, did the agent express concern in a human, caring way?",no
+243,HYBRID,"When internal notes show multiple prior contacts, did the agent’s closing acknowledge the repeated disruption and offer a concrete follow-up?",no
+231,SEMANTIC,check if the greeting included an apology but no meaningful action on billing error.,no
+241,HYBRID,"For chat conversations, was the opening appropriate for the channel?",no
+271,HYBRID,"For cases where hte agent responded within 1 minute but the shipment was still late, evaluate whether the agent avoided minimizing the customer’s feelings.",yes
+178,SEMANTIC,Did agent personalize or just paste boilerplate?,no
+192,SEMANTIC,Did agent avoid sounding cold or harsh when customer demanded escalation in outage?,no
+230,SEMANTIC,Detect whether the agent’s wording was too cold when asking troubleshooting questions.,no
+250,HYBRID,"For 'urgent' tickets, was the response quality adequate?",no
+262,HYBRID,Detect quality degradation in conversations exceeding 10 turns...,yes
+183,SEMANTIC,"Did agent acknowledge customer at start, or just said 'need info' with no context?",yes
+261,HYBRID,"If resolution time was between 30 and 90 minutes, did the agent capture the customer’s upgrade requirements clearly?",no
+198,SEMANTIC,check whether the agen avoided generic security tips and focused on the customer’s stated issue after the breach notification.,yes
+259,HYBRID,"If internal notes are present, did the agent offer a clear follow-up option at closing?",no
+197,SEMANTIC,"Detect whether the agent’s opening message includes both a brief self-identification and a sincere apology for the billing error, and whether it acknowledges the customer’s reason for contacting support without shifting blame to the customer or another department.",no
+185,SEMANTIC,"Verify that, if the customer stated they are locked out due to too many tries, agent handled lockout + reset appropriately in the resolution.",no
+246,HYBRID,Check if the agent apologized when response exceeded 45 minutes.,yes
+267,HYBRID,"For return requests submitted via email, assess whether the greeting matched a professional email tone.",no
+223,SEMANTIC,"If the customer remained confused after the reset instructions, did the agent conditionally offer additional options and then end appropriately once the customer understood?",no
+179,SEMANTIC,"Detect whether the agent’s initial summary matched customer’s shipping delay issue, no twist.",no
+272,HYBRID,"When resolution time surpassed 1 business day, determine whether the agent’s understanding of the request remained accurate across follow-ups.",no
+264,HYBRID,"If the conversation exceeded 6 turns on chat, assess whether the agent summarized the billing dispute details to confirm understanding before proposing a solution.",no
+180,SEMANTIC,"Check whether agent interpreted customer’s ask right, and didn’t go off on unrelated policy or sales pitch during initial troubleshooting.",yes
+182,SEMANTIC,Detect whether the qgent kept the conversqtion aligned with the customwr’d ask: rscalate the ouyqge case now.,no
+236,HYBRID,"If first response time exceeded 10 minutes on an urgent upgrade request, assess whether the greeting included a tactful acknowledgment of the delay.",no
+210,SEMANTIC,"At closing, did the agent provide accurate info on remaining access after cancel?",no
+256,HYBRID,"If the customer cited financial hardship and the first reply was over 4 minutes, evaluate whether the agent showed sensitivity and understanding.",no
+237,HYBRID,"For tickets with a response time over 20 minutes, judge whether the agent recognized the inconvenience and the emotional impact of waiting to cancel.",no
+258,HYBRID,Check if the agent apologized when response exceeded 15 minutes.,no
+255,HYBRID,"If the ticket is escalated and includes an upgrade request, did the greeting avoid blaming language and feel diplomatically phrased?",no
+189,SEMANTIC,"Assess whether agent’s greeting was aligned to shipping delay and included an understanding check plus concrete progression (order lookup, tracking review, ETA update); flag if it stayed generic or repetitive.",no
+249,HYBRID,"If the return case took more than 1 hour of active handling time before resolution, judge whether the agent consistently understood the customer’s issue without asking redundant clarifications.",no
+221,SEMANTIC,"Check for a proper first response: acknowledge refund request, identify agent, and address customer directly.",no

@@ -1,0 +1,13 @@
+{
+  "inter_annotator_kappa": 0.796,
+  "kappa_ci_lo": 0.707,
+  "kappa_ci_hi": 0.8704,
+  "kappa_interpretation": "Substantial",
+  "raw_agreement": 0.8333,
+  "n_annotated": 120,
+  "n_disagreements": 20,
+  "n_categories": 6,
+  "bootstrap_iterations": 5000,
+  "ann1_vs_gt_kappa": 0.74,
+  "ann2_vs_gt_kappa": 0.86
+}

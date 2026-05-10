@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thesis-router"
+version = "1.0.0"
+description = "Category-aware routing architecture for LLM-based QA evaluation (MSc thesis code)."
+requires-python = ">=3.13"
+readme = "README.md"
+license = { text = "MIT" }
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+py-modules = ["config"]
+packages = [
+    "thesis_router",
+    "benchmark",
+    "router",
+    "evaluation",
+]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }

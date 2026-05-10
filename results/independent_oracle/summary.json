@@ -1,0 +1,38 @@
+{
+  "n_symbolic": 175,
+  "methods": [
+    "A_dateutil",
+    "B_strptime",
+    "C_pandas"
+  ],
+  "overall_agreement_vs_ground_truth": {
+    "A_dateutil": 1.0,
+    "B_strptime": 1.0,
+    "C_pandas": 1.0
+  },
+  "per_category_agreement": {
+    "A_dateutil": {
+      "SYMBOLIC_COUNT": 1.0,
+      "SYMBOLIC_METADATA": 1.0,
+      "SYMBOLIC_TIME": 1.0
+    },
+    "B_strptime": {
+      "SYMBOLIC_COUNT": 1.0,
+      "SYMBOLIC_METADATA": 1.0,
+      "SYMBOLIC_TIME": 1.0
+    },
+    "C_pandas": {
+      "SYMBOLIC_COUNT": 1.0,
+      "SYMBOLIC_METADATA": 1.0,
+      "SYMBOLIC_TIME": 1.0
+    }
+  },
+  "triple_consensus_agreement_vs_ground_truth": 1.0,
+  "n_disagreements": 0,
+  "artifacts": {
+    "agreement_vs_ground_truth": "results/independent_oracle/agreement_vs_ground_truth.csv",
+    "pairwise_agreement": "results/independent_oracle/pairwise_agreement.csv",
+    "disagreements": "results/independent_oracle/disagreements.csv",
+    "full_results": "results/independent_oracle/full_results.csv"
+  }
+}

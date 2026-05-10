@@ -1,0 +1,176 @@
+prompt,category,conversation_idx,ground_truth,ground_truth_source,scenario,params,actual_response_time_min,actual_count,A_dateutil_answer,B_strptime_answer,C_pandas_answer
+Was the response delivered before 18 hours passed?,SYMBOLIC_TIME,0,yes,deterministic,clear_yes,"{""threshold"": 18, ""unit"": ""hours"", ""operator"": ""<=""}",540.0,,yes,yes,yes
+Was the query addressed within 22 minutes?,SYMBOLIC_TIME,1,no,deterministic,clear_no,"{""threshold"": 22, ""unit"": ""minutes"", ""operator"": ""<=""}",44.0,,no,no,no
+Measure wheather the first response took less than 15 hours.,SYMBOLIC_TIME,3,yes,deterministic,clear_yes,"{""threshold"": 15, ""unit"": ""hours"", ""operator"": ""<=""}",450.0,,yes,yes,yes
+Note if the response gap was wider than 16 sec.,SYMBOLIC_TIME,4,yes,deterministic,clear_no,"{""threshold"": 16, ""unit"": ""sec"", ""operator"": "">""}",0.53,,yes,yes,yes
+Did the customer get an answer before 25 hours elapsed?,SYMBOLIC_TIME,8,yes,deterministic,boundary,"{""threshold"": 25, ""unit"": ""hours"", ""operator"": ""<=""}",1425.0,,yes,yes,yes
+Was the first reply sent in under 26 hrs?,SYMBOLIC_TIME,9,yes,deterministic,clear_yes,"{""threshold"": 26, ""unit"": ""hrs"", ""operator"": ""<=""}",780.0,,yes,yes,yes
+Ascertain whether 15 sec was exceeded.,SYMBOLIC_TIME,10,yes,deterministic,clear_no,"{""threshold"": 15, ""unit"": ""sec"", ""operator"": "">""}",0.5,,yes,yes,yes
+Did the representative respond in less than 300 hours?,SYMBOLIC_TIME,11,yes,deterministic,boundary,"{""threshold"": 300, ""unit"": ""hours"", ""operator"": ""<=""}",17100.0,,yes,yes,yes
+Was there an answer from the agent within 24 hours?,SYMBOLIC_TIME,13,no,deterministic,clear_no,"{""threshold"": 24, ""unit"": ""hours"", ""operator"": ""<=""}",2880.0,,no,no,no
+Was the query addressed within 26 sec?,SYMBOLIC_TIME,16,no,deterministic,clear_no,"{""threshold"": 26, ""unit"": ""sec"", ""operator"": ""<=""}",0.87,,no,no,no
+pinpoint responses that came after 21 sec.,SYMBOLIC_TIME,17,no,deterministic,boundary,"{""threshold"": 21, ""unit"": ""sec"", ""operator"": "">""}",0.33,,no,no,no
+Measure whether the first response took less than 120 hours.,SYMBOLIC_TIME,18,yes,deterministic,clear_yes,"{""threshold"": 120, ""unit"": ""hours"", ""operator"": ""<=""}",3600.0,,yes,yes,yes
+Was the customer's message acknowledged w/in 18 min?,SYMBOLIC_TIME,19,no,deterministic,clear_no,"{""threshold"": 18, ""unit"": ""min"", ""operator"": ""<=""}",36.0,,no,no,no
+Was the agent's first message within 22 minutes of the query?,SYMBOLIC_TIME,22,no,deterministic,clear_no,"{""threshold"": 22, ""unit"": ""minutes"", ""operator"": ""<=""}",44.0,,no,no,no
+Did the reply arrive before the 90 sec mark?,SYMBOLIC_TIME,26,yes,deterministic,boundary,"{""threshold"": 90, ""unit"": ""sec"", ""operator"": ""<=""}",1.43,,yes,yes,yes
+Determine if first response exceeded 14 minutes.,SYMBOLIC_TIME,28,yes,deterministic,clear_no,"{""threshold"": 14, ""unit"": ""minutes"", ""operator"": "">""}",28.0,,yes,yes,yes
+Was the first contact from the agent made within 180 sec?,SYMBOLIC_TIME,31,no,deterministic,clear_no,"{""threshold"": 180, ""unit"": ""sec"", ""operator"": ""<=""}",6.0,,no,no,no
+Was the time to first response shorter than 19 hrs?,SYMBOLIC_TIME,32,yes,deterministic,boundary,"{""threshold"": 19, ""unit"": ""hrs"", ""operator"": ""<=""}",1083.0,,yes,yes,yes
+Examine if the response was sent before the 26 hours limit.,SYMBOLIC_TIME,33,yes,deterministic,clear_yes,"{""threshold"": 26, ""unit"": ""hours"", ""operator"": ""<=""}",780.0,,yes,yes,yes
+Was the customer kept waiting beyond 30 seconds?,SYMBOLIC_TIME,34,yes,deterministic,clear_no,"{""threshold"": 30, ""unit"": ""seconds"", ""operator"": "">""}",1.0,,yes,yes,yes
+Did the customer need to wait past 22 sec for acknowledgment?,SYMBOLIC_TIME,36,no,deterministic,clear_yes,"{""threshold"": 22, ""unit"": ""sec"", ""operator"": "">""}",0.18,,no,no,no
+Note if the response gap was wider than 28 hrs.,SYMBOLIC_TIME,39,no,deterministic,clear_yes,"{""threshold"": 28, ""unit"": ""hrs"", ""operator"": "">""}",840.0,,no,no,no
+Verify the response was sent under 4 minutes.,SYMBOLIC_TIME,40,no,deterministic,clear_no,"{""threshold"": 4, ""unit"": ""minutes"", ""operator"": ""<=""}",8.0,,no,no,no
+Examine if the response was sent before the 2 min limit.,SYMBOLIC_TIME,43,no,deterministic,clear_no,"{""threshold"": 2, ""unit"": ""min"", ""operator"": ""<=""}",4.0,,no,no,no
+Inspect if the first reply came under 13 sec.,SYMBOLIC_TIME,44,yes,deterministic,boundary,"{""threshold"": 13, ""unit"": ""sec"", ""operator"": ""<=""}",0.21,,yes,yes,yes
+Log responses that exceeded the 120 sec mark.,SYMBOLIC_TIME,46,yes,deterministic,clear_no,"{""threshold"": 120, ""unit"": ""sec"", ""operator"": "">""}",4.0,,yes,yes,yes
+Did the customer receive a reply within 90 seconds,SYMBOLIC_TIME,48,yes,deterministic,clear_yes,"{""threshold"": 90, ""unit"": ""seconds"", ""operator"": ""<=""}",0.75,,yes,yes,yes
+Did the agent take longer than 5 min to get back?,SYMBOLIC_TIME,51,no,deterministic,clear_yes,"{""threshold"": 5, ""unit"": ""min"", ""operator"": "">""}",2.5,,no,no,no
+Did the agent's response arrive in under 18 min?,SYMBOLIC_TIME,52,no,deterministic,clear_no,"{""threshold"": 18, ""unit"": ""min"", ""operator"": ""<=""}",36.0,,no,no,no
+Record whether the customer waited beyond 24 sec.,SYMBOLIC_TIME,54,no,deterministic,clear_yes,"{""threshold"": 24, ""unit"": ""sec"", ""operator"": "">""}",0.2,,no,no,no
+Did the customer end up waiting over 60 sec?,SYMBOLIC_TIME,56,no,deterministic,boundary,"{""threshold"": 60, ""unit"": ""sec"", ""operator"": "">""}",0.95,,no,no,no
+Did the agent take longer than 30 minutes to get back?,SYMBOLIC_TIME,57,no,deterministic,clear_yes,"{""threshold"": 30, ""unit"": ""minutes"", ""operator"": "">""}",15.0,,no,no,no
+Did the first reply take less than 16 hrs?,SYMBOLIC_TIME,59,yes,deterministic,boundary,"{""threshold"": 16, ""unit"": ""hrs"", ""operator"": ""<=""}",912.0,,yes,yes,yes
+Examine if the response was sent before the 30 seconds limit.,SYMBOLIC_TIME,60,yes,deterministic,clear_yes,"{""threshold"": 30, ""unit"": ""seconds"", ""operator"": ""<=""}",0.25,,yes,yes,yes
+did the customer get an answer before 14 minutes elapsed?,SYMBOLIC_TIME,63,yes,deterministic,clear_yes,"{""threshold"": 14, ""unit"": ""minutes"", ""operator"": ""<=""}",7.0,,yes,yes,yes
+Track if the turnaround time surpassed 5 seconds.,SYMBOLIC_TIME,305,yes,deterministic,boundary,"{""threshold"": 5, ""unit"": ""seconds"", ""operator"": "">""}",0.13,,yes,yes,yes
+Was the first reply sent in under 15 hours?,SYMBOLIC_TIME,306,yes,deterministic,boundary,"{""threshold"": 15, ""unit"": ""hours"", ""operator"": ""<=""}",855.0,,yes,yes,yes
+Was the initial response to the customer sent within 300 min?,SYMBOLIC_TIME,307,yes,deterministic,clear_yes,"{""threshold"": 300, ""unit"": ""min"", ""operator"": ""<=""}",108.72,,yes,yes,yes
+Verify the response was sent under 22 hours.,SYMBOLIC_TIME,308,no,deterministic,clear_no,"{""threshold"": 22, ""unit"": ""hours"", ""operator"": ""<=""}",1784.71,,no,no,no
+Did the representative respond in less than 120 minutes?,SYMBOLIC_TIME,309,yes,deterministic,clear_yes,"{""threshold"": 120, ""unit"": ""minutes"", ""operator"": ""<=""}",54.93,,yes,yes,yes
+Did the customer end up waiting over 60 minutes?,SYMBOLIC_TIME,310,yes,deterministic,boundary,"{""threshold"": 60, ""unit"": ""minutes"", ""operator"": "">""}",63.0,,yes,yes,yes
+Spot instances where the agent exceeded 2 seconds.,SYMBOLIC_TIME,311,yes,deterministic,clear_yes,"{""threshold"": 2, ""unit"": ""seconds"", ""operator"": "">""}",0.89,,yes,yes,yes
+Did the support rep answer within the 90 sec window...,SYMBOLIC_TIME,312,yes,deterministic,boundary,"{""threshold"": 90, ""unit"": ""sec"", ""operator"": ""<=""}",1.42,,yes,yes,yes
+Examine if the response was sent before the 27 seconds limit.,SYMBOLIC_TIME,313,yes,deterministic,clear_yes,"{""threshold"": 27, ""unit"": ""seconds"", ""operator"": ""<=""}",0.29,,yes,yes,yes
+Did the team member get back within 11 hrs?,SYMBOLIC_TIME,314,yes,deterministic,boundary,"{""threshold"": 11, ""unit"": ""hrs"", ""operator"": ""<=""}",627.0,,yes,yes,yes
+confirm the reply was delivered within 27 hours.,SYMBOLIC_TIME,315,yes,deterministic,clear_yes,"{""threshold"": 27, ""unit"": ""hours"", ""operator"": ""<=""}",1194.33,,yes,yes,yes
+Ascertain whether 20 minutes was exceeded.,SYMBOLIC_TIME,316,no,deterministic,clear_no,"{""threshold"": 20, ""unit"": ""minutes"", ""operator"": "">""}",14.26,,no,no,no
+Measure whether the first response took less than 3 hrs.,SYMBOLIC_TIME,317,yes,deterministic,clear_yes,"{""threshold"": 3, ""unit"": ""hrs"", ""operator"": ""<=""}",140.47,,yes,yes,yes
+Verify the response was sent under 11 hours.,SYMBOLIC_TIME,318,yes,deterministic,boundary,"{""threshold"": 11, ""unit"": ""hours"", ""operator"": ""<=""}",627.0,,yes,yes,yes
+Did the customer end up waiting over 9 hrs?,SYMBOLIC_TIME,319,yes,deterministic,clear_yes,"{""threshold"": 9, ""unit"": ""hrs"", ""operator"": "">""}",709.56,,yes,yes,yes
+Ascertain whether 7 min was exceeded.,SYMBOLIC_TIME,320,yes,deterministic,boundary,"{""threshold"": 7, ""unit"": ""min"", ""operator"": "">""}",7.35,,yes,yes,yes
+pinpoint responses that came after 25 seconds.,SYMBOLIC_TIME,321,no,deterministic,clear_no,"{""threshold"": 25, ""unit"": ""seconds"", ""operator"": "">""}",0.08,,no,no,no
+Did the customer receive a reply within 30 seconds?,SYMBOLIC_TIME,322,yes,deterministic,boundary,"{""threshold"": 30, ""unit"": ""seconds"", ""operator"": ""<=""}",0.47,,yes,yes,yes
+Was the time to first response shorter than 14 hours?,SYMBOLIC_TIME,323,yes,deterministic,boundary,"{""threshold"": 14, ""unit"": ""hours"", ""operator"": ""<=""}",798.0,,yes,yes,yes
+Spot instances where the agent exceeded 21 sec.,SYMBOLIC_TIME,324,yes,deterministic,clear_yes,"{""threshold"": 21, ""unit"": ""sec"", ""operator"": "">""}",1.02,,yes,yes,yes
+Was the initial response to the customer sent within 10 minutes?,SYMBOLIC_TIME,325,yes,deterministic,clear_yes,"{""threshold"": 10, ""unit"": ""minutes"", ""operator"": ""<=""}",4.55,,yes,yes,yes
+Inspect if the first reply came under 8 min.,SYMBOLIC_TIME,326,yes,deterministic,boundary,"{""threshold"": 8, ""unit"": ""min"", ""operator"": ""<=""}",7.6,,yes,yes,yes
+Was the first contact from the agent made within 7 sec?,SYMBOLIC_TIME,327,no,deterministic,clear_no,"{""threshold"": 7, ""unit"": ""sec"", ""operator"": ""<=""}",0.92,,no,no,no
+Examine if the response was sent before the 16 min limit.,SYMBOLIC_TIME,328,yes,deterministic,boundary,"{""threshold"": 16, ""unit"": ""min"", ""operator"": ""<=""}",15.2,,yes,yes,yes
+Was there a response within 12 min?,SYMBOLIC_TIME,329,yes,deterministic,boundary,"{""threshold"": 12, ""unit"": ""min"", ""operator"": ""<=""}",11.4,,yes,yes,yes
+Did the agent's response arrive in under 300 minutes?,SYMBOLIC_TIME,330,no,deterministic,clear_no,"{""threshold"": 300, ""unit"": ""minutes"", ""operator"": ""<=""}",367.47,,no,no,no
+Was there a response w/in 180 seconds?,SYMBOLIC_TIME,331,no,deterministic,clear_no,"{""threshold"": 180, ""unit"": ""seconds"", ""operator"": ""<=""}",4.16,,no,no,no
+Confirm the reply was delivered within 12 sec.,SYMBOLIC_TIME,332,no,deterministic,clear_no,"{""threshold"": 12, ""unit"": ""sec"", ""operator"": ""<=""}",1.14,,no,no,no
+Did the reply arrive before the 19 sec mark?,SYMBOLIC_TIME,333,yes,deterministic,boundary,"{""threshold"": 19, ""unit"": ""sec"", ""operator"": ""<=""}",0.3,,yes,yes,yes
+Did the customer need to wait past 17 seconds for acknowledgment?,SYMBOLIC_TIME,334,no,deterministic,clear_no,"{""threshold"": 17, ""unit"": ""seconds"", ""operator"": "">""}",0.01,,no,no,no
+Record cases where more than 19 replies were needed.,SYMBOLIC_COUNT,115,yes,deterministic,clear_yes,"{""threshold"": 19, ""operator"": "">""}",,20.0,yes,yes,yes
+Check if more than 6 turns occurred.,SYMBOLIC_COUNT,116,no,deterministic,clear_no,"{""threshold"": 6, ""operator"": "">""}",,2.0,no,no,no
+Pinpoint interactions exceeding 5 back-and-forths.,SYMBOLIC_COUNT,117,yes,deterministic,boundary,"{""threshold"": 5, ""operator"": "">""}",,6.0,yes,yes,yes
+Did the interaction require over 50 turns?,SYMBOLIC_COUNT,119,no,deterministic,clear_no,"{""threshold"": 50, ""operator"": "">""}",,20.0,no,no,no
+Validate that the conversation stayed under 18 turns.,SYMBOLIC_COUNT,120,no,deterministic,boundary,"{""threshold"": 18, ""operator"": ""<""}",,19.0,no,no,no
+Check if more than 14 turns occurred.,SYMBOLIC_COUNT,122,no,deterministic,clear_no,"{""threshold"": 14, ""operator"": "">""}",,10.0,no,no,no
+Did the agent need more than 16 attempts to address this?,SYMBOLIC_COUNT,123,yes,deterministic,boundary,"{""threshold"": 16, ""operator"": "">""}",,17.0,yes,yes,yes
+Monitor for exchanges going beyond 10 messages.,SYMBOLIC_COUNT,126,yes,deterministic,boundary,"{""threshold"": 10, ""operator"": "">""}",,11.0,yes,yes,yes
+Examine if the reply count went above 50.,SYMBOLIC_COUNT,127,no,deterministic,clear_yes,"{""threshold"": 50, ""operator"": "">""}",,20.0,no,no,no
+Was the message count above 17?,SYMBOLIC_COUNT,128,no,deterministic,clear_no,"{""threshold"": 17, ""operator"": "">""}",,13.0,no,no,no
+Inspect the thread for more than 9 exchanges.,SYMBOLIC_COUNT,129,yes,deterministic,boundary,"{""threshold"": 9, ""operator"": "">""}",,10.0,yes,yes,yes
+Did more than 10 replies get sent by the agent,SYMBOLIC_COUNT,130,yes,deterministic,clear_yes,"{""threshold"": 10, ""operator"": "">""}",,14.0,yes,yes,yes
+Record cases where more than 5 replies were needed.,SYMBOLIC_COUNT,131,no,deterministic,clear_no,"{""threshold"": 5, ""operator"": "">""}",,2.0,no,no,no
+Did the agnet write more than 13 responses?,SYMBOLIC_COUNT,133,yes,deterministic,clear_yes,"{""threshold"": 13, ""operator"": "">""}",,17.0,yes,yes,yes
+determine if the exchange surpassed 14 messages.,SYMBOLIC_COUNT,134,no,deterministic,clear_no,"{""threshold"": 14, ""operator"": "">""}",,10.0,no,no,no
+Watch for turn counts above 16.,SYMBOLIC_COUNT,135,yes,deterministic,boundary,"{""threshold"": 16, ""operator"": "">""}",,17.0,yes,yes,yes
+Measure if the total messages crossed 15.,SYMBOLIC_COUNT,136,yes,deterministic,clear_yes,"{""threshold"": 15, ""operator"": "">""}",,19.0,yes,yes,yes
+Flag if the conversation exceeded 10 messages.,SYMBOLIC_COUNT,137,no,deterministic,clear_no,"{""threshold"": 10, ""operator"": "">""}",,6.0,no,no,no
+Did the conversation have more than 5 turns?,SYMBOLIC_COUNT,139,yes,deterministic,clear_yes,"{""threshold"": 5, ""operator"": "">""}",,9.0,yes,yes,yes
+assess whether the turn count exceeded 18.,SYMBOLIC_COUNT,140,no,deterministic,clear_no,"{""threshold"": 18, ""operator"": "">""}",,14.0,no,no,no
+Monitor for exchanges going beyond 13 messages.,SYMBOLIC_COUNT,143,no,deterministic,clear_no,"{""threshold"": 13, ""operator"": "">""}",,9.0,no,no,no
+Pinpoint interactions exceeding 15 back-and-forths.,SYMBOLIC_COUNT,144,yes,deterministic,boundary,"{""threshold"": 15, ""operator"": "">""}",,16.0,yes,yes,yes
+Pinpoint interactions exceeding 19 back-and-forths.,SYMBOLIC_COUNT,145,yes,deterministic,clear_yes,"{""threshold"": 19, ""operator"": "">""}",,20.0,yes,yes,yes
+Was the message count above 9?,SYMBOLIC_COUNT,146,no,deterministic,clear_no,"{""threshold"": 9, ""operator"": "">""}",,5.0,no,no,no
+Track conversations exceeding the 18 message mark.,SYMBOLIC_COUNT,149,no,deterministic,clear_no,"{""threshold"": 18, ""operator"": "">""}",,14.0,no,no,no
+Monitor for exchanges going beyond 4 messages.,SYMBOLIC_COUNT,150,yes,deterministic,boundary,"{""threshold"": 4, ""operator"": "">""}",,5.0,yes,yes,yes
+Did more than 11 replies get sent by the agent?,SYMBOLIC_COUNT,151,yes,deterministic,clear_yes,"{""threshold"": 11, ""operator"": "">""}",,15.0,yes,yes,yes
+Examine if the reply count went above 7.,SYMBOLIC_COUNT,154,yes,deterministic,clear_yes,"{""threshold"": 7, ""operator"": "">""}",,11.0,yes,yes,yes
+Did more than 14 replies get sent by the agent?,SYMBOLIC_COUNT,155,no,deterministic,clear_no,"{""threshold"": 14, ""operator"": "">""}",,10.0,no,no,no
+Was the conversation longer than 17 exchanges?,SYMBOLIC_COUNT,156,yes,deterministic,boundary,"{""threshold"": 17, ""operator"": "">""}",,18.0,yes,yes,yes
+Was the message count above 11?,SYMBOLIC_COUNT,158,no,deterministic,clear_no,"{""threshold"": 11, ""operator"": "">""}",,7.0,no,no,no
+Was the conversation wrapped up before hitting 15 messages?,SYMBOLIC_COUNT,159,no,deterministic,boundary,"{""threshold"": 15, ""operator"": ""<""}",,16.0,no,no,no
+Did more than 13 replies get sent by the agent?,SYMBOLIC_COUNT,160,yes,deterministic,clear_yes,"{""threshold"": 13, ""operator"": "">""}",,17.0,yes,yes,yes
+Flag if the conversation exceeded 16 messages.,SYMBOLIC_COUNT,163,yes,deterministic,clear_yes,"{""threshold"": 16, ""operator"": "">""}",,20.0,yes,yes,yes
+Were there fewer than 17 messages?,SYMBOLIC_COUNT,164,yes,deterministic,clear_no,"{""threshold"": 17, ""operator"": ""<""}",,13.0,yes,yes,yes
+Were more than 14 back-and-forth exchanges needed?,SYMBOLIC_COUNT,165,yes,deterministic,boundary,"{""threshold"": 14, ""operator"": "">""}",,15.0,yes,yes,yes
+Record cases where more than 25 replies were needed.,SYMBOLIC_COUNT,167,no,deterministic,clear_no,"{""threshold"": 25, ""operator"": "">""}",,20.0,no,no,no
+Did the interaction require over 13 turns?,SYMBOLIC_COUNT,169,yes,deterministic,clear_yes,"{""threshold"": 13, ""operator"": "">""}",,17.0,yes,yes,yes
+Did the agent write more than 2 responses?,SYMBOLIC_COUNT,170,no,deterministic,clear_no,"{""threshold"": 2, ""operator"": "">""}",,2.0,no,no,no
+Catalog threads over 6 exchanges long.,SYMBOLIC_COUNT,171,yes,deterministic,boundary,"{""threshold"": 6, ""operator"": "">""}",,7.0,yes,yes,yes
+Did the agent need more than 30 attempts to address this?,SYMBOLIC_COUNT,172,no,deterministic,clear_yes,"{""threshold"": 30, ""operator"": "">""}",,20.0,no,no,no
+rxamine if the reply count went above 14.,SYMBOLIC_COUNT,173,no,deterministic,clear_no,"{""threshold"": 14, ""operator"": "">""}",,10.0,no,no,no
+Were more than 6 back-and-forth exchanges needed?,SYMBOLIC_COUNT,335,yes,deterministic,clear_yes,"{""threshold"": 6, ""operator"": "">""}",,7.0,yes,yes,yes
+Check if more than 4 turns occurred.,SYMBOLIC_COUNT,336,yes,deterministic,clear_yes,"{""threshold"": 4, ""operator"": "">""}",,5.0,yes,yes,yes
+Were more than 7 back-and-forth exchanges needed?,SYMBOLIC_COUNT,337,yes,deterministic,clear_yes,"{""threshold"": 7, ""operator"": "">""}",,8.0,yes,yes,yes
+Detect lengthy interactions over 50 exchanges.,SYMBOLIC_COUNT,338,no,deterministic,clear_no,"{""threshold"": 50, ""operator"": "">""}",,41.0,no,no,no
+Was the conversation longer than 2 exchanges?,SYMBOLIC_COUNT,339,yes,deterministic,boundary,"{""threshold"": 2, ""operator"": "">""}",,3.0,yes,yes,yes
+Was the conversation longer than 10 exchanges?,SYMBOLIC_COUNT,340,yes,deterministic,boundary,"{""threshold"": 10, ""operator"": "">""}",,11.0,yes,yes,yes
+Note interactions requiring more than 17 turns.,SYMBOLIC_COUNT,341,yes,deterministic,boundary,"{""threshold"": 17, ""operator"": "">""}",,18.0,yes,yes,yes
+Flag if the conversation exceeded 11 messages.,SYMBOLIC_COUNT,342,yes,deterministic,clear_yes,"{""threshold"": 11, ""operator"": "">""}",,14.0,yes,yes,yes
+Detect conversations exceeding 16 exchanges.,SYMBOLIC_COUNT,343,yes,deterministic,boundary,"{""threshold"": 16, ""operator"": "">""}",,17.0,yes,yes,yes
+Record cases where more than 13 replies were needed.,SYMBOLIC_COUNT,344,yes,deterministic,clear_yes,"{""threshold"": 13, ""operator"": "">""}",,17.0,yes,yes,yes
+spot threads that took over 25 replies.,SYMBOLIC_COUNT,345,no,deterministic,clear_no,"{""threshold"": 25, ""operator"": "">""}",,18.0,no,no,no
+Did solving the issue take more than 3 replies?,SYMBOLIC_COUNT,346,yes,deterministic,boundary,"{""threshold"": 3, ""operator"": "">""}",,4.0,yes,yes,yes
+Test whether fewer than 10 turns were used.,SYMBOLIC_COUNT,347,yes,deterministic,clear_yes,"{""threshold"": 10, ""operator"": ""<""}",,7.0,yes,yes,yes
+Was it resolved in under 2 messages?,SYMBOLIC_COUNT,348,no,deterministic,clear_no,"{""threshold"": 2, ""operator"": ""<""}",,3.0,no,no,no
+Did the conversation stay under 12 messages?,SYMBOLIC_COUNT,349,yes,deterministic,boundary,"{""threshold"": 12, ""operator"": ""<""}",,11.0,yes,yes,yes
+Assess whehter the turn count exceeded 2.,SYMBOLIC_COUNT,350,yes,deterministic,clear_yes,"{""threshold"": 2, ""operator"": "">""}",,3.0,yes,yes,yes
+Examine if the reply count went above 13.,SYMBOLIC_COUNT,351,yes,deterministic,boundary,"{""threshold"": 13, ""operator"": "">""}",,14.0,yes,yes,yes
+Was the conversation longer than 7 exchanges?,SYMBOLIC_COUNT,352,yes,deterministic,boundary,"{""threshold"": 7, ""operator"": "">""}",,8.0,yes,yes,yes
+Is the 'spam' tag present on this ticket?,SYMBOLIC_METADATA,65,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""spam""}",,,yes,yes,yes
+Is this a whatsapp ticket?,SYMBOLIC_METADATA,66,no,deterministic,channel_mismatch,"{""subtype"": ""channel"", ""value"": ""whatsapp""}",,,no,no,no
+Detect if 'onboarding' label exists.,SYMBOLIC_METADATA,67,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""onboarding""}",,,yes,yes,yes
+Is 'sensitive' applied to this ticket?,SYMBOLIC_METADATA,68,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""sensitive""}",,,no,no,no
+Detect social media conversations...,SYMBOLIC_METADATA,69,yes,deterministic,channel_match,"{""subtype"": ""channel"", ""value"": ""social media""}",,,yes,yes,yes
+Is this marked as 'urgent'?,SYMBOLIC_METADATA,70,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""urgent""}",,,no,no,no
+Was the channel twitter?,SYMBOLIC_METADATA,71,yes,deterministic,channel_match,"{""subtype"": ""channel"", ""value"": ""twitter""}",,,yes,yes,yes
+Identify 'urgent' cases.,SYMBOLIC_METADATA,72,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""urgent""}",,,no,no,no
+did this come through email?,SYMBOLIC_METADATA,73,yes,deterministic,channel_match,"{""subtype"": ""channel"", ""value"": ""email""}",,,yes,yes,yes
+Is this an 'billing' case,SYMBOLIC_METADATA,74,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""billing""}",,,no,no,no
+Has this been flagged as 'onboarding'?,SYMBOLIC_METADATA,75,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""onboarding""}",,,yes,yes,yes
+Verify this came via twitter.,SYMBOLIC_METADATA,76,no,deterministic,channel_mismatch,"{""subtype"": ""channel"", ""value"": ""twitter""}",,,no,no,no
+Is this marked as 'feature-request'?,SYMBOLIC_METADATA,77,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""feature-request""}",,,yes,yes,yes
+Any private comments added?,SYMBOLIC_METADATA,78,no,deterministic,notes_absent,"{""subtype"": ""notes"", ""value"": null}",,,no,no,no
+Filter for SMS tickets.,SYMBOLIC_METADATA,79,yes,deterministic,channel_match,"{""subtype"": ""channel"", ""value"": ""SMS""}",,,yes,yes,yes
+Is this marked as 'spam'?,SYMBOLIC_METADATA,80,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""spam""}",,,no,no,no
+Did this come through twitter?,SYMBOLIC_METADATA,81,yes,deterministic,channel_match,"{""subtype"": ""channel"", ""value"": ""twitter""}",,,yes,yes,yes
+Identify if source was email.,SYMBOLIC_METADATA,82,no,deterministic,channel_mismatch,"{""subtype"": ""channel"", ""value"": ""email""}",,,no,no,no
+Is 'complaint' applied to this ticket?,SYMBOLIC_METADATA,83,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""complaint""}",,,yes,yes,yes
+Verify ticket has 'resolved' status.,SYMBOLIC_METADATA,84,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""resolved""}",,,no,no,no
+Flag tickets marked 'refund'.,SYMBOLIC_METADATA,85,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""refund""}",,,yes,yes,yes
+Was it tagged 'duplicate'?,SYMBOLIC_METADATA,86,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""duplicate""}",,,no,no,no
+Are there internal notes in this convesation?,SYMBOLIC_METADATA,87,yes,deterministic,notes_present,"{""subtype"": ""notes"", ""value"": null}",,,yes,yes,yes
+Filter for whatsapp tickets.,SYMBOLIC_METADATA,88,no,deterministic,channel_mismatch,"{""subtype"": ""channel"", ""value"": ""whatsapp""}",,,no,no,no
+Detect if 'refund' label exists.,SYMBOLIC_METADATA,89,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""refund""}",,,yes,yes,yes
+Confirm 'spam' is present.,SYMBOLIC_METADATA,90,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""spam""}",,,no,no,no
+Detect email conversations,SYMBOLIC_METADATA,91,yes,deterministic,channel_match,"{""subtype"": ""channel"", ""value"": ""email""}",,,yes,yes,yes
+Is 'pending' applied to this ticket?,SYMBOLIC_METADATA,92,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""pending""}",,,no,no,no
+Verify ticket has 'urgent' status.,SYMBOLIC_METADATA,93,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""urgent""}",,,yes,yes,yes
+Was it tagged 'refund'?,SYMBOLIC_METADATA,94,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""refund""}",,,no,no,no
+Detect if 'follow-up' label exists.,SYMBOLIC_METADATA,95,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""follow-up""}",,,yes,yes,yes
+Is the 'onboarding' tag present on this ticket?,SYMBOLIC_METADATA,96,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""onboarding""}",,,no,no,no
+Does the ticket have the 'follow-up' label??,SYMBOLIC_METADATA,97,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""follow-up""}",,,yes,yes,yes
+Is 'vip' applied to this ticket?,SYMBOLIC_METADATA,98,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""vip""}",,,no,no,no
+Verify this came via social media.,SYMBOLIC_METADATA,99,yes,deterministic,channel_match,"{""subtype"": ""channel"", ""value"": ""social media""}",,,yes,yes,yes
+Flag converstions with internal notes.,SYMBOLIC_METADATA,100,no,deterministic,notes_absent,"{""subtype"": ""notes"", ""value"": null}",,,no,no,no
+Is this an 'refund' case?,SYMBOLIC_METADATA,101,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""refund""}",,,yes,yes,yes
+Was the channel web form...,SYMBOLIC_METADATA,102,no,deterministic,channel_mismatch,"{""subtype"": ""channel"", ""value"": ""web form""}",,,no,no,no
+Has this been flagged as 'feature-request'?,SYMBOLIC_METADATA,103,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""feature-request""}",,,yes,yes,yes
+Is this an 'complaint' case?,SYMBOLIC_METADATA,104,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""complaint""}",,,no,no,no
+Is this an 'follow-up' case?,SYMBOLIC_METADATA,105,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""follow-up""}",,,yes,yes,yes
+Verify ticket has 'feature-request' status.,SYMBOLIC_METADATA,106,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""feature-request""}",,,no,no,no
+Identify 'retention' cases.,SYMBOLIC_METADATA,107,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""retention""}",,,yes,yes,yes
+Is this a social media conversation?,SYMBOLIC_METADATA,108,no,deterministic,channel_mismatch,"{""subtype"": ""channel"", ""value"": ""social media""}",,,no,no,no
+Confirm 'technical' is present.,SYMBOLIC_METADATA,109,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""technical""}",,,yes,yes,yes
+Is the 'urgent' tag present on this ticket?,SYMBOLIC_METADATA,110,no,deterministic,tag_absent,"{""subtype"": ""tag"", ""value"": ""urgent""}",,,no,no,no
+Is 'technical' applied to this ticket?,SYMBOLIC_METADATA,111,yes,deterministic,tag_present,"{""subtype"": ""tag"", ""value"": ""technical""}",,,yes,yes,yes
+Identify if source was chat.,SYMBOLIC_METADATA,112,no,deterministic,channel_mismatch,"{""subtype"": ""channel"", ""value"": ""chat""}",,,no,no,no
+Identify if source was phone.,SYMBOLIC_METADATA,113,yes,deterministic,channel_match,"{""subtype"": ""channel"", ""value"": ""phone""}",,,yes,yes,yes
+Detect twitter conversations.,SYMBOLIC_METADATA,114,no,deterministic,channel_mismatch,"{""subtype"": ""channel"", ""value"": ""twitter""}",,,no,no,no

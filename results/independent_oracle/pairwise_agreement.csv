@@ -1,0 +1,7 @@
+method_a,method_b,agreement
+A_dateutil,A_dateutil,1.0
+A_dateutil,B_strptime,1.0
+A_dateutil,C_pandas,1.0
+B_strptime,B_strptime,1.0
+B_strptime,C_pandas,1.0
+C_pandas,C_pandas,1.0

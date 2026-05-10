@@ -1,0 +1,21 @@
+id,prompt,ann1,ann2
+6,Confirm 'escalated' is present.,SYMBOLIC_COUNT,SEMANTIC
+10,Can we verify the customer's account balance against Shopify?,UNSUPPORTED,SEMANTIC
+17,Did the customer come back with the same usage issue within 30 days?,HYBRID,UNSUPPORTED
+20,Was there a follow-up refund complaint after this ticket was closed?,HYBRID,UNSUPPORTED
+25,Did ut go ovee 5 exchanges before rwachibg resolution?,HYBRID,SYMBOLIC_COUNT
+29,Identify 'vip' cases.,SEMANTIC,SYMBOLIC_METADATA
+36,Has the customer filed more than 5 subscription requests before?,SYMBOLIC_COUNT,UNSUPPORTED
+42,Check the first two lines: does the agent acknowledge the delay and reassure the customer they’ll help troubleshoot?,HYBRID,SEMANTIC
+53,"For urgent product return tickets, determine whether the greeting was concise yet warm, not rushed or robotic.",SEMANTIC,HYBRID
+67,Assess handling appropriateness for 'escalated' cases.,HYBRID,SEMANTIC
+77,Flag drawn-out conversations...,SEMANTIC,SYMBOLIC_COUNT
+80,Was the back-and-forth minimal?,SEMANTIC,SYMBOLIC_COUNT
+91,Confirm 'onboarding' is present.,SYMBOLIC_COUNT,SYMBOLIC_METADATA
+96,Predict leave negative feedback likelihood based on this refund interaction.,SEMANTIC,UNSUPPORTED
+100,Verify that phone best practices were followed.,UNSUPPORTED,SEMANTIC
+103,"For chat sessions where the customer asks for a manager, evaluate whether the agent handled the request professionally and attempted a helpful resolution first.",HYBRID,SEMANTIC
+112,Did the customer hit their usage limit again after the agent’s fix?,SEMANTIC,UNSUPPORTED
+116,Was there a follow-up usage complaint after this ticket was closed?,HYBRID,UNSUPPORTED
+119,monitor for exchanges going beyond 2 messages.,HYBRID,SYMBOLIC_COUNT
+120,Did the customer renew after this interaction?,SEMANTIC,UNSUPPORTED

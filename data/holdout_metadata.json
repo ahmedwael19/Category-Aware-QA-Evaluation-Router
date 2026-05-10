@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-03-09T16:11:21.513934",
+  "model": "gpt-5.2",
+  "temperature": 1.0,
+  "seed": 99,
+  "total_before_dedup": 180,
+  "total_after_dedup": 180,
+  "per_category": {
+    "SYMBOLIC_TIME": 30,
+    "SYMBOLIC_METADATA": 30,
+    "SYMBOLIC_COUNT": 30,
+    "SEMANTIC": 30,
+    "HYBRID": 30,
+    "UNSUPPORTED": 30
+  },
+  "batches_per_category": 2,
+  "system_prompt": "You are helping create a test dataset for a QA evaluation system.\nWrite evaluation prompts that a real customer service QA manager might write.\nBe natural and varied. Use different sentence structures, lengths, and styles.\nSome should be short and direct. Some should be longer and more detailed.\nMix question style (\"Did the agent...?\") with instruction style (\"Check if...\").\nDo NOT use overly formal or academic language \u2014 write like a real person.",
+  "user_template": "Write exactly {n} QA evaluation prompts for the category: {category}\n\nCategory description: {description}\nReal-world use cases: {examples}\n\nRequirements:\n- Each prompt must clearly belong to this category\n- Use diverse phrasing \u2014 no two prompts should sound the same\n- Include both easy/obvious and subtle/tricky examples\n- Use a mix of operators where applicable (within/under/more than/fewer than/exactly/at least/at most)\n- Vary sentence length and complexity\n\nReturn JSON: {{\"prompts\": [\"...\", ...]}}",
+  "category_definitions": {
+    "SYMBOLIC_TIME": "Prompts that can be answered by comparing timestamps or measuring durations. The answer requires arithmetic over time values.",
+    "SYMBOLIC_METADATA": "Prompts that can be answered by checking whether a specific tag, channel, or metadata field has a particular value. Exact-match lookup.",
+    "SYMBOLIC_COUNT": "Prompts that can be answered by counting messages, turns, exchanges, or other enumerable conversation elements.",
+    "SEMANTIC": "Prompts that require subjective human judgment about communication quality. No deterministic answer exists. Covers tone, empathy, professionalism, helpfulness, comprehension, greeting quality, closing quality.",
+    "HYBRID": "Prompts that combine a verifiable numeric or metadata condition WITH a subjective quality judgment. Both parts are needed to answer. If you remove the condition, the evaluation changes.",
+    "UNSUPPORTED": "Prompts that reference data NOT available in a single conversation transcript. This includes: customer history across other tickets, CRM/billing data, post-conversation satisfaction scores, future predictions, agent performance comparisons."
+  },
+  "overlap_with_training": 0,
+  "purpose": "Cross-generator holdout for transfer evaluation. Generated with different prompting instructions than the main synthetic pipeline (no templates, no forbidden words, no few-shot examples)."
+}

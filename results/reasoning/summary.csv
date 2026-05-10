@@ -1,0 +1,6 @@
+model,mean_accuracy,std_accuracy,inconsistent_prompts,inconsistent_pct,mean_total_tokens,mean_reasoning_tokens,mean_latency_ms,p50_latency_ms,p95_latency_ms
+o3-mini,0.636,0.0167,7,0.14,588.3,245.5,2949.4,2508.6,6202.9
+o1,0.696,0.0219,9,0.18,782.1,439.3,8979.6,6654.0,22645.2
+gpt-4o,0.62,0.0141,2,0.04,330.1,0.0,395.8,336.0,591.7
+gpt-4o-mini (temp=0),0.556,0.0089,3,0.06,330.0,0.0,344.7,314.4,505.4
+deterministic,1.0,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0

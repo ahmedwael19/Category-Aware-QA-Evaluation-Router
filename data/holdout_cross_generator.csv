@@ -1,0 +1,181 @@
+prompt,top_category,generation_source
+"Did the agent respond within 2 minutes of the customer’s first message (customer at 09:14:30, agent at 09:16:20)?",SYMBOLIC_TIME,cross_generator_holdout
+Check if the hold time stayed under 90 seconds: hold started 14:03:10 and ended 14:04:55.,SYMBOLIC_TIME,cross_generator_holdout
+Was the total call duration at most 12 minutes? Call began at 7:48:35 and ended at 8:01:10.,SYMBOLIC_TIME,cross_generator_holdout
+Verify whether the agent violated the 24-hour SLA: ticket opened 2026-02-10 18:22 and first agent reply was 2026-02-11 19:05.,SYMBOLIC_TIME,cross_generator_holdout
+"Did the agent send a follow-up exactly 48 hours after the promised time? Promised: 2026-03-01 10:00, follow-up sent: 2026-03-03 10:00.",SYMBOLIC_TIME,cross_generator_holdout
+"Confirm the customer wasn’t left waiting more than 5 minutes between agent messages: agent sent at 11:05:00, next agent message at 11:12:30.",SYMBOLIC_TIME,cross_generator_holdout
+Is the gap between the customer’s last message (23:58:40) and the agent’s reply (00:03:15 next day) fewer than 5 minutes?,SYMBOLIC_TIME,cross_generator_holdout
+"Check if the agent placed the customer on hold at least 3 separate times, and each hold lasted under 2 minutes (use the provided hold start/end timestamps).",SYMBOLIC_TIME,cross_generator_holdout
+Did the agent close the chat within 30 seconds after the customer said “thanks” at 16:44:10 (chat closed at 16:45:05)?,SYMBOLIC_TIME,cross_generator_holdout
+"Verify the callback happened no later than 2 hours after it was scheduled: scheduled 13:00, callback completed 15:10.",SYMBOLIC_TIME,cross_generator_holdout
+"Was the refund processed within 72 hours of approval? Approved 2026-01-05 09:30, processed 2026-01-08 08:45.",SYMBOLIC_TIME,cross_generator_holdout
+"Check whether the agent’s second response was faster than their first: first customer message 10:00:00 → agent 10:04:20, second customer message 10:06:00 → agent 10:08:10.",SYMBOLIC_TIME,cross_generator_holdout
+"Did the agent keep the customer in queue for more than 10 minutes before pickup? Queue entry 12:19:40, agent answered 12:30:05.",SYMBOLIC_TIME,cross_generator_holdout
+Confirm the escalation was initiated within 15 minutes of the customer requesting it at 17:05:30 (escalation created 17:22:00).,SYMBOLIC_TIME,cross_generator_holdout
+"Was the agent actively engaged for at least 80% of the session time? Session ran 09:00–09:20, agent was idle from 09:06–09:08 and 09:14–09:19.",SYMBOLIC_TIME,cross_generator_holdout
+Did the agent send the first reply within 2 minutes of the customer’s initial message (compare the two timestamps)?,SYMBOLIC_TIME,cross_generator_holdout
+Check whether the time between the customer being placed on hold at 10:14:20 and returning at 10:16:05 was under 90 seconds.,SYMBOLIC_TIME,cross_generator_holdout
+Was the ticket updated within 1 business day of being created (use the created-at and first-update timestamps to confirm)?,SYMBOLIC_TIME,cross_generator_holdout
+Confirm the callback happened no later than 30 minutes after the customer requested it at 3:05 PM.,SYMBOLIC_TIME,cross_generator_holdout
+Did the agent exceed the 5-minute wrap-up limit (end-of-call timestamp to case-closure timestamp)?,SYMBOLIC_TIME,cross_generator_holdout
+Verify the customer waited at least 20 seconds before the agent responded after the last customer message at 09:02:40.,SYMBOLIC_TIME,cross_generator_holdout
+Was the total chat duration (from chat start to chat end) fewer than 45 minutes?,SYMBOLIC_TIME,cross_generator_holdout
+Check if the agent’s second response came more than 10 minutes after their first response (use the message timestamps).,SYMBOLIC_TIME,cross_generator_holdout
+Did the agent resolve the issue exactly 24 hours (±0 minutes) after the case was opened?,SYMBOLIC_TIME,cross_generator_holdout
+Confirm the hold time was at most 2 minutes across multiple holds by summing each hold segment duration.,SYMBOLIC_TIME,cross_generator_holdout
+Did the agent send the promised follow-up email within 4 hours of the call ending at 16:30?,SYMBOLIC_TIME,cross_generator_holdout
+Make sure the first internal note was added within 15 minutes after the chat ended (compare chat end time and note time).,SYMBOLIC_TIME,cross_generator_holdout
+Was there a gap of at least 8 hours with no agent activity between 22:10 and the next agent action (use the timestamps to compute idle time)?,SYMBOLIC_TIME,cross_generator_holdout
+"Check whether the refund was processed within 72 hours of the customer’s request, accounting for the exact hours elapsed (not just calendar days).",SYMBOLIC_TIME,cross_generator_holdout
+"Did the agent respond to the escalation within 30 minutes even though the timestamps cross midnight (e.g., 23:50 to 00:10)?",SYMBOLIC_TIME,cross_generator_holdout
+"Is the ticket channel set to ""email""?",SYMBOLIC_METADATA,cross_generator_holdout
+"Check whether the conversation has the tag ""refund_request"" applied (exact match).",SYMBOLIC_METADATA,cross_generator_holdout
+"Did this case come in under the ""WhatsApp"" channel, not SMS or chat?",SYMBOLIC_METADATA,cross_generator_holdout
+"Verify the metadata field source_type is exactly ""inbound"".",SYMBOLIC_METADATA,cross_generator_holdout
+"Is the customer_tier field present and set to ""VIP""?",SYMBOLIC_METADATA,cross_generator_holdout
+"Confirm the ticket priority is at least ""High"" (i.e., High or Urgent, but not Normal/Low).",SYMBOLIC_METADATA,cross_generator_holdout
+"Does the record show country_code within [""US"",""CA""]?",SYMBOLIC_METADATA,cross_generator_holdout
+Make sure the escalation_level is at most 2 in the metadata.,SYMBOLIC_METADATA,cross_generator_holdout
+"Is the language field exactly ""es-ES"" (not just ""es"")?",SYMBOLIC_METADATA,cross_generator_holdout
+"Check if the integration tag is missing: ""shopify"" should NOT appear anywhere in the tag list.",SYMBOLIC_METADATA,cross_generator_holdout
+"Did the agent mark the disposition as ""Resolved"" vs ""Closed"" in the status field?",SYMBOLIC_METADATA,cross_generator_holdout
+Verify there are fewer than 3 tags on the ticket in total.,SYMBOLIC_METADATA,cross_generator_holdout
+"Is the channel_type set to ""social"" and the platform field set to ""instagram""?",SYMBOLIC_METADATA,cross_generator_holdout
+"Confirm the SLA_policy value is exactly ""standard_24h"" and not ""standard"" or ""24h"".",SYMBOLIC_METADATA,cross_generator_holdout
+"Is the ticket created_at timestamp under 24 hours old (based on metadata), yes or no?",SYMBOLIC_METADATA,cross_generator_holdout
+"Is the ticket channel exactly ""chat""?",SYMBOLIC_METADATA,cross_generator_holdout
+"Check whether the conversation has the tag ""refund_request"" applied.",SYMBOLIC_METADATA,cross_generator_holdout
+"Does the metadata field source_type equal ""mobile_app"" (not web or email)?",SYMBOLIC_METADATA,cross_generator_holdout
+"Confirm the customer_tier is set to ""VIP"" in the CRM fields.",SYMBOLIC_METADATA,cross_generator_holdout
+"Is the language code in the ticket metadata exactly ""es""?",SYMBOLIC_METADATA,cross_generator_holdout
+"Verify the issue_category is one of [""billing"", ""payments"", ""invoice""].",SYMBOLIC_METADATA,cross_generator_holdout
+Make sure the escalation_level is at least 2 (>=2) in the case metadata.,SYMBOLIC_METADATA,cross_generator_holdout
+"Is the priority set to ""P1"" and not left blank or ""P2""?",SYMBOLIC_METADATA,cross_generator_holdout
+"Check if the ticket was created under the ""Enterprise"" queue name.",SYMBOLIC_METADATA,cross_generator_holdout
+Does the case include fewer than 2 tags total in its tag list?,SYMBOLIC_METADATA,cross_generator_holdout
+"Confirm the contact_reason value matches exactly ""password_reset"" (case-sensitive).",SYMBOLIC_METADATA,cross_generator_holdout
+"Is the originating_channel within [""facebook"", ""instagram""]?",SYMBOLIC_METADATA,cross_generator_holdout
+"Verify that the field ""order_id"" is present in metadata (not null/missing).",SYMBOLIC_METADATA,cross_generator_holdout
+"Is the SLA_status at most ""breached""? (i.e., not marked ""breached_plus"" if that exists).",SYMBOLIC_METADATA,cross_generator_holdout
+"Check whether the assignment_group is exactly ""Tier 2 Support"" and the status is exactly ""Open"".",SYMBOLIC_METADATA,cross_generator_holdout
+How many messages did the customer send in this conversation?,SYMBOLIC_COUNT,cross_generator_holdout
+Count the total turns (agent + customer). Is it under 12?,SYMBOLIC_COUNT,cross_generator_holdout
+Did the agent respond within the first 2 customer messages (yes/no)?,SYMBOLIC_COUNT,cross_generator_holdout
+Exactly how many times did the customer ask the same question (repeat or rephrase) before getting an answer?,SYMBOLIC_COUNT,cross_generator_holdout
+Check if there were at least 3 agent replies that included a question back to the customer.,SYMBOLIC_COUNT,cross_generator_holdout
+How many separate exchanges happened (customer message followed by an agent reply counts as one exchange)?,SYMBOLIC_COUNT,cross_generator_holdout
+Verify whether the agent used more than 1 follow-up message after their initial solution attempt.,SYMBOLIC_COUNT,cross_generator_holdout
+Count the number of times the agent apologized. Was it fewer than 2?,SYMBOLIC_COUNT,cross_generator_holdout
+"Did the customer send multiple messages in a row without an agent response? If yes, how many consecutive customer messages was the longest streak?",SYMBOLIC_COUNT,cross_generator_holdout
+How many agent messages contained a link or URL? Keep a numeric count.,SYMBOLIC_COUNT,cross_generator_holdout
+Determine if the conversation hit the 10-turn limit (exactly 10 turns) or went over.,SYMBOLIC_COUNT,cross_generator_holdout
+Count only the customer’s numbered lists or bullet lists. How many separate list messages did they send?,SYMBOLIC_COUNT,cross_generator_holdout
+"How many times did the agent ask for verification details (like order number, email, or phone)? Was it at most 1?",SYMBOLIC_COUNT,cross_generator_holdout
+Tally the total messages after the issue was marked resolved. Is it more than 0?,SYMBOLIC_COUNT,cross_generator_holdout
+Count how many distinct times the agent offered escalation (to supervisor/specialist). Was it exactly 2?,SYMBOLIC_COUNT,cross_generator_holdout
+How many total messages are in this conversation (including the customer’s first message and the agent’s last)?,SYMBOLIC_COUNT,cross_generator_holdout
+Did the agent keep the interaction to 6 turns or fewer (counting both sides’ turns)?,SYMBOLIC_COUNT,cross_generator_holdout
+Count the number of customer messages before the agent’s first reply — is it more than 1?,SYMBOLIC_COUNT,cross_generator_holdout
+Check if there are exactly 3 agent responses after the customer mentions a refund.,SYMBOLIC_COUNT,cross_generator_holdout
+Is the number of back-and-forth exchanges (customer+agent pair) at least 4?,SYMBOLIC_COUNT,cross_generator_holdout
+Verify the agent sent no more than 2 consecutive messages in a row without a customer reply in between.,SYMBOLIC_COUNT,cross_generator_holdout
+Did the agent ask fewer than 3 questions total across all their messages? (Count question marks and clearly phrased questions.),SYMBOLIC_COUNT,cross_generator_holdout
+How many times did the customer re-contact after the agent said the issue was resolved? (Count each new customer turn after that point.),SYMBOLIC_COUNT,cross_generator_holdout
+"Confirm whether the conversation stayed under 10 total turns, where a turn = one message from either party.",SYMBOLIC_COUNT,cross_generator_holdout
+"Count the number of agent apologies (e.g., “sorry,” “apologize”) — is it at most 1?",SYMBOLIC_COUNT,cross_generator_holdout
+"Is there exactly one instance where the agent provided a numbered list (like 1., 2., 3.)?",SYMBOLIC_COUNT,cross_generator_holdout
+Check if the agent referenced the policy link in more than one separate message (not multiple times in the same message).,SYMBOLIC_COUNT,cross_generator_holdout
+Did the customer send at least 2 follow-up messages after receiving the tracking number?,SYMBOLIC_COUNT,cross_generator_holdout
+"How many distinct handoffs occurred (e.g., agent says they’re transferring/escalating)? Is it exactly 0?",SYMBOLIC_COUNT,cross_generator_holdout
+Verify whether the agent’s closing/goodbye appears in the final 2 messages only (and nowhere earlier).,SYMBOLIC_COUNT,cross_generator_holdout
+"Did the agent keep a friendly, respectful tone throughout the conversation, even if the customer was upset?",SEMANTIC,cross_generator_holdout
+Check whether the agent showed genuine empathy (not just scripted phrases) when the customer described their problem.,SEMANTIC,cross_generator_holdout
+"Was the greeting appropriate for the channel and situation (not overly casual, not cold), and did it set a helpful tone?",SEMANTIC,cross_generator_holdout
+"Did the agent clearly understand what the customer was asking, or did they miss the main point and respond to something else?",SEMANTIC,cross_generator_holdout
+"Is the agent’s wording professional under pressure (no sarcasm, blaming, or passive-aggressive language), especially in the tricky parts?",SEMANTIC,cross_generator_holdout
+"Did the agent provide more than one helpful option or path forward, or did they stop at a single generic suggestion?",SEMANTIC,cross_generator_holdout
+Assess whether the agent’s explanations were clear enough that a non-expert customer could follow them without confusion.,SEMANTIC,cross_generator_holdout
+"Was the agent’s response concise while still being complete, or did they overwhelm the customer with too much detail?",SEMANTIC,cross_generator_holdout
+"Did the agent take accountability appropriately (e.g., owning what they can control) without overpromising or making unrealistic commitments?",SEMANTIC,cross_generator_holdout
+Check if the agent used at least one moment to reassure the customer or acknowledge frustration in a way that felt natural.,SEMANTIC,cross_generator_holdout
+"Did the agent ask relevant clarifying questions, or did they ask fewer than necessary and jump to conclusions?",SEMANTIC,cross_generator_holdout
+Evaluate whether the agent’s pacing and structure made the solution easy to follow (step-by-step vs. scattered info).,SEMANTIC,cross_generator_holdout
+"Was the closing strong: did they confirm the outcome, offer next steps, and end politely without sounding rushed?",SEMANTIC,cross_generator_holdout
+"Did the agent’s tone stay consistent, or did it become noticeably colder or more dismissive after the customer pushed back?",SEMANTIC,cross_generator_holdout
+"Overall, did the interaction feel helpful and customer-centered, or did it feel like the agent was trying to end the chat as quickly as possible?",SEMANTIC,cross_generator_holdout
+"Was the agent’s tone friendly and respectful throughout the conversation, even when the customer was upset?",SEMANTIC,cross_generator_holdout
+Check if the agent showed genuine empathy (not just canned phrases) when responding to the customer’s frustration.,SEMANTIC,cross_generator_holdout
+"Did the agent clearly understand what the customer was asking, or did they make assumptions and answer the wrong problem?",SEMANTIC,cross_generator_holdout
+"Is the greeting appropriate for the situation and channel (not too casual, not cold), and does it set a helpful tone?",SEMANTIC,cross_generator_holdout
+Evaluate whether the agent’s explanations were easy to follow (under the customer’s likely knowledge level) without sounding condescending.,SEMANTIC,cross_generator_holdout
+"Did the agent stay professional while still sounding human, or did they come off robotic or dismissive?",SEMANTIC,cross_generator_holdout
+"Check if the agent’s closing leaves the customer feeling supported (e.g., offers next steps or help) rather than abruptly ending the chat.",SEMANTIC,cross_generator_holdout
+Were there at least two moments where the agent validated the customer’s feelings or inconvenience in a natural way?,SEMANTIC,cross_generator_holdout
+"Did the agent avoid blaming the customer, even indirectly (e.g., wording that implies the customer caused the issue)?",SEMANTIC,cross_generator_holdout
+Assess whether the agent’s solution was genuinely helpful or just technically correct but unrealistic for the customer to follow.,SEMANTIC,cross_generator_holdout
+"Is the amount of jargon used at most what the customer seems comfortable with, based on their messages?",SEMANTIC,cross_generator_holdout
+"Did the agent ask clarifying questions when needed, or did they push ahead without confirming key details?",SEMANTIC,cross_generator_holdout
+Look for any passive-aggressive or sarcastic undertones—were there fewer than two lines that could be read as snippy?,SEMANTIC,cross_generator_holdout
+"Does the agent strike the right balance between being concise and being thorough, or do they over-explain/under-explain?",SEMANTIC,cross_generator_holdout
+"Overall, would a reasonable customer walk away feeling heard and taken seriously by the agent (more than just “issue addressed”)?",SEMANTIC,cross_generator_holdout
+"If the customer waited more than 5 minutes before the agent replied, did the agent apologize in a sincere way (not just a canned line)?",HYBRID,cross_generator_holdout
+Check whether the agent offered a clear next step when the ticket had exactly 2 prior transfers.,HYBRID,cross_generator_holdout
+"For chats that lasted under 3 minutes, did the agent still sound helpful and not rushed or dismissive?",HYBRID,cross_generator_holdout
+"If the customer used profanity at least once, did the agent stay calm and professional without sounding cold?",HYBRID,cross_generator_holdout
+"When the agent placed the customer on hold more than 2 times, did they explain the reason and come back with a friendly check-in each time?",HYBRID,cross_generator_holdout
+"If the case was marked 'billing' in the metadata, did the agent show confidence with billing policies rather than guessing?",HYBRID,cross_generator_holdout
+"For emails sent outside business hours (after 6pm local time), was the tone appropriately formal and did it avoid overly casual phrasing?",HYBRID,cross_generator_holdout
+"If the customer contacted us at least 3 times about the same issue, did the agent acknowledge the repeat effort and show genuine ownership?",HYBRID,cross_generator_holdout
+"When the refund amount was over $100, did the agent clearly set expectations and sound transparent about timelines?",HYBRID,cross_generator_holdout
+"If the order status shows 'delivered' but the customer says it wasn’t received, did the agent respond with empathy and avoid implying the customer is lying?",HYBRID,cross_generator_holdout
+"For interactions with fewer than 2 agent messages (e.g., quick closes), did the agent still provide a complete answer rather than a vague brush-off?",HYBRID,cross_generator_holdout
+"If the customer’s account is tagged 'VIP', did the agent give a noticeably higher level of care (proactive options, warmer tone) without overpromising?",HYBRID,cross_generator_holdout
+"When the agent used exactly 1 macro/template response, did they personalize it enough to match the customer’s situation?",HYBRID,cross_generator_holdout
+"If the customer mentioned a deadline within 24 hours, did the agent treat it with urgency and offer realistic solutions?",HYBRID,cross_generator_holdout
+"For calls longer than 12 minutes, did the agent keep the conversation organized and focused, or did it feel meandering and confusing?",HYBRID,cross_generator_holdout
+"If the customer waited more than 3 minutes before the agent replied, did the agent apologize for the delay in a sincere way?",HYBRID,cross_generator_holdout
+"Check whether the agent used the customer’s name at least once, and if they did, was it used naturally (not awkward or forced)?",HYBRID,cross_generator_holdout
+"If the issue required 2 or more transfers, did the agent keep the customer informed and sounding confident rather than passing them around?",HYBRID,cross_generator_holdout
+"When the refund amount is under $20, did the agent still treat the request seriously and avoid sounding dismissive?",HYBRID,cross_generator_holdout
+"If the chat has exactly 1 instance of the customer using profanity, did the agent remain calm and professional without lecturing them?",HYBRID,cross_generator_holdout
+"For emails sent after 6pm local time, is the tone still appropriate and not overly casual (e.g., no slang or jokes that don’t fit)?",HYBRID,cross_generator_holdout
+"If the customer asked the same question at least twice, did the agent respond with patience and not show irritation?",HYBRID,cross_generator_holdout
+"If there are more than 5 messages from the customer before resolution, did the agent stay organized and summarize clearly instead of getting scattered?",HYBRID,cross_generator_holdout
+"When the order is delivered 2+ days late, did the agent show genuine empathy and take ownership rather than blaming the carrier?",HYBRID,cross_generator_holdout
+"If the agent placed the customer on hold for more than 60 seconds, did they check back in and ask permission to continue holding?",HYBRID,cross_generator_holdout
+"If the agent offered exactly one solution option, was it explained thoroughly enough to feel helpful (not just a quick brush-off)?",HYBRID,cross_generator_holdout
+"For calls where the agent spoke more than 70% of the time, did they still leave enough space for the customer and avoid talking over them?",HYBRID,cross_generator_holdout
+"If the customer’s account shows at least 3 prior contacts about the same issue, did the agent acknowledge the history and sound proactive about fixing it?",HYBRID,cross_generator_holdout
+"When the customer’s subscription is cancelled within 14 days of signup, did the agent handle it gracefully without guilt-tripping or pressure tactics?",HYBRID,cross_generator_holdout
+"If the interaction includes fewer than 2 clarifying questions from the agent, did they still demonstrate clear understanding of the problem (no guessing or assumptions)?",HYBRID,cross_generator_holdout
+Did the agent acknowledge the customer’s previous ticket from last month and reference what was already tried?,UNSUPPORTED,cross_generator_holdout
+Check whether the rep verified the caller’s current subscription plan and billing status in the CRM before giving pricing info.,UNSUPPORTED,cross_generator_holdout
+"Based on the customer’s full account history, was this the third time they contacted us about the same issue?",UNSUPPORTED,cross_generator_holdout
+Did the agent mention the customer’s lifetime value or VIP tier and tailor the response accordingly?,UNSUPPORTED,cross_generator_holdout
+Confirm whether the agent correctly quoted the customer’s remaining warranty time left on their device (from purchase records).,UNSUPPORTED,cross_generator_holdout
+"Was a refund processed for the exact amount shown in the billing system, and did the agent communicate that amount accurately?",UNSUPPORTED,cross_generator_holdout
+Did the agent compare this interaction to the agent’s average handle time over the past 30 days and explain any deviation?,UNSUPPORTED,cross_generator_holdout
+Check if the customer’s last two orders (from the order management system) were reviewed before troubleshooting the delivery complaint.,UNSUPPORTED,cross_generator_holdout
+Did the agent use the customer’s prior satisfaction scores to decide whether to escalate immediately?,UNSUPPORTED,cross_generator_holdout
+Verify whether the agent followed up on the open case that’s still pending in another queue and aligned actions across both cases.,UNSUPPORTED,cross_generator_holdout
+Was the customer promised an at-most 2-day resolution based on existing SLA entitlements on the account?,UNSUPPORTED,cross_generator_holdout
+Did the agent identify that the customer has contacted support more than three times this quarter and offer a retention save?,UNSUPPORTED,cross_generator_holdout
+Confirm whether the agent correctly stated the exact renewal date and upcoming charge pulled from the subscription system.,UNSUPPORTED,cross_generator_holdout
+Check if the agent’s response reduced predicted churn risk compared to the customer’s baseline risk score.,UNSUPPORTED,cross_generator_holdout
+"Did the agent meet the team benchmark for first-contact resolution rate this week, relative to other agents?",UNSUPPORTED,cross_generator_holdout
+Did the agent take into account the customer’s previous two support tickets when responding in this chat?,UNSUPPORTED,cross_generator_holdout
+Check whether the rep verified the customer’s current subscription plan and billing status in the CRM before offering a refund.,UNSUPPORTED,cross_generator_holdout
+"Based on the customer’s lifetime spend, was the agent’s compensation offer appropriate (within company policy)?",UNSUPPORTED,cross_generator_holdout
+Did the agent mention the customer’s last shipment date and tracking updates from our order system accurately?,UNSUPPORTED,cross_generator_holdout
+Confirm whether the agent followed up on the open escalation from last week and referenced the existing case number.,UNSUPPORTED,cross_generator_holdout
+"Was the customer’s CSAT for this conversation at least 4/5, and if not, did the agent do anything that likely caused the low score?",UNSUPPORTED,cross_generator_holdout
+Check if the agent correctly identified that the customer has exactly 3 active licenses on the account (per account records).,UNSUPPORTED,cross_generator_holdout
+Did the agent avoid making promises that conflict with the customer’s contract terms stored in Salesforce?,UNSUPPORTED,cross_generator_holdout
+Review whether the agent recognized this as the customer’s third contact about the same issue and adjusted their approach accordingly.,UNSUPPORTED,cross_generator_holdout
+Did the agent apply the correct loyalty discount percentage based on the customer’s tenure (more than 12 months) shown in CRM?,UNSUPPORTED,cross_generator_holdout
+"Using the customer’s payment history, did the agent appropriately decide to require at most one additional verification step?",UNSUPPORTED,cross_generator_holdout
+"Was the agent’s resolution aligned with what the customer was told in their previous chat, or did it contradict earlier guidance?",UNSUPPORTED,cross_generator_holdout
+Check whether the agent confirmed the customer’s address on file matches the shipping address used on the last order.,UNSUPPORTED,cross_generator_holdout
+Did the agent correctly predict that the customer is likely to churn in the next 30 days and take retention steps?,UNSUPPORTED,cross_generator_holdout
+Compare this agent’s handle time and escalation rate to the team average—were they performing under the benchmark for this week?,UNSUPPORTED,cross_generator_holdout

@@ -1,0 +1,8 @@
+system,accuracy,ci_lo,ci_hi
+LLM-only (binary),0.6459,0.5934,0.6984
+LLM-only (with reject),0.4525,0.3967,0.5082
+Router (TF-IDF+LR),0.918,0.8852,0.9475
+Router (TF-IDF+SVM),0.9607,0.9377,0.9803
+Router (Emb+LR),0.9082,0.8721,0.941
+Router (Ensemble),0.9115,0.8787,0.941
+Router (Keyword),0.8,0.7541,0.8426

@@ -1,0 +1,3696 @@
+{
+  "model": "gpt-4o",
+  "model_id": "gpt-4o",
+  "provider": "openai",
+  "family": "gpt-4o-family",
+  "reasoning": false,
+  "n": 175,
+  "accuracy": 0.8514,
+  "per_category_accuracy": {
+    "SYMBOLIC_COUNT": {
+      "n": 60,
+      "accuracy": 0.8167
+    },
+    "SYMBOLIC_METADATA": {
+      "n": 50,
+      "accuracy": 1.0
+    },
+    "SYMBOLIC_TIME": {
+      "n": 65,
+      "accuracy": 0.7692
+    }
+  },
+  "total_tokens": 299837,
+  "reasoning_tokens": 0,
+  "mean_tokens_per_prompt": 1713.4,
+  "p50_latency_ms": 1062.9,
+  "p95_latency_ms": 2733.9,
+  "mean_tool_calls_per_prompt": 1.07,
+  "errors": 0,
+  "invalids": 0,
+  "elapsed_s": 230.5,
+  "per_prompt": [
+    {
+      "idx": 0,
+      "prompt": "Was the response delivered before 18 hours passed?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1271,
+      "reasoning_tokens": 0,
+      "latency_ms": 1380.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "540.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 1,
+      "prompt": "Was the query addressed within 22 minutes?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1119,
+      "reasoning_tokens": 0,
+      "latency_ms": 1294.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "44.000000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 3,
+      "prompt": "Measure wheather the first response took less than 15 hours.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1225,
+      "reasoning_tokens": 0,
+      "latency_ms": 1331.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "450.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 4,
+      "prompt": "Note if the response gap was wider than 16 sec.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1113,
+      "reasoning_tokens": 0,
+      "latency_ms": 1220.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.533333"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 8,
+      "prompt": "Did the customer get an answer before 25 hours elapsed?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1300,
+      "reasoning_tokens": 0,
+      "latency_ms": 1607.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "1425.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 9,
+      "prompt": "Was the first reply sent in under 26 hrs?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1519,
+      "reasoning_tokens": 0,
+      "latency_ms": 1865.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "780.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 10,
+      "prompt": "Ascertain whether 15 sec was exceeded.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1345,
+      "reasoning_tokens": 0,
+      "latency_ms": 1344.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.500000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 11,
+      "prompt": "Did the representative respond in less than 300 hours?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1108,
+      "reasoning_tokens": 0,
+      "latency_ms": 1626.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "17100.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 13,
+      "prompt": "Was there an answer from the agent within 24 hours?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1228,
+      "reasoning_tokens": 0,
+      "latency_ms": 1046.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "2880.000000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 16,
+      "prompt": "Was the query addressed within 26 sec?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1105,
+      "reasoning_tokens": 0,
+      "latency_ms": 1032.4,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.866667"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 17,
+      "prompt": "pinpoint responses that came after 21 sec.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "yes",
+      "correct": 0,
+      "total_tokens": 1423,
+      "reasoning_tokens": 0,
+      "latency_ms": 1006.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.332500"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 18,
+      "prompt": "Measure whether the first response took less than 120 hours.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1220,
+      "reasoning_tokens": 0,
+      "latency_ms": 3140.4,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "3600.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 19,
+      "prompt": "Was the customer's message acknowledged w/in 18 min?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1907,
+      "reasoning_tokens": 0,
+      "latency_ms": 1055.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "36.000000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 22,
+      "prompt": "Was the agent's first message within 22 minutes of the query?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1415,
+      "reasoning_tokens": 0,
+      "latency_ms": 1314.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "44.000000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 26,
+      "prompt": "Did the reply arrive before the 90 sec mark?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1217,
+      "reasoning_tokens": 0,
+      "latency_ms": 862.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "1.425000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 28,
+      "prompt": "Determine if first response exceeded 14 minutes.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1291,
+      "reasoning_tokens": 0,
+      "latency_ms": 1372.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "28.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 31,
+      "prompt": "Was the first contact from the agent made within 180 sec?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1317,
+      "reasoning_tokens": 0,
+      "latency_ms": 1537.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "6.000000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 32,
+      "prompt": "Was the time to first response shorter than 19 hrs?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1524,
+      "reasoning_tokens": 0,
+      "latency_ms": 785.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "1083.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 33,
+      "prompt": "Examine if the response was sent before the 26 hours limit.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1513,
+      "reasoning_tokens": 0,
+      "latency_ms": 1992.4,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "780.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 34,
+      "prompt": "Was the customer kept waiting beyond 30 seconds?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1413,
+      "reasoning_tokens": 0,
+      "latency_ms": 1136.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "1.000000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 36,
+      "prompt": "Did the customer need to wait past 22 sec for acknowledgment?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1409,
+      "reasoning_tokens": 0,
+      "latency_ms": 861.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.183333"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 39,
+      "prompt": "Note if the response gap was wider than 28 hrs.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1209,
+      "reasoning_tokens": 0,
+      "latency_ms": 1259.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "840.000000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 40,
+      "prompt": "Verify the response was sent under 4 minutes.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1527,
+      "reasoning_tokens": 0,
+      "latency_ms": 983.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "8.000000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 43,
+      "prompt": "Examine if the response was sent before the 2 min limit.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1225,
+      "reasoning_tokens": 0,
+      "latency_ms": 993.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "4.000000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 44,
+      "prompt": "Inspect if the first reply came under 13 sec.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1539,
+      "reasoning_tokens": 0,
+      "latency_ms": 1501.4,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.205833"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 46,
+      "prompt": "Log responses that exceeded the 120 sec mark.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1193,
+      "reasoning_tokens": 0,
+      "latency_ms": 944.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "4.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 48,
+      "prompt": "Did the customer receive a reply within 90 seconds",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1329,
+      "reasoning_tokens": 0,
+      "latency_ms": 863.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.750000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 51,
+      "prompt": "Did the agent take longer than 5 min to get back?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1511,
+      "reasoning_tokens": 0,
+      "latency_ms": 901.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "2.500000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 52,
+      "prompt": "Did the agent's response arrive in under 18 min?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1433,
+      "reasoning_tokens": 0,
+      "latency_ms": 1201.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "36.000000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 54,
+      "prompt": "Record whether the customer waited beyond 24 sec.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1413,
+      "reasoning_tokens": 0,
+      "latency_ms": 951.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.200000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 56,
+      "prompt": "Did the customer end up waiting over 60 sec?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1107,
+      "reasoning_tokens": 0,
+      "latency_ms": 1107.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.950000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 57,
+      "prompt": "Did the agent take longer than 30 minutes to get back?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1531,
+      "reasoning_tokens": 0,
+      "latency_ms": 2762.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "15.000000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 59,
+      "prompt": "Did the first reply take less than 16 hrs?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1393,
+      "reasoning_tokens": 0,
+      "latency_ms": 1330.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "912.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 60,
+      "prompt": "Examine if the response was sent before the 30 seconds limit.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1499,
+      "reasoning_tokens": 0,
+      "latency_ms": 1426.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.250000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 63,
+      "prompt": "did the customer get an answer before 14 minutes elapsed?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1503,
+      "reasoning_tokens": 0,
+      "latency_ms": 1001.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "7.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 305,
+      "prompt": "Track if the turnaround time surpassed 5 seconds.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1407,
+      "reasoning_tokens": 0,
+      "latency_ms": 791.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.130000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 306,
+      "prompt": "Was the first reply sent in under 15 hours?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1323,
+      "reasoning_tokens": 0,
+      "latency_ms": 1142.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "855.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 307,
+      "prompt": "Was the initial response to the customer sent within 300 min?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1211,
+      "reasoning_tokens": 0,
+      "latency_ms": 1606.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "108.720000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 308,
+      "prompt": "Verify the response was sent under 22 hours.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "yes",
+      "correct": 0,
+      "total_tokens": 1812,
+      "reasoning_tokens": 0,
+      "latency_ms": 1137.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "1784.710000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 309,
+      "prompt": "Did the representative respond in less than 120 minutes?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1421,
+      "reasoning_tokens": 0,
+      "latency_ms": 760.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "54.930000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 310,
+      "prompt": "Did the customer end up waiting over 60 minutes?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1207,
+      "reasoning_tokens": 0,
+      "latency_ms": 1449.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "63.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 311,
+      "prompt": "Spot instances where the agent exceeded 2 seconds.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1943,
+      "reasoning_tokens": 0,
+      "latency_ms": 1085.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.890000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 312,
+      "prompt": "Did the support rep answer within the 90 sec window...",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1631,
+      "reasoning_tokens": 0,
+      "latency_ms": 1981.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "1.420000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 313,
+      "prompt": "Examine if the response was sent before the 27 seconds limit.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1739,
+      "reasoning_tokens": 0,
+      "latency_ms": 922.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.290000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 314,
+      "prompt": "Did the team member get back within 11 hrs?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1839,
+      "reasoning_tokens": 0,
+      "latency_ms": 1176.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "627.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 315,
+      "prompt": "confirm the reply was delivered within 27 hours.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1924,
+      "reasoning_tokens": 0,
+      "latency_ms": 1613.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "1194.330000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 316,
+      "prompt": "Ascertain whether 20 minutes was exceeded.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1689,
+      "reasoning_tokens": 0,
+      "latency_ms": 5128.3,
+      "n_tool_calls": 2,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "14.260000"
+        },
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "4"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 317,
+      "prompt": "Measure whether the first response took less than 3 hrs.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1317,
+      "reasoning_tokens": 0,
+      "latency_ms": 1096.4,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "140.470000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 318,
+      "prompt": "Verify the response was sent under 11 hours.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1417,
+      "reasoning_tokens": 0,
+      "latency_ms": 2199.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "627.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 319,
+      "prompt": "Did the customer end up waiting over 9 hrs?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1935,
+      "reasoning_tokens": 0,
+      "latency_ms": 906.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "709.560000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 320,
+      "prompt": "Ascertain whether 7 min was exceeded.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1517,
+      "reasoning_tokens": 0,
+      "latency_ms": 1056.4,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "7.350000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 321,
+      "prompt": "pinpoint responses that came after 25 seconds.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "yes",
+      "correct": 0,
+      "total_tokens": 1899,
+      "reasoning_tokens": 0,
+      "latency_ms": 2800.1,
+      "n_tool_calls": 2,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.080000"
+        },
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "5"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 322,
+      "prompt": "Did the customer receive a reply within 30 seconds?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1197,
+      "reasoning_tokens": 0,
+      "latency_ms": 1048.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.470000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 323,
+      "prompt": "Was the time to first response shorter than 14 hours?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1203,
+      "reasoning_tokens": 0,
+      "latency_ms": 920.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "798.000000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 324,
+      "prompt": "Spot instances where the agent exceeded 21 sec.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1709,
+      "reasoning_tokens": 0,
+      "latency_ms": 1724.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "1.020000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 325,
+      "prompt": "Was the initial response to the customer sent within 10 minutes?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1727,
+      "reasoning_tokens": 0,
+      "latency_ms": 1149.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "4.550000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 326,
+      "prompt": "Inspect if the first reply came under 8 min.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1295,
+      "reasoning_tokens": 0,
+      "latency_ms": 985.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "7.600000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 327,
+      "prompt": "Was the first contact from the agent made within 7 sec?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1233,
+      "reasoning_tokens": 0,
+      "latency_ms": 897.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.920000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 328,
+      "prompt": "Examine if the response was sent before the 16 min limit.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1821,
+      "reasoning_tokens": 0,
+      "latency_ms": 837.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "15.200000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 329,
+      "prompt": "Was there a response within 12 min?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1409,
+      "reasoning_tokens": 0,
+      "latency_ms": 1140.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "11.400000"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 330,
+      "prompt": "Did the agent's response arrive in under 300 minutes?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1735,
+      "reasoning_tokens": 0,
+      "latency_ms": 847.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "367.470000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 331,
+      "prompt": "Was there a response w/in 180 seconds?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1297,
+      "reasoning_tokens": 0,
+      "latency_ms": 816.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "4.160000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 332,
+      "prompt": "Confirm the reply was delivered within 12 sec.",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1521,
+      "reasoning_tokens": 0,
+      "latency_ms": 1162.4,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "1.140000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 333,
+      "prompt": "Did the reply arrive before the 19 sec mark?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1621,
+      "reasoning_tokens": 0,
+      "latency_ms": 1002.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.300000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 334,
+      "prompt": "Did the customer need to wait past 17 seconds for acknowledgment?",
+      "category": "SYMBOLIC_TIME",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1143,
+      "reasoning_tokens": 0,
+      "latency_ms": 859.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "0.010000"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 115,
+      "prompt": "Record cases where more than 19 replies were needed.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 4134,
+      "reasoning_tokens": 0,
+      "latency_ms": 1640.8,
+      "n_tool_calls": 2,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "20"
+        },
+        {
+          "name": "has_internal_notes",
+          "args": {},
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 116,
+      "prompt": "Check if more than 6 turns occurred.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 918,
+      "reasoning_tokens": 0,
+      "latency_ms": 816.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "2"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 117,
+      "prompt": "Pinpoint interactions exceeding 5 back-and-forths.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1330,
+      "reasoning_tokens": 0,
+      "latency_ms": 943.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "6"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 119,
+      "prompt": "Did the interaction require over 50 turns?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 2744,
+      "reasoning_tokens": 0,
+      "latency_ms": 995.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "20"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 120,
+      "prompt": "Validate that the conversation stayed under 18 turns.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 2626,
+      "reasoning_tokens": 0,
+      "latency_ms": 2628.4,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "19"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 122,
+      "prompt": "Check if more than 14 turns occurred.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1708,
+      "reasoning_tokens": 0,
+      "latency_ms": 901.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "10"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 123,
+      "prompt": "Did the agent need more than 16 attempts to address this?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 3735,
+      "reasoning_tokens": 0,
+      "latency_ms": 2137.8,
+      "n_tool_calls": 2,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "17"
+        },
+        {
+          "name": "has_internal_notes",
+          "args": {},
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 126,
+      "prompt": "Monitor for exchanges going beyond 10 messages.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1814,
+      "reasoning_tokens": 0,
+      "latency_ms": 938.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "11"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 127,
+      "prompt": "Examine if the reply count went above 50.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 2730,
+      "reasoning_tokens": 0,
+      "latency_ms": 869.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "20"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 128,
+      "prompt": "Was the message count above 17?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 2030,
+      "reasoning_tokens": 0,
+      "latency_ms": 6576.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "13"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 129,
+      "prompt": "Inspect the thread for more than 9 exchanges.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1734,
+      "reasoning_tokens": 0,
+      "latency_ms": 902.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "10"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 130,
+      "prompt": "Did more than 10 replies get sent by the agent",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 3317,
+      "reasoning_tokens": 0,
+      "latency_ms": 2084.5,
+      "n_tool_calls": 3,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "14"
+        },
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "urgent"
+          },
+          "result": "true"
+        },
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "chat"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 131,
+      "prompt": "Record cases where more than 5 replies were needed.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 908,
+      "reasoning_tokens": 0,
+      "latency_ms": 1102.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "2"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 133,
+      "prompt": "Did the agnet write more than 13 responses?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 3779,
+      "reasoning_tokens": 0,
+      "latency_ms": 1421.1,
+      "n_tool_calls": 3,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "17"
+        },
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "urgent"
+          },
+          "result": "true"
+        },
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "refund"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 134,
+      "prompt": "determine if the exchange surpassed 14 messages.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1720,
+      "reasoning_tokens": 0,
+      "latency_ms": 802.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "10"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 135,
+      "prompt": "Watch for turn counts above 16.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2406,
+      "reasoning_tokens": 0,
+      "latency_ms": 1029.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "17"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 136,
+      "prompt": "Measure if the total messages crossed 15.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2660,
+      "reasoning_tokens": 0,
+      "latency_ms": 1097.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "19"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 137,
+      "prompt": "Flag if the conversation exceeded 10 messages.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1338,
+      "reasoning_tokens": 0,
+      "latency_ms": 934.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "6"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 139,
+      "prompt": "Did the conversation have more than 5 turns?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1610,
+      "reasoning_tokens": 0,
+      "latency_ms": 1620.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "9"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 140,
+      "prompt": "assess whether the turn count exceeded 18.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 2136,
+      "reasoning_tokens": 0,
+      "latency_ms": 5969.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "14"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 143,
+      "prompt": "Monitor for exchanges going beyond 13 messages.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1610,
+      "reasoning_tokens": 0,
+      "latency_ms": 708.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "9"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 144,
+      "prompt": "Pinpoint interactions exceeding 15 back-and-forths.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2346,
+      "reasoning_tokens": 0,
+      "latency_ms": 1646.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "16"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 145,
+      "prompt": "Pinpoint interactions exceeding 19 back-and-forths.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 4140,
+      "reasoning_tokens": 0,
+      "latency_ms": 1799.9,
+      "n_tool_calls": 2,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "20"
+        },
+        {
+          "name": "has_internal_notes",
+          "args": {},
+          "result": "false"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 146,
+      "prompt": "Was the message count above 9?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1218,
+      "reasoning_tokens": 0,
+      "latency_ms": 1023.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "5"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 149,
+      "prompt": "Track conversations exceeding the 18 message mark.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 2130,
+      "reasoning_tokens": 0,
+      "latency_ms": 1062.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "14"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 150,
+      "prompt": "Monitor for exchanges going beyond 4 messages.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1212,
+      "reasoning_tokens": 0,
+      "latency_ms": 1184.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "5"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 151,
+      "prompt": "Did more than 11 replies get sent by the agent?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 3393,
+      "reasoning_tokens": 0,
+      "latency_ms": 3128.9,
+      "n_tool_calls": 2,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "15"
+        },
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "28.005727"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 154,
+      "prompt": "Examine if the reply count went above 7.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1828,
+      "reasoning_tokens": 0,
+      "latency_ms": 810.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "11"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 155,
+      "prompt": "Did more than 14 replies get sent by the agent?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1728,
+      "reasoning_tokens": 0,
+      "latency_ms": 1177.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "10"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 156,
+      "prompt": "Was the conversation longer than 17 exchanges?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2528,
+      "reasoning_tokens": 0,
+      "latency_ms": 990.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "18"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 158,
+      "prompt": "Was the message count above 11?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1406,
+      "reasoning_tokens": 0,
+      "latency_ms": 1119.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "7"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 159,
+      "prompt": "Was the conversation wrapped up before hitting 15 messages?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 2342,
+      "reasoning_tokens": 0,
+      "latency_ms": 1062.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "16"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 160,
+      "prompt": "Did more than 13 replies get sent by the agent?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 3753,
+      "reasoning_tokens": 0,
+      "latency_ms": 5795.9,
+      "n_tool_calls": 2,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "17"
+        },
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "29.077915"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 163,
+      "prompt": "Flag if the conversation exceeded 16 messages.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2756,
+      "reasoning_tokens": 0,
+      "latency_ms": 926.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "20"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 164,
+      "prompt": "Were there fewer than 17 messages?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2038,
+      "reasoning_tokens": 0,
+      "latency_ms": 1411.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "13"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 165,
+      "prompt": "Were more than 14 back-and-forth exchanges needed?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 2252,
+      "reasoning_tokens": 0,
+      "latency_ms": 1317.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "15"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 167,
+      "prompt": "Record cases where more than 25 replies were needed.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 2766,
+      "reasoning_tokens": 0,
+      "latency_ms": 709.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "20"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 169,
+      "prompt": "Did the interaction require over 13 turns?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2436,
+      "reasoning_tokens": 0,
+      "latency_ms": 857.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "17"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 170,
+      "prompt": "Did the agent write more than 2 responses?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 928,
+      "reasoning_tokens": 0,
+      "latency_ms": 827.4,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "2"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 171,
+      "prompt": "Catalog threads over 6 exchanges long.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1404,
+      "reasoning_tokens": 0,
+      "latency_ms": 952.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "7"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 172,
+      "prompt": "Did the agent need more than 30 attempts to address this?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 2776,
+      "reasoning_tokens": 0,
+      "latency_ms": 784.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "20"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 173,
+      "prompt": "rxamine if the reply count went above 14.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1722,
+      "reasoning_tokens": 0,
+      "latency_ms": 1125.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "10"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 335,
+      "prompt": "Were more than 6 back-and-forth exchanges needed?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1426,
+      "reasoning_tokens": 0,
+      "latency_ms": 1012.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "7"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 336,
+      "prompt": "Check if more than 4 turns occurred.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1212,
+      "reasoning_tokens": 0,
+      "latency_ms": 853.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "5"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 337,
+      "prompt": "Were more than 7 back-and-forth exchanges needed?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1556,
+      "reasoning_tokens": 0,
+      "latency_ms": 876.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "8"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 338,
+      "prompt": "Detect lengthy interactions over 50 exchanges.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 4930,
+      "reasoning_tokens": 0,
+      "latency_ms": 1387.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "41"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 339,
+      "prompt": "Was the conversation longer than 2 exchanges?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1008,
+      "reasoning_tokens": 0,
+      "latency_ms": 912.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "3"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 340,
+      "prompt": "Was the conversation longer than 10 exchanges?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1830,
+      "reasoning_tokens": 0,
+      "latency_ms": 806.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "11"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 341,
+      "prompt": "Note interactions requiring more than 17 turns.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2524,
+      "reasoning_tokens": 0,
+      "latency_ms": 1011.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "18"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 342,
+      "prompt": "Flag if the conversation exceeded 11 messages.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2140,
+      "reasoning_tokens": 0,
+      "latency_ms": 812.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "14"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 343,
+      "prompt": "Detect conversations exceeding 16 exchanges.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2436,
+      "reasoning_tokens": 0,
+      "latency_ms": 1113.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "17"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 344,
+      "prompt": "Record cases where more than 13 replies were needed.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2448,
+      "reasoning_tokens": 0,
+      "latency_ms": 2006.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "17"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 345,
+      "prompt": "spot threads that took over 25 replies.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 2528,
+      "reasoning_tokens": 0,
+      "latency_ms": 1075.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "18"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 346,
+      "prompt": "Did solving the issue take more than 3 replies?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "no",
+      "correct": 0,
+      "total_tokens": 1126,
+      "reasoning_tokens": 0,
+      "latency_ms": 925.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "4"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 347,
+      "prompt": "Test whether fewer than 10 turns were used.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1408,
+      "reasoning_tokens": 0,
+      "latency_ms": 1041.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "7"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 348,
+      "prompt": "Was it resolved in under 2 messages?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1006,
+      "reasoning_tokens": 0,
+      "latency_ms": 741.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "3"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 349,
+      "prompt": "Did the conversation stay under 12 messages?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1824,
+      "reasoning_tokens": 0,
+      "latency_ms": 981.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "11"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 350,
+      "prompt": "Assess whehter the turn count exceeded 2.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1024,
+      "reasoning_tokens": 0,
+      "latency_ms": 1160.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "3"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 351,
+      "prompt": "Examine if the reply count went above 13.",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 2114,
+      "reasoning_tokens": 0,
+      "latency_ms": 1287.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "14"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 352,
+      "prompt": "Was the conversation longer than 7 exchanges?",
+      "category": "SYMBOLIC_COUNT",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1538,
+      "reasoning_tokens": 0,
+      "latency_ms": 1044.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "count_public_messages",
+          "args": {},
+          "result": "8"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 65,
+      "prompt": "Is the 'spam' tag present on this ticket?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1407,
+      "reasoning_tokens": 0,
+      "latency_ms": 770.4,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "spam"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 66,
+      "prompt": "Is this a whatsapp ticket?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1925,
+      "reasoning_tokens": 0,
+      "latency_ms": 1213.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "whatsapp"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 67,
+      "prompt": "Detect if 'onboarding' label exists.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1325,
+      "reasoning_tokens": 0,
+      "latency_ms": 1190.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "onboarding"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 68,
+      "prompt": "Is 'sensitive' applied to this ticket?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1927,
+      "reasoning_tokens": 0,
+      "latency_ms": 1176.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "sensitive"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 69,
+      "prompt": "Detect social media conversations...",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1955,
+      "reasoning_tokens": 0,
+      "latency_ms": 1111.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "social media"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 70,
+      "prompt": "Is this marked as 'urgent'?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1939,
+      "reasoning_tokens": 0,
+      "latency_ms": 1082.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "urgent"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 71,
+      "prompt": "Was the channel twitter?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1707,
+      "reasoning_tokens": 0,
+      "latency_ms": 1063.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "twitter"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 72,
+      "prompt": "Identify 'urgent' cases.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1882,
+      "reasoning_tokens": 0,
+      "latency_ms": 887.4,
+      "n_tool_calls": 2,
+      "tool_trace": [
+        {
+          "name": "first_response_minutes",
+          "args": {},
+          "result": "11.416566"
+        },
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "urgent"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 73,
+      "prompt": "did this come through email?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1819,
+      "reasoning_tokens": 0,
+      "latency_ms": 1118.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "email"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 74,
+      "prompt": "Is this an 'billing' case",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1115,
+      "reasoning_tokens": 0,
+      "latency_ms": 1514.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "billing"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 75,
+      "prompt": "Has this been flagged as 'onboarding'?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1529,
+      "reasoning_tokens": 0,
+      "latency_ms": 1043.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "onboarding"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 76,
+      "prompt": "Verify this came via twitter.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1623,
+      "reasoning_tokens": 0,
+      "latency_ms": 993.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "twitter"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 77,
+      "prompt": "Is this marked as 'feature-request'?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1817,
+      "reasoning_tokens": 0,
+      "latency_ms": 1096.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "feature-request"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 78,
+      "prompt": "Any private comments added?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1114,
+      "reasoning_tokens": 0,
+      "latency_ms": 827.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "has_internal_notes",
+          "args": {},
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 79,
+      "prompt": "Filter for SMS tickets.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1809,
+      "reasoning_tokens": 0,
+      "latency_ms": 1571.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "SMS"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 80,
+      "prompt": "Is this marked as 'spam'?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1717,
+      "reasoning_tokens": 0,
+      "latency_ms": 1205.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "spam"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 81,
+      "prompt": "Did this come through twitter?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1303,
+      "reasoning_tokens": 0,
+      "latency_ms": 995.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "twitter"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 82,
+      "prompt": "Identify if source was email.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1119,
+      "reasoning_tokens": 0,
+      "latency_ms": 1143.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "email"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 83,
+      "prompt": "Is 'complaint' applied to this ticket?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1217,
+      "reasoning_tokens": 0,
+      "latency_ms": 812.1,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "complaint"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 84,
+      "prompt": "Verify ticket has 'resolved' status.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1301,
+      "reasoning_tokens": 0,
+      "latency_ms": 1187.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "resolved"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 85,
+      "prompt": "Flag tickets marked 'refund'.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1423,
+      "reasoning_tokens": 0,
+      "latency_ms": 1949.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "refund"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 86,
+      "prompt": "Was it tagged 'duplicate'?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1409,
+      "reasoning_tokens": 0,
+      "latency_ms": 1013.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "duplicate"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 87,
+      "prompt": "Are there internal notes in this convesation?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1722,
+      "reasoning_tokens": 0,
+      "latency_ms": 914.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "has_internal_notes",
+          "args": {},
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 88,
+      "prompt": "Filter for whatsapp tickets.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1843,
+      "reasoning_tokens": 0,
+      "latency_ms": 977.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "whatsapp"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 89,
+      "prompt": "Detect if 'refund' label exists.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1947,
+      "reasoning_tokens": 0,
+      "latency_ms": 840.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "refund"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 90,
+      "prompt": "Confirm 'spam' is present.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1623,
+      "reasoning_tokens": 0,
+      "latency_ms": 862.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "spam"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 91,
+      "prompt": "Detect email conversations",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1803,
+      "reasoning_tokens": 0,
+      "latency_ms": 1310.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "email"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 92,
+      "prompt": "Is 'pending' applied to this ticket?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1617,
+      "reasoning_tokens": 0,
+      "latency_ms": 955.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "pending"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 93,
+      "prompt": "Verify ticket has 'urgent' status.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1737,
+      "reasoning_tokens": 0,
+      "latency_ms": 1835.3,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "urgent"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 94,
+      "prompt": "Was it tagged 'refund'?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1109,
+      "reasoning_tokens": 0,
+      "latency_ms": 970.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "refund"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 95,
+      "prompt": "Detect if 'follow-up' label exists.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1825,
+      "reasoning_tokens": 0,
+      "latency_ms": 1328.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "follow-up"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 96,
+      "prompt": "Is the 'onboarding' tag present on this ticket?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1849,
+      "reasoning_tokens": 0,
+      "latency_ms": 889.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "onboarding"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 97,
+      "prompt": "Does the ticket have the 'follow-up' label??",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1431,
+      "reasoning_tokens": 0,
+      "latency_ms": 1874.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "follow-up"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 98,
+      "prompt": "Is 'vip' applied to this ticket?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1829,
+      "reasoning_tokens": 0,
+      "latency_ms": 747.5,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "vip"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 99,
+      "prompt": "Verify this came via social media.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1337,
+      "reasoning_tokens": 0,
+      "latency_ms": 1220.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "social media"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 100,
+      "prompt": "Flag converstions with internal notes.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1914,
+      "reasoning_tokens": 0,
+      "latency_ms": 864.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "has_internal_notes",
+          "args": {},
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 101,
+      "prompt": "Is this an 'refund' case?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1535,
+      "reasoning_tokens": 0,
+      "latency_ms": 2721.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "refund"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 102,
+      "prompt": "Was the channel web form...",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1621,
+      "reasoning_tokens": 0,
+      "latency_ms": 1343.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "web form"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 103,
+      "prompt": "Has this been flagged as 'feature-request'?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1839,
+      "reasoning_tokens": 0,
+      "latency_ms": 795.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "feature-request"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 104,
+      "prompt": "Is this an 'complaint' case?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1123,
+      "reasoning_tokens": 0,
+      "latency_ms": 729.8,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "complaint"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 105,
+      "prompt": "Is this an 'follow-up' case?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1221,
+      "reasoning_tokens": 0,
+      "latency_ms": 889.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "follow-up"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 106,
+      "prompt": "Verify ticket has 'feature-request' status.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1121,
+      "reasoning_tokens": 0,
+      "latency_ms": 734.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "feature-request"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 107,
+      "prompt": "Identify 'retention' cases.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1635,
+      "reasoning_tokens": 0,
+      "latency_ms": 1131.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "retention"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 108,
+      "prompt": "Is this a social media conversation?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1127,
+      "reasoning_tokens": 0,
+      "latency_ms": 4291.0,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "social media"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 109,
+      "prompt": "Confirm 'technical' is present.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1421,
+      "reasoning_tokens": 0,
+      "latency_ms": 1043.6,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "technical"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 110,
+      "prompt": "Is the 'urgent' tag present on this ticket?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1423,
+      "reasoning_tokens": 0,
+      "latency_ms": 902.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "urgent"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 111,
+      "prompt": "Is 'technical' applied to this ticket?",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1429,
+      "reasoning_tokens": 0,
+      "latency_ms": 1511.9,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "tag_present",
+          "args": {
+            "tag": "technical"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 112,
+      "prompt": "Identify if source was chat.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1933,
+      "reasoning_tokens": 0,
+      "latency_ms": 840.4,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "chat"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    },
+    {
+      "idx": 113,
+      "prompt": "Identify if source was phone.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "yes",
+      "model_answer": "yes",
+      "correct": 1,
+      "total_tokens": 1629,
+      "reasoning_tokens": 0,
+      "latency_ms": 873.7,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "phone"
+          },
+          "result": "true"
+        }
+      ],
+      "raw": "yes"
+    },
+    {
+      "idx": 114,
+      "prompt": "Detect twitter conversations.",
+      "category": "SYMBOLIC_METADATA",
+      "ground_truth": "no",
+      "model_answer": "no",
+      "correct": 1,
+      "total_tokens": 1109,
+      "reasoning_tokens": 0,
+      "latency_ms": 883.2,
+      "n_tool_calls": 1,
+      "tool_trace": [
+        {
+          "name": "channel_equals",
+          "args": {
+            "value": "twitter"
+          },
+          "result": "false"
+        }
+      ],
+      "raw": "no"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+system,accuracy,n,total_tokens,mean_latency_ms,p50_latency_ms,p95_latency_ms
+LLM-only (binary),0.6459,305,93665,0.0,0.0,0.0
+LLM-only (with reject),0.4525,305,135755,0.0,0.0,0.0
+Router (TF-IDF+LR),0.918,305,37602,0.0,0.0,0.0
+Router (TF-IDF+SVM),0.9607,305,29344,0.0,0.0,0.0
+Router (Emb+LR),0.9082,305,38953,0.0,0.0,0.0
+Router (Ensemble),0.9115,305,38579,0.0,0.0,0.0
+Router (Keyword),0.8,305,47573,0.0,0.0,0.0

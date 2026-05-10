@@ -1,0 +1,12 @@
+{
+  "n_pairs": 70,
+  "inter_annotator_kappa": 0.8453,
+  "inter_annotator_pabak": 0.8857,
+  "gpt_prevalence_yes": 0.271,
+  "acceptance_threshold": 0.7,
+  "bootstrap_n": 5000,
+  "ann1_vs_gpt_kappa": 0.7833,
+  "ann1_vs_gpt_agreement": 0.9143,
+  "ann2_vs_gpt_kappa": 0.8453,
+  "ann2_vs_gpt_agreement": 0.9429
+}
