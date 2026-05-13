@@ -1,0 +1,50 @@
+{
+  "analysis": "Clerical-error sensitivity on inter-annotator kappa",
+  "primary_kappa": 0.796,
+  "primary_ci_lo": 0.707,
+  "primary_ci_hi": 0.870,
+  "primary_raw_agreement": 0.833,
+  "primary_n": 120,
+  "primary_disagreements": 20,
+  "clerical_error_corrections": [
+    {
+      "id": 6,
+      "prompt": "Confirm 'escalated' is present.",
+      "annotator": "A1",
+      "original": "SYMBOLIC_COUNT",
+      "corrected": "SYMBOLIC_METADATA",
+      "justification": "Prompt is a tag-presence check; no counting operation."
+    },
+    {
+      "id": 29,
+      "prompt": "Identify 'vip' cases.",
+      "annotator": "A1",
+      "original": "SEMANTIC",
+      "corrected": "SYMBOLIC_METADATA",
+      "justification": "'vip' in quotes references a tag; not a subjective judgment."
+    },
+    {
+      "id": 91,
+      "prompt": "Confirm 'onboarding' is present.",
+      "annotator": "A1",
+      "original": "SYMBOLIC_COUNT",
+      "corrected": "SYMBOLIC_METADATA",
+      "justification": "Same pattern as ID 6; tag-presence check."
+    },
+    {
+      "id": 119,
+      "prompt": "monitor for exchanges going beyond 2 messages.",
+      "annotator": "A1",
+      "original": "HYBRID",
+      "corrected": "SYMBOLIC_COUNT",
+      "justification": "No semantic component present; only a count threshold."
+    }
+  ],
+  "corrections_selected_on": "prompt content alone, independent of the generation-time gold label",
+  "sensitivity_kappa": 0.8267,
+  "sensitivity_ci_lo": 0.7445,
+  "sensitivity_ci_hi": 0.8981,
+  "sensitivity_raw_agreement": 0.8583,
+  "bootstrap_iterations": 5000,
+  "notes": "Primary kappa = 0.796 is retained for all analyses. Sensitivity value is reported as a bound on how much of the sub-threshold gap attributes to clerical mis-selection rather than taxonomic ambiguity. All four corrections are on Annotator 1's side."
+}
