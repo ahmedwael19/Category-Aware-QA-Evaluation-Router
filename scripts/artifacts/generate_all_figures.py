@@ -425,7 +425,7 @@ if _raw_reasoning_path.exists():
 
             bp = ax.boxplot(
                 [correct, wrong],
-                labels=["Correct", "Wrong"],
+                tick_labels=["Correct", "Wrong"],
                 widths=0.5,
                 patch_artist=True,
                 medianprops=dict(color="black", linewidth=1.5),
