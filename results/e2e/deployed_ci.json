@@ -1,0 +1,18 @@
+{
+  "deployed_accuracy": 0.9344,
+  "deployed_ci_lo": 0.9049,
+  "deployed_ci_hi": 0.9607,
+  "n": 305,
+  "bootstrap_B": 5000,
+  "llm_binary_accuracy": 0.6459,
+  "mcnemar_chi2_cc": 86.011,
+  "mcnemar_pvalue": 0.0,
+  "implicit_deployed_accuracy": 0.5789,
+  "implicit_llm_binary_accuracy": 0.5789,
+  "implicit_n": 19,
+  "explicit_moderate_deployed_accuracy": 0.9936,
+  "explicit_moderate_n": 156,
+  "thesis_formula_estimate_using_full_benchmark_88_5pct": 0.9358,
+  "reconstructed_actual_on_eval_305": 0.9344,
+  "note": "deployed_accuracy and ci are bootstrap over actual extraction outcomes on the 305 eval prompts. thesis_formula_estimate uses full-benchmark 88.5 percent symbolic extraction rate projected onto the 305-pair split; it is used in Table 4.5 because the 305-pair subset is a small sample of symbolic subcategory mix."
+}
