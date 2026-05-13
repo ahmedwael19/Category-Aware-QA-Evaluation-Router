@@ -1,7 +1,6 @@
 # Category-Aware QA Evaluation Router
 
-Code, data, and figures for the MSc thesis *Category-Aware Evaluation Architecture
-for QA Systems: Routing Between Symbolic and Semantic Computation* (University
+Code, data, and figures for the MSc thesis *A Hybrid Evaluation Framework for QA Systems: Classifier-Driven Routing with Category-Specific Evaluation* (University
 of Tartu, 2026).
 
 The router classifies each QA prompt into one of six categories (SYMBOLIC_TIME,
@@ -152,8 +151,7 @@ MIT. See `LICENSE`.
 
 ```bibtex
 @mastersthesis{soliman2026router,
-  title  = {Category-Aware Evaluation Architecture for QA Systems:
-            Routing Between Symbolic and Semantic Computation},
+  title  = {A Hybrid Evaluation Framework for QA Systems: Classifier-Driven Routing with Category-Specific Evaluation},
   author = {Soliman, Ahmed},
   school = {University of Tartu},
   year   = {2026},
