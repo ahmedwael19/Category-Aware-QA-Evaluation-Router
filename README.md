@@ -12,7 +12,7 @@ judge. On a 305-pair benchmark the routed system reaches **96.1% accuracy
 ## Quick start
 
 ```bash
-git clone <this repo> thesis-router
+git clone [<this repo>](https://github.com/ahmedwael19/Category-Aware-QA-Evaluation-Router.git) qa_router
 cd thesis-router
 python3.13 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
