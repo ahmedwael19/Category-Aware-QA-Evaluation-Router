@@ -22,7 +22,7 @@ baseline.
 
 ```bash
 git clone https://github.com/ahmedwael19/Category-Aware-QA-Evaluation-Router.git qa_router
-cd thesis-router
+cd qa_router
 python3.13 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 pip install -e .
