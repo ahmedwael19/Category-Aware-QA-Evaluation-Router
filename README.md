@@ -6,8 +6,9 @@ of Tartu, 2026).
 The router classifies each QA prompt into one of six categories (SYMBOLIC_TIME,
 SYMBOLIC_COUNT, SYMBOLIC_METADATA, SEMANTIC, HYBRID, UNSUPPORTED) and dispatches
 symbolic prompts to a deterministic checker and semantic prompts to an LLM
-judge. On a 305-pair benchmark the routed system reaches **96.1% accuracy
-[93.8, 98.0]** against **64.6% [59.3, 69.8]** for the LLM-only baseline.
+judge. On a 305-pair benchmark the routed system reaches **96.4% accuracy
+[94.1, 98.4]** against **64.9% [59.3, 70.2]** for the GPT-4o-mini binary
+baseline.
 
 > **Note on numbers.** The thesis cites values from
 > `results/e2e/e2e_rescored_summary.json` (96.4% / 64.9%), produced by the
