@@ -9,6 +9,14 @@ symbolic prompts to a deterministic checker and semantic prompts to an LLM
 judge. On a 305-pair benchmark the routed system reaches **96.1% accuracy
 [93.8, 98.0]** against **64.6% [59.3, 69.8]** for the LLM-only baseline.
 
+> **Note on numbers.** The thesis cites values from
+> `results/e2e/e2e_rescored_summary.json` (96.4% / 64.9%), produced by the
+> operator-fix rerun (`scripts/baselines/rerun_llm_baselines.py`). The
+> `make phase3` quick-output below prints values from
+> `results/e2e/summary.csv` (96.1% / 64.6%), which is the earlier phase-3 run.
+> Both files are committed; the two runs agree within bootstrap CI width. If
+> you want to reproduce thesis-cited numbers exactly, use the rescored summary.
+
 ## Quick start
 
 ```bash
