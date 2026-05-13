@@ -37,7 +37,7 @@ phase2:
 phase3:
 	python -m cli.run_phase3_evaluation
 	python -m scripts.baselines.rerun_llm_baselines
-
+	python -m scripts.analyses.answerable_only
 phase4:
 	python -m cli.run_phase4_baselines
 
