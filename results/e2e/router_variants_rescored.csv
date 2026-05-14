@@ -1,0 +1,6 @@
+system,accuracy,ci_lo,ci_hi,tokens
+TF-IDF+SVM (oracle),0.9639,0.941,0.9836,29060
+"TF-IDF+LR (oracle, tau=0.85)",0.941,0.9115,0.9672,32506
+"Emb+LR (oracle, tau=0.85)",0.9311,0.9016,0.9574,34041
+"Ensemble (oracle, tau=0.85)",0.941,0.9115,0.9672,31665
+Keyword (oracle),0.8131,0.7672,0.8557,41777

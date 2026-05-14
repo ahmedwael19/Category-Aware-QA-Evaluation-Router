@@ -1,0 +1,306 @@
+prompt,category,ground_truth,svm_correct,tfidf_lr_correct,emb_lr_correct,ensemble_correct,keyword_correct
+Was the response delivered before 18 hours passed?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Was the query addressed within 22 minutes?,SYMBOLIC_TIME,no,1,1,1,1,1
+Measure wheather the first response took less than 15 hours.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Note if the response gap was wider than 16 sec.,SYMBOLIC_TIME,yes,1,1,0,1,1
+Did the customer get an answer before 25 hours elapsed?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Was the first reply sent in under 26 hrs?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Ascertain whether 15 sec was exceeded.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Did the representative respond in less than 300 hours?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Was there an answer from the agent within 24 hours?,SYMBOLIC_TIME,no,1,1,1,1,1
+Was the query addressed within 26 sec?,SYMBOLIC_TIME,no,1,1,1,1,1
+pinpoint responses that came after 21 sec.,SYMBOLIC_TIME,no,1,1,1,1,1
+Measure whether the first response took less than 120 hours.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Was the customer's message acknowledged w/in 18 min?,SYMBOLIC_TIME,no,1,1,1,1,0
+Was the agent's first message within 22 minutes of the query?,SYMBOLIC_TIME,no,1,1,1,1,1
+Did the reply arrive before the 90 sec mark?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Determine if first response exceeded 14 minutes.,SYMBOLIC_TIME,yes,1,0,1,1,1
+Was the first contact from the agent made within 180 sec?,SYMBOLIC_TIME,no,1,1,1,1,1
+Was the time to first response shorter than 19 hrs?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Examine if the response was sent before the 26 hours limit.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Was the customer kept waiting beyond 30 seconds?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Did the customer need to wait past 22 sec for acknowledgment?,SYMBOLIC_TIME,no,1,1,1,1,1
+Note if the response gap was wider than 28 hrs.,SYMBOLIC_TIME,no,1,1,1,1,1
+Verify the response was sent under 4 minutes.,SYMBOLIC_TIME,no,1,1,1,1,1
+Examine if the response was sent before the 2 min limit.,SYMBOLIC_TIME,no,1,1,1,1,1
+Inspect if the first reply came under 13 sec.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Log responses that exceeded the 120 sec mark.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Did the customer receive a reply within 90 seconds,SYMBOLIC_TIME,yes,1,1,1,1,1
+Did the agent take longer than 5 min to get back?,SYMBOLIC_TIME,no,1,1,1,1,1
+Did the agent's response arrive in under 18 min?,SYMBOLIC_TIME,no,1,1,1,1,1
+Record whether the customer waited beyond 24 sec.,SYMBOLIC_TIME,no,1,1,1,1,1
+Did the customer end up waiting over 60 sec?,SYMBOLIC_TIME,no,1,1,1,1,1
+Did the agent take longer than 30 minutes to get back?,SYMBOLIC_TIME,no,1,1,1,1,1
+Did the first reply take less than 16 hrs?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Examine if the response was sent before the 30 seconds limit.,SYMBOLIC_TIME,yes,1,1,1,1,1
+did the customer get an answer before 14 minutes elapsed?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Track if the turnaround time surpassed 5 seconds.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Was the first reply sent in under 15 hours?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Was the initial response to the customer sent within 300 min?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Verify the response was sent under 22 hours.,SYMBOLIC_TIME,no,1,1,1,1,1
+Did the representative respond in less than 120 minutes?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Did the customer end up waiting over 60 minutes?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Spot instances where the agent exceeded 2 seconds.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Did the support rep answer within the 90 sec window...,SYMBOLIC_TIME,yes,1,1,1,1,1
+Examine if the response was sent before the 27 seconds limit.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Did the team member get back within 11 hrs?,SYMBOLIC_TIME,yes,1,1,1,1,1
+confirm the reply was delivered within 27 hours.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Ascertain whether 20 minutes was exceeded.,SYMBOLIC_TIME,no,1,1,1,1,1
+Measure whether the first response took less than 3 hrs.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Verify the response was sent under 11 hours.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Did the customer end up waiting over 9 hrs?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Ascertain whether 7 min was exceeded.,SYMBOLIC_TIME,yes,1,1,1,1,1
+pinpoint responses that came after 25 seconds.,SYMBOLIC_TIME,no,1,1,1,1,1
+Did the customer receive a reply within 30 seconds?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Was the time to first response shorter than 14 hours?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Spot instances where the agent exceeded 21 sec.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Was the initial response to the customer sent within 10 minutes?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Inspect if the first reply came under 8 min.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Was the first contact from the agent made within 7 sec?,SYMBOLIC_TIME,no,1,1,1,1,1
+Examine if the response was sent before the 16 min limit.,SYMBOLIC_TIME,yes,1,1,1,1,1
+Was there a response within 12 min?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Did the agent's response arrive in under 300 minutes?,SYMBOLIC_TIME,no,1,1,1,1,1
+Was there a response w/in 180 seconds?,SYMBOLIC_TIME,no,1,1,1,1,1
+Confirm the reply was delivered within 12 sec.,SYMBOLIC_TIME,no,1,1,1,1,1
+Did the reply arrive before the 19 sec mark?,SYMBOLIC_TIME,yes,1,1,1,1,1
+Did the customer need to wait past 17 seconds for acknowledgment?,SYMBOLIC_TIME,no,1,1,1,1,1
+Record cases where more than 19 replies were needed.,SYMBOLIC_COUNT,yes,1,1,0,1,1
+Check if more than 6 turns occurred.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Pinpoint interactions exceeding 5 back-and-forths.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Did the interaction require over 50 turns?,SYMBOLIC_COUNT,no,1,1,1,1,1
+Validate that the conversation stayed under 18 turns.,SYMBOLIC_COUNT,no,1,1,1,1,0
+Check if more than 14 turns occurred.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Did the agent need more than 16 attempts to address this?,SYMBOLIC_COUNT,yes,1,1,1,1,0
+Monitor for exchanges going beyond 10 messages.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Examine if the reply count went above 50.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Was the message count above 17?,SYMBOLIC_COUNT,no,1,1,1,1,1
+Inspect the thread for more than 9 exchanges.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Did more than 10 replies get sent by the agent,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Record cases where more than 5 replies were needed.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Did the agnet write more than 13 responses?,SYMBOLIC_COUNT,yes,1,1,1,1,0
+determine if the exchange surpassed 14 messages.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Watch for turn counts above 16.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Measure if the total messages crossed 15.,SYMBOLIC_COUNT,yes,1,1,1,1,0
+Flag if the conversation exceeded 10 messages.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Did the conversation have more than 5 turns?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+assess whether the turn count exceeded 18.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Monitor for exchanges going beyond 13 messages.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Pinpoint interactions exceeding 15 back-and-forths.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Pinpoint interactions exceeding 19 back-and-forths.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Was the message count above 9?,SYMBOLIC_COUNT,no,1,1,1,1,1
+Track conversations exceeding the 18 message mark.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Monitor for exchanges going beyond 4 messages.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Did more than 11 replies get sent by the agent?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Examine if the reply count went above 7.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Did more than 14 replies get sent by the agent?,SYMBOLIC_COUNT,no,1,1,1,1,1
+Was the conversation longer than 17 exchanges?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Was the message count above 11?,SYMBOLIC_COUNT,no,1,1,1,1,1
+Was the conversation wrapped up before hitting 15 messages?,SYMBOLIC_COUNT,no,1,1,1,1,1
+Did more than 13 replies get sent by the agent?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Flag if the conversation exceeded 16 messages.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Were there fewer than 17 messages?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Were more than 14 back-and-forth exchanges needed?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Record cases where more than 25 replies were needed.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Did the interaction require over 13 turns?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Did the agent write more than 2 responses?,SYMBOLIC_COUNT,no,1,1,1,1,1
+Catalog threads over 6 exchanges long.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Did the agent need more than 30 attempts to address this?,SYMBOLIC_COUNT,no,1,1,1,1,1
+rxamine if the reply count went above 14.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Were more than 6 back-and-forth exchanges needed?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Check if more than 4 turns occurred.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Were more than 7 back-and-forth exchanges needed?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Detect lengthy interactions over 50 exchanges.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Was the conversation longer than 2 exchanges?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Was the conversation longer than 10 exchanges?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Note interactions requiring more than 17 turns.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Flag if the conversation exceeded 11 messages.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Detect conversations exceeding 16 exchanges.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Record cases where more than 13 replies were needed.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+spot threads that took over 25 replies.,SYMBOLIC_COUNT,no,1,1,1,1,1
+Did solving the issue take more than 3 replies?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Test whether fewer than 10 turns were used.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Was it resolved in under 2 messages?,SYMBOLIC_COUNT,no,1,1,1,1,0
+Did the conversation stay under 12 messages?,SYMBOLIC_COUNT,yes,1,1,1,1,0
+Assess whehter the turn count exceeded 2.,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Examine if the reply count went above 13.,SYMBOLIC_COUNT,yes,1,1,1,1,0
+Was the conversation longer than 7 exchanges?,SYMBOLIC_COUNT,yes,1,1,1,1,1
+Is the 'spam' tag present on this ticket?,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Is this a whatsapp ticket?,SYMBOLIC_METADATA,no,1,1,1,1,1
+Detect if 'onboarding' label exists.,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Is 'sensitive' applied to this ticket?,SYMBOLIC_METADATA,no,1,1,1,1,1
+Detect social media conversations...,SYMBOLIC_METADATA,yes,1,0,0,0,0
+Is this marked as 'urgent'?,SYMBOLIC_METADATA,no,1,1,0,1,1
+Was the channel twitter?,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Identify 'urgent' cases.,SYMBOLIC_METADATA,no,1,1,1,1,1
+did this come through email?,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Is this an 'billing' case,SYMBOLIC_METADATA,no,1,1,1,1,1
+Has this been flagged as 'onboarding'?,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Verify this came via twitter.,SYMBOLIC_METADATA,no,1,1,1,1,1
+Is this marked as 'feature-request'?,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Any private comments added?,SYMBOLIC_METADATA,no,1,1,1,1,1
+Filter for SMS tickets.,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Is this marked as 'spam'?,SYMBOLIC_METADATA,no,1,1,1,1,1
+Did this come through twitter?,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Identify if source was email.,SYMBOLIC_METADATA,no,1,1,1,1,1
+Is 'complaint' applied to this ticket?,SYMBOLIC_METADATA,yes,1,0,1,0,0
+Verify ticket has 'resolved' status.,SYMBOLIC_METADATA,no,1,1,1,1,0
+Flag tickets marked 'refund'.,SYMBOLIC_METADATA,yes,1,1,1,1,0
+Was it tagged 'duplicate'?,SYMBOLIC_METADATA,no,1,1,1,1,1
+Are there internal notes in this convesation?,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Filter for whatsapp tickets.,SYMBOLIC_METADATA,no,1,1,1,1,1
+Detect if 'refund' label exists.,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Confirm 'spam' is present.,SYMBOLIC_METADATA,no,1,1,1,1,1
+Detect email conversations,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Is 'pending' applied to this ticket?,SYMBOLIC_METADATA,no,1,1,1,1,1
+Verify ticket has 'urgent' status.,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Was it tagged 'refund'?,SYMBOLIC_METADATA,no,1,1,1,1,1
+Detect if 'follow-up' label exists.,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Is the 'onboarding' tag present on this ticket?,SYMBOLIC_METADATA,no,1,1,1,1,1
+Does the ticket have the 'follow-up' label??,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Is 'vip' applied to this ticket?,SYMBOLIC_METADATA,no,1,1,1,1,1
+Verify this came via social media.,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Flag converstions with internal notes.,SYMBOLIC_METADATA,no,1,1,1,1,1
+Is this an 'refund' case?,SYMBOLIC_METADATA,yes,1,0,0,0,0
+Was the channel web form...,SYMBOLIC_METADATA,no,1,1,1,1,1
+Has this been flagged as 'feature-request'?,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Is this an 'complaint' case?,SYMBOLIC_METADATA,no,1,0,1,0,0
+Is this an 'follow-up' case?,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Verify ticket has 'feature-request' status.,SYMBOLIC_METADATA,no,1,1,1,1,1
+Identify 'retention' cases.,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Is this a social media conversation?,SYMBOLIC_METADATA,no,1,1,1,1,1
+Confirm 'technical' is present.,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Is the 'urgent' tag present on this ticket?,SYMBOLIC_METADATA,no,1,1,1,1,1
+Is 'technical' applied to this ticket?,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Identify if source was chat.,SYMBOLIC_METADATA,no,1,1,1,1,1
+Identify if source was phone.,SYMBOLIC_METADATA,yes,1,1,1,1,1
+Detect twitter conversations.,SYMBOLIC_METADATA,no,1,1,1,1,1
+Did the agent offer more help after confirming escalation for the service outage?,SEMANTIC,no,1,1,1,1,1
+Did the agent acknowledge previous case details about the defect before giving next steps?,SEMANTIC,no,1,1,1,1,1
+"If the refund request is tied to a defective item, did the agent acknowledge that and personalize troubleshooting?",SEMANTIC,no,1,1,1,1,1
+Did agent personalize or just paste boilerplate?,SEMANTIC,no,1,1,1,1,1
+"Detect whether the agent’s initial summary matched customer’s shipping delay issue, no twist.",SEMANTIC,no,1,1,1,1,0
+"Check whether agent interpreted customer’s ask right, and didn’t go off on unrelated policy or sales pitch during initial troubleshooting.",SEMANTIC,yes,1,1,1,1,1
+"If refund is pending, did the agent communicate timelines and then ask if there’s anything else they can do?",SEMANTIC,no,1,1,1,1,0
+Detect whether the qgent kept the conversqtion aligned with the customwr’d ask: rscalate the ouyqge case now.,SEMANTIC,no,1,1,1,1,1
+"Did agent acknowledge customer at start, or just said 'need info' with no context?",SEMANTIC,yes,1,1,1,1,1
+Detect whether agent acknowledged inconvenience of outage while escalating.,SEMANTIC,no,1,1,1,1,1
+"Verify that, if the customer stated they are locked out due to too many tries, agent handled lockout + reset appropriately in the resolution.",SEMANTIC,no,1,1,1,1,1
+"Detect whether the agent opened the follow-up by acknowledging the customer’s reported defect and confirming they’re continuing the existing case, rather than treating it like a brand-new request, before laying out next steps.",SEMANTIC,no,1,1,1,1,1
+"If customer provided photos/serial number, did the agent confirm receipt, explain next steps, and then finish properly??",SEMANTIC,no,1,1,1,1,1
+"Detect whether the agent properly opened the conversation by acknowledging the customer’s delayed shipment, confirming understanding of the concern, and setting up next steps in a clear, professional tone.",SEMANTIC,no,1,1,1,1,1
+"Assess whether agent’s greeting was aligned to shipping delay and included an understanding check plus concrete progression (order lookup, tracking review, ETA update); flag if it stayed generic or repetitive.",SEMANTIC,no,1,1,1,1,1
+Determine if the agent remained patient and kept user informed while escalating.,SEMANTIC,no,1,1,1,1,1
+Did agent start off by confirming they understand customer wants refund and will help?,SEMANTIC,no,1,1,1,1,1
+Did agent avoid sounding cold or harsh when customer demanded escalation in outage?,SEMANTIC,no,1,1,1,1,1
+"did the agent give clear final confirmation after checking your understanding, or did they just stop replying?",SEMANTIC,yes,1,1,1,1,1
+Assess whether the agent took responsibility and then brought the exchange to a proper end after the breach notice was handled.,SEMANTIC,no,1,1,1,1,1
+"Determine whether the greeting was aligned with the customer’s frustration about a late package, and included a quick check for understanding.",SEMANTIC,no,1,1,1,1,1
+Did the agent offer pause/downgrade options and then still cancel immediately when declined?,SEMANTIC,no,1,1,1,1,1
+"Detect whether the agent’s opening message includes both a brief self-identification and a sincere apology for the billing error, and whether it acknowledges the customer’s reason for contacting support without shifting blame to the customer or another department.",SEMANTIC,no,1,1,1,1,1
+check whether the agen avoided generic security tips and focused on the customer’s stated issue after the breach notification.,SEMANTIC,yes,0,0,0,0,0
+"Did the agent ask any final check-in question before ending (e.g., anything else I can help with)?",SEMANTIC,yes,1,1,1,1,1
+Did the agent clearly acknowledge the customer’s account lock situation?,SEMANTIC,no,1,1,1,1,0
+"Was the escalation path offered based on the lockout, not generic troubleshooting?",SEMANTIC,no,1,1,1,1,1
+Detect if agent used a quick acknowledgement like 'that’s frustrating' and then delivered reset instructions.,SEMANTIC,no,1,1,1,1,1
+"See if agent says hi, apologizes, and nails the billing error issue right away.",SEMANTIC,no,1,1,1,1,1
+"If the customer said they’re stressed, did the agent acknowledge it and then finalize the interaction with a recap and offer further assistance?",SEMANTIC,no,1,1,1,1,1
+Detect whether the greeting included a brief recap of what the customer is contacting about (late shipment).,SEMANTIC,no,1,1,1,1,1
+"Detect if the agent properly ended the subscription cancellation interaction, including offering alternatives like pausing the service or switching tiers, and then clearly asked if there’s anything else they can help with before ending.",SEMANTIC,no,1,1,1,1,1
+Did agent apologize in greeting and not twist the billing error into something else?,SEMANTIC,no,1,1,1,1,1
+"If customer mentions a defective unit again, did agent recognize that and state they’re following up, then give next steps without making customer repeat everything?",SEMANTIC,no,1,1,1,1,1
+Determine whether agent’s closing reinforced that the customer was heard and then offered options.,SEMANTIC,no,1,1,1,1,1
+"At closing, did the agent provide accurate info on remaining access after cancel?",SEMANTIC,no,1,1,1,1,1
+"Check that agent didn’t twist customer’s request: customer asked escalate now due to locked account, not “wait 24 hours” unless that’s the stated policy AND they explained it.",SEMANTIC,yes,0,0,0,0,0
+Did the agent confirm which order is delayed before proceeding?,SEMANTIC,no,1,1,1,1,0
+Detect whether the agent’s greeting apology is tied to the billing error and not a generic sorry.,SEMANTIC,no,1,1,1,1,1
+"If the customer asked for alternate flights, did the agent provide concrete alternatives or at least a process, not generic policy talk?",SEMANTIC,no,1,1,1,1,1
+"Did the agent set expectations for escalation during outage while also acknowledging the customer’s situation and keeping a patient, steady pace (no interrupting, no blaming, no shortcuts)?",SEMANTIC,no,1,1,1,1,1
+Did the agent get the cancellation reason right before offering alternatives?,SEMANTIC,no,1,1,1,1,1
+Confirm the agent didn’t act annoyed when the customer declined alternatives.,SEMANTIC,yes,1,1,1,1,1
+"Detect whether the agent’s greeting escalated tension (e.g., sharp wording) in a shipping delay chat.",SEMANTIC,no,1,1,1,1,0
+"Did the agent pause to reflect the customer’s situation, then suggest keep-plan options?",SEMANTIC,no,1,1,1,1,1
+"Did the agent’s first response set a proper start by stating their name/department, acknowledging the customer’s message about the delayed shipment, and confirming what the customer is looking for (status, refund, reroute)?",SEMANTIC,no,1,1,1,1,0
+"Check for a proper first response: acknowledge refund request, identify agent, and address customer directly.",SEMANTIC,no,1,1,1,1,1
+Did the agent mention they can see why the delay is a big deal for the customer,SEMANTIC,no,1,1,1,1,0
+"If the customer remained confused after the reset instructions, did the agent conditionally offer additional options and then end appropriately once the customer understood?",SEMANTIC,no,1,1,1,1,1
+"Check if agent ended the convo properly: confirm fix, offer more help, then finish.",SEMANTIC,yes,1,1,1,1,1
+Determine whether the agent’s follow-up phrasing was too blunt when instructing the customer on next steps for a defective item.,SEMANTIC,no,1,1,1,1,1
+Detect whether the agent verified the customer’s goal (status update / expedite / complaint) while keeping focus on the shipping delay.,SEMANTIC,no,1,1,1,1,0
+"Determine whether the agent’s communication stayed suitable for the situation and avoided any sharp or cold phrasing, while also demonstrating active listening (paraphrasing, confirmations) through the entire escalation request on the locked account case.",SEMANTIC,no,1,1,1,1,1
+Did the agent show empathy for the lost password frustration when presenting the fix?,SEMANTIC,no,1,1,1,1,1
+Detect whether the agent used a courteous final line and offered extra help after handling the lost password.,SEMANTIC,no,1,1,1,1,1
+Detect whether the agent’s wording was too cold when asking troubleshooting questions.,SEMANTIC,no,0,0,0,0,0
+check if the greeting included an apology but no meaningful action on billing error.,SEMANTIC,no,1,1,1,1,1
+Confirm the agent addressed customer’s situation before offering pauses/discounts.,SEMANTIC,yes,1,1,1,1,1
+Did agent wrap things up properly?,SEMANTIC,yes,0,0,0,0,0
+"Check for a proper start: agent identifies self/team + acknowledges data breach notification, especially when presenting the resolution.",SEMANTIC,no,1,1,1,1,1
+"If the agent added internal notes, assess whether they offered an appropriate follow-up channel before ending the conversation.",HYBRID,no,1,1,1,1,1
+"If first response time exceeded 10 minutes on an urgent upgrade request, assess whether the greeting included a tactful acknowledgment of the delay.",HYBRID,no,1,1,1,1,0
+"For tickets with a response time over 20 minutes, judge whether the agent recognized the inconvenience and the emotional impact of waiting to cancel.",HYBRID,no,1,1,1,1,0
+"If internal notes are missing, did the agent still offer a clear follow-up and closing?",HYBRID,yes,1,1,1,1,0
+"If an urgent tag is present, did the agent’s first line convey calm reassurance appropriate to an upgrade request?",HYBRID,no,1,1,1,1,1
+"For VIP return tickets, check whether the greeting used the customer’s name (when available) and felt respectful.",HYBRID,no,1,1,1,1,1
+"For chat conversations, was the opening appropriate for the channel?",HYBRID,no,1,1,1,1,1
+"For upgrade requests resolved within 20 minutes, did the agent understand the customer’s priorities (cost vs. features) well enough to respond appropriately?",HYBRID,no,1,1,1,1,1
+"When internal notes show multiple prior contacts, did the agent’s closing acknowledge the repeated disruption and offer a concrete follow-up?",HYBRID,no,1,1,1,1,1
+"If the ticket is urgent and was transferred at least once, evaluate whether the greeting after transfer re-established rapport appropriately for the upgrade request.",HYBRID,no,1,1,1,1,1
+Evaluate both response speed (15 minute threshold) and helpfulness.,HYBRID,yes,1,1,1,1,1
+Check if the agent apologized when response exceeded 45 minutes.,HYBRID,yes,0,0,0,0,0
+"If the customer cites a previous case number in an email, evaluate whether the agent used that history effectively to resolve the billing dispute faster.",HYBRID,no,1,1,1,1,1
+"When the customer used negative sentiment words (e.g., ""angry"", ""disappointed"") at least 1 time, did the agent acknowledge that emotion promptly?",HYBRID,no,1,1,1,1,1
+"If the return case took more than 1 hour of active handling time before resolution, judge whether the agent consistently understood the customer’s issue without asking redundant clarifications.",HYBRID,no,1,1,1,1,0
+"For 'urgent' tickets, was the response quality adequate?",HYBRID,no,1,1,1,1,1
+Assess handling appropriateness for 'sensitive' cases.,HYBRID,yes,0,0,0,0,0
+"If the customer reported a lost package and the agent’s next reply took over 5 minutes, did the agent express concern in a human, caring way?",HYBRID,no,1,1,1,1,1
+"For cases with internal notes present, evaluate whether the agent’s closing acknowledged the customer’s effort and offered continued help.",HYBRID,no,1,1,1,1,1
+"For cancellation requests where the agent proposes an alternative plan (metadata: plan_change_offered=true), judge whether the offer was presented courteously and professionally.",HYBRID,no,1,1,1,1,1
+"If the ticket is escalated and includes an upgrade request, did the greeting avoid blaming language and feel diplomatically phrased?",HYBRID,no,1,1,1,1,1
+"If the customer cited financial hardship and the first reply was over 4 minutes, evaluate whether the agent showed sensitivity and understanding.",HYBRID,no,1,1,1,1,1
+assess email-appropriate communication style.,HYBRID,no,1,1,1,1,1
+Check if the agent apologized when response exceeded 15 minutes.,HYBRID,no,1,1,1,1,1
+"If internal notes are present, did the agent offer a clear follow-up option at closing?",HYBRID,no,1,1,1,1,0
+"For tickets where internal notes were used to document troubleshooting results, check whether the agent closed by confirming the customer can reach back easily",HYBRID,no,1,1,1,1,0
+"If resolution time was between 30 and 90 minutes, did the agent capture the customer’s upgrade requirements clearly?",HYBRID,no,1,1,1,1,0
+Detect quality degradation in conversations exceeding 10 turns...,HYBRID,yes,0,0,0,0,0
+Assess handling appropriateness for 'urgent' cases.,HYBRID,no,1,1,1,1,1
+"If the conversation exceeded 6 turns on chat, assess whether the agent summarized the billing dispute details to confirm understanding before proposing a solution.",HYBRID,no,1,1,1,1,1
+"If tagged 'sensitive' and over 15 turns, was urgency maintained?",HYBRID,yes,0,0,0,0,0
+"If tagged 'legal' and over 10 turns, was urgency maintained?",HYBRID,no,1,1,1,1,0
+"For return requests submitted via email, assess whether the greeting matched a professional email tone.",HYBRID,no,1,1,1,1,1
+"If this came via twitter, was communication style suitable?",HYBRID,no,1,1,1,1,1
+"For responses taking over 3 minutes, was there an apology?",HYBRID,yes,0,0,0,0,0
+"For responses taking over 30 minutes, was there an apology?",HYBRID,no,1,1,1,1,1
+"For cases where hte agent responded within 1 minute but the shipment was still late, evaluate whether the agent avoided minimizing the customer’s feelings.",HYBRID,yes,0,0,0,0,0
+"When resolution time surpassed 1 business day, determine whether the agent’s understanding of the request remained accurate across follow-ups.",HYBRID,no,1,1,1,1,1
+"If tagged 'legal' and over 30 turns, was urgency maintained?",HYBRID,yes,0,0,0,0,0
+"For VIP tickets about product returns, was the opening greeting appropriately courteous and personalized?",HYBRID,no,1,1,1,1,1
+"Based on this converstion, will rhe customer's credit score change?",UNSUPPORTED,reject,1,1,1,1,0
+Predict churn likelihood based on this subscription interaction.,UNSUPPORTED,reject,1,1,1,1,1
+How many times has this custmer had escalation issues in previous tickets?,UNSUPPORTED,reject,1,1,1,1,1
+Assess whether the customer is likely to leave negative feedback after this exchange.,UNSUPPORTED,reject,1,1,1,1,0
+"Across the last 20 tickets, what is the refund trend?",UNSUPPORTED,reject,1,1,1,1,0
+Verify whether the customer placed another order immediately after this complaint.,UNSUPPORTED,reject,1,1,1,1,0
+What is the customer's account balance according to external database records?,UNSUPPORTED,reject,1,1,1,1,1
+Did the customer’s account remain active 30 days later?,UNSUPPORTED,reject,1,1,1,1,1
+Check if the customer has a history of chronic signal issues at this address.,UNSUPPORTED,reject,1,1,1,1,0
+What is the customer's loyalty points according to Salesforce records?,UNSUPPORTED,reject,1,1,1,1,1
+Did the customer’s subscription status change within a week after this interaction?,UNSUPPORTED,reject,1,1,1,1,1
+Check if the passenger had prior disruptions on earlier flights this year.,UNSUPPORTED,reject,1,1,1,1,0
+Aggregate the customer's complaint pattern from the last 2 contacts.,UNSUPPORTED,reject,1,1,1,1,0
+Cross-reference this support ticket issue with Shopify data.,UNSUPPORTED,reject,1,1,1,1,1
+Verify whether a follow-up email was sent and whether the customer opened it.,UNSUPPORTED,reject,1,0,1,0,0
+Estimate the probability that this customer will upgrade within 90 days.,UNSUPPORTED,reject,1,1,1,1,0
+Confirm whether the guest’s next booking was completed successfully without support.,UNSUPPORTED,reject,1,1,0,1,0
+Predict cancel likelihood based on this complaint interaction.,UNSUPPORTED,reject,1,1,1,1,1
+What is the customer's subscription pattern in ERP?,UNSUPPORTED,reject,1,1,1,1,1
+Predict request a callback likelihood based on this subscription interaction.,UNSUPPORTED,reject,1,1,1,1,1
+Estimate the probability that this customer will escalate within month.,UNSUPPORTED,reject,1,1,1,1,0
+Cross-reference this return issue with Shopify data.,UNSUPPORTED,reject,1,1,1,1,1
+Verify whether the restaurant issued a remake or replacement after the conversation.,UNSUPPORTED,reject,1,1,0,0,0
+Is this a repeat support ticket complaint from the same customer?,UNSUPPORTED,reject,1,0,0,0,0
+Compare this agent's handling against  custoemr's pattern in the app.,UNSUPPORTED,reject,1,1,0,1,0
+Did the customer come back with the same complaint issue within week?,UNSUPPORTED,reject,1,1,1,1,1
+Calculate the impact of this conversation on escalation over quarter.,UNSUPPORTED,reject,1,1,0,1,0
+Forecast the customer's support ticket trend over the next week.,UNSUPPORTED,reject,1,1,1,1,1
+Assess based on the customer's return records in third-party system.,UNSUPPORTED,reject,1,1,1,1,0
+Verify the customer's payment method in Salesforce.,UNSUPPORTED,reject,1,1,1,1,1
