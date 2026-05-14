@@ -1,11 +1,61 @@
-"""Statistical analysis: McNemar's test, bootstrap CIs, per-category accuracy.
-
-"""
+"""Statistical analysis: McNemar's test, bootstrap CIs, per-category accuracy."""
 import math
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 from scipy.stats import chi2
+
+
+_BASELINES_RESCORED = "baselines_rescored.csv"
+_ROUTER_VARIANTS_RESCORED = "router_variants_per_prompt.csv"
+
+_LLM_SYSTEMS = [
+    ("LLM GPT-4o-mini (bin)", "mini_bin_correct", "mini_bin_tokens", "mini_bin_latency"),
+    ("LLM GPT-4o-mini (rej)", "mini_rej_correct", "mini_rej_tokens", "mini_rej_latency"),
+    ("LLM GPT-4o (bin)",      "gpt4o_bin_correct", "gpt4o_bin_tokens", None),
+    ("LLM GPT-4o (rej)",      "gpt4o_rej_correct", "gpt4o_rej_tokens", None),
+]
+
+_ROUTER_SYSTEMS = [
+    ("Router (TF-IDF+SVM)", "svm_correct"),
+    ("Router (TF-IDF+LR)",  "tfidf_lr_correct"),
+    ("Router (Emb+LR)",     "emb_lr_correct"),
+    ("Router (Ensemble)",   "ensemble_correct"),
+    ("Router (Keyword)",    "keyword_correct"),
+]
+
+
+def _bootstrap_ci(values, n_boot=5000):
+    boots = [np.mean(np.random.choice(values, size=len(values), replace=True)) for _ in range(n_boot)]
+    return float(np.percentile(boots, 2.5)), float(np.percentile(boots, 97.5))
+
+
+def _mcnemar(baseline_correct, router_correct):
+    b = int(((1 - baseline_correct) * router_correct).sum())
+    c = int((baseline_correct * (1 - router_correct)).sum())
+    if b + c == 0:
+        return b, c, 0.0, 1.0
+    chi2_stat = (abs(b - c) - 1) ** 2 / (b + c)
+    return b, c, chi2_stat, float(1 - chi2.cdf(chi2_stat, df=1))
+
+
+def _cohens_h(p1, p2):
+    p1 = max(0.001, min(0.999, p1))
+    p2 = max(0.001, min(0.999, p2))
+    return 2 * math.asin(math.sqrt(p2)) - 2 * math.asin(math.sqrt(p1))
+
+
+def _holm_bonferroni(p_values):
+    k = len(p_values)
+    order = np.argsort(p_values)
+    adjusted = np.ones(k)
+    running = 0.0
+    for rank, idx in enumerate(order):
+        adj = min(1.0, p_values[idx] * (k - rank))
+        running = max(running, adj)
+        adjusted[idx] = running
+    return adjusted
 
 
 def compute_all_statistics(
@@ -15,225 +65,160 @@ def compute_all_statistics(
     n_boot=5000,
     seed=42,
 ):
-    """Compute McNemar's test, Cohen's h effect size, bootstrap CIs (overall + per-category).
-
-    Parameters
-    ----------
-    eval_with_llm : pd.DataFrame
-        Evaluation dataset with LLM baseline results.
-    system_results : pd.DataFrame
-        Full comparison results from run_full_comparison.
-    results_e2e_dir : str
-        Directory to save result CSVs.
-    n_boot : int
-        Number of bootstrap resamples (>= 5000 for publication-grade).
-    seed : int
-        Random seed for bootstrap.
-
-    Returns
-    -------
-    dict
-        Keys: 'summary_df', 'mcnemar_df', 'ci_df', 'cat_ci_df', 'cat_df'.
-    """
+    """Compute McNemar, bootstrap CIs, per-category accuracy from the rescored sources."""
     np.random.seed(seed)
 
-    # ── Per-system accuracy ───────────────────────────────────────────
-    _summary_rows = [
-        {
-            "system": "LLM-only (binary)",
-            "accuracy": round(eval_with_llm["system_a_binary_correct"].mean(), 4),
-            "n": len(eval_with_llm),
-            "total_tokens": int(eval_with_llm["system_a_binary_tokens"].sum()),
-            "mean_latency_ms": round(eval_with_llm["system_a_binary_latency_ms"].mean(), 1),
-            "p50_latency_ms": round(eval_with_llm["system_a_binary_latency_ms"].median(), 1),
-            "p95_latency_ms": round(np.percentile(eval_with_llm["system_a_binary_latency_ms"], 95), 1),
-        },
-        {
-            "system": "LLM-only (with reject)",
-            "accuracy": round(eval_with_llm["system_a_reject_correct"].mean(), 4),
-            "n": len(eval_with_llm),
-            "total_tokens": int(eval_with_llm["system_a_reject_tokens"].sum()),
-            "mean_latency_ms": round(eval_with_llm["system_a_reject_latency_ms"].mean(), 1),
-            "p50_latency_ms": round(eval_with_llm["system_a_reject_latency_ms"].median(), 1),
-            "p95_latency_ms": round(np.percentile(eval_with_llm["system_a_reject_latency_ms"], 95), 1),
-        },
-    ]
+    e2e_dir = Path(results_e2e_dir)
+    baselines = pd.read_csv(e2e_dir / _BASELINES_RESCORED)
+    routers = pd.read_csv(e2e_dir / _ROUTER_VARIANTS_RESCORED)
 
-    for _rname in system_results["router"].unique():
-        _sub = system_results[system_results["router"] == _rname]
-        _summary_rows.append({
-            "system": f"Router ({_rname})",
-            "accuracy": round(_sub["correct"].mean(), 4),
-            "n": len(_sub),
-            "total_tokens": int(_sub["tokens"].sum()),
-            "mean_latency_ms": round(_sub["latency_ms"].mean(), 1),
-            "p50_latency_ms": round(_sub["latency_ms"].median(), 1),
-            "p95_latency_ms": round(np.percentile(_sub["latency_ms"], 95), 1),
+    if len(baselines) != len(routers):
+        raise ValueError(f"Row mismatch: {_BASELINES_RESCORED} ({len(baselines)}) vs {_ROUTER_VARIANTS_RESCORED} ({len(routers)})")
+    n = len(baselines)
+    categories = baselines["category"].values
+
+    summary_rows = []
+    for name, col, tok_col, lat_col in _LLM_SYSTEMS:
+        lat_mean = lat_p50 = lat_p95 = 0.0
+        if lat_col and lat_col in baselines.columns:
+            lat = baselines[lat_col].values
+            lat_mean = round(float(np.mean(lat)), 1)
+            lat_p50 = round(float(np.median(lat)), 1)
+            lat_p95 = round(float(np.percentile(lat, 95)), 1)
+        summary_rows.append({
+            "system": name,
+            "accuracy": round(float(baselines[col].mean()), 4),
+            "n": n,
+            "total_tokens": int(baselines[tok_col].sum()),
+            "mean_latency_ms": lat_mean,
+            "p50_latency_ms": lat_p50,
+            "p95_latency_ms": lat_p95,
         })
 
-    _summary_df = pd.DataFrame(_summary_rows)
-    print("System Comparison Summary:")
-    print(_summary_df.to_string(index=False))
+    for name, col in _ROUTER_SYSTEMS:
+        summary_rows.append({
+            "system": name,
+            "accuracy": round(float(routers[col].mean()), 4),
+            "n": n,
+            "total_tokens": "",
+            "mean_latency_ms": "",
+            "p50_latency_ms": "",
+            "p95_latency_ms": "",
+        })
 
-    # ── McNemar's test: each router vs LLM-only ──────────────────────
+    summary_df = pd.DataFrame(summary_rows)
+    print("System Comparison Summary:")
+    print(summary_df.to_string(index=False))
+
     print(f"\n{'='*80}")
     print("McNEMAR'S TEST: Router vs LLM-only")
     print(f"{'='*80}")
 
-    _mcnemar_rows = []
-
-    for _bl_name, _bl_col in [("LLM-only (binary)", "system_a_binary_correct"), ("LLM-only (with reject)", "system_a_reject_correct")]:
-        _sys_a = eval_with_llm[_bl_col].values
-        _p_a = eval_with_llm[_bl_col].mean()
-        print(f"\n  vs {_bl_name} (acc={_p_a:.3f}):")
-
-        for _rname in system_results["router"].unique():
-            _sub = system_results[system_results["router"] == _rname].sort_values("idx")
-            _sys_b = _sub["correct"].values
-
-            _b = int(((1 - _sys_a) * _sys_b).sum())
-            _c = int((_sys_a * (1 - _sys_b)).sum())
-
-            # Edwards continuity-corrected McNemar's test (more conservative
-            # for small discordant pairs; standard for N < 1000)
-            _chi2_stat = (abs(_b - _c) - 1) ** 2 / (_b + _c) if (_b + _c) > 0 else 0.0
-            _p_value = 1 - chi2.cdf(_chi2_stat, df=1) if (_b + _c) > 0 else 1.0
-
-            _sub_acc = _sub["correct"].mean()
-            _h = 2 * math.asin(math.sqrt(max(0.001, min(0.999, _sub_acc)))) - 2 * math.asin(math.sqrt(max(0.001, min(0.999, _p_a))))
-
-            _mcnemar_rows.append({
-                "baseline": _bl_name, "router": _rname,
-                "b_router_wins": _b, "c_baseline_wins": _c,
-                "chi2": round(_chi2_stat, 4), "p_value": round(_p_value, 6),
-                "cohens_h": round(_h, 4), "significant": _p_value < 0.05,
+    mcnemar_rows = []
+    baseline_pairs = [
+        ("LLM GPT-4o-mini (bin)", baselines["mini_bin_correct"].values),
+        ("LLM GPT-4o-mini (rej)", baselines["mini_rej_correct"].values),
+        ("LLM GPT-4o (bin)",      baselines["gpt4o_bin_correct"].values),
+        ("LLM GPT-4o (rej)",      baselines["gpt4o_rej_correct"].values),
+    ]
+    for bl_name, bl_vec in baseline_pairs:
+        p_bl = float(bl_vec.mean())
+        print(f"\n  vs {bl_name} (acc={p_bl:.3f}):")
+        for r_name, r_col in _ROUTER_SYSTEMS:
+            r_vec = routers[r_col].values
+            b, c, chi2_stat, p_val = _mcnemar(bl_vec, r_vec)
+            h = _cohens_h(p_bl, float(r_vec.mean()))
+            mcnemar_rows.append({
+                "baseline": bl_name, "router": r_name,
+                "b_router_wins": b, "c_baseline_wins": c,
+                "chi2": round(chi2_stat, 4), "p_value": round(p_val, 6),
+                "cohens_h": round(h, 4), "significant": p_val < 0.05,
             })
-            _sig = "***" if _p_value < 0.001 else "**" if _p_value < 0.01 else "*" if _p_value < 0.05 else "ns"
-            print(f"    {_rname:<20} b={_b:>3} c={_c:>3} chi2={_chi2_stat:.2f} p={_p_value:.4f} h={_h:+.3f} {_sig}")
+            sig = "***" if p_val < 0.001 else "**" if p_val < 0.01 else "*" if p_val < 0.05 else "ns"
+            print(f"    {r_name:<22} b={b:>3} c={c:>3} chi2={chi2_stat:.2f} p={p_val:.4f} h={h:+.3f} {sig}")
 
-    # ── Holm-Bonferroni correction for multiple comparisons ───────────
-    _raw_ps = [r["p_value"] for r in _mcnemar_rows]
-    _sorted_indices = np.argsort(_raw_ps)
-    _k = len(_raw_ps)
-    _corrected = np.ones(_k)
-    for _rank, _orig_idx in enumerate(_sorted_indices):
-        _corrected[_orig_idx] = min(1.0, _raw_ps[_orig_idx] * (_k - _rank))
+    holm = _holm_bonferroni([row["p_value"] for row in mcnemar_rows])
+    for i, row in enumerate(mcnemar_rows):
+        row["p_holm"] = round(float(holm[i]), 6)
+        row["significant_holm"] = bool(holm[i] < 0.05)
 
-    # Enforce monotonicity
-    _running_max = 0.0
-    for _rank, _orig_idx in enumerate(_sorted_indices):
-        _corrected[_orig_idx] = max(_corrected[_orig_idx], _running_max)
-        _running_max = _corrected[_orig_idx]
+    print(f"\n  Holm-Bonferroni correction applied ({len(mcnemar_rows)} tests):")
+    for row in mcnemar_rows:
+        sig = "***" if row["p_holm"] < 0.001 else "**" if row["p_holm"] < 0.01 else "*" if row["p_holm"] < 0.05 else "ns"
+        print(f"    {row['baseline'][:20]:<22} vs {row['router']:<22} p_raw={row['p_value']:.4f} p_holm={row['p_holm']:.4f} {sig}")
 
-    for i, r in enumerate(_mcnemar_rows):
-        r["p_holm"] = round(float(_corrected[i]), 6)
-        r["significant_holm"] = _corrected[i] < 0.05
-
-    print(f"\n  Holm-Bonferroni correction applied ({_k} tests):")
-    for r in _mcnemar_rows:
-        _sig_h = "***" if r["p_holm"] < 0.001 else "**" if r["p_holm"] < 0.01 else "*" if r["p_holm"] < 0.05 else "ns"
-        print(f"    {r['baseline'][:15]:<16} vs {r['router']:<18} p_raw={r['p_value']:.4f} p_holm={r['p_holm']:.4f} {_sig_h}")
-
-    # ── Bootstrap 95% CIs ─────────────────────────────────────────────
     print(f"\n{'='*80}")
     print("BOOTSTRAP 95% CIs")
     print(f"{'='*80}")
 
-    _ci_rows = []
+    ci_rows = []
+    for bl_name, bl_vec in baseline_pairs:
+        lo, hi = _bootstrap_ci(bl_vec, n_boot)
+        ci_rows.append({"system": bl_name, "accuracy": round(float(bl_vec.mean()), 4),
+                        "ci_lo": round(lo, 4), "ci_hi": round(hi, 4)})
+    for r_name, r_col in _ROUTER_SYSTEMS:
+        r_vec = routers[r_col].values
+        lo, hi = _bootstrap_ci(r_vec, n_boot)
+        ci_rows.append({"system": r_name, "accuracy": round(float(r_vec.mean()), 4),
+                        "ci_lo": round(lo, 4), "ci_hi": round(hi, 4)})
+    for r in ci_rows:
+        print(f"  {r['system']:<28} acc={r['accuracy']:.3f} CI=[{r['ci_lo']:.3f}, {r['ci_hi']:.3f}]")
 
-    # Both baselines
-    for _bl_name, _bl_col in [("LLM-only (binary)", "system_a_binary_correct"), ("LLM-only (with reject)", "system_a_reject_correct")]:
-        _vals = eval_with_llm[_bl_col].values
-        _boots = [np.mean(np.random.choice(_vals, size=len(_vals), replace=True)) for _ in range(n_boot)]
-        _ci_rows.append({"system": _bl_name, "accuracy": round(np.mean(_vals), 4),
-                          "ci_lo": round(np.percentile(_boots, 2.5), 4),
-                          "ci_hi": round(np.percentile(_boots, 97.5), 4)})
-
-    for _rname in system_results["router"].unique():
-        _sub = system_results[system_results["router"] == _rname]
-        _vals = _sub["correct"].values
-        _boots = [np.mean(np.random.choice(_vals, size=len(_vals), replace=True)) for _ in range(n_boot)]
-        _ci_rows.append({"system": f"Router ({_rname})", "accuracy": round(np.mean(_vals), 4),
-                          "ci_lo": round(np.percentile(_boots, 2.5), 4),
-                          "ci_hi": round(np.percentile(_boots, 97.5), 4)})
-
-    for _r in _ci_rows:
-        print(f"  {_r['system']:<30} acc={_r['accuracy']:.3f} CI=[{_r['ci_lo']:.3f}, {_r['ci_hi']:.3f}]")
-
-    # ── Per-category bootstrap CIs ────────────────────────────────────
     print(f"\n{'='*80}")
     print("PER-CATEGORY BOOTSTRAP 95% CIs")
     print(f"{'='*80}")
 
-    _cat_ci_rows = []
-    for _cat in sorted(eval_with_llm["category"].unique()):
-        _cat_mask = eval_with_llm["category"] == _cat
+    cat_ci_rows = []
+    for cat in sorted(set(categories)):
+        mask = categories == cat
+        n_cat = int(mask.sum())
+        for bl_name, bl_vec in baseline_pairs:
+            vals = bl_vec[mask]
+            if len(vals) > 1:
+                lo, hi = _bootstrap_ci(vals, n_boot)
+                cat_ci_rows.append({"system": bl_name, "category": cat, "n": n_cat,
+                                    "accuracy": round(float(vals.mean()), 4),
+                                    "ci_lo": round(lo, 4), "ci_hi": round(hi, 4)})
+        for r_name, r_col in _ROUTER_SYSTEMS:
+            vals = routers[r_col].values[mask]
+            if len(vals) > 1:
+                lo, hi = _bootstrap_ci(vals, n_boot)
+                cat_ci_rows.append({"system": r_name, "category": cat, "n": n_cat,
+                                    "accuracy": round(float(vals.mean()), 4),
+                                    "ci_lo": round(lo, 4), "ci_hi": round(hi, 4)})
 
-        # Both baselines
-        for _bl_name, _bl_col in [("LLM-only (binary)", "system_a_binary_correct"), ("LLM-only (with reject)", "system_a_reject_correct")]:
-            _vals = eval_with_llm.loc[_cat_mask, _bl_col].values
-            if len(_vals) > 1:
-                _boots = [np.mean(np.random.choice(_vals, size=len(_vals), replace=True)) for _ in range(n_boot)]
-                _cat_ci_rows.append({"system": _bl_name, "category": _cat, "n": len(_vals),
-                                      "accuracy": round(np.mean(_vals), 4),
-                                      "ci_lo": round(np.percentile(_boots, 2.5), 4),
-                                      "ci_hi": round(np.percentile(_boots, 97.5), 4)})
+    cat_ci_df = pd.DataFrame(cat_ci_rows)
+    cat_ci_df.to_csv(e2e_dir / "per_category_ci.csv", index=False)
+    print("Saved per_category_ci.csv")
 
-        # Each router
-        for _rname in system_results["router"].unique():
-            _sub = system_results[(system_results["router"] == _rname) & (system_results["true_category"] == _cat)]
-            _vals = _sub["correct"].values
-            if len(_vals) > 1:
-                _boots = [np.mean(np.random.choice(_vals, size=len(_vals), replace=True)) for _ in range(n_boot)]
-                _cat_ci_rows.append({"system": f"Router ({_rname})", "category": _cat, "n": len(_vals),
-                                      "accuracy": round(np.mean(_vals), 4),
-                                      "ci_lo": round(np.percentile(_boots, 2.5), 4),
-                                      "ci_hi": round(np.percentile(_boots, 97.5), 4)})
-
-    pd.DataFrame(_cat_ci_rows).to_csv(f"{results_e2e_dir}/per_category_ci.csv", index=False)
-    print(f"Saved per_category_ci.csv")
-
-    # ── Per-category breakdown ────────────────────────────────────────
     print(f"\n{'='*80}")
     print("PER-CATEGORY ACCURACY")
     print(f"{'='*80}")
 
-    _cat_rows = []
-    for _cat in sorted(eval_with_llm["category"].unique()):
-        _cat_mask = eval_with_llm["category"] == _cat
-        _n_cat = _cat_mask.sum()
-        _row = {"category": _cat, "n": _n_cat}
+    cat_rows = []
+    for cat in sorted(set(categories)):
+        mask = categories == cat
+        row = {"category": cat, "n": int(mask.sum())}
+        for bl_name, bl_vec in baseline_pairs:
+            row[bl_name] = round(float(bl_vec[mask].mean()), 4)
+        for r_name, r_col in _ROUTER_SYSTEMS:
+            row[r_name] = round(float(routers[r_col].values[mask].mean()), 4)
+        cat_rows.append(row)
 
-        _row["LLM-only (binary)"] = round(eval_with_llm.loc[_cat_mask, "system_a_binary_correct"].mean(), 4)
-        _row["LLM-only (reject)"] = round(eval_with_llm.loc[_cat_mask, "system_a_reject_correct"].mean(), 4)
+    cat_df = pd.DataFrame(cat_rows)
+    print(cat_df.to_string(index=False))
 
-        for _rname in system_results["router"].unique():
-            _sub = system_results[(system_results["router"] == _rname)]
-            _cat_sub = _sub[_sub["true_category"] == _cat]
-            _row[f"Router ({_rname})"] = round(_cat_sub["correct"].mean(), 4) if len(_cat_sub) > 0 else None
+    summary_df.to_csv(e2e_dir / "summary.csv", index=False)
+    pd.DataFrame(mcnemar_rows).to_csv(e2e_dir / "mcnemar.csv", index=False)
+    pd.DataFrame(ci_rows).to_csv(e2e_dir / "bootstrap_ci.csv", index=False)
+    cat_df.to_csv(e2e_dir / "per_category.csv", index=False)
 
-        _cat_rows.append(_row)
-
-    _cat_df = pd.DataFrame(_cat_rows)
-    print(_cat_df.to_string(index=False))
-
-    # ── Save all results ──────────────────────────────────────────────
-    _summary_df.to_csv(f"{results_e2e_dir}/summary.csv", index=False)
-    pd.DataFrame(_mcnemar_rows).to_csv(f"{results_e2e_dir}/mcnemar.csv", index=False)
-    pd.DataFrame(_ci_rows).to_csv(f"{results_e2e_dir}/bootstrap_ci.csv", index=False)
-    _cat_df.to_csv(f"{results_e2e_dir}/per_category.csv", index=False)
-
-    # GPT-5.2 judge cost (for reproducibility reporting)
-    _gt_calls = eval_with_llm[eval_with_llm["ground_truth_source"] == "gpt5.2_judge"].shape[0]
-    _gt_total_tokens = int(eval_with_llm["gt_tokens"].sum())
-    print(f"\nGPT-5.2 judge: {_gt_calls} calls, {_gt_total_tokens:,} tokens total")
-
-    print(f"Saved: summary.csv, mcnemar.csv, bootstrap_ci.csv, per_category.csv, per_category_ci.csv")
+    print(f"\nSaved: summary.csv, mcnemar.csv, bootstrap_ci.csv, per_category.csv, per_category_ci.csv")
 
     return {
-        "summary_df": _summary_df,
-        "mcnemar_df": pd.DataFrame(_mcnemar_rows),
-        "ci_df": pd.DataFrame(_ci_rows),
-        "cat_ci_df": pd.DataFrame(_cat_ci_rows),
-        "cat_df": _cat_df,
+        "summary_df": summary_df,
+        "mcnemar_df": pd.DataFrame(mcnemar_rows),
+        "ci_df": pd.DataFrame(ci_rows),
+        "cat_ci_df": cat_ci_df,
+        "cat_df": cat_df,
     }
